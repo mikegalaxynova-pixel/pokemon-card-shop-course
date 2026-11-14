@@ -1,0 +1,70 @@
+{%- comment -%}一条信息流卡片。参数：kind title url date updated excerpt image image_alt image_width image_height source ntype prev watch creator reason rank topic{%- endcomment -%}
+{%- assign _url = include.url | relative_url -%}
+{%- assign _kind = include.kind -%}
+{%- assign _media = "none" -%}
+{%- assign yt_id = "" -%}
+{%- if include.watch and include.watch != blank -%}
+  {%- if include.watch contains "youtu.be/" -%}
+    {%- assign yt_id = include.watch | split: "youtu.be/" | last | split: "?" | first | split: "/" | first -%}
+  {%- elsif include.watch contains "v=" -%}
+    {%- assign yt_id = include.watch | split: "v=" | last | split: "&" | first -%}
+  {%- elsif include.watch contains "youtube.com/embed/" -%}
+    {%- assign yt_id = include.watch | split: "embed/" | last | split: "?" | first -%}
+  {%- endif -%}
+  {%- if yt_id != blank -%}{%- assign _media = "video" -%}{%- endif -%}
+{%- endif -%}
+{%- if _media == "none" and include.image and include.image != blank -%}
+  {%- assign _media = "thumb" -%}
+  {%- if include.image_width and include.image_height and include.image_height != 0 -%}
+    {%- assign _ratio = include.image_width | times: 100 | divided_by: include.image_height -%}
+    {%- if _ratio >= 110 -%}{%- assign _media = "hero" -%}{%- endif -%}
+  {%- endif -%}
+{%- endif -%}
+{%- assign _excerpt = include.excerpt | default: "" | strip_html | strip_newlines | truncate: 72 -%}
+{%- case _kind -%}
+  {%- when "news" -%}{%- assign _klabel = "每日新闻" -%}
+  {%- when "shops" -%}{%- assign _klabel = "店铺案例" -%}
+  {%- when "videos" -%}{%- assign _klabel = "视频" -%}
+  {%- when "kb" -%}{%- assign _klabel = "基础知识" -%}
+  {%- else -%}{%- assign _klabel = _kind -%}
+{%- endcase -%}
+{%- assign _search = include.title | append: " " | append: include.excerpt | append: " " | append: include.source | append: " " | append: include.creator | append: " " | append: _klabel | strip_html | strip_newlines -%}
+<article class="feed-item media-{{ _media }}" data-kind="{{ _kind }}"{% if include.ntype %} data-ntype="{{ include.ntype }}"{% endif %}{% if include.topic %} data-topic="{{ include.topic }}"{% endif %} data-url="{{ _url }}" data-read-url="{{ _url }}" data-ts="{{ include.date | date: '%s' }}"{% if include.reason %} data-featured="1" data-featured-rank="{{ include.rank }}"{% endif %} data-search="{{ _search | escape }}">
+  <div class="feed-row">
+    <div class="feed-body">
+      <h2 class="feed-title"><a href="{{ _url }}">{{ include.title }}</a></h2>
+      <p class="feed-kicker">
+        <span class="stream stream-{{ _kind }}">{{ _klabel }}</span>
+        {%- if _kind == "news" -%}{% include news-type.html id=include.ntype prev=include.prev %}{%- endif -%}
+        {%- if include.source -%}<span class="feed-source">{{ include.source }}</span>{%- endif -%}
+      </p>
+      {%- if _excerpt != "" -%}<p class="feed-excerpt">{{ _excerpt }}</p>{%- endif -%}
+    </div>
+    {%- if _media == "thumb" -%}
+    <a class="feed-thumb" href="{{ _url }}" tabindex="-1" aria-hidden="true">
+      <img src="{{ include.image | relative_url }}" alt="" width="{{ include.image_width | default: 160 }}" height="{{ include.image_height | default: 160 }}" loading="lazy" decoding="async">
+    </a>
+    {%- endif -%}
+  </div>
+  {%- if _media == "hero" -%}
+  <a class="feed-hero" href="{{ _url }}">
+    <img src="{{ include.image | relative_url }}" alt="{{ include.image_alt | default: include.title | escape }}" width="{{ include.image_width }}" height="{{ include.image_height }}" loading="lazy" decoding="async">
+  </a>
+  {%- endif -%}
+  {%- if _media == "video" and yt_id != blank -%}
+  <div class="feed-yt" data-yt="{{ yt_id }}" data-title="{{ include.title | escape }}" data-url="{{ _url }}">
+    <button type="button" class="feed-yt-btn" aria-label="在本页播放：{{ include.title | escape }}">
+      <img src="https://i.ytimg.com/vi/{{ yt_id }}/hqdefault.jpg" alt="视频「{{ include.title | escape }}」的缩略图（来源 YouTube）" width="480" height="360" loading="lazy" decoding="async">
+      <span class="yt-play" aria-hidden="true"></span>
+    </button>
+  </div>
+  {%- endif -%}
+  {%- if include.reason -%}<p class="feed-reason"><span class="feed-reason-label">为什么今天先看</span>{{ include.reason }}</p>{%- endif -%}
+  <p class="feed-meta">
+    <time datetime="{{ include.date | date: '%Y-%m-%d' }}">{{ include.date | date: '%Y年%-m月%-d日' }}</time>
+    {% include badge.html date=include.date updated=include.updated url=include.url %}
+    <span class="badge read" data-feed-read hidden>已读</span>
+    <span class="badge freq" data-feed-frequent hidden>常看</span>
+    <span class="feed-views" data-feed-views hidden></span>
+  </p>
+</article>

@@ -1,31 +1,8 @@
 ---
-layout: default
+layout: home
 title: 今日
 nav: home
-description: 今天更新了什么、下一步该做什么。面向准备在东京高田马场开 PSA 评级卡实体店的新手。
-tldr: |
-  **结论**：先看下面「今日新增」，再看「本周重点」。目标是尽快让月毛利盖过月固定成本。
-  **你该做什么**：有新新闻就看类型标签；有新案例或视频就点进去。然后用收支平衡路线图填入你自己的租金和人工。
+description: 今天该先看什么、下一步该做什么。面向准备在东京高田马场开 PSA 评级卡实体店的新手。新闻、店铺案例、视频和基础知识混在一条信息流里，可以按类型筛选。
 ---
-<section class="prose">
-  <h1>今日</h1>
-</section>
-
-{% include tldr.html %}
-{% include today.html %}
-
-{% assign latest = site.posts | first %}
-{% if latest and latest.breakeven %}
-<section class="be-box action-box" aria-labelledby="next-h">
-  <p class="kicker">面向收支平衡</p>
-  <h2 id="next-h">本周重点 / 下一步行动</h2>
-  {% if latest.breakeven.intro %}<div class="mentor-body">{{ latest.breakeven.intro | markdownify }}</div>{% endif %}
-  <ol>
-  {% for item in latest.breakeven.items limit: 3 %}
-    <li>{% if item.priority %}<span class="priority">优先 {{ item.priority }}.</span>{% endif %}{{ item.action }}</li>
-  {% endfor %}
-  </ol>
-  <p><a class="cta" href="{{ '/breakeven/' | relative_url }}">打开收支平衡路线图</a></p>
-  <p class="src">依据<a href="{{ latest.url | relative_url }}">第 {{ latest.issue }} 期新闻</a>整理。公式里的数字都是你自己的假设，不是行情事实。</p>
-</section>
-{% endif %}
+<h1 class="sr">今日</h1>
+{% include feed.html %}
