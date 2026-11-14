@@ -1,6 +1,17 @@
 # 更新日志（唯一数据源）。每次每日更新在最上面新增一条。
 # kind 取值与导航 id 对应：news | shops | videos | kb | tools（旧条目可能仍是 daily / recs / path / glossary，首页会归入「其他」）；type: new | updated
 - date: 2026-11-15
+  title: 新增「娱乐/开箱」：开箱视频与卡片圈 X 帖
+  items:
+    - { kind: videos, type: new, title: "两箱开「100 万的红色梦幻」？标题很猛，行情要另算", url: /videos/roadsilk-30th-red-mew/ }
+    - { kind: videos, type: new, title: "メガシンフォニア 100 包开封", url: /videos/neko-mega-symphonia-100packs/ }
+    - { kind: videos, type: new, title: "30 周年 9 种套装：自称 0.23% 的奇迹", url: /videos/pakkuma-30th-nineset/ }
+    - { kind: videos, type: new, title: "PSA 常规方案 30 枚返还开封", url: /videos/ayane-psa-30-return/ }
+    - { kind: videos, type: new, title: "人生第一次送 PSA：在 PSA Lounge Tokyo 开结果", url: /videos/roadsilk-first-psa/ }
+    - { kind: videos, type: new, title: "X：SNKRDUNK 提醒 ミュウex FUR 精巧仿品", url: /videos/x-snkrdunk-mew-ex-fur-fake/ }
+    - { kind: videos, type: new, title: "X：SNKRDUNK 续报 ミュウツーex FUR 仿品", url: /videos/x-snkrdunk-mewtwo-ex-fur-fake/ }
+    - { kind: videos, type: updated, title: "视频页增加「娱乐/开箱」分区，并支持 X 帖卡片", url: /videos/ }
+- date: 2026-11-15
   title: 新增开店与买卖入门视频，列表改为卡片点播，并按全站主题筛选
   items:
     - { kind: videos, type: new, title: "揭密日本卡店后台：秋叶原 Cardon 店员一个月", url: /videos/cardholics-akihabara-clerk/ }

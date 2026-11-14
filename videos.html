@@ -3,26 +3,40 @@ layout: default
 title: 视频
 nav: videos
 permalink: /videos/
-description: 开店入门、卡片买卖和店铺经营视频。每条都有内容总结、要点分析和导师点评，可按主题筛选，点击卡片即可在本页播放。
+description: 开箱、有趣的卡片内容和社区动态，以及开店入门、买卖与经营视频。每条都有内容总结和导师点评，可按主题筛选。
 tldr: |
-  **结论**：优先看买卖交易、店铺运营和开店基础，不要从官方宣传片入门。每条都有总结和点评，数字以片中口述为准，不能直接当报价单。
-  **你该做什么**：用下面的主题筛选，点缩略图即可在本页播放；看完「先看这里」再决定要不要把要点记下来。
+  **结论**：想每天打开这个站点的话，先看「娱乐/开箱」：开箱、鑑定結果開封，以及日本卡片圈值得看的 X 帖。要学买卖和开店，再看下面的入门条目。官方宣传片仍放在最底下。
+  **你该做什么**：用主题筛选找到今天想看的那一类，点卡片即可观看或打开原帖；娱乐条目的点评更轻松，数字仍以片中口述和注明的报价来源为准，不能直接当报价单。
 ---
 <div class="prose">
   <h1>视频</h1>
 </div>
 {% include tldr.html %}
 {%- assign all_vids = site.videos | sort: "date" | reverse -%}
-{%- assign learn_vids = all_vids | where_exp: "v", "v.official != true" -%}
 {%- assign official_vids = all_vids | where_exp: "v", "v.official == true" -%}
 <div class="video-filter-root">
 {% include video-filter.html videos=all_vids %}
+<section data-video-section="fun" aria-labelledby="fun-h">
+  <h2 id="fun-h">娱乐/开箱</h2>
+  <p class="muted">开箱、开封、追击卡抽出、有趣或搞笑的卡片内容，以及日本卡片圈值得看的 X 帖。先图个开心，点评也更轻松一点。</p>
+  <div class="vcard-grid">
+  {% for v in all_vids %}
+    {%- if v.official != true and v.topics contains "娱乐/开箱" -%}
+    {% include video-card.html video=v %}
+    {%- endif -%}
+  {% endfor %}
+  </div>
+</section>
 <section data-video-section="learn" aria-labelledby="learn-h">
   <h2 id="learn-h">入门、买卖与经营</h2>
   <p class="muted">面向准备开店的人。先看总结和点评，再决定要不要把片中数字写进自己的测算。</p>
   <div class="vcard-grid">
-  {% for v in learn_vids %}
-    {% include video-card.html video=v %}
+  {% for v in all_vids %}
+    {%- if v.official != true -%}
+      {%- unless v.topics contains "娱乐/开箱" -%}
+      {% include video-card.html video=v %}
+      {%- endunless -%}
+    {%- endif -%}
   {% endfor %}
   </div>
 </section>

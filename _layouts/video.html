@@ -9,23 +9,40 @@ nav: videos
   {%- if page.title_zh and page.title_zh != page.title -%}
   <p class="enname">原标题：{{ page.title }}</p>
   {%- endif -%}
-  <p class="meta">{% if page.creator %}{{ page.creator }} · {% endif %}{% if page.duration %}{{ page.duration }} · {% endif %}{% if page.published %}YouTube 公开于 <time datetime="{{ page.published }}">{{ page.published | date: "%Y年%-m月%-d日" }}</time> · {% endif %}本站收录 <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%Y年%-m月%-d日' }}</time></p>
+  <p class="meta">{% if page.creator %}{{ page.creator }} · {% endif %}{% if page.duration %}{{ page.duration }} · {% endif %}{%- if page.published -%}{%- if page.platform == "x" -%}X 发布于 <time datetime="{{ page.published }}">{{ page.published | date: "%Y年%-m月%-d日" }}</time> · {% else %}YouTube 公开于 <time datetime="{{ page.published }}">{{ page.published | date: "%Y年%-m月%-d日" }}</time> · {% endif %}{%- endif %}本站收录 <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%Y年%-m月%-d日' }}</time></p>
   {% include tldr.html %}
+  {%- if page.platform == "x" -%}
+  <section class="x-post" aria-label="原帖摘录">
+    <p class="x-kicker">X</p>
+    <p class="x-handle">{{ page.creator }}</p>
+    {%- if page.quote -%}<blockquote>{{ page.quote }}</blockquote>{%- endif -%}
+    <p><a href="{{ page.watch }}" rel="noopener">打开原帖 ↗</a></p>
+  </section>
+  {%- else -%}
   {% include yt-lite.html video=page title=page.title_zh mode="inline" page=true %}
+  {%- endif -%}
   <section class="video-info" aria-labelledby="vinfo-h">
-    <h2 id="vinfo-h">视频信息</h2>
+    <h2 id="vinfo-h">{% if page.platform == "x" %}帖子信息{% else %}视频信息{% endif %}</h2>
     <p><strong>原标题</strong>：{{ page.title }}</p>
     {%- if page.title_zh -%}<p><strong>中文标题</strong>：{{ page.title_zh }}</p>{%- endif -%}
-    {%- if page.creator -%}<p><strong>频道</strong>：{{ page.creator }}</p>{%- endif -%}
+    {%- if page.creator -%}<p><strong>{% if page.platform == "x" %}账号{% else %}频道{% endif %}</strong>：{{ page.creator }}</p>{%- endif -%}
     {%- if page.duration -%}<p><strong>时长</strong>：{{ page.duration }}</p>{%- endif -%}
-    {%- if page.published -%}<p><strong>公开日期</strong>：{{ page.published | date: "%Y年%-m月%-d日" }}（以 YouTube 页面为准）</p>{%- endif -%}
+    {%- if page.published -%}<p><strong>发布日期</strong>：{{ page.published | date: "%Y年%-m月%-d日" }}（以{% if page.platform == "x" %} X 原帖{% else %} YouTube 页面{% endif %}为准）</p>{%- endif -%}
     {%- if page.topics -%}<p><strong>主题</strong>：{% for t in page.topics %}{% include topic.html label=t %}{% endfor %}</p>{%- endif -%}
+    {%- if page.platform == "x" -%}
+    <p class="muted">这是日本卡片圈的 X 动态，不是 YouTube 视频。请点上面的链接查看原帖（含对方发布的对比视频，如有）。</p>
+    {%- else -%}
     <p class="muted">缩略图来源：<a href="{{ page.watch }}" rel="noopener">YouTube</a>。点击上方画面在本页播放，不会跳转离开。</p>
+    {%- endif -%}
   </section>
   {% include media.html item=page %}
   {% if page.note %}<p>{{ page.note }}</p>{% endif %}
   {{ content }}
   {% include comment.html text=page.comment %}
+  {%- if page.platform == "x" -%}
+  <p class="muted">原帖链接：<a href="{{ page.watch }}" rel="noopener">{{ page.watch }}</a></p>
+  {%- else -%}
   <p class="muted">需要在 YouTube 打开时：<a href="{{ page.watch }}" rel="noopener">原视频链接</a>。</p>
+  {%- endif -%}
   {% if page.issue %}<p class="muted">同期新闻：<a href="{{ page.issue | relative_url }}">回到当日新闻</a></p>{% endif %}
 </article>

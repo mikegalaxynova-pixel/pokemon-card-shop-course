@@ -2,17 +2,26 @@
 {%- if v -%}
 {%- assign _topics = "" -%}
 {%- for t in v.topics -%}{%- assign _topics = _topics | append: t | append: " " -%}{%- endfor -%}
-<article class="vcard{% if v.official %} is-official{% endif %}" data-topics="{{ _topics | strip }}"{% if v.official %} data-official="1"{% endif %}>
+<article class="vcard{% if v.official %} is-official{% endif %}{% if v.platform == 'x' %} is-x{% endif %}" data-topics="{{ _topics | strip }}"{% if v.official %} data-official="1"{% endif %}>
+  {%- if v.platform == "x" -%}
+  <div class="vcard-media vcard-xmedia">
+    <p class="x-kicker">X</p>
+    <p class="x-handle">{{ v.creator }}</p>
+    {%- if v.quote -%}<blockquote class="x-quote">{{ v.quote }}</blockquote>{%- endif -%}
+    <a class="x-open" href="{{ v.watch }}" rel="noopener">打开原帖 ↗</a>
+  </div>
+  {%- else -%}
   <div class="vcard-media">
     {% include yt-lite.html video=v title=v.title mode="modal" %}
   </div>
+  {%- endif -%}
   <div class="vcard-body">
     <p class="kind">{% include stream.html id="videos" %} {% for t in v.topics %}{% include topic.html label=t %}{% endfor %} {% include badge.html date=v.date updated=v.last_updated url=v.url %}</p>
     <h3><a href="{{ v.url | relative_url }}">{{ v.title_zh | default: v.title }}</a></h3>
     {%- if v.title_zh and v.title_zh != v.title -%}<p class="enname">{{ v.title }}</p>{%- endif -%}
-    <p class="vcard-meta">{% if v.creator %}{{ v.creator }}{% endif %}{% if v.duration %} · {{ v.duration }}{% endif %}{% if v.published %} · 公开于 {{ v.published | date: "%Y年%-m月%-d日" }}{% endif %}</p>
+    <p class="vcard-meta">{% if v.creator %}{{ v.creator }}{% endif %}{% if v.duration %} · {{ v.duration }}{% endif %}{% if v.published %} · {% if v.platform == "x" %}发布于{% else %}公开于{% endif %} {{ v.published | date: "%Y年%-m月%-d日" }}{% endif %}</p>
     <p class="vcard-hook">{{ v.description }}</p>
-    <p class="vcard-actions"><a href="{{ v.url | relative_url }}">看总结、分析和导师点评 →</a></p>
+    <p class="vcard-actions"><a href="{{ v.url | relative_url }}">{% if v.platform == "x" %}看摘录和导师点评 →{% else %}看总结、分析和导师点评 →{% endif %}</a></p>
   </div>
 </article>
 {%- endif -%}
