@@ -75,6 +75,7 @@ html[data-theme=dark] .next-mini-link{color:#7eb6ff}
 .feed-meta{margin:.45rem 0 0;display:flex;flex-wrap:wrap;align-items:center;gap:.35rem .5rem;font-size:.78rem;color:var(--feed-muted)}
 .feed-views{color:var(--feed-muted)}
 .badge.freq{background:#f3e8f8;color:#6b21a8;border:1px solid #d8b4fe}
+.badge[hidden],.feed-views[hidden]{display:none!important}
 html[data-theme=dark] .badge.freq{background:#2a1a38;color:#d8b4fe;border-color:#6b21a8}
 .feed-item.is-read .feed-title{font-weight:650}
 .feed-item.is-read .badge.new,.feed-item.is-read .badge.upd{display:none}
