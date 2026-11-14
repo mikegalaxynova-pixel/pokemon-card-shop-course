@@ -103,6 +103,36 @@
     return out;
   }
 
+
+  function hasFunTopic(el) {
+    return hasTopic(el, "fun") || hasTopic(el, "unbox") || hasTopic(el, "entertainment");
+  }
+  function ensureFunFeatured() {
+    var featured = items.filter(function (el) { return el.getAttribute("data-featured") === "1"; });
+    if (featured.some(hasFunTopic)) return;
+    var funItems = items.filter(hasFunTopic);
+    if (!funItems.length) return;
+    var pick = newestFirst(funItems)[0];
+    if (featured.length >= 5) {
+      var evictable = featured.filter(function (el) { return rankOf(el) >= 2; })
+        .sort(function (a, b) { return rankOf(b) - rankOf(a); });
+      if (evictable[0]) {
+        evictable[0].removeAttribute("data-featured");
+        evictable[0].removeAttribute("data-featured-rank");
+      }
+    }
+    pick.setAttribute("data-featured", "1");
+    pick.setAttribute("data-featured-rank", "2");
+    if (!pick.querySelector(".feed-reason")) {
+      var p = document.createElement("p");
+      p.className = "feed-reason";
+      p.innerHTML = '<span class="feed-reason-label">为什么今天先看</span>轻松看一条开箱或社区动态，也能感觉客人现在在聊什么。';
+      var meta = pick.querySelector(".feed-meta");
+      if (meta) pick.insertBefore(p, meta);
+      else pick.appendChild(p);
+    }
+  }
+
   function applyMeta() {
     var readMap = getMap(READ_KEY);
     var views = getMap(VIEW_KEY);
@@ -319,6 +349,7 @@
 
   window.addEventListener("hashchange", function () { setTab(currentTab(), false); });
   applyMeta();
+  ensureFunFeatured();
 
   var navType = "";
   try { navType = performance.getEntriesByType("navigation")[0].type; } catch (e) {}

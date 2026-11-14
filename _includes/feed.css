@@ -243,3 +243,5 @@ html[data-theme=dark] .page-back a{color:#7eb6ff}
 .page-main .prose p,.page-main article > p{margin:.85em 0}
 .page-main .meta,.page-main .crumbs{margin:0 0 .75rem}
 .page-main .crumbs a{display:inline-flex;align-items:center;min-height:44px}
+
+html[data-theme=dark] .vtopic-fun{background:#3a1528;color:#f9a8d4;border-color:#db2777}

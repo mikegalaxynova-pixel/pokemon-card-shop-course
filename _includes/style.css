@@ -157,6 +157,7 @@ input[type=search]{width:100%;font:inherit;padding:.7rem .9rem;border:1px solid 
 .vtopic-shops{background:#e6f4f1;color:#115e59;border-color:#0f766e}
 .vtopic-news{background:#fde8e8;color:#9b1c1c;border-color:#b3001b}
 .vtopic-startup{background:#eef6ea;color:#116329;border-color:#116329}
+.vtopic-fun{background:#fde8f1;color:#9d174d;border-color:#db2777}
 
 .vcard-grid{display:grid;gap:1rem;margin:1rem 0;padding:0;list-style:none}
 .vcard{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;display:flex;flex-direction:column;margin:0;padding:0}

@@ -21,3 +21,6 @@
 - id: startup
   label: 开店基础
   hint: 开业资金、选址、回本准备
+- id: fun
+  label: 娱乐/开箱
+  hint: 开箱、趣味内容和社区动态（含 X 帖）
