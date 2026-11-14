@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="240" viewBox="0 0 600 240" role="img" aria-labelledby="t d">
+<title id="t">收购定价上限公式示意图</title>
+<desc id="d">收购价上限等于预期净售价减去目标毛利再减去滞销或跌价缓冲。预期净售价等于预期售价减去卖出时的手续费和运费。这是经营假设公式，不是市场统一买取率。</desc>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC",sans-serif;fill:#1f2328}.muted{fill:#57606a}</style>
+<rect width="600" height="240" fill="#f6f8fa"/>
+<text x="24" y="28" font-size="16" font-weight="700">收购定价：先算卖得出去的净额，再留余地</text>
+<text x="24" y="48" font-size="11" class="muted">A shop formula, not a published market buy-rate. Do not treat any percentage as a rule.</text>
+<rect x="24" y="64" width="552" height="64" rx="8" fill="#fff" stroke="#b3001b"/>
+<text x="300" y="90" text-anchor="middle" font-size="14" font-weight="700">收购价上限 = 预期净售价 − 目标毛利 − 滞销或跌价缓冲</text>
+<text x="300" y="112" text-anchor="middle" font-size="12" class="muted">Max buy = expected net sell − target profit − holding / price-drop buffer</text>
+<rect x="24" y="140" width="552" height="56" rx="8" fill="#fff" stroke="#d0d7de"/>
+<text x="300" y="164" text-anchor="middle" font-size="13">预期净售价 = 预期售价 − 卖出手续费 − 运费等变动成本</text>
+<text x="300" y="184" text-anchor="middle" font-size="12" class="muted">Expected net sell = expected sale price − selling fees − postage and other variable costs</text>
+<text x="24" y="220" font-size="12">示意图。不要用「行情的百分之几十」当固定规则，流动性差的卡要留更大缓冲。</text>
+</svg>

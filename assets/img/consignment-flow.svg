@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="230" viewBox="0 0 600 230" role="img" aria-labelledby="t d">
+<title id="t">寄售流程示意图</title>
+<desc id="d">接受出售委托时先做本人确认并记台账，书面约定标价、分成、保管责任和未售退还，卖出后再按约定结算，未售出则退还委托人。</desc>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC",sans-serif;fill:#1f2328}.muted{fill:#57606a}</style>
+<rect width="600" height="230" fill="#f6f8fa"/>
+<text x="24" y="28" font-size="16" font-weight="700">寄售：收下委托时就要确认和记账</text>
+<text x="24" y="48" font-size="11" class="muted">Identity check and ledger happen at intake, not at payout. Unsold cards go back under the written terms.</text>
+<g font-size="12">
+  <rect x="24" y="64" width="126" height="110" rx="8" fill="#fff" stroke="#d0d7de"/>
+  <text x="87" y="96" text-anchor="middle" font-weight="700">1 收下委托</text>
+  <text x="87" y="118" text-anchor="middle">本人确认</text>
+  <text x="87" y="136" text-anchor="middle">记台账</text>
+  <text x="158" y="116" font-size="16" fill="#57606a">→</text>
+  <rect x="176" y="64" width="126" height="110" rx="8" fill="#fff" stroke="#d0d7de"/>
+  <text x="239" y="96" text-anchor="middle" font-weight="700">2 书面约定</text>
+  <text x="239" y="118" text-anchor="middle">标价与分成</text>
+  <text x="239" y="136" text-anchor="middle">损坏与退还</text>
+  <text x="310" y="116" font-size="16" fill="#57606a">→</text>
+  <rect x="328" y="64" width="126" height="110" rx="8" fill="#fff" stroke="#0b5cad"/>
+  <text x="391" y="96" text-anchor="middle" font-weight="700">3 上架出售</text>
+  <text x="391" y="118" text-anchor="middle">店头或约定渠道</text>
+  <text x="391" y="136" text-anchor="middle">改价要先说清</text>
+  <text x="462" y="116" font-size="16" fill="#57606a">→</text>
+  <rect x="480" y="64" width="96" height="110" rx="8" fill="#fff" stroke="#b3001b"/>
+  <text x="528" y="96" text-anchor="middle" font-weight="700">4 结算</text>
+  <text x="528" y="118" text-anchor="middle">卖出付款</text>
+  <text x="528" y="136" text-anchor="middle">未售退还</text>
+</g>
+<text x="24" y="202" font-size="12">示意图。分成比例由双方约定，本文不规定统一费率。</text>
+</svg>

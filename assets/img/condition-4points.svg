@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="260" viewBox="0 0 600 260" role="img" aria-labelledby="t d">
+<title id="t">未评级卡成色四个观察点示意图</title>
+<desc id="d">判断未评级卡成色时看四个位置：四角、边缘、表面和居中。PSA 十分要求几乎完美，正面居中约不超过五十五比四十五，背面约不超过七十五比二十五。本图是观察位置示意图，不是某张卡的评级结果。</desc>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC",sans-serif;fill:#1f2328}.muted{fill:#57606a}</style>
+<rect width="600" height="260" fill="#f6f8fa"/>
+<text x="24" y="28" font-size="16" font-weight="700">未评级卡成色：四个位置都要看</text>
+<text x="24" y="48" font-size="11" class="muted">Corners, edges, surface, centering. This is a diagram of where to look, not a grade for any real card.</text>
+<g font-size="12">
+  <rect x="24" y="64" width="270" height="80" rx="8" fill="#fff" stroke="#d0d7de"/>
+  <text x="40" y="90" font-weight="700">四角（Corners）</text>
+  <text x="40" y="110">是否变圆、起毛、缺角、发白</text>
+  <text x="40" y="128" font-size="11" class="muted">Fraying, dings, whitening</text>
+  <rect x="306" y="64" width="270" height="80" rx="8" fill="#fff" stroke="#d0d7de"/>
+  <text x="322" y="90" font-weight="700">边缘（Edges）</text>
+  <text x="322" y="110">白边、缺口、磨损、凹痕</text>
+  <text x="322" y="128" font-size="11" class="muted">Chipping, roughness, dents</text>
+  <rect x="24" y="154" width="270" height="80" rx="8" fill="#fff" stroke="#d0d7de"/>
+  <text x="40" y="180" font-weight="700">表面（Surface）</text>
+  <text x="40" y="200">刮痕、折痕、污渍、印刷线</text>
+  <text x="40" y="218" font-size="11" class="muted">Scratches, creases, print lines</text>
+  <rect x="306" y="154" width="270" height="80" rx="8" fill="#fff" stroke="#0b5cad"/>
+  <text x="322" y="180" font-weight="700">居中（Centering）</text>
+  <text x="322" y="200">PSA 10：正面约 55/45</text>
+  <text x="322" y="218" font-size="11" class="muted">Back about 75/25 for a 10</text>
+</g>
+</svg>

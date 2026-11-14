@@ -9,6 +9,7 @@ nav: kb
   <p class="meta">首发 <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%Y年%-m月%-d日' }}</time>{% if page.last_updated and page.last_updated != page.date %} · 最后更新 <time datetime="{{ page.last_updated | date: '%Y-%m-%d' }}">{{ page.last_updated | date: '%Y年%-m月%-d日' }}</time>{% endif %}{% if page.tags %} · {% for t in page.tags %}<span class="tag">{{ t }}</span>{% endfor %}{% endif %}</p>
   {% include tldr.html %}
   {{ content }}
+  {% include comment.html text=page.comment %}
 </article>
 <aside class="related" aria-labelledby="rel-h">
   <h2 id="rel-h">「{{ sec.title }}」其他文章</h2>

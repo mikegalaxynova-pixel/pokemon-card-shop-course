@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="250" viewBox="0 0 600 250" role="img" aria-labelledby="t d">
+<title id="t">不同渠道对回本的作用示意图</title>
+<desc id="d">自有库存店头销售毛利较高但占用现金；寄售分成较低但少占现金；网上销售要扣除平台手续费和运费，回款也更慢。回本要按渠道分开算毛利率。</desc>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC",sans-serif;fill:#1f2328}.muted{fill:#57606a}</style>
+<rect width="600" height="250" fill="#f6f8fa"/>
+<text x="24" y="28" font-size="16" font-weight="700">回本要按渠道分开算，不要用一个毛利率套全部</text>
+<text x="24" y="48" font-size="11" class="muted">Owned stock, consignment and online sales have different margins and cash timing. No made-up percentages here.</text>
+<g font-size="12">
+  <rect x="24" y="64" width="176" height="140" rx="8" fill="#fff" stroke="#0b5cad"/>
+  <text x="112" y="92" text-anchor="middle" font-weight="700">自有库存 · 店头</text>
+  <text x="112" y="116" text-anchor="middle">毛利 = 售价−进货成本</text>
+  <text x="112" y="136" text-anchor="middle">无平台手续费</text>
+  <text x="112" y="156" text-anchor="middle">但货值占用现金</text>
+  <text x="112" y="180" text-anchor="middle" font-size="11" class="muted">Owned, in-store</text>
+  <rect x="212" y="64" width="176" height="140" rx="8" fill="#fff" stroke="#d0d7de"/>
+  <text x="300" y="92" text-anchor="middle" font-weight="700">寄售</text>
+  <text x="300" y="116" text-anchor="middle">收入是约定分成</text>
+  <text x="300" y="136" text-anchor="middle">少占现金</text>
+  <text x="300" y="156" text-anchor="middle">覆盖固定成本靠量</text>
+  <text x="300" y="180" text-anchor="middle" font-size="11" class="muted">Consignment</text>
+  <rect x="400" y="64" width="176" height="140" rx="8" fill="#fff" stroke="#d0d7de"/>
+  <text x="488" y="92" text-anchor="middle" font-weight="700">网上出售</text>
+  <text x="488" y="116" text-anchor="middle">要扣手续费和运费</text>
+  <text x="488" y="136" text-anchor="middle">回款通常更慢</text>
+  <text x="488" y="156" text-anchor="middle">适合店头暂时卖不动的卡</text>
+  <text x="488" y="180" text-anchor="middle" font-size="11" class="muted">Online marketplaces</text>
+</g>
+<text x="24" y="230" font-size="12">示意图。具体费率见「卖出渠道与毛利」；数字请填进收支平衡路线图页。</text>
+</svg>

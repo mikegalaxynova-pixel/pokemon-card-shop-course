@@ -261,10 +261,10 @@ tags: [...]
 
 不要再计划或撰写「如何申请古物商许可」「开业手续逐步清单」这类申请教程。许可后的台账、本人确认、收购记录属于买卖交易内容，可以写。
 
-`_data/kb.yml` 是基础知识目录和「建议优先」（`/kb/#path`）的唯一数据源。
+`_data/kb.yml` 是基础知识目录和「建议优先」（`/kb/#path`）的唯一数据源。阅读顺序写在顶级的 `priority_path` 里。
 
-- 文章发布：把该条 `status: planned` 改成 `status: published`（可删除 `recommended`）。**published 的条目必须已有对应的 `_kb` 文件。**
-- 计划调整：改 `recommended: true`。不要再把 `planned` 日期当成每晚必写的截止日期。
+- 文章发布：把该条 `status: planned` 改成 `status: published`。**published 的条目必须已有对应的 `_kb` 文件。** 若该篇仍在建议优先路径上，保留 `recommended: true`，不要从 `priority_path` 里删掉，这样 `/kb/#path` 会显示为「已发布」并可点开。
+- 计划调整：改 `recommended: true`，并视需要把 slug 追加到 `priority_path`。不要再把 `planned` 日期当成每晚必写的截止日期。
 - 新增计划文章：在对应分区 `articles` 下加 `- { slug: xxx, title: "…", status: planned, recommended: true }`。
 - 新分区：在 `sections` 下加 `id`、`title`、`desc`、`articles`。
 

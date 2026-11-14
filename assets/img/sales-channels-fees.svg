@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="280" viewBox="0 0 600 280" role="img" aria-labelledby="t d">
+<title id="t">主要卖出渠道平台手续费示意图</title>
+<desc id="d">店头销售没有平台手续费。メルカリ销售手续费为售价的百分之十。雅虎拍卖落札系统利用料为落札价的百分之十含税。SNKRDUNK 销售手续费按会员等级约为百分之九点五到百分之七。另有运费和提现手续费，费率以各平台最新官方说明为准。</desc>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC",sans-serif;fill:#1f2328}.muted{fill:#57606a}</style>
+<rect width="600" height="280" fill="#f6f8fa"/>
+<text x="24" y="28" font-size="16" font-weight="700">卖出渠道：先看平台费率，再算到手毛利</text>
+<text x="24" y="48" font-size="11" class="muted">Platform fees only. Shipping and payout fees are extra. Confirm the official page before you list.</text>
+<g font-size="12">
+  <rect x="24" y="64" width="132" height="150" rx="8" fill="#fff" stroke="#0b5cad"/>
+  <text x="90" y="96" text-anchor="middle" font-weight="700">店头</text>
+  <text x="90" y="122" text-anchor="middle" font-size="18" font-weight="700">0%</text>
+  <text x="90" y="144" text-anchor="middle">无平台手续费</text>
+  <text x="90" y="168" text-anchor="middle" font-size="11" class="muted">Rent is a fixed cost</text>
+  <text x="90" y="188" text-anchor="middle" font-size="11" class="muted">In-store</text>
+  <rect x="164" y="64" width="132" height="150" rx="8" fill="#fff" stroke="#d0d7de"/>
+  <text x="230" y="96" text-anchor="middle" font-weight="700">メルカリ</text>
+  <text x="230" y="122" text-anchor="middle" font-size="18" font-weight="700">10%</text>
+  <text x="230" y="144" text-anchor="middle">销售手续费</text>
+  <text x="230" y="168" text-anchor="middle" font-size="11" class="muted">+ postage, ¥200 payout</text>
+  <text x="230" y="188" text-anchor="middle" font-size="11" class="muted">Mercari</text>
+  <rect x="304" y="64" width="132" height="150" rx="8" fill="#fff" stroke="#d0d7de"/>
+  <text x="370" y="96" text-anchor="middle" font-weight="700">ヤフオク</text>
+  <text x="370" y="122" text-anchor="middle" font-size="18" font-weight="700">10%</text>
+  <text x="370" y="144" text-anchor="middle">落札利用料（税込）</text>
+  <text x="370" y="168" text-anchor="middle" font-size="11" class="muted">+ postage; LYP may apply</text>
+  <text x="370" y="188" text-anchor="middle" font-size="11" class="muted">Yahoo Auctions</text>
+  <rect x="444" y="64" width="132" height="150" rx="8" fill="#fff" stroke="#d0d7de"/>
+  <text x="510" y="96" text-anchor="middle" font-weight="700">スニダン</text>
+  <text x="510" y="122" text-anchor="middle" font-size="16" font-weight="700">9.5%〜7.0%</text>
+  <text x="510" y="144" text-anchor="middle">按会员等级</text>
+  <text x="510" y="168" text-anchor="middle" font-size="11" class="muted">+ ship-in, payout fee</text>
+  <text x="510" y="188" text-anchor="middle" font-size="11" class="muted">SNKRDUNK</text>
+</g>
+<text x="24" y="242" font-size="12">数字依据各平台官方费率页整理，以你上架当天的页面为准。示意图不含运费。</text>
+<text x="24" y="262" font-size="11" class="muted">Magi 等第三方寄售是另一套费率，见寄售一文。</text>
+</svg>

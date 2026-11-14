@@ -1,6 +1,23 @@
 # 更新日志（唯一数据源）。每次每日更新在最上面新增一条。
 # kind 取值与导航 id 对应：news | shops | videos | kb | tools（旧条目可能仍是 daily / recs / path / glossary，首页会归入「其他」）；type: new | updated
 - date: 2026-11-15
+  title: 落实建议优先：12 篇买卖与回本文章全部发布
+  items:
+    - { kind: kb, type: new, title: "朋友提供的库存：买取、寄售怎样安排", url: /kb/shop/friend-stock/ }
+    - { kind: kb, type: new, title: "收支平衡路线图：高田马场 PSA 店模型", url: /kb/shop/breakeven/ }
+    - { kind: kb, type: new, title: "查价渠道与读法", url: /kb/market/price-sources/ }
+    - { kind: kb, type: new, title: "PSA 卡进货判断", url: /kb/buy/psa-intake/ }
+    - { kind: kb, type: new, title: "店头定价与改价", url: /kb/market/pricing-strategy/ }
+    - { kind: kb, type: new, title: "卖出渠道与毛利", url: /kb/buy/sales-channels/ }
+    - { kind: kb, type: new, title: "寄售（委託販売）模式", url: /kb/buy/consignment/ }
+    - { kind: kb, type: new, title: "收购（買取）流程", url: /kb/buy/buyback-flow/ }
+    - { kind: kb, type: new, title: "收购定价与利润", url: /kb/buy/buy-pricing/ }
+    - { kind: kb, type: new, title: "高额 PSA 交易怎么做", url: /kb/buy/high-value-trades/ }
+    - { kind: kb, type: new, title: "店铺活动：引流与复购", url: /kb/shop/shop-events/ }
+    - { kind: kb, type: new, title: "未评级卡（生カード）成色判断", url: /kb/cards/condition/ }
+    - { kind: kb, type: updated, title: "建议优先改为按开业到回本的阅读顺序，已发布篇可点开", url: /kb/#path }
+    - { kind: tools, type: updated, title: "术语表：补买卖与定价用语；查价工具增加平台费率页", url: /tools/ }
+- date: 2026-11-15
   title: 改版：先看今天该做什么；新闻、案例、视频分开
   items:
     - { kind: news, type: updated, title: "第 3 期只保留抽选截止这一条真正的新进展", url: /daily/2026-11-15-2/ }

@@ -32,7 +32,7 @@
 | `_shops/<slug>.md` | 店铺案例正文，发布为 `/shops/<slug>/` |
 | `_videos/<slug>.md` | 视频推荐正文，发布为 `/videos/<slug>/` |
 | `_kb/<分区>/<slug>.md` | 基础知识文章 |
-| `_data/kb.yml` | 基础知识目录 +「建议优先」的唯一数据源 |
+| `_data/kb.yml` | 基础知识目录 +「建议优先」阅读顺序（priority_path）的唯一数据源 |
 | `_data/news_types.yml` | 新闻类型固定集合 |
 | `_data/shops.yml` | 已写过的店铺，避免重复 |
 | `_data/recommendations.yml` | 查价工具、网站、账号（视频已改到 `_videos`） |

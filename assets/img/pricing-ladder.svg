@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="260" viewBox="0 0 600 260" role="img" aria-labelledby="t d">
+<title id="t">店头定价三层示意图</title>
+<desc id="d">定价先算成本底线，再对照近期成交价，最后给出店头标价。底线以下不卖；标价应能解释，并准备在滞销或行情变化时改价。</desc>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC",sans-serif;fill:#1f2328}.muted{fill:#57606a}</style>
+<rect width="600" height="260" fill="#f6f8fa"/>
+<text x="24" y="28" font-size="16" font-weight="700">店头定价：底线、成交、标价分三层看</text>
+<text x="24" y="48" font-size="11" class="muted">Floor, recent sold, then ask. Do not sell below the floor. Reprice when the card sits or the market moves.</text>
+<rect x="24" y="64" width="552" height="48" rx="8" fill="#fff" stroke="#b3001b"/>
+<text x="40" y="84" font-size="13" font-weight="700">底线 = 进货成本 + 变动费用 + 你要求的最低毛利</text>
+<text x="40" y="102" font-size="11" class="muted">Floor = cost + variable fees + minimum margin you need. Below this, a sale hurts break-even.</text>
+<rect x="24" y="122" width="552" height="48" rx="8" fill="#fff" stroke="#d0d7de"/>
+<text x="40" y="142" font-size="13" font-weight="700">参照 = 同卡同级的近期成交价（不是在售标价）</text>
+<text x="40" y="160" font-size="11" class="muted">Reference = recent sold prices for the same card and grade, not asking prices.</text>
+<rect x="24" y="180" width="552" height="48" rx="8" fill="#fff" stroke="#0b5cad"/>
+<text x="40" y="200" font-size="13" font-weight="700">标价 = 在参照附近，并能向客人说明为什么是这个价</text>
+<text x="40" y="218" font-size="11" class="muted">Ask price should be explainable. Convenience can support a small premium; a student area will not pay a tourist premium.</text>
+</svg>

@@ -1,4 +1,49 @@
 # 推荐库（唯一数据源）。新条目追加到最上面。type: video | podcast | account | tool | site | community
+- id: mercari-fees
+  type: tool
+  title: メルカリの手数料
+  url: https://help.jp.mercari.com/guide/articles/65/
+  note: 官方帮助页。出品免费；交易完成时按销售价格收取 10% 销售手续费；提现申请通常每笔 200 日元。以该页最新说明为准。
+  comment: >
+    这是算网上出手到账金额的第一手来源，可信度高。对高田马场 PSA 店的意义是：同一张壳在店头卖掉和在メルカリ卖掉，毛利差的不只是「看起来差一点点」。建议做：上架前用这一页把手续费和运费算进到手价。不要把 10% 记成「所有平台都一样」。
+  tags: [查价, 手续费, メルカリ]
+  added: 2026-11-15
+- id: yahoo-auctions-fees
+  type: tool
+  title: Yahoo!オークション ご利用料金
+  url: https://auctions.yahoo.co.jp/guide/guide/fee.html
+  note: 官方利用料金页。一般类目落札系统利用料为落札价格的 10%（税込）；特定类目除外。使用全部出品功能通常需要 LYP プレミアム等条件。
+  comment: >
+    拍卖适合发现部分高价壳的竞争出价，但落札价要再扣 10% 和运费才是到手。建议先不做：不要一开业就把主力库存都拿去拍卖。需要出清慢销卡时，再打开这一页核对当前费率。
+  tags: [查价, 手续费, ヤフオク]
+  added: 2026-11-15
+- id: snkrdunk-rank
+  type: tool
+  title: SNKRDUNK 会员ランクと販売手数料
+  url: https://snkrdunk.com/guide/rank
+  note: 官方会员等级页。销售手续费随等级变化，REGULAR 为 9.5%，可降至 PLATINUM 7.0%。高额交易另有分段计算，以帮助页为准。
+  comment: >
+    スニダン有鉴定环节，对外信任度较高，但回款更慢，还要承担送到鉴定点的运费。开业初期适合作为中高价卡的备选出口，不是默认主渠道。费率以出品当时的等级为准，上架前看这一页和利用料帮助页。
+  tags: [查价, 手续费, SNKRDUNK]
+  added: 2026-11-15
+- id: magi-consignment
+  type: site
+  title: magi 委託販売（magiX）
+  url: https://cardshopmagi.com/consignment-sale/
+  note: 大型店公开的寄售费率示例：销售额的 8% + 2,000 日元（每笔交易），另有最短销售期等条件。以该页最新说明为准。
+  comment: >
+    这是别人的价格表，不是你必须照搬的分成。它可以证明「成熟店会把寄售条件写在纸上并公开」，但不能覆盖你在高田马场的柜位和人手成本。建议看完后回去写自己和朋友的约定，而不是直接抄 8%。
+  tags: [寄售, 费率]
+  added: 2026-11-15
+- id: pokemon-card-gym
+  type: site
+  title: ポケモンカードジムとは？（公式）
+  url: https://www.pokemon-card.com/event/pokemon_card_gym/about-pokemon-card-gym.html
+  note: 官方说明认证店铺的好处：可举办健身房活动并出现在官方检索、可销售独自商品、可成为部分キャンペーン对象。未公布统一加盟费或保证客流。
+  comment: >
+    可信度最高的官方介绍，但没有告诉你办活动一定能卖出 PSA，也没有公布费用。建议先不做：不要把申请健身房当成开业第一件事。等店头销售稳定后，再对照场地和人手决定是否注册。
+  tags: [官方, 活动, 健身房]
+  added: 2026-11-15
 - id: yt-30th-futuristic
   type: video
   title: 『【公式】ポケモンカードゲーム 30周年記念商品コンセプト映像「What's FUTURISTIC?」』

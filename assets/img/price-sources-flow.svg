@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="280" viewBox="0 0 600 280" role="img" aria-labelledby="t d">
+<title id="t">查价顺序示意图</title>
+<desc id="d">先确认卡的弹、编号、语言和评级，再查近期成交价，不要只看正在出售的标价。日本可对照 SNKRDUNK、メルカリ、ヤフオク的成交；海外成交可对照 PriceCharting。最后记下查询日期和来源。</desc>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC",sans-serif;fill:#1f2328}.muted{fill:#57606a}</style>
+<rect width="600" height="280" fill="#f6f8fa"/>
+<text x="24" y="28" font-size="16" font-weight="700">查价先认卡，再看成交，不要只看标价</text>
+<text x="24" y="48" font-size="11" class="muted">Identify the exact card first. Use sold prices, not asking prices. Record the date and source.</text>
+<g font-size="12">
+  <rect x="24" y="64" width="126" height="130" rx="8" fill="#fff" stroke="#d0d7de"/>
+  <text x="87" y="100" text-anchor="middle" font-weight="700">1. 认卡</text>
+  <text x="87" y="122" text-anchor="middle">弹 / 编号</text>
+  <text x="87" y="140" text-anchor="middle">语言 / 等级</text>
+  <text x="87" y="162" text-anchor="middle" font-size="11" class="muted">Identify</text>
+  <text x="158" y="128" font-size="16" fill="#57606a">→</text>
+  <rect x="176" y="64" width="126" height="130" rx="8" fill="#fff" stroke="#0b5cad"/>
+  <text x="239" y="100" text-anchor="middle" font-weight="700">2. 成交价</text>
+  <text x="239" y="122" text-anchor="middle">已卖掉的价格</text>
+  <text x="239" y="140" text-anchor="middle">不是在售标价</text>
+  <text x="239" y="162" text-anchor="middle" font-size="11" class="muted">Sold, not listed</text>
+  <text x="310" y="128" font-size="16" fill="#57606a">→</text>
+  <rect x="328" y="64" width="126" height="130" rx="8" fill="#fff" stroke="#d0d7de"/>
+  <text x="391" y="100" text-anchor="middle" font-weight="700">3. 对照</text>
+  <text x="391" y="122" text-anchor="middle">至少两个来源</text>
+  <text x="391" y="140" text-anchor="middle">排除异常值</text>
+  <text x="391" y="162" text-anchor="middle" font-size="11" class="muted">Cross-check</text>
+  <text x="462" y="128" font-size="16" fill="#57606a">→</text>
+  <rect x="480" y="64" width="96" height="130" rx="8" fill="#fff" stroke="#b3001b"/>
+  <text x="528" y="100" text-anchor="middle" font-weight="700">4. 记下</text>
+  <text x="528" y="122" text-anchor="middle">日期</text>
+  <text x="528" y="140" text-anchor="middle">来源</text>
+  <text x="528" y="162" text-anchor="middle" font-size="11" class="muted">Log it</text>
+</g>
+<text x="24" y="226" font-size="12">常用来源：SNKRDUNK（スニダン）、メルカリ（Mercari）、ヤフオク（Yahoo Auctions）、PriceCharting。</text>
+<text x="24" y="248" font-size="11" class="muted">示意图。PriceCharting 基于已成交数据，标价不含运费；具体算法见其官方说明。</text>
+</svg>

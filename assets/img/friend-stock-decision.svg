@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="280" viewBox="0 0 600 280" role="img" aria-labelledby="t d">
+<title id="t">朋友库存两种入账方式示意图</title>
+<desc id="d">朋友提供的 PSA 库存可以买断或寄售。买断要先付货款、毛利和跌价风险归店铺；寄售少占现金，店铺只拿约定分成。两种在开展营业时都要做本人确认和台账。本图是示意图，不含分成数字。</desc>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC",sans-serif;fill:#1f2328}.muted{fill:#57606a}</style>
+<rect width="600" height="280" fill="#f6f8fa"/>
+<text x="24" y="28" font-size="16" font-weight="700">朋友库存先分清：买断还是寄售</text>
+<text x="24" y="48" font-size="11" class="muted">Buy outright or consign. Both need identity checks and a ledger once you operate as a dealer. No split rates shown.</text>
+<rect x="24" y="64" width="270" height="170" rx="8" fill="#fff" stroke="#d0d7de"/>
+<text x="40" y="90" font-size="14" font-weight="700">买断（買取）</text>
+<text x="40" y="114" font-size="12">店铺先付钱，货权归店</text>
+<text x="40" y="134" font-size="12">售价减去买价，就是毛利</text>
+<text x="40" y="154" font-size="12">卖不掉或跌价，风险在店里</text>
+<text x="40" y="174" font-size="12">现金被库存占用</text>
+<text x="40" y="202" font-size="11" class="muted">Purchase: you own margin and risk</text>
+<rect x="306" y="64" width="270" height="170" rx="8" fill="#fff" stroke="#0b5cad"/>
+<text x="322" y="90" font-size="14" font-weight="700">寄售（委託販売）</text>
+<text x="322" y="114" font-size="12">货仍属朋友，店里代为出售</text>
+<text x="322" y="134" font-size="12">店铺收入是约定分成</text>
+<text x="322" y="154" font-size="12">未售出按约定退还</text>
+<text x="322" y="174" font-size="12">少占现金，要写清责任</text>
+<text x="322" y="202" font-size="11" class="muted">Consignment: commission, less cash tied</text>
+<text x="24" y="258" font-size="12">许可办妥后，买入和接受出售委托都要做本人确认并记台账。示意图，不含分成比例。</text>
+</svg>

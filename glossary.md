@@ -4,7 +4,7 @@ nav: glossary
 permalink: /glossary/
 date: 2026-11-14
 last_updated: 2026-11-15
-description: 宝可梦卡牌店常用日文 / 英文 / 中文术语对照：卡面、商品、评级、开店法规。
+description: 宝可梦卡牌店常用日文 / 英文 / 中文术语对照：卡面、商品、评级、买卖定价、开店法规。
 lead: 店里接待、查价、办手续时最常见的词。新词随每日更新追加。日文专名后都附英文；没有官方英文商品名的会标明暂译。
 tldr: |
   **结论**：这是接待和查价时的对照表，不是教程。
@@ -70,6 +70,20 @@ tldr: |
 | BGS / CGC | Beckett / Certified Guaranty Company | 其他评级公司 | |
 
 {% include figure.html src="/assets/img/psa-slab-label.svg" alt="PSA 壳标签字段示意图：卡名与系列、等级、认证编号。不是实物照片" width="600" height="380" credit="本站示意图（依据 PSA 官方说明）" credit_url="https://www.psacard.com/articles/articleview/10241/psa-update-journey-card" %}
+
+
+## 买卖与定价
+
+| 日文 / 英文 | 英文（补充） | 中文 | 说明 |
+| --- | --- | --- | --- |
+| 買取 | buyback / purchase | 收购 / 买断 | 店铺付钱把卡买下来；流程见[收购（買取）流程]({{ '/kb/buy/buyback-flow/' | relative_url }}) |
+| 委託販売 | consignment | 寄售 | 接受出售委托，卖出后按约定分成，见[寄售模式]({{ '/kb/buy/consignment/' | relative_url }}) |
+| 査定 | appraisal | 估价 | 给出收购价之前的判断，不是成交承诺 |
+| 売価 / 店頭価格 | ask / retail price | 标价 / 店头价 | 写在价签上的价格，见[店头定价与改价]({{ '/kb/market/pricing-strategy/' | relative_url }}) |
+| 成約価格 / sold price | sold / completed price | 成交价 | 已经卖掉的价格，不是在售标价；查法见[查价渠道与读法]({{ '/kb/market/price-sources/' | relative_url }}) |
+| 販売手数料 | selling fee | 销售手续费 | 平台按成交价收取的费用，例如メルカリ为 10%，以官方页为准 |
+| 白欠け | whitening / edge wear | 白缺 | 边缘或四角纸芯发白，是未评级卡常见成色问题 |
+| 初期傷 / 印刷線 | print line / factory defect | 印刷线 / 出厂痕迹 | 生产造成的表面线，不等于使用磨损，但仍可能影响送评 |
 
 ## 开店法规
 

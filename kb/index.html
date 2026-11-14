@@ -3,10 +3,10 @@ layout: default
 title: 基础知识
 nav: kb
 permalink: /kb/
-description: 可反复查阅的参考文章。买卖交易和店铺运营类按需撰写，每日更新会推荐下一篇。
+description: 可反复查阅的参考文章。建议优先的买卖与回本篇已按阅读顺序发布；其余题目仍按需撰写。
 tldr: |
-  **结论**：基础知识不再每晚自动写。先读已发布的文章，再按「建议优先」点名下一篇。
-  **你该做什么**：许可后的买货先看古物台账；算回本去工具里的路线图。不要在这里找申请步骤教程。
+  **结论**：建议优先的 12 篇已经写完，按下面的顺序读即可。
+  **你该做什么**：从朋友库存和收支平衡开始，再学查价、进货判断和定价。不要在这里找申请步骤教程。
 ---
 <div class="prose">
   <h1>基础知识</h1>
@@ -15,12 +15,24 @@ tldr: |
 
 <section aria-labelledby="path">
   <h2 id="path">建议优先</h2>
-  <p class="muted">下面这些题目对买卖和回本更直接，点名后再写。</p>
-  <ul class="list">
-  {% for s in site.data.kb.sections %}{% for a in s.articles %}{% if a.recommended and a.status != "published" %}
-    <li><span class="status rec">建议优先</span> {{ a.title }} <span class="muted">· {{ s.title }}</span></li>
-  {% endif %}{% endfor %}{% endfor %}
-  </ul>
+  <p class="muted">按从开业准备到回本的阅读顺序排列。已发布的可以直接点开；先看每篇开头的「先看这里」。</p>
+  <ol class="list">
+  {% for p in site.data.kb.priority_path %}
+    {% assign sec = site.data.kb.sections | where: "id", p.section | first %}
+    {% assign a = sec.articles | where: "slug", p.slug | first %}
+    {% assign a_url = "/kb/" | append: p.section | append: "/" | append: p.slug | append: "/" %}
+    <li>
+      {% if a.status == "published" %}
+        <span class="status done">已发布</span>
+        <a href="{{ a_url | relative_url }}">{{ a.title }}</a>
+        <span class="muted">· {{ sec.title }}</span>
+      {% else %}
+        <span class="status rec">待撰写</span>
+        {{ a.title }} <span class="muted">· {{ sec.title }}</span>
+      {% endif %}
+    </li>
+  {% endfor %}
+  </ol>
 </section>
 
 {% for s in site.data.kb.sections %}

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="250" viewBox="0 0 600 250" role="img" aria-labelledby="t d">
+<title id="t">PSA 卡进货判断五步示意图</title>
+<desc id="d">进货前依次核验认证号、核对等级与限定符、查看 Pop、检查壳况、对照近期成交价，再决定上架、寄售、退回或停手申告。</desc>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC",sans-serif;fill:#1f2328}.muted{fill:#57606a}</style>
+<rect width="600" height="250" fill="#f6f8fa"/>
+<text x="24" y="28" font-size="16" font-weight="700">PSA 卡进货：先核验，再谈价钱</text>
+<text x="24" y="48" font-size="11" class="muted">Verify the cert, grade, Pop, slab condition and sold price before you accept the card.</text>
+<g font-size="12">
+  <rect x="24" y="64" width="104" height="120" rx="8" fill="#fff" stroke="#d0d7de"/>
+  <text x="76" y="100" text-anchor="middle" font-weight="700">1 认证号</text>
+  <text x="76" y="122" text-anchor="middle">官网核对</text>
+  <text x="76" y="150" text-anchor="middle" font-size="11" class="muted">Cert check</text>
+  <rect x="136" y="64" width="104" height="120" rx="8" fill="#fff" stroke="#d0d7de"/>
+  <text x="188" y="100" text-anchor="middle" font-weight="700">2 等级</text>
+  <text x="188" y="122" text-anchor="middle">含限定符</text>
+  <text x="188" y="150" text-anchor="middle" font-size="11" class="muted">Grade / qualifier</text>
+  <rect x="248" y="64" width="104" height="120" rx="8" fill="#fff" stroke="#d0d7de"/>
+  <text x="300" y="100" text-anchor="middle" font-weight="700">3 Pop</text>
+  <text x="300" y="122" text-anchor="middle">同级数量</text>
+  <text x="300" y="150" text-anchor="middle" font-size="11" class="muted">Population</text>
+  <rect x="360" y="64" width="104" height="120" rx="8" fill="#fff" stroke="#d0d7de"/>
+  <text x="412" y="100" text-anchor="middle" font-weight="700">4 壳况</text>
+  <text x="412" y="122" text-anchor="middle">裂、雾、贴</text>
+  <text x="412" y="150" text-anchor="middle" font-size="11" class="muted">Slab condition</text>
+  <rect x="472" y="64" width="104" height="120" rx="8" fill="#fff" stroke="#b3001b"/>
+  <text x="524" y="100" text-anchor="middle" font-weight="700">5 成交价</text>
+  <text x="524" y="122" text-anchor="middle">再决定收不收</text>
+  <text x="524" y="150" text-anchor="middle" font-size="11" class="muted">Sold price</text>
+</g>
+<text x="24" y="216" font-size="12">对不上、壳异常或来源说不清：先停手，不要付款、不要上架。</text>
+<text x="24" y="236" font-size="11" class="muted">示意图，不是检查表原件。</text>
+</svg>
