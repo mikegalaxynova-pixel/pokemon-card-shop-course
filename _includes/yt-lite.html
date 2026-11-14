@@ -1,0 +1,11 @@
+{%- include yt-id.html id=include.id watch=include.watch video=include.video -%}
+{%- assign _title = include.title | default: include.video.title | default: "视频" -%}
+{%- assign _mode = include.mode | default: "inline" -%}
+{%- if yt_id and yt_id != blank -%}
+<div class="yt-lite{% if include.page %} yt-lite-page{% endif %}" data-yt="{{ yt_id }}" data-mode="{{ _mode }}" data-title="{{ _title | escape }}">
+  <button type="button" class="yt-lite-btn" aria-label="在本页播放：{{ _title | escape }}">
+    <img src="https://i.ytimg.com/vi/{{ yt_id }}/hqdefault.jpg" alt="视频「{{ _title | escape }}」的缩略图（来源 YouTube）" width="480" height="360" loading="lazy" decoding="async">
+    <span class="yt-play" aria-hidden="true"></span>
+  </button>
+</div>
+{%- endif -%}

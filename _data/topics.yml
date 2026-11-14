@@ -1,0 +1,23 @@
+# 全站内容主题（新闻、视频、案例等共用同一组名称）。
+# 视频 front matter 的 topics 使用下面的 label（也可写 id，模板两边都能识别）。
+- id: cards
+  label: 卡牌知识
+  hint: 卡种、稀有度、商品认识
+- id: grading
+  label: PSA/评级
+  hint: 评级公司、送评、鉴定品买卖
+- id: trade
+  label: 买卖交易
+  hint: 收购、寄售、定价、卖出渠道
+- id: ops
+  label: 店铺运营
+  hint: 日常经营、陈列、客流、人员
+- id: shops
+  label: 店铺案例
+  hint: 真实店铺探访与成长路径
+- id: news
+  label: 行情新闻
+  hint: 价格、市场与近期动态
+- id: startup
+  label: 开店基础
+  hint: 开业资金、选址、回本准备

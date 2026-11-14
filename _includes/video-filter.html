@@ -1,0 +1,17 @@
+{%- assign _used = "|" -%}
+{%- for v in include.videos -%}
+  {%- for t in v.topics -%}
+    {%- assign _needle = t | append: "|" -%}
+    {%- unless _used contains _needle -%}{%- assign _used = _used | append: t | append: "|" -%}{%- endunless -%}
+  {%- endfor -%}
+{%- endfor -%}
+<div class="nfilter" role="group" aria-label="按主题筛选视频">
+  <button type="button" class="nfilter-btn is-on" data-filter="all" aria-pressed="true">全部</button>
+  {%- for tp in site.data.topics -%}
+    {%- assign _needle = tp.label | append: "|" -%}
+    {%- assign _needle2 = tp.id | append: "|" -%}
+    {%- if _used contains _needle or _used contains _needle2 -%}
+  <button type="button" class="nfilter-btn" data-filter="{{ tp.label }}" data-filter-id="{{ tp.id }}" aria-pressed="false"><span class="vtopic vtopic-{{ tp.id }}">{{ tp.label }}</span></button>
+    {%- endif -%}
+  {%- endfor -%}
+</div>

@@ -1,6 +1,19 @@
 # 更新日志（唯一数据源）。每次每日更新在最上面新增一条。
 # kind 取值与导航 id 对应：news | shops | videos | kb | tools（旧条目可能仍是 daily / recs / path / glossary，首页会归入「其他」）；type: new | updated
 - date: 2026-11-15
+  title: 新增开店与买卖入门视频，列表改为卡片点播，并按全站主题筛选
+  items:
+    - { kind: videos, type: new, title: "揭密日本卡店后台：秋叶原 Cardon 店员一个月", url: /videos/cardholics-akihabara-clerk/ }
+    - { kind: videos, type: new, title: "想开卡店的人，先看这个（ポンポコ）", url: /videos/ponpoko-start-guide/ }
+    - { kind: videos, type: new, title: "トレカキャンプ：卡店经营里最重要的事", url: /videos/torecacamp-ops-essentials/ }
+    - { kind: videos, type: new, title: "大型宝可梦专卖店开业会碰到的难关", url: /videos/torecacamp-opening-hardships/ }
+    - { kind: videos, type: new, title: "秋叶原卡店女社长访谈：业绩与库存踩坑", url: /videos/sakaiman-akihabara-ceo/ }
+    - { kind: videos, type: new, title: "卡店倒闭原因 TOP 5（Tomohappy）", url: /videos/tomohappy-why-shops-fail/ }
+    - { kind: videos, type: new, title: "店铺买取比较：PSA 篇", url: /videos/aoisun-psa-buyback/ }
+    - { kind: videos, type: new, title: "メルカリ和卡店买取哪个更高", url: /videos/aoisun-mercari-vs-shop/ }
+    - { kind: videos, type: new, title: "秋叶原买取比较：和池袋差额很大", url: /videos/aoisun-akihabara-buyback/ }
+    - { kind: videos, type: updated, title: "视频页改为缩略图卡片、主题筛选，官方宣传下沉", url: /videos/ }
+- date: 2026-11-15
   title: 落实建议优先：12 篇买卖与回本文章全部发布
   items:
     - { kind: kb, type: new, title: "朋友提供的库存：买取、寄售怎样安排", url: /kb/shop/friend-stock/ }

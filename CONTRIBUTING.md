@@ -212,23 +212,33 @@ next_steps: |
 
 ## 3. 新增视频
 
-文件：`_videos/<slug>.md`，permalink 自动为 `/videos/<slug>/`。用 `watch` 保存 YouTube（或其他平台）链接，不要用 `url`（会和页面地址冲突）。
+文件：`_videos/<slug>.md`，permalink 自动为 `/videos/<slug>/`。用 `watch` 保存 YouTube（或其他平台）链接，不要用 `url`（会和页面地址冲突）。列表页和详情页会按 `watch` 做成「先点缩略图、再加载 youtube-nocookie 播放器」的卡片，不要预埋 iframe，也不要把「打开 YouTube」当成主要按钮。
+
+`topics` 必须使用 `_data/topics.yml` 里的名称（可写 label 或 id）：卡牌知识、PSA/评级、买卖交易、店铺运营、店铺案例、行情新闻、开店基础。官方宣传片标 `official: true`，主题用「卡牌知识」，会自动沉到列表页底部。入门、买卖、经营类视频不要用官方宣传片充数。
+
+正文必须有「内容总结」（3〜6 条，尽量带时间码）和「要点分析」。先看这里、视频信息、导师点评由模板渲染。总结必须依据字幕、说明栏或可靠来源，并写明依据；不要编造没听到的数字或店名。卡片、商品名保留英文名。
 
 ```yaml
 ---
-slug: 30th-futuristic
+slug: cardholics-akihabara-clerk
 title: 『<原标题>』
-creator: <创作者>
+title_zh: <中文标题>
+creator: <频道名>
 watch: https://www.youtube.com/watch?v=...
-date: YYYY-MM-DD
+youtube_id: <11位ID>
+duration: "mm:ss"
+published: YYYY-MM-DD   # YouTube 公开日
+date: YYYY-MM-DD        # 本站收录日，用于 NEW 徽标
 last_updated: YYYY-MM-DD
-description: <列表用的一句>
+official: false
+topics: [店铺运营, 开店基础]
+description: <列表和卡片上的一句钩子>
 tldr: |
   **结论**：...
   **你该做什么**：...
-note: <1〜2 句事实，为什么值得看>
+note: <依据（字幕/说明栏）以及需要提醒的限制>
 comment: |
-  <收入/成本/现金流、风险、建议做或先不做或小范围先试、与回本的关系。>
+  <可信度、对高田马场 PSA 店的意义、对回本的影响、建议做或先不做。与上方事实分开。>
 ---
 ```
 

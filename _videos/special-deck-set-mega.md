@@ -3,6 +3,12 @@ slug: special-deck-set-mega
 title: 『【ポケカ新商品】スペシャルデッキセットだって～～～～！？【ポケモンカード】』
 creator: 【公式】ポケモンカードチャンネル
 watch: https://www.youtube.com/watch?v=8MdwGqVOoP0
+title_zh: 【官方】「スペシャルデッキセットMEGA」（暂译：Special Deck Set MEGA）商品介绍
+youtube_id: 8MdwGqVOoP0
+duration: "9:42"
+published: 2026-10-16
+official: true
+topics: [卡牌知识]
 date: 2026-11-14
 last_updated: 2026-11-14
 description: 官方介绍「スペシャルデッキセットMEGA」（暂译：Special Deck Set MEGA）的三套角色和附件。用来对名称，不是现在就进货的理由。
@@ -23,3 +29,13 @@ comment: >
   建议做：只记下角色线和附件。建议先不做：现在压这套新品。
 issue: /daily/2026-11-14/
 ---
+## 内容总结
+
+本篇依据官方商品介绍视频的既有整理，未重新逐字校对全部字幕。
+
+1. 介绍 2026 年 11 月 13 日上市的「スペシャルデッキセットMEGA」（暂译：Special Deck Set MEGA）。
+2. 三套固定内容商品分别收录 Mega Feraligatr ex、Mega Dragonite ex、Mega Gengar ex，并说明附赠配件。
+
+## 要点分析
+
+官方介绍可信，用途是把三套的角色线和附件记清楚，方便以后接待询价。它不是「现在必须压货」的清单。

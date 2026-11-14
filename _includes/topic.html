@@ -1,0 +1,8 @@
+{%- assign _t = include.id | default: include.label -%}
+{%- assign _meta = site.data.topics | where: "label", _t | first -%}
+{%- if _meta == nil -%}{%- assign _meta = site.data.topics | where: "id", _t | first -%}{%- endif -%}
+{%- if _meta -%}
+<span class="vtopic vtopic-{{ _meta.id }}">{{ _meta.label }}</span>
+{%- elsif _t and _t != blank -%}
+<span class="vtopic">{{ _t }}</span>
+{%- endif -%}

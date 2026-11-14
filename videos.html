@@ -3,24 +3,40 @@ layout: default
 title: 视频
 nav: videos
 permalink: /videos/
-description: 按日期更新的视频与播客推荐，每条都有导师点评。不重复推荐同一条。
+description: 开店入门、卡片买卖和店铺经营视频。每条都有内容总结、要点分析和导师点评，可按主题筛选，点击卡片即可在本页播放。
 tldr: |
-  **结论**：视频是独立栏目，不再塞在新闻里。只推荐真实存在、打开过的链接。
-  **你该做什么**：先看最新一条的「先看这里」，再决定值不值得打开原片。
+  **结论**：优先看买卖交易、店铺运营和开店基础，不要从官方宣传片入门。每条都有总结和点评，数字以片中口述为准，不能直接当报价单。
+  **你该做什么**：用下面的主题筛选，点缩略图即可在本页播放；看完「先看这里」再决定要不要把要点记下来。
 ---
 <div class="prose">
   <h1>视频</h1>
 </div>
 {% include tldr.html %}
-<ul class="cards-list">
-{% assign vids = site.videos | sort: "date" | reverse %}
-{% for v in vids %}
-  <li class="card">
-    <p class="kind">{% include stream.html id="videos" %} <time datetime="{{ v.date | date: '%Y-%m-%d' }}">{{ v.date | date: '%Y年%-m月%-d日' }}</time> {% include badge.html date=v.date updated=v.last_updated url=v.url %}</p>
-    <h2><a href="{{ v.url | relative_url }}">{{ v.title }}</a></h2>
-    {% if v.creator %}<p class="muted">{{ v.creator }}</p>{% endif %}
-    <p>{{ v.description }}</p>
-  </li>
-{% endfor %}
-</ul>
-<p class="muted">查价工具和官网入口在<a href="{{ '/recommendations/' | relative_url }}">工具库</a>。</p>
+{%- assign all_vids = site.videos | sort: "date" | reverse -%}
+{%- assign learn_vids = all_vids | where_exp: "v", "v.official != true" -%}
+{%- assign official_vids = all_vids | where_exp: "v", "v.official == true" -%}
+<div class="video-filter-root">
+{% include video-filter.html videos=all_vids %}
+<section data-video-section="learn" aria-labelledby="learn-h">
+  <h2 id="learn-h">入门、买卖与经营</h2>
+  <p class="muted">面向准备开店的人。先看总结和点评，再决定要不要把片中数字写进自己的测算。</p>
+  <div class="vcard-grid">
+  {% for v in learn_vids %}
+    {% include video-card.html video=v %}
+  {% endfor %}
+  </div>
+</section>
+{%- if official_vids.size > 0 -%}
+<section class="official-block" data-video-section="official" aria-labelledby="off-h">
+  <h2 id="off-h">官方宣传</h2>
+  <p class="muted">用来对上商品和卡名，不是经营课。对回本几乎没有直接帮助，可以后看。</p>
+  <div class="vcard-grid">
+  {% for v in official_vids %}
+    {% include video-card.html video=v %}
+  {% endfor %}
+  </div>
+</section>
+{%- endif -%}
+</div>
+{% include yt-modal.html %}
+<p class="muted">查价工具和官网入口在<a href="{{ '/tools/' | relative_url }}">工具</a>。</p>

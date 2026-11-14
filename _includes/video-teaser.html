@@ -1,10 +1,4 @@
 {%- assign v = site.videos | where: "slug", include.slug | first -%}
 {%- if v -%}
-<article class="card teaser">
-  <p class="kicker">{% include stream.html id="videos" %} {% include badge.html date=v.date updated=v.last_updated url=v.url %}</p>
-  <h3><a href="{{ v.url | relative_url }}">{{ v.title }}</a></h3>
-  {% if v.creator %}<p class="muted">{{ v.creator }}</p>{% endif %}
-  <p>{{ v.description | default: v.tldr | default: v.note }}</p>
-  <p><a href="{{ v.url | relative_url }}">看推荐与导师点评 →</a></p>
-</article>
+{% include video-card.html video=v %}
 {%- endif -%}

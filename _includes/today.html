@@ -21,7 +21,21 @@
   {%- if video_items.size > 0 -%}
   <div class="home-group">
     <h3>{% include stream.html id="videos" %}</h3>
-    <ul>{% for it in video_items %}<li><span class="badge {% if it.type == 'updated' %}upd{% else %}new{% endif %}" data-read-url="{{ it.url | relative_url }}">{% if it.type == 'updated' %}更新{% else %}NEW{% endif %}</span> <a href="{{ it.url | relative_url }}">{{ it.title }}</a></li>{% endfor %}</ul>
+    <div class="vcard-grid">
+    {%- for it in video_items -%}
+      {%- assign _slug = it.url | split: "/" | last -%}
+      {%- if _slug == "" -%}{%- assign _parts = it.url | split: "/" -%}{%- assign _slug = _parts | last -%}{%- endif -%}
+      {%- comment -%}changelog url is /videos/<slug>/ so last segment may be empty{%- endcomment -%}
+      {%- assign _segs = it.url | split: "/" -%}
+      {%- for _s in _segs reversed -%}{%- if _s != "" -%}{%- assign _slug = _s -%}{%- break -%}{%- endif -%}{%- endfor -%}
+      {%- assign v = site.videos | where: "slug", _slug | first -%}
+      {%- if v -%}
+        {% include video-card.html video=v %}
+      {%- else -%}
+        <p><span class="badge {% if it.type == 'updated' %}upd{% else %}new{% endif %}" data-read-url="{{ it.url | relative_url }}">{% if it.type == 'updated' %}更新{% else %}NEW{% endif %}</span> <a href="{{ it.url | relative_url }}">{{ it.title }}</a></p>
+      {%- endif -%}
+    {%- endfor -%}
+    </div>
   </div>
   {%- endif -%}
   {%- assign rest = c.items | reject: "kind", "news" -%}
