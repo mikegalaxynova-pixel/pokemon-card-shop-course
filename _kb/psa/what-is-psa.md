@@ -11,11 +11,17 @@ tags: [PSA, 评级卡, 风险]
 
 PSA（Professional Sports Authenticator）是最广为人知的第三方鉴定公司之一，由 Collectors 集团运营；日本有 **PSA Japan**，可用日文申请。
 
+{% include figure.html src="/assets/img/psa-three-steps.svg" alt="PSA 三步示意图：第一步判断真伪，第二步按 1 到 10 分评分，第三步封进带认证编号的硬壳" width="600" height="180" credit="本站示意图（依据 PSA 官方说明）" %}
+
 1. 先判断**真伪**，以及有无**裁切、补色、修复**；
 2. 再按 **1 到 10** 评分；
 3. 封进带标签的硬壳（slab，日文常说「鑑定済み」「PSAケース」）。
 
 壳上有唯一**认证编号（cert number）**，任何人都能到 [PSA 官网](https://www.psacard.com/) 核对。对实体店来说，这把「有没有伤」这种容易争吵的判断，变成了**可核验的标签**。
+
+目前没有把官方壳标照片下载进本站（PSA 官网抓取受限），所以下面用示意图标出标签上要看的字段。字段依据 PSA 对 Lighthouse 标签的说明：卡名与系列、等级、认证编号和条码。这不是真实评级卡的照片。
+
+{% include figure.html src="/assets/img/psa-slab-label.svg" alt="PSA 评级壳标签示意图：顶部标签上标出卡名与系列、等级如 GEM MT 10、认证编号 cert number 和条码，下方是封装中的卡片轮廓。本图不是实物照片" width="600" height="380" credit="本站示意图（依据 PSA 官方说明）" credit_url="https://www.psacard.com/articles/articleview/10241/psa-update-journey-card" %}
 
 ## 为什么评级卡是好生意
 

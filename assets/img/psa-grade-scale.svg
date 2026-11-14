@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="280" viewBox="0 0 600 280" role="img" aria-labelledby="t d">
+<title id="t">PSA 1 到 10 等级尺示意图</title>
+<desc id="d">示意图展示 PSA 的 10 分制，并单独说明 10 分 Gem Mint 与 9 分 Mint 的要点和居中公差，依据官方 Grading Standards。</desc>
+<style>
+  text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Noto Sans SC",sans-serif;fill:#1f2328}
+  .muted{fill:#57606a}
+  .w{fill:#fff}
+  .accent{fill:#b3001b}
+</style>
+
+<rect width="600" height="280" fill="#f6f8fa"/>
+<text x="24" y="28" font-size="16" font-weight="700">PSA 10 分制（店里最常见的是 10 和 9）</text>
+<text x="24" y="48" font-size="11" class="muted">PSA 10-point scale. Details follow official Grading Standards.</text>
+<rect x="24" y="70" width="50" height="44" rx="6" fill="#fff" stroke="#d0d7de"/><text x="49" y="98" font-size="16" font-weight="700" text-anchor="middle" fill="#1f2328">1</text><rect x="80" y="70" width="50" height="44" rx="6" fill="#fff" stroke="#d0d7de"/><text x="105" y="98" font-size="16" font-weight="700" text-anchor="middle" fill="#1f2328">2</text><rect x="136" y="70" width="50" height="44" rx="6" fill="#fff" stroke="#d0d7de"/><text x="161" y="98" font-size="16" font-weight="700" text-anchor="middle" fill="#1f2328">3</text><rect x="192" y="70" width="50" height="44" rx="6" fill="#fff" stroke="#d0d7de"/><text x="217" y="98" font-size="16" font-weight="700" text-anchor="middle" fill="#1f2328">4</text><rect x="248" y="70" width="50" height="44" rx="6" fill="#fff" stroke="#d0d7de"/><text x="273" y="98" font-size="16" font-weight="700" text-anchor="middle" fill="#1f2328">5</text><rect x="304" y="70" width="50" height="44" rx="6" fill="#fff" stroke="#d0d7de"/><text x="329" y="98" font-size="16" font-weight="700" text-anchor="middle" fill="#1f2328">6</text><rect x="360" y="70" width="50" height="44" rx="6" fill="#fff" stroke="#d0d7de"/><text x="385" y="98" font-size="16" font-weight="700" text-anchor="middle" fill="#1f2328">7</text><rect x="416" y="70" width="50" height="44" rx="6" fill="#fff" stroke="#d0d7de"/><text x="441" y="98" font-size="16" font-weight="700" text-anchor="middle" fill="#1f2328">8</text><rect x="472" y="70" width="50" height="44" rx="6" fill="#7a4a00" stroke="#d0d7de"/><text x="497" y="98" font-size="16" font-weight="700" text-anchor="middle" fill="#fff">9</text><rect x="528" y="70" width="50" height="44" rx="6" fill="#b3001b" stroke="#d0d7de"/><text x="553" y="98" font-size="16" font-weight="700" text-anchor="middle" fill="#fff">10</text>
+<text x="49" y="132" font-size="10" class="muted" text-anchor="middle">1</text>
+<text x="497" y="132" font-size="10" class="muted" text-anchor="middle">9 Mint</text>
+<text x="553" y="132" font-size="10" class="muted" text-anchor="middle">10 Gem</text>
+<rect x="24" y="150" width="270" height="110" rx="8" fill="#fff" stroke="#b3001b"/>
+<text x="36" y="172" font-size="13" font-weight="700">PSA 10 Gem Mint</text>
+<text x="36" y="192" font-size="12">几乎完美：四角锐利、原有光泽、无污渍。</text>
+<text x="36" y="210" font-size="12">正面居中约不超过 55/45，</text>
+<text x="36" y="226" font-size="12">背面约不超过 75/25。</text>
+<text x="36" y="246" font-size="11" class="muted">极轻微印刷瑕疵须不影响整体观感。</text>
+<rect x="306" y="150" width="270" height="110" rx="8" fill="#fff" stroke="#7a4a00"/>
+<text x="318" y="172" font-size="13" font-weight="700">PSA 9 Mint</text>
+<text x="318" y="192" font-size="12">极好，但还没到几乎完美。</text>
+<text x="318" y="210" font-size="12">允许个别轻微缺点。</text>
+<text x="318" y="226" font-size="12">完整原文请打开官方标准页，</text>
+<text x="318" y="246" font-size="11" class="muted">不要凭记忆向客人保证差在哪一条。</text>
+
+</svg>

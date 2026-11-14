@@ -11,13 +11,17 @@ tags: [法规, 古物商, 新宿, 许可]
 
 ## 为什么必须先拿许可
 
-买卖二手 PSA 卡在日本通常属于**古物营业（古物営業）**，必须先取得都道府县公安委员会的**古物商许可（古物商許可，こぶつしょうきょか）**。
+买卖二手 PSA 卡在日本通常属于**古物营业（古物営業）**，必须先取得都道府县公安委员会的**古物商许可（古物商許可，こぶつしょうきょか）**。英文常称 antique dealer license / secondhand dealer license，但对外和对警察署沟通时，仍以日文正式名称「古物商許可」为准。
 
 - 许可下来之前不能以古物商身份营业，**不是「先开再补办」**。
 - **即使货是朋友提供的**，只要作为店铺持续出售，就应先取得许可，并记录「从谁、何时、取得了什么」。
 - 买入、寄售还是其他安排，法律评价可能不同（后续文章详讲），必要时向警察署或行政书士确认。
 
+{% include figure.html src="/assets/img/kobutsusho-roadmap.svg" alt="开店路线图示意图：许可、资金、选址、入货记录、收银库存、开业；强调必须先取得许可，且营业所地址与许可申请绑定" width="600" height="230" credit="本站示意图（依据警視庁公开说明整理）" credit_url="https://www.keishicho.metro.tokyo.lg.jp/tetsuzuki/kobutsu/tetsuzuki/kyoka.html" %}
+
 ## 西新宿的申请要点
+
+{% include figure.html src="/assets/img/kobutsusho-points.svg" alt="西新宿申请四个要点示意图：窗口为新宿警察署，手续费 19000 日元且不退，标准处理期间 40 日，品目须向警察署确认。本图不是官方表格" width="600" height="250" credit="本站示意图（依据警視庁公开说明整理）" credit_url="https://www.keishicho.metro.tokyo.lg.jp/tetsuzuki/kobutsu/tetsuzuki/kyoka.html" %}
 
 | 项目 | 内容 |
 | --- | --- |

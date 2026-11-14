@@ -4,9 +4,20 @@
   title: 『【ポケカ新商品】スペシャルデッキセットだって～～～～！？【ポケモンカード】』
   creator: 【公式】ポケモンカードチャンネル
   url: https://www.youtube.com/watch?v=8MdwGqVOoP0
-  note: 官方介绍 11/13 上市的「スペシャルデッキセットMEGA」：三套固定内容商品各收录哪些角色卡、附赠什么配件，便于对照定价和后续单卡收藏需求。
+  note: 官方介绍 11/13 上市的「スペシャルデッキセットMEGA」（暂译：Special Deck Set MEGA）：三套固定内容商品各收录哪些角色卡（Mega Feraligatr ex、Mega Dragonite ex、Mega Gengar ex）、附赠什么配件，便于对照定价和后续单卡收藏需求。
   comment: >
-    官方频道的商品介绍，内容可信，值得花几分钟看完，但不必当成「必进货」清单。主卖 PSA 的店看它，是为了搞清三套分别收录哪些角色、附赠什么配件，以后客人问起或出现相关单卡询价时能对得上；视频本身不构成现在就备货的理由。下一步：看完后只记下三套的角色线和附件，发售后再对照有没有单卡收藏需求，不要在视频里寻找组卡或对战信息。
+    官方频道的商品介绍，内容可信，值得花几分钟看完，但不必当成「必进货」清单。主卖 PSA 的店看它，是为了搞清三套分别收录 Mega Feraligatr ex、Mega Dragonite ex、Mega Gengar ex、附赠什么配件，以后客人问起或出现相关单卡询价时能对得上；视频本身不构成现在就备货的理由。下一步：看完后只记下三套的角色线和附件，发售后再对照有没有单卡收藏需求，不要在视频里寻找组卡或对战信息。
+  en: 暂译：Special Deck Set MEGA（官方英文商品名尚未公布）
+  image: /assets/img/special-deck-set-mega.webp
+  image_alt: 「スペシャルデッキセットMEGA」（暂译：Special Deck Set MEGA）官方商品图
+  image_width: 600
+  image_height: 371
+  image_credit: ポケモンカードゲーム公式
+  image_credit_url: https://www.pokemon-card.com/products/mega/mg.html
+  images:
+    - { src: /assets/img/mega-feraligatr-ex.webp, alt: "メガオーダイル ex（Mega Feraligatr ex）", width: 400, height: 559, credit: ポケモンカードゲーム公式, credit_url: https://www.pokemon-card.com/products/mega/mg.html }
+    - { src: /assets/img/mega-dragonite-ex.webp, alt: "メガカイリュー ex（Mega Dragonite ex）", width: 400, height: 559, credit: ポケモンカードゲーム公式, credit_url: https://www.pokemon-card.com/products/mega/mg.html }
+    - { src: /assets/img/mega-gengar-ex.webp, alt: "メガゲンガー ex（Mega Gengar ex）", width: 400, height: 559, credit: ポケモンカードゲーム公式, credit_url: https://www.pokemon-card.com/products/mega/mg.html }
   tags: [官方, 新商品, 日语]
   added: 2026-11-14
 - id: snkrdunk
@@ -60,7 +71,7 @@
   url: https://www.pokemon-card.com/
   note: 新商品、收录卡、发售日的第一手来源，新闻和商品确认以这里为准。
   comment: >
-    确认发售日、收录卡和希望零售价，应当回到这个官网，重要性和可信度都最高；媒体和社交转述只作为线索。店里回答「哪天出、一包多少钱、有哪张 SAR」时，以这里为准，可以避免把未证实的箱规或转售价说成事实。下一步：把「ハドウシーカー」和「スペシャルデッキセットMEGA」的商品页收进书签，有新收录再对照更新备忘。
+    确认发售日、收录卡和希望零售价，应当回到这个官网，重要性和可信度都最高；媒体和社交转述只作为线索。店里回答「哪天出、一包多少钱、有哪张 SAR」时，以这里为准，可以避免把未证实的箱规或转售价说成事实。下一步：把「ハドウシーカー」（暂译：Aura Seeker）和「スペシャルデッキセットMEGA」（暂译：Special Deck Set MEGA）的商品页收进书签，有新收录再对照更新备忘。
   tags: [官方, 新商品]
   added: 2026-11-14
 - id: x-pokemon-cojp

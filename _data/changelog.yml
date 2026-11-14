@@ -1,6 +1,14 @@
 # 更新日志（唯一数据源）。每次每日更新在最上面新增一条。
 # kind 取值与导航 id 对应：daily | kb | recs | news | glossary | path ；type: new | updated
 - date: 2026-11-14
+  title: 为名称配上图片和英文
+  items:
+    - { kind: daily, type: updated, title: "第 1 期新闻和推荐配上官方商品图、卡图和英文名", url: /daily/2026-11-14/ }
+    - { kind: kb, type: updated, title: "基础知识各篇增加说明图和英文名", url: /kb/ }
+    - { kind: recs, type: updated, title: "推荐库商品介绍配图", url: /recommendations/ }
+    - { kind: glossary, type: updated, title: "术语表增加英文对照和配图", url: /glossary/ }
+    - { kind: news, type: updated, title: "新闻归档同步显示配图和英文名", url: /news/ }
+- date: 2026-11-14
   title: 新闻和推荐增加「导师点评」
   items:
     - { kind: daily, type: updated, title: "第 1 期三条新闻补上导师点评", url: /daily/2026-11-14/ }

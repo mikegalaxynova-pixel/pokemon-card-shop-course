@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="340" viewBox="0 0 600 340" role="img" aria-labelledby="t d">
+<title id="t">日文版与英文版卡背区别示意图</title>
+<desc id="d">示意图：现行日文版卡背是金框并带有七颗能量球；英文版是深蓝框和白色旋涡，没有能量球。本图不是实物照片。</desc>
+<style>
+  text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Noto Sans SC",sans-serif;fill:#1f2328}
+  .muted{fill:#57606a}
+  .w{fill:#fff}
+  .accent{fill:#b3001b}
+</style>
+
+<rect width="600" height="340" fill="#f6f8fa"/>
+<text x="300" y="28" font-size="16" font-weight="700" text-anchor="middle">日文版与英文版背面：怎么一眼分开</text>
+<text x="300" y="48" font-size="11" class="muted" text-anchor="middle">Schematic only — not a photograph of a real card</text>
+<!-- JP back -->
+<rect x="50" y="64" width="210" height="210" rx="12" fill="#1a3a7a" stroke="#c9a227" stroke-width="8"/>
+<circle cx="155" cy="155" r="28" fill="#c0392b"/>
+<circle cx="155" cy="155" r="28" fill="#f4f4f4" clip-path="none"/>
+<path d="M127 155 h56" stroke="#1f2328" stroke-width="3"/>
+<circle cx="155" cy="155" r="8" fill="#ddd" stroke="#1f2328"/>
+<!-- orbs -->
+<circle cx="100" cy="100" r="8" fill="#7cb342"/><circle cx="155" cy="88" r="8" fill="#f4d03f"/><circle cx="210" cy="100" r="8" fill="#af7ac5"/>
+<circle cx="100" cy="210" r="8" fill="#e74c3c"/><circle cx="155" cy="222" r="8" fill="#5dade2"/><circle cx="210" cy="210" r="8" fill="#c0392b"/>
+<circle cx="155" cy="200" r="8" fill="#f7f7f7" stroke="#bbb"/>
+<text x="155" y="120" font-size="13" font-weight="700" text-anchor="middle" fill="#f4d03f">Pokémon</text>
+<text x="155" y="300" font-size="14" font-weight="700" text-anchor="middle">日文版（现行）</text>
+<text x="155" y="318" font-size="11" class="muted" text-anchor="middle">金框、七颗能量球</text>
+<!-- EN back -->
+<rect x="340" y="64" width="210" height="210" rx="12" fill="#1b4e89" stroke="#16365f" stroke-width="8"/>
+<ellipse cx="445" cy="169" rx="70" ry="40" fill="#e8eef7" opacity=".85"/>
+<circle cx="445" cy="169" r="28" fill="#c0392b"/>
+<path d="M417 169 h56" stroke="#1f2328" stroke-width="3"/>
+<circle cx="445" cy="169" r="8" fill="#d6e4f0" stroke="#1f2328"/>
+<text x="445" y="130" font-size="13" font-weight="700" text-anchor="middle" fill="#f4d03f">Pokémon</text>
+<text x="445" y="300" font-size="14" font-weight="700" text-anchor="middle">英文版</text>
+<text x="445" y="318" font-size="11" class="muted" text-anchor="middle">深蓝框、白色旋涡、没有能量球</text>
+
+</svg>

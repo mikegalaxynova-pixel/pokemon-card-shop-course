@@ -2,6 +2,7 @@
   <p class="kind">{{ site.data.rec_types[include.r.type] | default: include.r.type }}</p>
   <h3><a href="{{ include.r.url }}" rel="noopener">{{ include.r.title }}</a></h3>
   {% if include.r.creator %}<p class="muted">{{ include.r.creator }}</p>{% endif %}
+  {% include media.html item=include.r %}
   <p>{{ include.r.note }}</p>
   {% include comment.html text=include.r.comment %}
   <p class="src">{% for t in include.r.tags %}<span class="tag">{{ t }}</span>{% endfor %} <span class="muted">收录于 {{ include.r.added }}</span></p>

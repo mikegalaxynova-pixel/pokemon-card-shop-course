@@ -71,3 +71,12 @@ input[type=search]{width:100%;font:inherit;padding:.7rem .9rem;border:1px solid 
 .mentor-body>p:first-child{margin-top:0}
 .mentor-body>p:last-child{margin-bottom:0}
 .card .mentor{margin:.6rem 0}
+.enname{margin:.15rem 0 .4rem;font-weight:600;color:var(--muted);font-size:.95rem}
+.fig{margin:.8rem 0 1.1rem}
+.fig img{display:block;width:100%;max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line);background:var(--soft)}
+.fig figcaption{font-size:.85rem;color:var(--muted);line-height:1.5;margin:.4rem 0 0}
+.fig-row,.fig-pair{display:grid;gap:.65rem;margin:.8rem 0 1.1rem}
+.fig-row{grid-template-columns:repeat(auto-fit,minmax(8.2rem,1fr))}
+.fig-pair{grid-template-columns:1fr 1fr}
+.fig-row .fig,.fig-pair .fig{margin:0}
+@media(max-width:32rem){.fig-pair{grid-template-columns:1fr}}

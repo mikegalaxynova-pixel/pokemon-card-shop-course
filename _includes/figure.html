@@ -1,0 +1,14 @@
+{%- if include.src -%}
+<figure class="fig{% if include.class %} {{ include.class }}{% endif %}">
+  <img src="{{ include.src | relative_url }}" alt="{{ include.alt }}" width="{{ include.width }}" height="{{ include.height }}" loading="lazy" decoding="async">
+  {%- if include.caption or include.credit -%}
+  <figcaption>
+    {%- if include.caption -%}{{ include.caption }}{%- endif -%}
+    {%- if include.credit -%}
+      {%- if include.caption %} {% endif -%}
+      图片来源：{%- if include.credit_url -%}<a href="{{ include.credit_url }}" rel="noopener">{{ include.credit }}</a>{%- else -%}{{ include.credit }}{%- endif -%}
+    {%- endif -%}
+  </figcaption>
+  {%- endif -%}
+</figure>
+{%- endif -%}

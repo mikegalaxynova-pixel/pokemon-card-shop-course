@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="180" viewBox="0 0 600 180" role="img" aria-labelledby="t d">
+<title id="t">PSA 在做什么：真伪、打分、封壳</title>
+<desc id="d">三个步骤：先判断真伪和是否被改过，再按 1 到 10 分评分，最后封进带认证编号的硬壳。</desc>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC",sans-serif;fill:#1f2328}.muted{fill:#57606a}.w{fill:#fff}</style>
+<rect width="600" height="180" fill="#f6f8fa"/>
+<text x="24" y="28" font-size="16" font-weight="700">PSA 的三步</text>
+<text x="24" y="48" font-size="11" class="muted">Authenticate, grade, encapsulate. Study diagram.</text>
+<rect x="24" y="64" width="170" height="96" rx="10" fill="#b3001b"/>
+<text x="109" y="100" font-size="20" font-weight="700" text-anchor="middle" class="w">1</text>
+<text x="109" y="124" font-size="14" font-weight="700" text-anchor="middle" class="w">真伪</text>
+<text x="109" y="144" font-size="11" text-anchor="middle" fill="#fde8e8">Authenticity</text>
+<text x="204" y="118" font-size="20" fill="#b3001b">→</text>
+<rect x="226" y="64" width="170" height="96" rx="10" fill="#fff" stroke="#d0d7de"/>
+<text x="311" y="100" font-size="20" font-weight="700" text-anchor="middle">2</text>
+<text x="311" y="124" font-size="14" font-weight="700" text-anchor="middle">1〜10 分</text>
+<text x="311" y="144" font-size="11" text-anchor="middle" class="muted">Grade</text>
+<text x="406" y="118" font-size="20" fill="#b3001b">→</text>
+<rect x="428" y="64" width="148" height="96" rx="10" fill="#fff" stroke="#d0d7de"/>
+<text x="502" y="100" font-size="20" font-weight="700" text-anchor="middle">3</text>
+<text x="502" y="124" font-size="14" font-weight="700" text-anchor="middle">封壳</text>
+<text x="502" y="144" font-size="11" text-anchor="middle" class="muted">Slab + cert</text>
+</svg>

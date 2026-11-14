@@ -57,6 +57,28 @@
 
 写法要求：事实只写在新闻的 `summary` 或推荐的 `note` 里；点评里可以给判断和建议，但不要冒充新的事实或价格。没有依据就写「现在还看不出」「不要提前下结论」。新闻的 `comment` 写在每日更新该条新闻下；视频/播客的 `comment` 写在 `_data/recommendations.yml` 对应条目（每日更新页会自动带出）。工具、网站、账号也建议写点评，说明怎么用、别踩什么坑。
 
+#### 英文名（商品、卡、宝可梦名必须有）
+
+正文、新闻、推荐、术语表里，凡是出现**商品、弹/卡包、卡片或宝可梦的日文名**，都要在后面补英文，格式如「スペシャルデッキセットMEGA」（暂译：Special Deck Set MEGA）、メガゲンガー ex（Mega Gengar ex）。
+
+- 有官方英文名（宝可梦名、已公布的英文商品/套装名、英文卡名）就用官方名，不要自己改译。
+- 日文商品还没有官方英文版时，用直译，并标明「暂译」，同时写清「官方英文商品名尚未公布」。不要把媒体或论坛的叫法写成官方名。
+- 术语表用「日文 | 英文 | 中文 | 说明」对照。
+
+#### 配图（每日更新和基础知识都要有说明性图片）
+
+**每一篇每日更新、每一篇基础知识文章，都要有多张说明性图片**，帮助读者把名字和实物对上，不要只堆文字。新闻或推荐只要涉及新商品、新弹或具体卡片，有官方图就配上。
+
+做法：
+
+- 优先用 [宝可梦卡牌官网](https://www.pokemon-card.com/) 或 Pokémon / PSA 等官方站点的商品图、卡图、讲解图。
+- **下载到仓库** `assets/img/`，压缩为合适宽度（商品图约 600px，单卡约 400px）的 webp 或 jpg，**不要热链到外站**。
+- 每张图必须有有意义的 `alt`、`width` / `height`、`loading="lazy"`，以及注明来源并链接到原页的图注，例如「图片来源：[ポケモンカードゲーム公式](https://www.pokemon-card.com/)」。
+- 用 `{% include figure.html %}` 插入。新闻和推荐可用字段 `image`、`image_alt`、`image_width`、`image_height`、`image_credit`、`image_credit_url`，以及可选的 `images` 列表；英文名用 `en`。
+- 概念说明（卡面位置、壳上标签字段、Pop 读法、开店步骤、日英卡背区别等）可以画 **SVG 示意图**，并写明这是示意图、不是实物照片。
+- **严禁伪造卡图或壳标**。没有可靠来源就不要用图，宁可只用示意图或写「暂无合适官方图」。
+- 控制体积：懒加载、合理尺寸、一页不要塞进未压缩原图，以免影响手机加载和 Lighthouse。
+
 ## 1. 新增每日更新
 
 文件：`_posts/YYYY-MM-DD-daily.md`（文件名日期 = 当天日本日期）。
@@ -77,6 +99,15 @@ news:                         # 今日新闻（新闻归档页自动汇总这里
     tags: [新商品]
     comment: |                # 导师点评（个人判断），必填
       <可信度与重要性。对西新宿 PSA 店的进货/定价/库存/客人/风险意味着什么。下一步做什么或观察什么。>
+    en: <官方英文名，或「暂译：…」>
+    image: /assets/img/<file>.webp
+    image_alt: <说明性 alt，含中英名称>
+    image_width: 600
+    image_height: 371
+    image_credit: ポケモンカードゲーム公式
+    image_credit_url: https://www.pokemon-card.com/...
+    images:                   # 可选，多张配图（如主打卡）
+      - { src: /assets/img/<card>.webp, alt: "...", width: 400, height: 559, credit: ポケモンカードゲーム公式, credit_url: https://www.pokemon-card.com/... }
 recs: [<recommendations.yml 里的 id>, ...]   # 视频/播客推荐，至少 1 个
 ---
 
@@ -141,6 +172,13 @@ tags: [...]
   note: <为什么值得看，1〜2 句事实>
   comment: |                  # 导师点评（个人判断）；视频/播客必填，其他类型建议写
     <可信度与重要性。对西新宿 PSA 店意味着什么。下一步怎么用或观察什么。>
+  en: <如涉及具体商品，写英文名或暂译>
+  image: /assets/img/<file>.webp   # 新商品/新卡的推荐应配图
+  image_alt: <说明性 alt>
+  image_width: 600
+  image_height: 371
+  image_credit: ポケモンカードゲーム公式
+  image_credit_url: https://www.pokemon-card.com/...
   tags: [开箱, 日语]
   added: YYYY-MM-DD
 ```

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="380" viewBox="0 0 600 380" role="img" aria-labelledby="t d">
+<title id="t">PSA 评级壳标签字段示意图</title>
+<desc id="d">示意图展示 PSA 硬壳顶部标签上的卡名与系列、等级、认证编号和条码位置，以及下方的封装卡。不是真实评级卡的照片。</desc>
+<style>
+  text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Noto Sans SC",sans-serif;fill:#1f2328}
+  .muted{fill:#57606a}
+  .w{fill:#fff}
+  .accent{fill:#b3001b}
+</style>
+
+<rect width="600" height="380" fill="#f6f8fa"/>
+<text x="250" y="28" font-size="16" font-weight="700">PSA 壳（slab）标签怎么读</text>
+<text x="250" y="46" font-size="11" class="muted">Diagram of a PSA holder — not a photo of a real graded card</text>
+<!-- slab -->
+<rect x="36" y="58" width="180" height="300" rx="8" fill="#fff" stroke="#8c959f" stroke-width="3"/>
+<!-- label -->
+<rect x="44" y="66" width="164" height="86" rx="3" fill="#1f3a5f"/>
+<text x="126" y="84" font-size="9" text-anchor="middle" fill="#fff">PSA</text>
+<text x="52" y="102" font-size="8" fill="#cde">① 卡名 / 系列</text>
+<text x="52" y="116" font-size="8" fill="#cde">CARD NAME · SET</text>
+<text x="52" y="138" font-size="11" font-weight="700" fill="#f4d03f">② GEM MT 10</text>
+<rect x="54" y="148" width="120" height="14" rx="2" fill="#0b1e33"/>
+<text x="58" y="158" font-size="7" fill="#9cf">③ Cert 00000000  ④ 条码</text>
+<!-- inner card silhouette -->
+<rect x="58" y="162" width="136" height="184" rx="8" fill="#eaeef2" stroke="#d0d7de"/>
+<text x="126" y="258" font-size="11" class="muted" text-anchor="middle">卡（示意）</text>
+<!-- callouts -->
+<text x="240" y="90" font-size="13">① 卡片描述：卡名、系列/年份等</text>
+<text x="258" y="108" font-size="12" class="muted">Label description</text>
+<text x="240" y="140" font-size="13">② 等级：如 GEM MT 10、MINT 9</text>
+<text x="258" y="158" font-size="12" class="muted">Grade</text>
+<text x="240" y="190" font-size="13">③ 认证编号 cert number</text>
+<text x="258" y="208" font-size="12" class="muted">到 PSA 官网核对真伪的关键</text>
+<text x="240" y="240" font-size="13">④ 条码 / 防伪相关信息</text>
+<text x="240" y="280" font-size="13">硬壳本身：防拆的塑料封装</text>
+<text x="258" y="298" font-size="12" class="muted">Tamper-evident holder</text>
+<text x="240" y="340" font-size="11" class="muted">字段依据 PSA 官方对 Lighthouse 标签的说明绘制。</text>
+
+</svg>

@@ -1,0 +1,13 @@
+{%- if include.item.en -%}
+<p class="enname">（{{ include.item.en }}）</p>
+{%- endif -%}
+{%- if include.item.image -%}
+{% include figure.html src=include.item.image alt=include.item.image_alt width=include.item.image_width height=include.item.image_height credit=include.item.image_credit credit_url=include.item.image_credit_url %}
+{%- endif -%}
+{%- if include.item.images -%}
+<div class="fig-row">
+{%- for im in include.item.images -%}
+{% include figure.html src=im.src alt=im.alt width=im.width height=im.height credit=im.credit credit_url=im.credit_url class="fig-sm" %}
+{%- endfor -%}
+</div>
+{%- endif -%}
