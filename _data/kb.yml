@@ -1,7 +1,7 @@
 # 基础知识目录（唯一数据源）。status: published | planned。published 必须有对应 _kb/<section>/<slug>.md。
 weeks:
   - { n: 1, title: "卡牌基础与 PSA 评级", range: "11/14–11/20", goal: "看懂一张卡、系列与稀有度、日英版差异、PSA 等级与 Pop、认证号与假壳。" }
-  - { n: 2, title: "开店法规与运营", range: "11/21–11/27", goal: "古物商许可、古物台账与入货记录、选址、开业手续、POS 与库存、税务、展示与防盗。" }
+  - { n: 2, title: "开店法规与运营", range: "11/21–11/27", goal: "古物商许可、古物台账与入货记录、开业手续、POS 与库存、税务、展示与防盗。" }
   - { n: 3, title: "热门卡与市场定价", range: "11/28–12/4", goal: "查价渠道、定价策略、PSA 10/9 溢价、新弹发售周期、库存周转、海外买家。" }
   - { n: 4, title: "社群与宣传", range: "12/5–12/11", goal: "X 账号、Discord 与论坛、Google 商家资料、店铺活动、KOL 合作、游客引流。" }
   - { n: 5, title: "收购、新卡与周边", range: "12/12–12/18", goal: "收购流程、真伪鉴别、收购定价、寄售、新品与抽选、周边、正规进货渠道。" }
@@ -30,12 +30,11 @@ sections:
       - { slug: submission, title: "PSA Japan 送评流程与费用", week: 1, status: planned, planned: 2026-11-18 }
   - id: shop
     title: "开店实务"
-    desc: "在日本合法开卡牌店：古物商许可、入货记录、选址、POS、税务。"
+    desc: "在日本合法开卡牌店：古物商许可、入货记录、POS、税务。"
     articles:
       - { slug: kobutsusho, title: "古物商许可要点（新宿警察署）", week: 2, status: published }
       - { slug: kobutsu-records, title: "古物台账、本人确认与入货记录", week: 2, status: planned, planned: 2026-11-21 }
       - { slug: friend-stock, title: "朋友提供的库存：买取、寄售怎样合法安排", week: 2, status: planned, planned: 2026-11-22 }
-      - { slug: location, title: "西新宿选址：客流、租金与竞争", week: 2, status: planned, planned: 2026-11-23 }
       - { slug: opening-procedures, title: "开业手续：开业届、青色申告等", week: 2, status: planned, planned: 2026-11-24 }
       - { slug: pos-inventory, title: "POS 与库存管理", week: 2, status: planned, planned: 2026-11-25 }
       - { slug: tax, title: "税务基础：消费税、发票制度、免税销售", week: 2, status: planned, planned: 2026-11-26 }
