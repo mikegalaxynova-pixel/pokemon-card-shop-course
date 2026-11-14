@@ -2,7 +2,7 @@
 {%- assign _url = include.url | relative_url -%}
 {%- assign _kind = include.kind -%}
 {%- assign yt_id = "" -%}
-{%- if include.watch and include.watch != "" -%}
+{%- if include.platform != "x" and include.watch and include.watch != "" -%}
   {%- if include.watch contains "youtu.be/" -%}
     {%- assign yt_id = include.watch | split: "youtu.be/" | last | split: "?" | first | split: "/" | first -%}
   {%- elsif include.watch contains "v=" -%}
@@ -28,7 +28,9 @@
   {%- assign _one_h = _im0.height | default: _one_h -%}
 {%- endif -%}
 {%- assign _media = "none" -%}
-{%- if yt_id != "" -%}
+{%- if include.platform == "x" -%}
+  {%- assign _media = "x" -%}
+{%- elsif yt_id != "" -%}
   {%- assign _media = "video" -%}
 {%- elsif _gcount >= 4 -%}
   {%- assign _media = "grid" -%}
@@ -55,6 +57,7 @@
   {%- when "kb" -%}{%- assign _klabel = "基础" -%}
   {%- else -%}{%- assign _klabel = _kind -%}
 {%- endcase -%}
+{%- if include.platform == "x" -%}{%- assign _klabel = "帖子" -%}{%- endif -%}
 {%- assign _when = include.updated | default: include.date -%}
 {%- assign _topic_ids = "" -%}
 {%- assign _topic_labels = "" -%}
@@ -70,7 +73,9 @@
 {%- assign _search = include.title | append: " " | append: include.excerpt | append: " " | append: include.source | append: " " | append: include.creator | append: " " | append: _klabel | append: " " | append: _topic_labels | strip_html | strip_newlines -%}
 {%- assign _feat = include.featured | default: "no" -%}
 {%- assign _tid = include.url | slugify | append: "-" | append: _kind -%}
-<article class="feed-item media-{{ _media }}" data-kind="{{ _kind }}" data-topics="{{ _topic_ids }}"{% if include.ntype %} data-ntype="{{ include.ntype }}"{% endif %}{% if include.topic %} data-topic="{{ include.topic }}"{% endif %} data-url="{{ _url }}" data-read-url="{{ _url }}" data-ts="{{ _when | date: '%s' }}" data-day="{{ _when | date: '%Y-%m-%d' }}"{% if _feat == "yes" %} data-featured="1" data-featured-rank="{{ include.rank }}"{% endif %} data-search="{{ _search | escape }}">
+{%- assign _dkind = _kind -%}
+{%- if include.platform == "x" -%}{%- assign _dkind = "x" -%}{%- endif -%}
+<article class="feed-item media-{{ _media }}" data-kind="{{ _dkind }}" data-topics="{{ _topic_ids }}"{% if include.ntype %} data-ntype="{{ include.ntype }}"{% endif %}{% if include.topic %} data-topic="{{ include.topic }}"{% endif %} data-url="{{ _url }}" data-read-url="{{ _url }}" data-ts="{{ _when | date: '%s' }}" data-day="{{ _when | date: '%Y-%m-%d' }}"{% if _feat == "yes" %} data-featured="1" data-featured-rank="{{ include.rank }}"{% endif %} data-search="{{ _search | escape }}">
   <div class="feed-row">
     <div class="feed-body">
       <h2 class="feed-title" id="ft-{{ _tid }}"><a class="feed-stretch" href="{{ _url }}">{{ include.title }}</a></h2>
@@ -78,7 +83,7 @@
         {%- for t in include.topics -%}
           {% include topic.html label=t %}
         {%- endfor -%}
-        <span class="feed-fmt stream stream-{{ _kind }}">{{ _klabel }}</span>
+        <span class="feed-fmt stream stream-{{ _dkind }}">{{ _klabel }}</span>
         {%- if _kind == "news" -%}{% include news-type.html id=include.ntype prev=include.prev %}{%- endif -%}
         {%- if include.source -%}<span class="feed-source">{{ include.source }}</span>{%- endif -%}
       </p>
@@ -116,6 +121,13 @@
   <div class="feed-yt feed-yt-preview" aria-hidden="true">
     <img src="https://i.ytimg.com/vi/{{ yt_id }}/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async">
     <span class="yt-play" aria-hidden="true"></span>
+  </div>
+  {%- endif -%}
+  {%- if _media == "x" -%}
+  <div class="feed-x" aria-hidden="true">
+    <p class="feed-x-kicker">X</p>
+    {%- if include.creator -%}<p class="feed-x-handle">{{ include.creator }}</p>{%- endif -%}
+    {%- if include.quote -%}<blockquote class="feed-x-quote">{{ include.quote | strip_html | truncate: 90 }}</blockquote>{%- endif -%}
   </div>
   {%- endif -%}
   {%- if _feat == "yes" and include.reason -%}<p class="feed-reason"><span class="feed-reason-label">为什么今天先看</span>{{ include.reason }}</p>{%- endif -%}
