@@ -1,7 +1,7 @@
 {%- comment -%}Set yt_id from include.id, include.watch, or include.video.watch{%- endcomment -%}
 {%- assign yt_id = include.id -%}
 {%- assign _watch = include.watch | default: include.video.watch -%}
-{%- if yt_id == nil or yt_id == blank -%}
+{%- if yt_id == nil or yt_id == "" -%}
   {%- if _watch contains "youtu.be/" -%}
     {%- assign yt_id = _watch | split: "youtu.be/" | last | split: "?" | first | split: "/" | first -%}
   {%- elsif _watch contains "v=" -%}

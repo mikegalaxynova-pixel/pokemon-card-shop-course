@@ -2,7 +2,7 @@
 {%- assign _url = include.url | relative_url -%}
 {%- assign _kind = include.kind -%}
 {%- assign yt_id = "" -%}
-{%- if include.watch and include.watch != blank -%}
+{%- if include.watch and include.watch != "" -%}
   {%- if include.watch contains "youtu.be/" -%}
     {%- assign yt_id = include.watch | split: "youtu.be/" | last | split: "?" | first | split: "/" | first -%}
   {%- elsif include.watch contains "v=" -%}
@@ -28,13 +28,13 @@
   {%- assign _one_h = _im0.height | default: _one_h -%}
 {%- endif -%}
 {%- assign _media = "none" -%}
-{%- if yt_id != blank -%}
+{%- if yt_id != "" -%}
   {%- assign _media = "video" -%}
 {%- elsif _gcount >= 4 -%}
   {%- assign _media = "grid" -%}
 {%- elsif _gcount >= 2 -%}
   {%- assign _media = "row" -%}
-{%- elsif _one_src and _one_src != blank -%}
+{%- elsif _one_src and _one_src != "" -%}
   {%- assign _media = "thumb" -%}
   {%- assign _is_svg = false -%}
   {%- if _one_src contains ".svg" -%}{%- assign _is_svg = true -%}{%- endif -%}
@@ -112,7 +112,7 @@
     {%- endfor -%}
   </div>
   {%- endif -%}
-  {%- if _media == "video" and yt_id != blank -%}
+  {%- if _media == "video" and yt_id != "" -%}
   <div class="feed-yt feed-yt-preview" aria-hidden="true">
     <img src="https://i.ytimg.com/vi/{{ yt_id }}/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async">
     <span class="yt-play" aria-hidden="true"></span>
