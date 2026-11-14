@@ -57,7 +57,7 @@ sections:
       - { slug: x-accounts, title: "X（Twitter）账号运营与值得关注的账号", week: 4, status: planned, planned: 2026-12-05 }
       - { slug: discord-forums, title: "Discord、论坛与本地社群", week: 4, status: planned, planned: 2026-12-06 }
       - { slug: google-business, title: "Google 商家资料与地图评价", week: 4, status: planned, planned: 2026-12-07 }
-      - { slug: events, title: "店铺活动与对战会", week: 4, status: planned, planned: 2026-12-08 }
+      - { slug: collector-events, title: "收藏家活动与开箱直播", week: 4, status: planned, planned: 2026-12-08 }
       - { slug: kol, title: "YouTuber / KOL 合作", week: 4, status: planned, planned: 2026-12-09 }
       - { slug: inbound, title: "游客引流与海外宣传", week: 4, status: planned, planned: 2026-12-10 }
       - { slug: content-plan, title: "店铺内容日历", week: 4, status: planned, planned: 2026-12-11 }

@@ -4,16 +4,8 @@
   title: 『【ポケカ新商品】スペシャルデッキセットだって～～～～！？【ポケモンカード】』
   creator: 【公式】ポケモンカードチャンネル
   url: https://www.youtube.com/watch?v=8MdwGqVOoP0
-  note: 官方介绍 11/13 上市的「スペシャルデッキセットMEGA」，快速搞懂三套卡组各有什么、在打什么。
+  note: 官方介绍 11/13 上市的「スペシャルデッキセットMEGA」：三套固定内容商品各收录哪些角色卡、附赠什么配件，便于对照定价和后续单卡收藏需求。
   tags: [官方, 新商品, 日语]
-  added: 2026-11-14
-- id: yt-rules-beginner
-  type: video
-  title: 『【公式動画】これからポケカを始めるキミに！ルール解説【ポケモンカード】』
-  creator: 【公式】ポケモンカードチャンネル
-  url: https://www.youtube.com/watch?v=3Ixc4sKaABA
-  note: 官方入门讲解，从卡的种类、HP、属性、进化讲到对战流程。看时对照实物暂停，找左上进化、右上 HP、底部标记。
-  tags: [官方, 入门, 规则, 日语]
   added: 2026-11-14
 - id: snkrdunk
   type: tool

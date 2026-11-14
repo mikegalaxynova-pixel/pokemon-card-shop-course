@@ -1,6 +1,16 @@
 # 更新日志（唯一数据源）。每次每日更新在最上面新增一条。
 # kind 取值与导航 id 对应：daily | kb | recs | news | glossary | path ；type: new | updated
 - date: 2026-11-14
+  title: 内容范围调整：聚焦收藏与评级卡
+  items:
+    - { kind: kb, type: updated, title: "卡面结构：去掉对战讲解，规则标记改为时期识别", url: /kb/cards/anatomy/ }
+    - { kind: kb, type: updated, title: "稀有度速查：价格理由改为需求，不再用「对战强卡」", url: /kb/cards/rarity/ }
+    - { kind: kb, type: updated, title: "日文版 vs 英文版：去掉赛场规则表述", url: /kb/cards/jp-vs-en/ }
+    - { kind: glossary, type: updated, title: "术语表：去掉卡组词条，规则标记改为识别用", url: /glossary/ }
+    - { kind: recs, type: updated, title: "推荐库：去掉官方规则讲解视频", url: /recommendations/ }
+    - { kind: path, type: updated, title: "学习路径：原「店铺活动与对战会」改为「收藏家活动与开箱直播」", url: /path/ }
+    - { kind: daily, type: updated, title: "第 1 期新闻改为商品、价格与收藏角度", url: /daily/2026-11-14/ }
+- date: 2026-11-14
   title: 网站上线 · 第 1 期
   items:
     - { kind: daily, type: new, title: "每日更新 第 1 期（11/14）", url: /daily/2026-11-14/ }
