@@ -39,6 +39,7 @@
     {%- for n in post.news -%}
       {%- assign feat_reason = "" -%}
       {%- assign feat_rank = "" -%}
+      {%- assign is_featured = "no" -%}
       {%- assign _fu = post.url | relative_url -%}
       {%- assign _key = "," | append: _fu | append: "," -%}
       {%- assign _topic_ok = true -%}
@@ -58,6 +59,7 @@
           {%- endif -%}
         {%- endfor -%}
         {%- if feat_reason != "" -%}
+          {%- assign is_featured = "yes" -%}
           {%- assign claimed = claimed | append: _fu | append: "," -%}
         {%- endif -%}
       {%- endunless -%}
@@ -78,6 +80,7 @@
           prev=n.prev
           topic=n.topic
           reason=feat_reason
+          featured=is_featured
           rank=feat_rank -%}
     {%- endfor -%}
   {%- endif -%}
@@ -87,6 +90,7 @@
 {%- for s in shops -%}
   {%- assign feat_reason = "" -%}
   {%- assign feat_rank = "" -%}
+  {%- assign is_featured = "no" -%}
   {%- assign _fu = s.url | relative_url -%}
   {%- assign _key = "," | append: _fu | append: "," -%}
   {%- unless claimed contains _key -%}
@@ -98,6 +102,7 @@
       {%- endif -%}
     {%- endfor -%}
     {%- if feat_reason != "" -%}
+      {%- assign is_featured = "yes" -%}
       {%- assign claimed = claimed | append: _fu | append: "," -%}
     {%- endif -%}
   {%- endunless -%}
@@ -115,6 +120,7 @@
       image_height=s.image_height
       source=_src
       reason=feat_reason
+      featured=is_featured
       rank=feat_rank -%}
 {%- endfor -%}
 
@@ -122,6 +128,7 @@
 {%- for v in vids -%}
   {%- assign feat_reason = "" -%}
   {%- assign feat_rank = "" -%}
+  {%- assign is_featured = "no" -%}
   {%- assign _fu = v.url | relative_url -%}
   {%- assign _key = "," | append: _fu | append: "," -%}
   {%- unless claimed contains _key -%}
@@ -133,6 +140,7 @@
       {%- endif -%}
     {%- endfor -%}
     {%- if feat_reason != "" -%}
+      {%- assign is_featured = "yes" -%}
       {%- assign claimed = claimed | append: _fu | append: "," -%}
     {%- endif -%}
   {%- endunless -%}
@@ -152,6 +160,7 @@
       watch=v.watch
       creator=v.creator
       reason=feat_reason
+      featured=is_featured
       rank=feat_rank -%}
 {%- endfor -%}
 
@@ -159,6 +168,7 @@
 {%- for k in kbs -%}
   {%- assign feat_reason = "" -%}
   {%- assign feat_rank = "" -%}
+  {%- assign is_featured = "no" -%}
   {%- assign _fu = k.url | relative_url -%}
   {%- assign _key = "," | append: _fu | append: "," -%}
   {%- unless claimed contains _key -%}
@@ -170,6 +180,7 @@
       {%- endif -%}
     {%- endfor -%}
     {%- if feat_reason != "" -%}
+      {%- assign is_featured = "yes" -%}
       {%- assign claimed = claimed | append: _fu | append: "," -%}
     {%- endif -%}
   {%- endunless -%}
@@ -188,6 +199,7 @@
       image_height=k.image_height
       source=_ksrc
       reason=feat_reason
+      featured=is_featured
       rank=feat_rank -%}
 {%- endfor -%}
 

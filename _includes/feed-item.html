@@ -29,7 +29,8 @@
   {%- else -%}{%- assign _klabel = _kind -%}
 {%- endcase -%}
 {%- assign _search = include.title | append: " " | append: include.excerpt | append: " " | append: include.source | append: " " | append: include.creator | append: " " | append: _klabel | strip_html | strip_newlines -%}
-<article class="feed-item media-{{ _media }}" data-kind="{{ _kind }}"{% if include.ntype %} data-ntype="{{ include.ntype }}"{% endif %}{% if include.topic %} data-topic="{{ include.topic }}"{% endif %} data-url="{{ _url }}" data-read-url="{{ _url }}" data-ts="{{ include.date | date: '%s' }}"{% if include.reason %} data-featured="1" data-featured-rank="{{ include.rank }}"{% endif %} data-search="{{ _search | escape }}">
+{%- assign _feat = include.featured | default: "no" -%}
+<article class="feed-item media-{{ _media }}" data-kind="{{ _kind }}"{% if include.ntype %} data-ntype="{{ include.ntype }}"{% endif %}{% if include.topic %} data-topic="{{ include.topic }}"{% endif %} data-url="{{ _url }}" data-read-url="{{ _url }}" data-ts="{{ include.date | date: '%s' }}"{% if _feat == "yes" %} data-featured="1" data-featured-rank="{{ include.rank }}"{% endif %} data-search="{{ _search | escape }}">
   <div class="feed-row">
     <div class="feed-body">
       <h2 class="feed-title"><a href="{{ _url }}">{{ include.title }}</a></h2>
@@ -59,7 +60,7 @@
     </button>
   </div>
   {%- endif -%}
-  {%- if include.reason -%}<p class="feed-reason"><span class="feed-reason-label">为什么今天先看</span>{{ include.reason }}</p>{%- endif -%}
+  {%- if _feat == "yes" and include.reason -%}<p class="feed-reason"><span class="feed-reason-label">为什么今天先看</span>{{ include.reason }}</p>{%- endif -%}
   <p class="feed-meta">
     <time datetime="{{ include.date | date: '%Y-%m-%d' }}">{{ include.date | date: '%Y年%-m月%-d日' }}</time>
     {% include badge.html date=include.date updated=include.updated url=include.url %}
