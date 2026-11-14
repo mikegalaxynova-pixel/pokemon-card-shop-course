@@ -10,8 +10,8 @@ description: 日本宝可梦卡牌新闻归档：新商品、新弹、抽选、P
   <p class="lead">每日更新里的新闻按日期汇总，每条附来源链接。</p>
 </div>
 {% for p in site.posts %}{% if p.news %}
-<section aria-labelledby="n-{{ p.date | date: '%Y%m%d' }}">
-  <h2 id="n-{{ p.date | date: '%Y%m%d' }}"><a href="{{ p.url | relative_url }}#news">{{ p.date | date: '%Y年%-m月%-d日' }}</a> {% include badge.html date=p.date url=p.url %}</h2>
+<section aria-labelledby="n-{{ p.date | date: '%Y%m%d%H%M' }}">
+  <h2 id="n-{{ p.date | date: '%Y%m%d%H%M' }}"><a href="{{ p.url | relative_url }}#news">{{ p.date | date: '%Y年%-m月%-d日' }}</a> {% include badge.html date=p.date url=p.url %}</h2>
   <ul class="news">
   {% for n in p.news %}
     <li><strong>{{ n.title }}</strong>

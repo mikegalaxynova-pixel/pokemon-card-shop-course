@@ -41,6 +41,8 @@ lead: 店里接待、查价、办手续时最常见的词。新词随每日更�
 | 構築済みデッキ / スターター | preconstructed deck / Starter Set | 构筑套装 | 内容固定的套装商品，不随机开包 |
 | 抽選 | lottery | 抽选 | 热门新品常用的销售方式 |
 | ハドウシーカー | 暂译：Aura Seeker | 一弹扩展包名 | 官方英文商品名尚未公布 |
+| メガブレイブ | 暂译：Mega Brave | MEGA 系列扩展包（M1L，2025-08） | 主打メガルカリオex（Mega Lucario ex） |
+| ストームエメラルダ | 暂译：Storm Emeralda | MEGA 系列扩展包（M6，2026-07） | 唯一 MUR 为メガレックウザex（Mega Rayquaza ex） |
 | スペシャルデッキセットMEGA | 暂译：Special Deck Set MEGA | 一套固定内容商品 | 官方英文商品名尚未公布 |
 
 {% include figure.html src="/assets/img/hadou-seeker-pack.webp" alt="扩展包「ハドウシーカー」（暂译：Aura Seeker）官方包装" width="420" height="780" credit="ポケモンカードゲーム公式 商品页" credit_url="https://www.pokemon-card.com/ex/m7/" %}
@@ -51,7 +53,12 @@ lead: 店里接待、查价、办手续时最常见的词。新词随每日更�
 | --- | --- | --- | --- |
 | PSA | Professional Sports Authenticator | PSA 评级公司 | 见[PSA 是什么]({{ '/kb/psa/what-is-psa/' | relative_url }}) |
 | 鑑定済み / PSAケース / slab | slab | 已鉴定 / 评级壳 | 封装评级卡的硬壳 |
-| cert number | certification number | 认证编号 | 每个壳唯一，可在官网核对 |
+| cert number / 証明番号 | certification number | 认证编号 | 每个壳唯一，可在官网核对；查得到不等于壳一定是真的，见[认证号核验与假壳识别]({{ '/kb/psa/cert-and-fake/' | relative_url }}) |
+| 偽造ケース / 偽物 | counterfeit slab / fake | 假壳 / 假货 | 假标签、假壳或壳里换卡 |
+| ライトハウスラベル | Lighthouse label | Lighthouse 全息标签 | 2017 年起的 PSA 标签，倾斜时全息标会变化 |
+| クオリファイア（OC / ST / MC 等） | qualifier | 限定符 | 等级后括号里的缺陷标注，如 5(MC) = miscut |
+| クロスオーバー | Crossover | 转壳 | 把其他公司评级卡转进 PSA 壳的服务 |
+| ミニマムグレード | minimum grade | 最低接受等级 | 转壳时自己指定，达不到就原壳退回 |
 | Gem Mint 10 / Mint 9 | Gem Mint / Mint | 10 分 / 9 分 | 见[等级速查]({{ '/kb/psa/grades/' | relative_url }}) |
 | センタリング | centering | 居中 | 图案在卡面上的居中程度 |
 | Population Report（Pop） | Population Report | 鉴定数量报告 | 见[Pop Report]({{ '/kb/psa/pop-report/' | relative_url }}) |
@@ -74,3 +81,4 @@ lead: 店里接待、查价、办手续时最常见的词。新词随每日更�
 | 身分証明書 | identity certificate (municipal) | 身份证明书 | 本籍地市区町村开具，非一般身份证 |
 | 誓約書 | written pledge | 誓约书 | |
 | 行政書士 | administrative scrivener | 行政书士 | 可代办许可申请的专业人士 |
+| 不正品の申告 | reporting suspected illicit goods | 可疑物品申告 | 《古物営業法》第 15 条第 3 项：买入时怀疑是不正品，须立即向警察申告 |

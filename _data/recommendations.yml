@@ -1,4 +1,35 @@
 # 推荐库（唯一数据源）。新条目追加到最上面。type: video | podcast | account | tool | site | community
+- id: yt-neet-psa-new-plan
+  type: video
+  title: 『PSA新プラン登場！が正直渋いです。今PSA出すべきカードをカードショップオーナーが解説』
+  creator: 貧乏すぎたポケカ投資家　ニートポケモン
+  url: https://www.youtube.com/watch?v=7aWExr5oHD8
+  note: 2026-11-14（JST）公开、约 6 分钟。频道主在说明栏中写明自己经营横滨的卡店「トレカトップ」（做 PSA 与裸卡收购），视频按标题是从卡店经营者角度谈 PSA 新方案和「现在该送评哪些卡」。说明栏里也有自家网店、オリパ（原创福袋）等宣传链接。
+  comment: >
+    同行卡店老板的视角，对你很有参考价值，但它是个人观点加自家宣传，可信度中等：涉及费用、等级和交期的说法，一律以 PSA Japan 官网为准（本期新闻已列出转壳新价）。
+    对西新宿店，看点是「卡店怎么判断一张卡值不值得送评」以及收购 PSA 卡时的思路；不要照搬他的「该出哪些卡」清单，那是他的库存和客群。
+    下一步：看完写下他提到的判断标准（如价差、交期、费用），对照本站的 PSA 文章，下周讲送评流程时再核一次。
+  tags: [PSA, 送评, 卡店经营, 日语]
+  added: 2026-11-14
+- id: yt-hadou-seeker-official
+  type: video
+  title: 『【公式】「ポケモンカードゲーム」拡張パック「ハドウシーカー」』
+  creator: ポケモン公式YouTubeチャンネル
+  url: https://www.youtube.com/watch?v=1jW5MWxW4jQ
+  note: 官方 30 秒商品宣传片（2026-10-29 JST 公开），介绍 11/27 发售的扩展包「ハドウシーカー」（暂译：Aura Seeker）。看包装、主打角色，方便店员认商品。
+  comment: >
+    官方一手物料，可信度最高，但信息量少，只是商品宣传，不含任何价格或稀有度信息。
+    对主卖 PSA 的店，它的用途是让你和店员对上包装和主打角色メガルカリオZ ex（Mega Lucario Z ex），客人问起时能认出来；不构成备货理由。
+    下一步：发售前再看一次官网卡表，MUR 和 SAR 公布后再判断这弹对评级卡询价的影响。
+  en: 暂译：Aura Seeker（官方英文商品名尚未公布）
+  image: /assets/img/hadou-seeker-pack.webp
+  image_alt: 扩展包「ハドウシーカー」（暂译：Aura Seeker）官方包装
+  image_width: 420
+  image_height: 780
+  image_credit: ポケモンカードゲーム公式
+  image_credit_url: https://www.pokemon-card.com/ex/m7/
+  tags: [官方, 新商品, 日语]
+  added: 2026-11-14
 - id: yt-special-deck-set-mega
   type: video
   title: 『【ポケカ新商品】スペシャルデッキセットだって～～～～！？【ポケモンカード】』

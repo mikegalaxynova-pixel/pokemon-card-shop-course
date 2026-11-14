@@ -25,7 +25,7 @@ sections:
       - { slug: what-is-psa, title: "PSA 是什么：评级卡生意的优势与风险", week: 1, status: published }
       - { slug: grades, title: "PSA 等级标准速查（10 / 9 及其他）", week: 1, status: published }
       - { slug: pop-report, title: "Pop Report（鉴定数量报告）怎么看", week: 1, status: published }
-      - { slug: cert-and-fake, title: "认证号核验与假壳识别", week: 1, status: planned, planned: 2026-11-15 }
+      - { slug: cert-and-fake, title: "认证号核验与假壳识别", week: 1, status: published }
       - { slug: grading-companies, title: "PSA、BGS、CGC 等评级公司对比", week: 1, status: planned, planned: 2026-11-16 }
       - { slug: submission, title: "PSA Japan 送评流程与费用", week: 1, status: planned, planned: 2026-11-18 }
   - id: shop

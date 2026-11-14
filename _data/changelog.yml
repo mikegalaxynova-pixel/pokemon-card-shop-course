@@ -1,6 +1,15 @@
 # 更新日志（唯一数据源）。每次每日更新在最上面新增一条。
 # kind 取值与导航 id 对应：daily | kb | recs | news | glossary | path ；type: new | updated
 - date: 2026-11-14
+  title: 第 2 期 · 新弹 MUR 未公布、PSA 转壳改价、认假壳
+  items:
+    - { kind: daily, type: new, title: "每日更新 第 2 期（11/14 晚）", url: /daily/2026-11-14-2/ }
+    - { kind: kb, type: new, title: "认证号核验与假壳识别", url: /kb/psa/cert-and-fake/ }
+    - { kind: path, type: updated, title: "学习路径：认证号核验与假壳识别已发布", url: /path/ }
+    - { kind: recs, type: new, title: "推荐：卡店老板谈 PSA 新方案、「ハドウシーカー」官方宣传片", url: /recommendations/ }
+    - { kind: news, type: new, title: "新闻归档：11/14 晚 3 条", url: /news/ }
+    - { kind: glossary, type: updated, title: "术语表：新增证明番号、限定符、转壳、最低等级等", url: /glossary/ }
+- date: 2026-11-14
   title: 为名称配上图片和英文
   items:
     - { kind: daily, type: updated, title: "第 1 期新闻和推荐配上官方商品图、卡图和英文名", url: /daily/2026-11-14/ }

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="270" viewBox="0 0 600 270" role="img" aria-labelledby="t d">
+<title id="t">PSA 高端档转壳收费新旧对比（示意图）</title>
+<desc id="d">以 PSA 美国官方举例的 Premium 1 为例：以前不论是否成功转壳都收 999 美元；11 月 11 日起先收 599 美元评估费，成功转壳再加 400 美元，合计仍是 999 美元，不成功只付 599 美元。日本官方页面对应档位为基本费 89,980 日元，达标时追加 60,000 日元。</desc>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC",sans-serif;fill:#1f2328}.muted{fill:#57606a}.w{fill:#fff}</style>
+<rect width="600" height="270" fill="#f6f8fa"/>
+<text x="24" y="28" font-size="16" font-weight="700">转壳（クロスオーバー）高端档：收费怎么变了</text>
+<text x="24" y="48" font-size="11" class="muted">Crossover pricing at Premium 1+ (from Nov 11, 2026). Study diagram; numbers from PSA official pages.</text>
+<rect x="24" y="64" width="264" height="120" rx="10" fill="#fff" stroke="#d0d7de"/>
+<text x="40" y="90" font-size="13" font-weight="700">以前（Premium 1，美国）</text>
+<rect x="40" y="104" width="232" height="30" rx="4" fill="#8c959f"/>
+<text x="156" y="124" font-size="13" text-anchor="middle" class="w">$999 不论成败</text>
+<text x="40" y="164" font-size="11" class="muted">转不过去也付全额</text>
+<rect x="312" y="64" width="264" height="120" rx="10" fill="#fff" stroke="#b3001b"/>
+<text x="328" y="90" font-size="13" font-weight="700">现在（11/11 起）</text>
+<rect x="328" y="104" width="138" height="30" rx="4" fill="#b3001b"/>
+<text x="397" y="124" font-size="12" text-anchor="middle" class="w">评估费 $599</text>
+<rect x="468" y="104" width="94" height="30" rx="4" fill="#f2b8bf"/>
+<text x="515" y="124" font-size="12" text-anchor="middle">成功 +$400</text>
+<text x="328" y="156" font-size="11" class="muted">成功：合计 $999（不变）</text>
+<text x="328" y="172" font-size="11" class="muted">没达到最低等级：只付 $599</text>
+<rect x="24" y="196" width="552" height="62" rx="8" fill="#fff" stroke="#d0d7de"/>
+<text x="38" y="216" font-size="12" font-weight="700">日本（PSA Japan 官方页）：基本料 89,980 日元/张，达标才追加</text>
+<text x="38" y="232" font-size="11" class="muted">例：申报价 400 万日元以下的档位，达标追加 60,000 日元。</text>
+<text x="38" y="248" font-size="11" class="muted">未达标：卡留在原公司的壳里退回。Express〜Premier 档维持原价。以官方页最新为准。</text>
+</svg>
