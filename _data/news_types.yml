@@ -1,0 +1,21 @@
+# 新闻类型（固定小集合）。每日新闻的 type 必须是下面的 id 之一。
+# 后续用 prev 字段表示，并额外显示「后续」标签，不单开一类主类型。
+# 视频是独立栏目，不要把视频条目写进新闻。
+- id: official
+  label: 官方
+  hint: 官网公告与新弹、新卡公布
+- id: lottery
+  label: 抽选/发售
+  hint: 抽选、发售日、渠道到货
+- id: market
+  label: 价格行情
+  hint: 成交、市场走势、定价变化
+- id: grading
+  label: PSA/评级
+  hint: PSA 及其他评级公司、费用、送评
+- id: community
+  label: 社区/X
+  hint: 社群、论坛、社交平台讨论
+- id: shop
+  label: 店铺动态
+  hint: 其他卡牌店的公开动态，不是本站的店铺案例正文

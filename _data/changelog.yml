@@ -1,5 +1,14 @@
 # 更新日志（唯一数据源）。每次每日更新在最上面新增一条。
-# kind 取值与导航 id 对应：daily | kb | recs | news | glossary | path ；type: new | updated
+# kind 取值与导航 id 对应：news | shops | videos | kb | tools（旧条目可能仍是 daily / recs / path / glossary，首页会归入「其他」）；type: new | updated
+- date: 2026-11-15
+  title: 改版：先看今天该做什么；新闻、案例、视频分开
+  items:
+    - { kind: news, type: updated, title: "第 3 期只保留抽选截止这一条真正的新进展", url: /daily/2026-11-15-2/ }
+    - { kind: shops, type: new, title: "店铺案例：カードラッシュ（Card Rush）", url: /shops/cardrush/ }
+    - { kind: videos, type: new, title: "视频：30 周年概念影像「What's FUTURISTIC?」", url: /videos/30th-futuristic/ }
+    - { kind: videos, type: updated, title: "往期视频已单独成篇，可按日期回看", url: /videos/ }
+    - { kind: kb, type: updated, title: "基础知识增加「先看这里」，学习路径并入本页", url: /kb/ }
+    - { kind: tools, type: new, title: "工具入口：收支平衡路线图、术语表、搜索", url: /tools/ }
 - date: 2026-11-15
   title: 第 3 期 · 抽选截止、カードラッシュ案例、高田马场与收支平衡
   items:

@@ -1,12 +1,38 @@
 {%- assign c = site.data.changelog | first -%}
 {%- if c -%}
-<section class="today" aria-labelledby="today-h">
+<section class="home-now" aria-labelledby="today-h">
   <h2 id="today-h">今日新增 <span class="muted">· {{ c.date | date: '%Y年%-m月%-d日' }}</span></h2>
-  <ul>
-  {%- for it in c.items -%}
-    <li><span class="badge {% if it.type == 'updated' %}upd{% else %}new{% endif %}" data-read-url="{{ it.url | relative_url }}">{% if it.type == 'updated' %}更新{% else %}NEW{% endif %}</span> <a href="{{ it.url | relative_url }}">{{ it.title }}</a></li>
-  {%- endfor -%}
-  </ul>
-  <p class="muted"><a href="{{ '/changelog/' | relative_url }}">查看全部更新日志 →</a></p>
+  {%- assign news_items = c.items | where: "kind", "news" -%}
+  {%- assign shop_items = c.items | where: "kind", "shops" -%}
+  {%- assign video_items = c.items | where: "kind", "videos" -%}
+  {%- assign other_items = "" -%}
+  {%- if news_items.size > 0 -%}
+  <div class="home-group">
+    <h3>{% include stream.html id="news" %}</h3>
+    <ul>{% for it in news_items %}<li><span class="badge {% if it.type == 'updated' %}upd{% else %}new{% endif %}" data-read-url="{{ it.url | relative_url }}">{% if it.type == 'updated' %}更新{% else %}NEW{% endif %}</span> <a href="{{ it.url | relative_url }}">{{ it.title }}</a></li>{% endfor %}</ul>
+  </div>
+  {%- endif -%}
+  {%- if shop_items.size > 0 -%}
+  <div class="home-group">
+    <h3>{% include stream.html id="shops" %}</h3>
+    <ul>{% for it in shop_items %}<li><span class="badge {% if it.type == 'updated' %}upd{% else %}new{% endif %}" data-read-url="{{ it.url | relative_url }}">{% if it.type == 'updated' %}更新{% else %}NEW{% endif %}</span> <a href="{{ it.url | relative_url }}">{{ it.title }}</a></li>{% endfor %}</ul>
+  </div>
+  {%- endif -%}
+  {%- if video_items.size > 0 -%}
+  <div class="home-group">
+    <h3>{% include stream.html id="videos" %}</h3>
+    <ul>{% for it in video_items %}<li><span class="badge {% if it.type == 'updated' %}upd{% else %}new{% endif %}" data-read-url="{{ it.url | relative_url }}">{% if it.type == 'updated' %}更新{% else %}NEW{% endif %}</span> <a href="{{ it.url | relative_url }}">{{ it.title }}</a></li>{% endfor %}</ul>
+  </div>
+  {%- endif -%}
+  {%- assign rest = c.items | reject: "kind", "news" -%}
+  {%- assign rest = rest | reject: "kind", "shops" -%}
+  {%- assign rest = rest | reject: "kind", "videos" -%}
+  {%- if rest.size > 0 -%}
+  <div class="home-group">
+    <h3 class="muted">其他</h3>
+    <ul>{% for it in rest %}<li><span class="badge {% if it.type == 'updated' %}upd{% else %}new{% endif %}" data-read-url="{{ it.url | relative_url }}">{% if it.type == 'updated' %}更新{% else %}NEW{% endif %}</span> <a href="{{ it.url | relative_url }}">{{ it.title }}</a></li>{% endfor %}</ul>
+  </div>
+  {%- endif -%}
+  <p class="muted"><a href="{{ '/changelog/' | relative_url }}">全部更新日志 →</a></p>
 </section>
 {%- endif -%}

@@ -5,6 +5,10 @@ date: 2026-11-14
 last_updated: 2026-11-15
 description: 认证编号（証明番号 / cert number）在哪、怎样在官网逐项核对，为什么「查得到」还不够，以及评级壳和标签的六个检查点、店里的入库与收购规矩。
 tags: [PSA, 认证号, 防伪, 收购, 入库]
+tldr: |
+  **结论**：假壳和假标存在。核验认证号、比对壳和标签，是进货底线。
+  **你该做什么**：每张准备上架的 PSA 都先在官网查认证号，对不上的先隔离。
+
 ---
 
 > 本篇按 PSA 官方说明整理：[証明番号確認](https://www.psacard.com/ja-JP/cert)、[PSA Security: A Buyer's Guide](https://www.psacard.com/services/psasecurityabuyersguide)、[2017 年新标签说明](https://www.psacard.com/articles/articleview/9234/psa-labels-get-new-look-new-technology)。阅读约 15 分钟。法律部分以主管机关最新说明为准。

@@ -5,6 +5,10 @@ date: 2026-11-14
 last_updated: 2026-11-14
 description: Gem Mint 10 与 Mint 9 的官方标准要点、居中公差，以及 10 分和 9 分在价格上的差别逻辑。
 tags: [速查, PSA, 等级, 居中]
+tldr: |
+  **结论**：PSA 1〜10 是评级分数，分数影响定价区间，但不是你必须用的货架价。
+  **你该做什么**：给每张评级卡记下分数和认证号，再对照近期成交标价。
+
 ---
 
 > 以 PSA 官方 [Grading Standards](https://www.psacard.com/gradingstandards) 为准。本页先整理店里最常见的 10 分和 9 分；其余等级会在后续更新中补全。

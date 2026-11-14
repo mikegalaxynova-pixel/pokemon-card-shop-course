@@ -6,7 +6,7 @@
 {%- assign doc = site.kb | where: "url", a_url | first -%}
 <li><a href="{{ a_url | relative_url }}">{{ a.title }}</a> {% if doc %}{% include badge.html date=doc.date updated=doc.last_updated url=a_url %}{% endif %}</li>
 {%- else -%}
-<li><span class="muted">{{ a.title }}</span> <span class="badge soon">即将更新{% if a.planned %} · {{ a.planned | date: '%-m/%-d' }}{% endif %}</span></li>
+<li><span class="muted">{{ a.title }}</span> {% if a.recommended %}<span class="status rec">建议优先</span>{% else %}<span class="badge soon">按需撰写</span>{% endif %}</li>
 {%- endif -%}
 {%- endunless -%}
 {%- endfor -%}

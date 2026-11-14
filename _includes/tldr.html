@@ -1,0 +1,12 @@
+{%- assign _t = include.text | default: page.tldr -%}
+{%- if _t and _t != blank -%}
+<aside class="tldr">
+  <p class="tldr-label">先看这里</p>
+  <div class="tldr-body">{{ _t | markdownify }}</div>
+</aside>
+{%- elsif page.description -%}
+<aside class="tldr">
+  <p class="tldr-label">先看这里</p>
+  <p>{{ page.description }}</p>
+</aside>
+{%- endif -%}

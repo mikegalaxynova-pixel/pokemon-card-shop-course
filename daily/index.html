@@ -1,20 +1,24 @@
 ---
 layout: default
-title: 每日更新
-nav: daily
+title: 新闻期次
+nav: news
 permalink: /daily/
-description: 每天 20:00（日本时间）一期：今日新闻、视频/播客推荐、市场动态、今日小课与行动建议。
+description: 按期阅读每日新闻。带类型筛选的归档在新闻页。
+tldr: |
+  **结论**：这是新闻的期次列表。日常阅读请走新闻页的类型筛选。
+  **你该做什么**：要按日期读某一期，从这里点进去。
 ---
 <div class="prose">
-  <h1>每日更新</h1>
-  <p class="lead">每天 20:00（日本时间）一期。也可以用 <a href="{{ '/feed.xml' | relative_url }}">RSS</a> 订阅。</p>
+  <h1>新闻期次</h1>
 </div>
+{% include tldr.html %}
+<p><a href="{{ '/news/' | relative_url }}">带类型筛选的新闻归档 →</a></p>
 <ul class="cards-list">
 {% for p in site.posts %}
   <li class="card">
-    <p class="kind"><time datetime="{{ p.date | date: '%Y-%m-%d' }}">{{ p.date | date: '%Y年%-m月%-d日' }}</time> · 第 {{ p.issue }} 期 {% include badge.html date=p.date updated=p.last_updated url=p.url %}</p>
+    <p class="kind">{% include stream.html id="news" %} <time datetime="{{ p.date | date: '%Y-%m-%d' }}">{{ p.date | date: '%Y年%-m月%-d日' }}</time>{% if p.issue %} · 第 {{ p.issue }} 期{% endif %} {% include badge.html date=p.date updated=p.last_updated url=p.url %}</p>
     <h3><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h3>
-    <p>{{ p.summary }}</p>
+    <p>{{ p.tldr | default: p.summary | markdownify | strip_html | truncate: 120 }}</p>
   </li>
 {% endfor %}
 </ul>

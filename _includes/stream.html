@@ -1,0 +1,9 @@
+{%- case include.id -%}
+{%- when "news" -%}{%- assign _l = "新闻" -%}
+{%- when "shops" -%}{%- assign _l = "店铺案例" -%}
+{%- when "videos" -%}{%- assign _l = "视频" -%}
+{%- when "kb" -%}{%- assign _l = "基础知识" -%}
+{%- when "tools" -%}{%- assign _l = "工具" -%}
+{%- else -%}{%- assign _l = include.id -%}
+{%- endcase -%}
+<span class="stream stream-{{ include.id }}">{{ _l }}</span>

@@ -1,0 +1,10 @@
+{%- assign s = site.shops | where: "slug", include.slug | first -%}
+{%- if s -%}
+<article class="card teaser">
+  <p class="kicker">{% include stream.html id="shops" %} 本期案例 {% include badge.html date=s.date updated=s.last_updated url=s.url %}</p>
+  <h3><a href="{{ s.url | relative_url }}">{{ s.title }}</a></h3>
+  {% if s.name_en %}<p class="enname">{{ s.name_ja }}（{{ s.name_en }}）</p>{% endif %}
+  <p>{{ s.description }}</p>
+  <p><a href="{{ s.url | relative_url }}">阅读完整案例 →</a></p>
+</article>
+{%- endif -%}

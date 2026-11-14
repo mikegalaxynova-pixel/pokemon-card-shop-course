@@ -6,6 +6,10 @@ date: 2026-11-14
 last_updated: 2026-11-15
 description: 宝可梦卡牌店常用日文 / 英文 / 中文术语对照：卡面、商品、评级、开店法规。
 lead: 店里接待、查价、办手续时最常见的词。新词随每日更新追加。日文专名后都附英文；没有官方英文商品名的会标明暂译。
+tldr: |
+  **结论**：这是接待和查价时的对照表，不是教程。
+  **你该做什么**：遇到日文专名先在这里对英文和中文，再回到对应文章看用法。
+
 ---
 
 {% include figure.html src="/assets/img/jp-front-back.webp" alt="日文版卡片正面与背面示例：正面为ミミロル（Buneary），背面为现行日文版金框卡背" width="331" height="243" credit="ポケモンカードゲーム公式「あそびかた」" credit_url="https://www.pokemon-card.com/howtoplay/" %}

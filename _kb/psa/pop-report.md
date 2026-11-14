@@ -5,6 +5,10 @@ date: 2026-11-14
 last_updated: 2026-11-14
 description: Pop 数字代表什么、不代表什么，以及它在进货和定价中的用法。
 tags: [PSA, Pop, 定价]
+tldr: |
+  **结论**：Pop Report 只说明某分数「评了多少张」，不能单独决定价格。
+  **你该做什么**：查价时把 Pop 当作稀缺参考，仍以近期成交为主。
+
 ---
 
 ## Pop Report 是什么

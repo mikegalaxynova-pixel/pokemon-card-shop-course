@@ -1,16 +1,20 @@
 ---
 layout: default
-title: 推荐
-nav: recs
+title: 查价工具与网站
+nav: tools
 permalink: /recommendations/
-description: 宝可梦卡牌店学习推荐库：视频、播客、X 账号、查价与 PSA 工具、官方网站，持续累积。
+description: SNKRDUNK、PriceCharting、PSA 与官网等查价和核验工具。视频推荐已移到视频栏目。
+tldr: |
+  **结论**：这里只留工具和网站。视频在「视频」栏目，避免两处各推荐一遍。
+  **你该做什么**：标价先用 SNKRDUNK 查近期成交，核验壳用 PSA 认证号查询。
 ---
 <div class="prose">
-  <h1>推荐库</h1>
-  <p class="lead">视频、播客、账号、工具和网站，每天随每日更新累积。</p>
-  <p>{% for t in site.data.rec_types %}<a class="tag" href="#{{ t[0] }}">{{ t[1] }}</a>{% endfor %}</p>
+  <h1>查价工具与网站</h1>
 </div>
+{% include tldr.html %}
+<p><a href="{{ '/videos/' | relative_url }}">前往视频推荐 →</a></p>
 {% for t in site.data.rec_types %}
+{% unless t[0] == "video" or t[0] == "podcast" %}
 {% assign items = site.data.recommendations | where: "type", t[0] %}
 {% if items.size > 0 %}
 <section aria-labelledby="{{ t[0] }}">
@@ -18,4 +22,5 @@ description: 宝可梦卡牌店学习推荐库：视频、播客、X 账号、�
   <ul class="cards-list">{% for r in items %}{% include rec.html r=r %}{% endfor %}</ul>
 </section>
 {% endif %}
+{% endunless %}
 {% endfor %}

@@ -1,0 +1,27 @@
+---
+layout: default
+nav: shops
+---
+<nav class="crumbs" aria-label="面包屑"><a href="{{ '/shops/' | relative_url }}">店铺案例</a></nav>
+<article class="prose">
+  <p class="kicker">{% include stream.html id="shops" %}</p>
+  <h1>{{ page.title }} {% include badge.html date=page.date updated=page.last_updated url=page.url %}</h1>
+  <p class="meta">{% if page.name_ja %}{{ page.name_ja }}{% if page.name_en %}（{{ page.name_en }}）{% endif %} · {% endif %}<time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%Y年%-m月%-d日' }}</time>{% if page.area %} · {{ page.area }}{% endif %}</p>
+  {% include tldr.html %}
+  {% include media.html item=page %}
+  {{ content }}
+  {% if page.borrow %}
+  <h2>值得借鉴的地方</h2>
+  <div class="mentor-body">{{ page.borrow | markdownify }}</div>
+  {% endif %}
+  {% if page.next_steps %}
+  <h2>你可以怎么推进</h2>
+  <div class="mentor-body">{{ page.next_steps | markdownify }}</div>
+  {% endif %}
+  {% if page.source %}
+  <h2>来源</h2>
+  <p class="src">{% if page.source_url %}<a href="{{ page.source_url }}" rel="noopener">{{ page.source }}</a>{% else %}{{ page.source }}{% endif %}</p>
+  {% endif %}
+  {% include comment.html text=page.comment %}
+  {% if page.issue %}<p class="muted">同期新闻：<a href="{{ page.issue | relative_url }}">第 {{ page.issue_no | default: "" }} 期</a></p>{% endif %}
+</article>

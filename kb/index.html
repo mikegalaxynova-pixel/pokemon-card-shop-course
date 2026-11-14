@@ -3,21 +3,31 @@ layout: default
 title: 基础知识
 nav: kb
 permalink: /kb/
-description: 系统的宝可梦卡牌店基础知识库：卡牌入门、PSA 与评级、开店实务、定价与市场、社群与宣传、收购、新卡与周边、店铺运营。
+description: 可反复查阅的参考文章。买卖交易和店铺运营类按需撰写，每日更新会推荐下一篇。
+tldr: |
+  **结论**：基础知识不再每晚自动写。先读已发布的文章，再按「建议优先」点名下一篇。
+  **你该做什么**：许可后的买货先看古物台账；算回本去工具里的路线图。不要在这里找申请步骤教程。
 ---
 <div class="prose">
   <h1>基础知识</h1>
-  <p class="lead">可以反复查阅的长期文章，按主题分组。标「即将更新」的文章会按<a href="{{ '/path/' | relative_url }}">学习路径</a>逐日上线。</p>
 </div>
+{% include tldr.html %}
+
+<section aria-labelledby="path">
+  <h2 id="path">建议优先</h2>
+  <p class="muted">下面这些题目对买卖和回本更直接，点名后再写。</p>
+  <ul class="list">
+  {% for s in site.data.kb.sections %}{% for a in s.articles %}{% if a.recommended and a.status != "published" %}
+    <li><span class="status rec">建议优先</span> {{ a.title }} <span class="muted">· {{ s.title }}</span></li>
+  {% endif %}{% endfor %}{% endfor %}
+  </ul>
+</section>
+
 {% for s in site.data.kb.sections %}
 {% assign pub = s.articles | where: "status", "published" %}
 <section aria-labelledby="{{ s.id }}">
-  <h2 id="{{ s.id }}">{{ s.title }} <span class="muted">（{{ pub.size }} / {{ s.articles.size }}）</span></h2>
+  <h2 id="{{ s.id }}">{{ s.title }} <span class="muted">（已发布 {{ pub.size }} / {{ s.articles.size }}）</span></h2>
   <p class="muted">{{ s.desc }}</p>
   {% include kb-list.html sec=s %}
 </section>
 {% endfor %}
-<section aria-labelledby="g">
-  <h2 id="g">术语表</h2>
-  <p><a href="{{ '/glossary/' | relative_url }}">日文 / 英文 / 中文术语对照 →</a></p>
-</section>

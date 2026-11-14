@@ -1,0 +1,7 @@
+{%- assign nt = site.data.news_types | where: "id", include.id | first -%}
+{%- if nt -%}
+<span class="ntype ntype-{{ nt.id }}">{{ nt.label }}</span>
+{%- endif -%}
+{%- if include.prev -%}
+<span class="ntype ntype-followup">后续</span>
+{%- endif -%}

@@ -3,8 +3,13 @@ layout: default
 title: 更新日志
 permalink: /changelog/
 description: 宝可梦卡牌店实战课每天新增和更新的内容记录。
+tldr: |
+  **结论**：这里按日期记录新增和更新，首页「今日新增」只显示最新一天。
+  **你该做什么**：要核对某天改了什么，从这里点进去。
+
 ---
-<div class="prose"><h1>更新日志</h1><p class="lead">每天新增和更新了什么。</p></div>
+<div class="prose">{% include tldr.html %}
+  <h1>更新日志</h1><p class="lead">每天新增和更新了什么。</p></div>
 {% for c in site.data.changelog %}
 <section aria-labelledby="c-{{ c.date | date: '%Y%m%d' }}">
   <h2 id="c-{{ c.date | date: '%Y%m%d' }}">{{ c.date | date: '%Y年%-m月%-d日' }} · {{ c.title }}</h2>

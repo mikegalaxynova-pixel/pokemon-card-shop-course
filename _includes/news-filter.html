@@ -1,0 +1,36 @@
+{%- if include.source == "all" -%}
+  {%- assign _items = "" -%}
+  {%- assign _types_str = "|" -%}
+  {%- assign _has_prev = false -%}
+  {%- for p in site.posts -%}{%- for n in p.news -%}
+    {%- assign _tid = n.type | append: "|" -%}
+    {%- unless _types_str contains _tid -%}{%- assign _types_str = _types_str | append: n.type | append: "|" -%}{%- endunless -%}
+    {%- if n.prev -%}{%- assign _has_prev = true -%}{%- endif -%}
+  {%- endfor -%}{%- endfor -%}
+{%- else -%}
+  {%- assign _items = include.items -%}
+  {%- assign _types_str = "|" -%}
+  {%- assign _has_prev = false -%}
+  {%- for n in include.items -%}
+    {%- assign _tid = n.type | append: "|" -%}
+    {%- unless _types_str contains _tid -%}{%- assign _types_str = _types_str | append: n.type | append: "|" -%}{%- endunless -%}
+    {%- if n.prev -%}{%- assign _has_prev = true -%}{%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+{%- assign _parts = _types_str | split: "|" -%}
+{%- assign _count = 0 -%}
+{%- for tid in _parts -%}{%- if tid != "" -%}{%- assign _count = _count | plus: 1 -%}{%- endif -%}{%- endfor -%}
+{%- if _count > 1 or _has_prev -%}
+<div class="nfilter" role="group" aria-label="按新闻类型筛选">
+  <button type="button" class="nfilter-btn is-on" data-filter="all" aria-pressed="true">全部</button>
+  {%- for nt in site.data.news_types -%}
+    {%- assign _needle = nt.id | append: "|" -%}
+    {%- if _types_str contains _needle -%}
+  <button type="button" class="nfilter-btn" data-filter="{{ nt.id }}" aria-pressed="false"><span class="ntype ntype-{{ nt.id }}">{{ nt.label }}</span></button>
+    {%- endif -%}
+  {%- endfor -%}
+  {%- if _has_prev -%}
+  <button type="button" class="nfilter-btn" data-filter="followup" aria-pressed="false"><span class="ntype ntype-followup">后续</span></button>
+  {%- endif -%}
+</div>
+{%- endif -%}

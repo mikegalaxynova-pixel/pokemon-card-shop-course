@@ -1,55 +1,31 @@
 ---
 layout: default
-title: 宝可梦卡牌店实战课
+title: 今日
 nav: home
-description: 面向准备在东京高田马场开 PSA 评级卡实体店的新手：每日更新新闻、视频推荐与店铺案例，并围绕如何更快走到收支平衡给建议。
+description: 今天更新了什么、下一步该做什么。面向准备在东京高田马场开 PSA 评级卡实体店的新手。
+tldr: |
+  **结论**：先看下面「今日新增」，再看「本周重点」。目标是尽快让月毛利盖过月固定成本。
+  **你该做什么**：有新新闻就看类型标签；有新案例或视频就点进去。然后用收支平衡路线图填入你自己的租金和人工。
 ---
 <section class="prose">
-  <h1>宝可梦卡牌店实战课</h1>
-  <p class="lead">写给零基础、准备在东京高田马场（高田馬場 / Takadanobaba）开实体宝可梦卡牌店的新手：以 PSA 评级卡为主，之后扩展到收购、新卡和周边。每天 20:00（日本时间）更新新闻、视频推荐和店铺案例，并讨论怎样更快走到收支平衡。</p>
+  <h1>今日</h1>
 </section>
 
+{% include tldr.html %}
 {% include today.html %}
 
-<section aria-labelledby="latest-h">
-  <h2 id="latest-h">最新每日更新</h2>
-  <ul class="cards-list">
-  {% for p in site.posts limit: 3 %}
-    <li class="card">
-      <p class="kind"><time datetime="{{ p.date | date: '%Y-%m-%d' }}">{{ p.date | date: '%-m月%-d日' }}</time> · 第 {{ p.issue }} 期 {% include badge.html date=p.date updated=p.last_updated url=p.url %}</p>
-      <h3><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h3>
-      <p>{{ p.summary }}</p>
-    </li>
-  {% endfor %}
-  </ul>
-  <p><a href="{{ '/daily/' | relative_url }}">全部每日更新 →</a></p>
-</section>
-
-<section aria-labelledby="kb-h">
-  <h2 id="kb-h">基础知识</h2>
-  <ul class="grid">
-  {% for s in site.data.kb.sections %}
-    {% assign pub = s.articles | where: "status", "published" %}
-    <li class="card">
-      <h3><a href="{{ '/kb/' | relative_url }}#{{ s.id }}">{{ s.title }}</a></h3>
-      <p class="muted">{{ s.desc }}</p>
-      <p class="src">已发布 {{ pub.size }} / {{ s.articles.size }} 篇</p>
-    </li>
-  {% endfor %}
-    <li class="card">
-      <h3><a href="{{ '/glossary/' | relative_url }}">术语表</a></h3>
-      <p class="muted">日文 / 英文 / 中文对照，店里接待和查价常用词。</p>
-    </li>
-  </ul>
-</section>
-
-<section class="prose" aria-labelledby="how-h">
-  <h2 id="how-h">怎么用这个网站</h2>
+{% assign latest = site.posts | first %}
+{% if latest and latest.breakeven %}
+<section class="be-box action-box" aria-labelledby="next-h">
+  <p class="kicker">面向收支平衡</p>
+  <h2 id="next-h">本周重点 / 下一步行动</h2>
+  {% if latest.breakeven.intro %}<div class="mentor-body">{{ latest.breakeven.intro | markdownify }}</div>{% endif %}
   <ol>
-    <li><strong>每天看一期<a href="{{ '/daily/' | relative_url }}">每日更新</a></strong>：今日新闻（遇新弹会做详细研究）、视频推荐、一家店铺案例，文末有「推荐下一篇基础文章」和「本期对收支平衡的启示」。买卖交易和店铺运营放在基础知识里，点名后再写。</li>
-    <li><strong>先用<a href="{{ '/breakeven/' | relative_url }}">收支平衡路线图</a></strong>填入你的租金、人工和毛利率假设，算出回本需要多少月销售额。所有数字都是可改假设，不是行情事实。</li>
-    <li><strong>把<a href="{{ '/kb/' | relative_url }}">基础知识</a>当速查手册</strong>，按<a href="{{ '/path/' | relative_url }}">学习路径</a>里「建议优先」的买卖与运营题目点名撰写；基础知识不再每晚自动更新。</li>
-    <li>已拆过的店在<a href="{{ '/shops/' | relative_url }}">店铺案例</a>里可以回看。</li>
-    <li>带 <span class="badge new">NEW</span> / <span class="badge upd">更新</span> 标记的是近 2 天的内容，打开过的会变成灰色。</li>
+  {% for item in latest.breakeven.items limit: 3 %}
+    <li>{% if item.priority %}<span class="priority">优先 {{ item.priority }}.</span>{% endif %}{{ item.action }}</li>
+  {% endfor %}
   </ol>
+  <p><a class="cta" href="{{ '/breakeven/' | relative_url }}">打开收支平衡路线图</a></p>
+  <p class="src">依据<a href="{{ latest.url | relative_url }}">第 {{ latest.issue }} 期新闻</a>整理。公式里的数字都是你自己的假设，不是行情事实。</p>
 </section>
+{% endif %}

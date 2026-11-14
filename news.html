@@ -1,24 +1,33 @@
 ---
 layout: default
-title: 新闻归档
+title: 新闻
 nav: news
 permalink: /news/
-description: 日本宝可梦卡牌新闻归档：新商品、新弹、抽选、PSA 与市场动态，每条附来源。
+description: 近 1〜2 天的卡牌新闻归档，按官方、抽选/发售、价格行情、PSA/评级等类型筛选。
+tldr: |
+  **结论**：这里是新闻流。每条都有类型标签和来源；重复报道不会再出现，除非有真正的新进展。
+  **你该做什么**：用下面的类型筛选，先看和进货、定价、评级有关的条目，再决定要不要点进该期阅读点评。
 ---
 <div class="prose">
-  <h1>新闻归档</h1>
-  <p class="lead">每日更新里的新闻按日期汇总，每条附来源链接。</p>
+  <h1>新闻</h1>
 </div>
+{% include tldr.html %}
+<p class="muted">按期列表见<a href="{{ '/daily/' | relative_url }}">新闻期次</a>。没有实质性新消息的日子，不会为了填版面而发新闻。</p>
+<div class="news-filter-root">
+{% include news-filter.html source="all" %}
 {% for p in site.posts %}{% if p.news %}
 <section aria-labelledby="n-{{ p.date | date: '%Y%m%d%H%M' }}">
-  <h2 id="n-{{ p.date | date: '%Y%m%d%H%M' }}"><a href="{{ p.url | relative_url }}#news">{{ p.date | date: '%Y年%-m月%-d日' }}</a> {% include badge.html date=p.date url=p.url %}</h2>
+  <h2 id="n-{{ p.date | date: '%Y%m%d%H%M' }}"><a href="{{ p.url | relative_url }}#news">{{ p.date | date: '%Y年%-m月%-d日' }}{% if p.issue %} · 第 {{ p.issue }} 期{% endif %}</a> {% include badge.html date=p.date updated=p.last_updated url=p.url %}</h2>
   <ul class="news">
   {% for n in p.news %}
-    <li><strong>{{ n.title }}</strong>
-    {% include media.html item=n %}
-    <span class="src">来源：<a href="{{ n.url }}" rel="noopener">{{ n.source }}</a>{% for t in n.tags %} <span class="tag">{{ t }}</span>{% endfor %}</span>
-    {% include comment.html text=n.comment %}</li>
+    <li data-news-type="{{ n.type }}"{% if n.prev %} data-news-followup="1"{% endif %}>
+      <div class="news-title">{% include news-type.html id=n.type prev=n.prev %}<strong>{{ n.title }}</strong></div>
+      {% include media.html item=n %}
+      <span class="src">来源：<a href="{{ n.url }}" rel="noopener">{{ n.source }}</a>{% if n.prev %} · <a href="{{ n.prev | relative_url }}">见此前报道</a>{% endif %}</span>
+      {% include comment.html text=n.comment %}
+    </li>
   {% endfor %}
   </ul>
 </section>
 {% endif %}{% endfor %}
+</div>

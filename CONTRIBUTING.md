@@ -2,20 +2,48 @@
 
 所有内容都是 Markdown / YAML，推送到 `main` 后 GitHub Pages 自动构建，约 1〜2 分钟上线。**不需要本地构建。** 全站中文，日文术语用括号标注（例：古物商许可（古物商許可））。计划开店地点是东京高田马场（高田馬場 / Takadanobaba，新宿区），客群偏向学生和年轻人；不要再写西新宿，也不要编造租金或人流量。
 
-## 0. 每日更新清单（每天 20:00 JST）
+## 网站结构（长期有效）
 
-每次运行按顺序做完下面步骤，然后**一次提交、一次推送**：
+面向忙碌的新手店主，手机优先。每一页、每一篇文章开头都必须有 2〜3 行「先看这里」（front matter 字段 `tldr`）：**一句话结论 + 你该做什么**，然后再写细节。不要在多个页面重复同一段长介绍。
 
-1. 新建当天的每日更新 `_posts/YYYY-MM-DD-daily.md`（第 1 节）。同一天若已有一期，用 `-2` 文件名和 permalink，避免占掉晚间例行那篇。
-2. **不要自动撰写基础知识文章。** 在当日文末用 `next_kb` 推荐 1〜2 个题目（买卖交易和店铺运营优先）。只有读者点名后，才新增或加深对应文章，并更新 `_data/kb.yml`。
-3. 把当天推荐的视频/播客/账号/工具追加到 `_data/recommendations.yml`（第 4 节）。
-4. 若有新的店铺案例，把该店写入 `_data/shops.yml`，避免以后重复。
-5. 在 `_data/changelog.yml` **最上面**加一条当天记录（第 5 节）。
-6. 如有新术语，追加到 `glossary.md` 对应表格，并把它的 `last_updated` 改成今天。
+主导航只有六项：
 
-提交信息格式：`daily: YYYY-MM-DD 第N期`；若读者点名后写了基础知识，再补上文章标题。
+| 导航 | 路径 | 写什么 |
+| --- | --- | --- |
+| 今日 | `/` | 单屏回答「今天更新了什么、下一步该做什么」：`changelog` 最上面一条按 新闻 / 店铺案例 / 视频 分组；再加一块「本周重点 / 下一步行动」（取最新新闻期的 `breakeven`）和通往 `/breakeven/` 的入口。不要写长篇「怎么用这个网站」。 |
+| 新闻 | `/news/` | 全部新闻的类型筛选归档。期次列表在 `/daily/`（不进主导航）。单期 permalink 默认 `/daily/YYYY-MM-DD/`。 |
+| 店铺案例 | `/shops/` | 一家店一篇，文件 `_shops/<slug>.md` → `/shops/<slug>/`。 |
+| 视频 | `/videos/` | 一条视频一篇，文件 `_videos/<slug>.md` → `/videos/<slug>/`。不要把视频再写进新闻条目。 |
+| 基础知识 | `/kb/` | 可反复查阅的参考。「建议优先」在 `/kb/#path`。旧地址 `/path/` 只保留跳转。 |
+| 工具 | `/tools/` | 收支平衡路线图、术语表、搜索、更新日志、查价工具入口。这些页不进主导航，放页脚和工具页即可。 |
 
-推送后检查：`gh api repos/mikegalaxynova-pixel/pokemon-card-shop-course/pages/builds/latest --jq .status` 为 `built`，并用 curl 确认当天页面返回 200。
+新闻、店铺案例、视频是三条独立更新流，可以同一天一起发，也可以只发其中一条。
+
+## 0. 每日更新清单（每天约 20:00 JST，可提前到 19:45 开始）
+
+**质量优先于档期。** 没有实质性新消息，就不要发新闻期次。有合适的新店或新视频，可以单独发布。短篇完全可以，不要为了凑版面重复或注水。
+
+每次运行按顺序做完该做的步骤，然后**一次提交、一次推送**：
+
+1. **先查重**。翻一遍 `_posts`（含各期 `news` 的 `topic` / 标题）、`_shops`、`_videos`、`_data/changelog.yml`。已经报道过的事情不要再写一遍。
+2. **新闻**：只有当天确有近 1〜2 天、有来源、对开店或买卖有意义的新消息，才新建 `_posts/YYYY-MM-DD-daily.md`。同一天若已有一期，用 `-2` 文件名和 permalink，避免占掉晚间例行那篇。没有新闻就跳过这一步。
+3. **店铺案例**：只有找到尚未写过、且有可靠来源的店，才新增 `_shops/<slug>.md`，并在 `_data/shops.yml` 记一笔。不要为了「每天一家」硬写。若当天有新闻期，在该期 front matter 里写 `shop: <slug>`，布局会显示短卡片，不要把全文再贴进新闻。
+4. **视频**：只有尚未推荐过、并且打开过的真实链接，才新增 `_videos/<slug>.md`。不要再往 `_data/recommendations.yml` 追加 `type: video` / `podcast`。若当天有新闻期，写 `videos: [<slug>, ...]`。
+5. **不要自动撰写基础知识文章。** 若当天有新闻期，用 `next_kb` 推荐 1〜2 个题目（买卖交易和店铺运营优先）。只有读者点名后，才新增或加深对应文章，并更新 `_data/kb.yml`。
+6. 查价工具或网站有新增时，才追加到 `_data/recommendations.yml`。
+7. 在 `_data/changelog.yml` **最上面**加一条当天记录。`kind` 必须能让首页分组：有新闻用 `news`，有案例用 `shops`，有视频用 `videos`，基础知识用 `kb`，工具页用 `tools`。
+8. 如有新术语，追加到 `glossary.md` 对应表格，并把它的 `last_updated` 改成今天。
+
+提交信息格式：有新闻时 `daily: YYYY-MM-DD 第N期`；若只发了案例或视频，写 `shops:` 或 `videos:` 加标题。读者点名后写了基础知识，再补上文章标题。
+
+推送后检查：`gh api repos/mikegalaxynova-pixel/pokemon-card-shop-course/pages/builds/latest --jq .status` 为 `built`，用 curl 确认相关页面返回 200，并抽查站内链接没有 404。
+
+### 不重复（强制）
+
+- 不要重报已经写过的新闻。只有出现**真正的新进展**时才再写，而且只写增量，用 `prev` 链回此前报道，类型标签外会多一枚「后续」。
+- 同一 `topic`（如 `hadou-seeker-reveal`、`lottery-hadou-seeker`）没有新事实就不要再出现。
+- 「官网今天还是没有公布 XX」这类「没有消息的消息」，如果上一期已经说过，直接删掉。
+- 店铺和视频各只写一次。同一家店、同一条视频不要再开新篇。
 
 ### 内容规则
 
@@ -41,7 +69,7 @@
 
 #### 新弹 / 新卡包新闻（详细研究）
 
-每日更新里如果出现新弹或新卡包（拡張パック、高档包、子集包、特典套装等），不要只写发售日和定价，要做一篇**详细研究**，至少包括：
+每日新闻里如果出现新弹或新卡包（拡張パック、高档包、子集包、特典套装等），不要只写发售日和定价，要做一篇**详细研究**，至少包括：
 
 1. **这弹是什么**：官方名称、系列、发售日、包装规格（一包几张、希望零售价、箱规如有官方或正规店依据再写）。
 2. **追捧卡（chase）**：已知的高稀有或高关注卡及稀有度（SAR、UR、MUR 等），附官网或可靠来源。
@@ -53,7 +81,7 @@
 
 #### 导师点评（必须围绕收支平衡）
 
-每条新闻、每条视频或播客推荐，以及「店铺案例」，都必须写「导师点评」（字段名 `comment`）。「收购与买卖交易」「店铺运营」是基础知识题目，只有读者点名后才写成文章，不要再写成每日固定栏目。布局会把它渲染成单独的点评框，并标明「个人判断，与上方事实分开」。
+每条新闻、每条视频，以及每一篇店铺案例，都必须写「导师点评」（字段名 `comment`）。「收购与买卖交易」「店铺运营」是基础知识题目，只有读者点名后才写成文章，不要再写成每日固定栏目。布局会把它渲染成单独的点评框，并标明「个人判断，与上方事实分开」。
 
 点评不要复述上方事实，要做判断，并固定覆盖：
 
@@ -62,11 +90,13 @@
 3. **明确建议**：建议做 / 建议先不做 / 建议小范围先试。标出优先级。
 4. **跟收支平衡的关系**：这件事是加快回本、拖慢回本，还是现在还看不出来。
 
-写法要求：事实只写在新闻的 `summary`、推荐的 `note` 或各节 `body` 里；点评里可以给判断和建议，但不要冒充新的事实或价格。需要算术时，把公式和假设写清楚，例如「若月固定成本为 F、毛利率为 m，回本销售额为 F÷m（F 和 m 是你的假设）」。没有依据就写「现在还看不出」「不要提前下结论」。新闻的 `comment` 写在每日更新该条新闻下；视频/播客的 `comment` 写在 `_data/recommendations.yml` 对应条目。工具、网站、账号也建议写点评。提到本店时，用高田马场店、主卖 PSA 的语境，不要再用西新宿。
+写法要求：事实只写在新闻的 `summary`、视频的 `note` 或案例正文里；点评里可以给判断和建议，但不要冒充新的事实或价格。需要算术时，把公式和假设写清楚，例如「若月固定成本为 F、毛利率为 m，回本销售额为 F÷m（F 和 m 是你的假设）」。没有依据就写「现在还看不出」「不要提前下结论」。新闻的 `comment` 写在该条新闻下；视频的 `comment` 写在 `_videos/<slug>.md`；案例的 `comment` 写在 `_shops/<slug>.md`。工具和网站也建议写点评。提到本店时，用高田马场店、主卖 PSA 的语境，不要再用西新宿。
 
-#### 本期对收支平衡的启示（每期必有）
+#### 本期对收支平衡的启示
 
-每篇每日更新文末必须有 `breakeven` 区块「本期对收支平衡的启示」。把当天新闻、推荐视频和店铺案例收成 **1〜3 条按优先级排列的行动**，能做粗算就做粗算。所有数字要么有来源，要么明确标成「假设」并给出可改公式。禁止把编造的租金、客流、毛利率写成事实。可链到 [收支平衡路线图](https://mikegalaxynova-pixel.github.io/pokemon-card-shop-course/breakeven/) 让读者代入自己的成本。
+只要写了新闻期次，文末必须有 `breakeven` 区块「本期对收支平衡的启示」。把当天新闻、视频和店铺案例收成 **1〜3 条按优先级排列的行动**，能做粗算就做粗算。所有数字要么有来源，要么明确标成「假设」并给出可改公式。禁止把编造的租金、客流、毛利率写成事实。可链到 [收支平衡路线图](https://mikegalaxynova-pixel.github.io/pokemon-card-shop-course/breakeven/) 让读者代入自己的成本。首页「本周重点」会引用最新一期的这个区块。
+
+若当天只发了案例或视频、没有新闻期，也要在该篇文章的点评和「你可以怎么推进」里落到回本行动，不必另造一篇空的新闻期。
 
 #### 英文名（商品、卡、宝可梦名必须有）
 
@@ -76,23 +106,25 @@
 - 日文商品还没有官方英文版时，用直译，并标明「暂译」，同时写清「官方英文商品名尚未公布」。不要把媒体或论坛的叫法写成官方名。
 - 术语表用「日文 | 英文 | 中文 | 说明」对照。
 
-#### 配图（每日更新和基础知识都要有说明性图片）
+#### 配图（新闻、案例、视频和基础知识都要有说明性图片）
 
-**每一篇每日更新、每一篇基础知识文章，都要有多张说明性图片**，帮助读者把名字和实物对上，不要只堆文字。新闻或推荐只要涉及新商品、新弹或具体卡片，有官方图就配上。
+**每一篇新闻期、店铺案例、视频页和基础知识文章，都要有说明性图片**，帮助读者把名字和实物对上，不要只堆文字。新闻或视频只要涉及新商品、新弹或具体卡片，有官方图就配上。
 
 做法：
 
 - 优先用 [宝可梦卡牌官网](https://www.pokemon-card.com/) 或 Pokémon / PSA 等官方站点的商品图、卡图、讲解图。
 - **下载到仓库** `assets/img/`，压缩为合适宽度（商品图约 600px，单卡约 400px）的 webp 或 jpg，**不要热链到外站**。
 - 每张图必须有有意义的 `alt`、`width` / `height`、`loading="lazy"`，以及注明来源并链接到原页的图注，例如「图片来源：[ポケモンカードゲーム公式](https://www.pokemon-card.com/)」。
-- 用 `{% include figure.html %}` 插入。新闻、推荐和各实践区块可用字段 `image`、`image_alt`、`image_width`、`image_height`、`image_credit`、`image_credit_url`，以及可选的 `images` 列表；英文名用 `en`。
+- 用 `{% include figure.html %}` 插入。新闻、视频和案例可用字段 `image`、`image_alt`、`image_width`、`image_height`、`image_credit`、`image_credit_url`，以及可选的 `images` 列表；英文名用 `en`。
 - 概念说明可以画 **SVG 示意图**，并写明这是示意图、不是实物照片。
 - **严禁伪造卡图或壳标**。没有可靠来源就不要用图，宁可只用示意图或写「暂无合适官方图」。
 - 控制体积：懒加载、合理尺寸，以免影响手机加载和 Lighthouse。
 
-## 1. 新增每日更新
+## 1. 新增新闻期次（仅在有实质新闻时）
 
 文件：`_posts/YYYY-MM-DD-daily.md`（文件名日期 = 当天日本日期）。
+
+每条 `news` 必须有 `type`，取值只能是 `_data/news_types.yml` 里的 id：`official`（官方）、`lottery`（抽选/发售）、`market`（价格行情）、`grading`（PSA/评级）、`community`（社区/X）、`shop`（店铺动态，指其他店的公开动态，不是本站案例正文）。可选 `topic`（短英文 id，用于查重），后续报道加 `prev: /daily/YYYY-MM-DD/`。
 
 ```yaml
 ---
@@ -100,11 +132,17 @@ title: 每日更新 第 N 期：<一句话主题>
 issue: N
 date: YYYY-MM-DD 20:00:00 +0900
 last_updated: YYYY-MM-DD
-summary: <一两句摘要，首页卡片显示>
+tldr: |
+  **结论**：<一句话>
+  **你该做什么**：<一句话>
+summary: <一两句摘要>
 tags: [...]
 news:
   - title: <标题>
-    summary: <2〜3 句事实，写清对开店和买卖的意义>
+    type: official          # official | lottery | market | grading | community | shop
+    topic: <短英文id>        # 可选，用于查重
+    prev: /daily/YYYY-MM-DD/ # 仅在这是后续报道时填写
+    summary: <2〜3 句事实，写清对开店和买卖的意义；后续报道只写增量>
     source: <来源名>
     url: <来源链接>
     tags: [新商品]
@@ -117,33 +155,12 @@ news:
     image_height: 371
     image_credit: ポケモンカードゲーム公式
     image_credit_url: https://www.pokemon-card.com/...
-recs: [<recommendations.yml 里的 id>, ...]   # 至少 1 个真实视频/播客
-shop_case:          # 每期拆一家真实的店；发前先查 _data/shops.yml，不要重复
-  shop_id: cardrush
-  title: 店铺案例：<店名>
-  body: |
-    <创办与扩张路径，只用官网、访谈、新闻里能核对的事实。>
-  borrow: |
-    <对高田马场 PSA 店值得借鉴什么，不要照搬对方的规模。>
-  next_steps: |
-    **现在**：...
-    **开店前**：...
-    **开业后六个月**：...
-  comment: |
-    <围绕收支平衡的评价：建议做 / 先不做 / 小范围先试。>
-  source: ...
-  url: ...
-  image: /assets/img/<file>.svg
-  image_alt: ...
-  image_width: 600
-  image_height: 250
-  image_credit: 本站示意图（依据该店官网公开信息）
-  image_credit_url: https://...
+shop: cardrush                 # 可选。对应 _shops/<slug>.md，布局只显示短卡片
+videos: [30th-futuristic]      # 可选。对应 _videos/<slug>.md
 next_kb:
   - title: <建议优先的基础文章题>
+    url: /kb/.../              # 若已发布
     reason: <为什么现在写这篇对回本或买卖更有用>
-  - title: <第二候选>
-    reason: ...
 breakeven:
   intro: |
     <一两句把当天收束到回本目标。>
@@ -158,17 +175,70 @@ breakeven:
 ---
 ```
 
-每日固定栏目只有：「今日新闻」「视频 / 播客推荐」「店铺案例」「推荐下一篇基础文章」「本期对收支平衡的启示」。它们由布局根据 front matter 自动渲染，正文**不要**再重复这些标题。遇新弹时，详细研究写在正文里。「收购与买卖交易」「店铺运营」不要写进每日更新，去基础知识里按需撰写。
+新闻期由布局渲染「今日新闻」、同期案例/视频短卡片、「推荐下一篇基础文章」「本期对收支平衡的启示」。正文**不要**再重复这些标题，也不要把案例或视频全文贴进来。遇新弹时，详细研究写在正文里。条数不求多：当天只有 1〜2 条真正的新消息，就只写 1〜2 条。
 
-店铺案例优先选日本店（如 カードラッシュ、晴れる屋、magi、遊々亭、カードショップ193、Torecolo、ドラゴンスター、BIGMAGIC，或东京小型 PSA 店），海外店只偶尔写。没有来源的数字一律不写。
+## 2. 新增店铺案例
 
-## 2. 新增 / 加深基础知识文章（仅在读者点名后）
+文件：`_shops/<slug>.md`，permalink 自动为 `/shops/<slug>/`。发前先查 `_data/shops.yml` 和已有文件，不要重复。优先选日本店（如 カードラッシュ、晴れる屋、magi、遊々亭、カードショップ193、Torecolo、ドラゴンスター、BIGMAGIC，或东京小型 PSA 店），海外店只偶尔写。没有来源的数字一律不写。
 
-基础知识是固定参考，不再每晚自动写。每日更新只负责推荐。读者指定题目之后：
+```yaml
+---
+slug: cardrush
+title: <店名与一句话判断>
+name_ja: カードラッシュ
+name_en: Card Rush
+operator: 株式会社RUSH
+area: 东京（秋叶原、池袋等）
+date: YYYY-MM-DD
+last_updated: YYYY-MM-DD
+description: <列表用的一句事实摘要>
+tldr: |
+  **结论**：...
+  **你该做什么**：...
+source: ...
+source_url: https://...
+comment: |
+  <围绕收支平衡的评价：建议做 / 先不做 / 小范围先试。>
+borrow: |
+  <对高田马场 PSA 店值得借鉴什么，不要照搬对方的规模。>
+next_steps: |
+  **现在**：...
+  **开店前**：...
+  **开业后六个月**：...
+---
+```
+
+正文写创办与扩张路径，只用官网、访谈、新闻里能核对的事实。写完后在 `_data/shops.yml` 追加 `id` / `slug` / `url`。
+
+## 3. 新增视频
+
+文件：`_videos/<slug>.md`，permalink 自动为 `/videos/<slug>/`。用 `watch` 保存 YouTube（或其他平台）链接，不要用 `url`（会和页面地址冲突）。
+
+```yaml
+---
+slug: 30th-futuristic
+title: 『<原标题>』
+creator: <创作者>
+watch: https://www.youtube.com/watch?v=...
+date: YYYY-MM-DD
+last_updated: YYYY-MM-DD
+description: <列表用的一句>
+tldr: |
+  **结论**：...
+  **你该做什么**：...
+note: <1〜2 句事实，为什么值得看>
+comment: |
+  <收入/成本/现金流、风险、建议做或先不做或小范围先试、与回本的关系。>
+---
+```
+
+## 4. 新增 / 加深基础知识文章（仅在读者点名后）
+
+基础知识是固定参考，不再每晚自动写。读者指定题目之后：
 
 ### 新增
 1. 在 `_data/kb.yml` 里找到对应 `status: planned` 的条目，或新增一条。买卖交易与店铺运营类优先，并设置 `recommended: true`。
-2. 新建 `_kb/<分区 id>/<slug>.md`，分区 id 和 slug 必须与 `kb.yml` 一致：
+2. 新建 `_kb/<分区 id>/<slug>.md`，分区 id 和 slug 必须与 `kb.yml` 一致，并写上 `tldr`：
 
 ```yaml
 ---
@@ -177,6 +247,9 @@ section: <分区 id，如 buy>
 date: YYYY-MM-DD
 last_updated: YYYY-MM-DD
 description: <一句话摘要，用于 SEO 和列表>
+tldr: |
+  **结论**：...
+  **你该做什么**：...
 tags: [...]
 ---
 ```
@@ -184,65 +257,38 @@ tags: [...]
 3. 正文用 `##` 分节，多用表格和清单，结尾附「来源」小节。站内链接一律写 `{{ '/kb/…/' | relative_url }}`。把该条 `status` 改成 `published`。
 
 ### 加深已有文章
-直接编辑正文，**把 `last_updated` 改成今天**（`date` 不动）。
+直接编辑正文，**把 `last_updated` 改成今天**（`date` 不动），如有新的结论也同步改 `tldr`。
 
 不要再计划或撰写「如何申请古物商许可」「开业手续逐步清单」这类申请教程。许可后的台账、本人确认、收购记录属于买卖交易内容，可以写。
 
-## 3. 更新学习路径状态
-
-`_data/kb.yml` 是基础知识目录和学习路径页的唯一数据源。
+`_data/kb.yml` 是基础知识目录和「建议优先」（`/kb/#path`）的唯一数据源。
 
 - 文章发布：把该条 `status: planned` 改成 `status: published`（可删除 `recommended`）。**published 的条目必须已有对应的 `_kb` 文件。**
-- 计划调整：改 `week` 或 `recommended: true`。不要再把 `planned` 日期当成每晚必写的截止日期。
-- 新增计划文章：在对应分区 `articles` 下加 `- { slug: xxx, title: "…", week: N, status: planned, recommended: true }`。
+- 计划调整：改 `recommended: true`。不要再把 `planned` 日期当成每晚必写的截止日期。
+- 新增计划文章：在对应分区 `articles` 下加 `- { slug: xxx, title: "…", status: planned, recommended: true }`。
 - 新分区：在 `sections` 下加 `id`、`title`、`desc`、`articles`。
 
-## 4. 新增推荐（视频 / 播客 / 账号 / 工具）
+## 5. 查价工具与网站
 
-在 `_data/recommendations.yml` **最上面**追加：
+只把工具、网站、账号写进 `_data/recommendations.yml`（`type: tool | site | account | community`）。视频已改到 `_videos`，不要再往这个文件加视频。推荐页按类型自动分组。
 
-```yaml
-- id: yt-<简短英文id>
-  type: video                   # video | podcast | account | tool | site | community
-  title: 『<原标题>』
-  creator: <创作者>
-  url: <链接>
-  note: <为什么值得看，1〜2 句事实>
-  comment: |                  # 导师点评；视频/播客必填
-    <收入/成本/现金流、风险、建议做或先不做或小范围先试、与回本的关系。对高田马场 PSA 店怎么用。>
-  image: /assets/img/<file>.webp
-  image_alt: <说明性 alt>
-  image_width: 600
-  image_height: 371
-  image_credit: ポケモンカードゲーム公式
-  image_credit_url: https://www.pokemon-card.com/...
-  tags: [开箱, 日语]
-  added: YYYY-MM-DD
-```
-
-推荐页按类型自动分组；当天的每日更新在 `recs` 里写 id 即可显示（含该条的导师点评）。不要重复已经推荐过的视频。
-
-## 5. 更新日志与 NEW 徽标
+## 6. 更新日志与 NEW 徽标
 
 在 `_data/changelog.yml` **最上面**加一条：
 
 ```yaml
 - date: YYYY-MM-DD
-  title: 第 N 期 · <主题>
+  title: 第 N 期 · <主题>   # 若当天没有新闻期，改成案例或视频的主题
   items:
-    - { kind: daily, type: new, title: "每日更新 第 N 期（M/D）", url: /daily/YYYY-MM-DD/ }
-    - { kind: recs, type: new, title: "推荐：<名称>", url: /recommendations/ }
-    - { kind: news, type: new, title: "新闻归档：M/D N 条", url: /news/ }
+    - { kind: news, type: new, title: "每日新闻 第 N 期（M/D）", url: /daily/YYYY-MM-DD/ }
+    - { kind: shops, type: new, title: "店铺案例：<名称>", url: /shops/<slug>/ }
+    - { kind: videos, type: new, title: "视频：<名称>", url: /videos/<slug>/ }
+    - { kind: kb, type: new, title: "<文章标题>", url: /kb/.../ }
+    - { kind: tools, type: updated, title: "术语表：新增…", url: /glossary/ }
 ```
 
-读者点名后新写了基础知识，再补 `kind: kb` 和 `kind: path`。
-
-- `kind` 取值与导航 id 一致：`daily` `kb` `path` `recs` `news` `glossary`；导航上对应栏目会出现红点。
+- `kind` 取值与导航 id 一致，供首页分组和导航红点使用：`news` `shops` `videos` `kb` `tools`。不要再用 `daily`、`recs`、`path` 作为新条目的 kind（旧条目可保留，首页会归入「其他」）。
 - `type`：`new`（新增）或 `updated`（更新）。
-- 首页「今日新增」显示最上面一条，`/changelog/` 显示全部历史。
+- 首页「今日新增」只显示最上面一条，并按 新闻 / 店铺案例 / 视频 分组；`/changelog/` 显示全部历史。
 
 **徽标规则（自动）**：构建时间往前 2 天内（`_config.yml` 的 `new_badge_days`），`date` 在范围内显示 **NEW**，否则 `last_updated` 在范围内显示 **更新**。因为每天推送都会重新构建，旧徽标会自动消失。读者打开过的页面，徽标变灰（浏览器 localStorage，不影响布局）。
-
-## 6. 新闻归档
-
-不用单独维护：新闻写在每日更新的 `news` 里，`/news/` 自动按日期汇总。

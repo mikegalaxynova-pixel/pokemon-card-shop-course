@@ -1,5 +1,5 @@
 title: 宝可梦卡牌店实战课
-description: 面向准备在东京高田马场开 PSA 评级卡实体店的新手：每日更新新闻、视频推荐与店铺案例，并围绕更快走到收支平衡给建议。
+description: 给准备在东京高田马场开 PSA 评级卡店的新手：先看今天更新了什么、下一步该做什么。新闻、店铺案例和视频分开更新。
 lang: zh-CN
 locale: zh_CN
 url: https://mikegalaxynova-pixel.github.io
@@ -22,11 +22,21 @@ collections:
   kb:
     output: true
     permalink: /kb/:path/
+  shops:
+    output: true
+    permalink: /shops/:name/
+  videos:
+    output: true
+    permalink: /videos/:name/
 defaults:
   - scope: { path: "", type: kb }
-    values: { layout: kb }
+    values: { layout: kb, nav: kb }
+  - scope: { path: "", type: shops }
+    values: { layout: shop, nav: shops }
+  - scope: { path: "", type: videos }
+    values: { layout: video, nav: videos }
   - scope: { path: "", type: posts }
-    values: { layout: daily }
+    values: { layout: daily, nav: news }
   - scope: { path: "" }
     values: { layout: page }
 exclude:

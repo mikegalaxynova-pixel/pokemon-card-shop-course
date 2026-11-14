@@ -1,0 +1,26 @@
+---
+layout: default
+title: 视频
+nav: videos
+permalink: /videos/
+description: 按日期更新的视频与播客推荐，每条都有导师点评。不重复推荐同一条。
+tldr: |
+  **结论**：视频是独立栏目，不再塞在新闻里。只推荐真实存在、打开过的链接。
+  **你该做什么**：先看最新一条的「先看这里」，再决定值不值得打开原片。
+---
+<div class="prose">
+  <h1>视频</h1>
+</div>
+{% include tldr.html %}
+<ul class="cards-list">
+{% assign vids = site.videos | sort: "date" | reverse %}
+{% for v in vids %}
+  <li class="card">
+    <p class="kind">{% include stream.html id="videos" %} <time datetime="{{ v.date | date: '%Y-%m-%d' }}">{{ v.date | date: '%Y年%-m月%-d日' }}</time> {% include badge.html date=v.date updated=v.last_updated url=v.url %}</p>
+    <h2><a href="{{ v.url | relative_url }}">{{ v.title }}</a></h2>
+    {% if v.creator %}<p class="muted">{{ v.creator }}</p>{% endif %}
+    <p>{{ v.description }}</p>
+  </li>
+{% endfor %}
+</ul>
+<p class="muted">查价工具和官网入口在<a href="{{ '/recommendations/' | relative_url }}">工具库</a>。</p>
