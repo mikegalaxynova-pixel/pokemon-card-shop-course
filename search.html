@@ -1,0 +1,17 @@
+---
+layout: default
+title: 搜索
+nav: search
+permalink: /search/
+description: 搜索宝可梦卡牌店实战课的基础知识、每日更新、术语和推荐。
+---
+<div class="prose">
+  <h1>搜索</h1>
+  <form role="search" onsubmit="return false">
+    <label for="q" class="sr">搜索关键词</label>
+    <input id="q" type="search" placeholder="例如：PSA 10、古物商、SAR" autocomplete="off">
+  </form>
+  <p id="s-status" class="muted" aria-live="polite">输入关键词（中文、日文或英文）开始搜索。</p>
+  <ul id="s-results" class="cards-list"></ul>
+</div>
+<script src="{{ '/assets/js/search.js' | relative_url }}" defer data-index="{{ '/search.json' | relative_url }}"></script>

@@ -1,0 +1,38 @@
+title: 宝可梦卡牌店实战课
+description: 面向零基础新手的宝可梦卡牌店开店课程：卡牌入门、PSA 评级、日本开店实务、定价与市场、社群宣传，每天 20:00（日本时间）更新。
+lang: zh-CN
+locale: zh_CN
+url: https://mikegalaxynova-pixel.github.io
+baseurl: /pokemon-card-shop-course
+timezone: Asia/Tokyo
+future: true
+new_badge_days: 2
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+permalink: /daily/:year-:month-:day/
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+feed:
+  path: feed.xml
+collections:
+  kb:
+    output: true
+    permalink: /kb/:path/
+defaults:
+  - scope: { path: "", type: kb }
+    values: { layout: kb }
+  - scope: { path: "", type: posts }
+    values: { layout: daily }
+  - scope: { path: "" }
+    values: { layout: page }
+exclude:
+  - README.md
+  - CONTRIBUTING.md
+  - ROADMAP.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

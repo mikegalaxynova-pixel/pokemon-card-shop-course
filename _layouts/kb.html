@@ -1,0 +1,16 @@
+---
+layout: default
+nav: kb
+---
+{% assign sec = site.data.kb.sections | where: "id", page.section | first %}
+<nav class="crumbs" aria-label="面包屑"><a href="{{ '/kb/' | relative_url }}">基础知识</a> › <a href="{{ '/kb/' | relative_url }}#{{ sec.id }}">{{ sec.title }}</a></nav>
+<article class="prose">
+  <h1>{{ page.title }} {% include badge.html date=page.date updated=page.last_updated url=page.url %}</h1>
+  <p class="meta">首发 <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%Y年%-m月%-d日' }}</time>{% if page.last_updated and page.last_updated != page.date %} · 最后更新 <time datetime="{{ page.last_updated | date: '%Y-%m-%d' }}">{{ page.last_updated | date: '%Y年%-m月%-d日' }}</time>{% endif %}{% if page.tags %} · {% for t in page.tags %}<span class="tag">{{ t }}</span>{% endfor %}{% endif %}</p>
+  {% if page.description %}<p class="lead">{{ page.description }}</p>{% endif %}
+  {{ content }}
+</article>
+<aside class="related" aria-labelledby="rel-h">
+  <h2 id="rel-h">「{{ sec.title }}」其他文章</h2>
+  {% include kb-list.html sec=sec exclude=page.url %}
+</aside>

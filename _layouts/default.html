@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#b3001b">
+{% seo %}
+<link rel="alternate" type="application/atom+xml" title="{{ site.title }} 每日更新" href="{{ '/feed.xml' | relative_url }}">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%23fff' stroke='%23222' stroke-width='8'/%3E%3Cpath d='M4 50h92' stroke='%23222' stroke-width='8'/%3E%3Cpath d='M8 46A42 42 0 0 1 92 46Z' fill='%23d6001c'/%3E%3Ccircle cx='50' cy='50' r='12' fill='%23fff' stroke='%23222' stroke-width='8'/%3E%3C/svg%3E">
+<style>{% include style.css %}</style>
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+  </div>
+  <nav class="site-nav" aria-label="主导航">
+    {%- assign _now = site.time | date: '%s' | plus: 0 -%}
+    {%- assign _win = site.new_badge_days | default: 2 | times: 86400 -%}
+    {%- assign _latest = site.data.changelog | first -%}
+    {%- assign _ld = _latest.date | date: '%s' | plus: 0 -%}
+    {%- assign _lage = _now | minus: _ld -%}
+    <ul class="wrap">
+      {% for item in site.data.nav %}
+      {%- assign item_url = item.url | relative_url -%}
+      {%- assign _hits = _latest.items | where: "kind", item.id -%}
+      <li><a href="{{ item_url }}"{% if page.url == item.url or page.nav == item.id or layout.nav == item.id %} aria-current="page"{% endif %}>{{ item.title }}{% if _lage < _win and _hits.size > 0 %}<span class="dot" title="近 2 天有新内容"><span class="sr">（有新内容）</span></span>{% endif %}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>
+<main id="main" class="wrap">
+{{ content }}
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>{{ site.title }} · 每天 20:00（日本时间）更新 · <a href="{{ '/feed.xml' | relative_url }}">RSS</a></p>
+    <p class="muted">内容为学习整理，法规与价格以官方和主管机关最新信息为准。宝可梦相关名称归其权利人所有，本站为非官方学习笔记。</p>
+  </div>
+</footer>
+<script>{% include read.js %}</script>
+</body>
+</html>

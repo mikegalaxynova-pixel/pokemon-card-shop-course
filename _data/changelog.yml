@@ -1,0 +1,18 @@
+# 更新日志（唯一数据源）。每次每日更新在最上面新增一条。
+# kind 取值与导航 id 对应：daily | kb | recs | news | glossary | path ；type: new | updated
+- date: 2026-11-14
+  title: 网站上线 · 第 1 期
+  items:
+    - { kind: daily, type: new, title: "每日更新 第 1 期（11/14）", url: /daily/2026-11-14/ }
+    - { kind: kb, type: new, title: "卡面结构：一张卡要看哪些位置", url: /kb/cards/anatomy/ }
+    - { kind: kb, type: new, title: "系列、弹与包装", url: /kb/cards/series/ }
+    - { kind: kb, type: new, title: "稀有度速查", url: /kb/cards/rarity/ }
+    - { kind: kb, type: new, title: "日文版 vs 英文版", url: /kb/cards/jp-vs-en/ }
+    - { kind: kb, type: new, title: "PSA 是什么：评级卡生意的优势与风险", url: /kb/psa/what-is-psa/ }
+    - { kind: kb, type: new, title: "PSA 等级标准速查", url: /kb/psa/grades/ }
+    - { kind: kb, type: new, title: "Pop Report 怎么看", url: /kb/psa/pop-report/ }
+    - { kind: kb, type: new, title: "古物商许可要点（新宿警察署）", url: /kb/shop/kobutsusho/ }
+    - { kind: glossary, type: new, title: "术语表（首批词条）", url: /glossary/ }
+    - { kind: recs, type: new, title: "推荐库：2 个视频、4 个工具、2 个网站、1 个账号", url: /recommendations/ }
+    - { kind: news, type: new, title: "新闻归档：11/14 三条新闻", url: /news/ }
+    - { kind: path, type: new, title: "学习路径（6 周计划）", url: /path/ }

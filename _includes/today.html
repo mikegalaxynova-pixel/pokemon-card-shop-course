@@ -1,0 +1,12 @@
+{%- assign c = site.data.changelog | first -%}
+{%- if c -%}
+<section class="today" aria-labelledby="today-h">
+  <h2 id="today-h">今日新增 <span class="muted">· {{ c.date | date: '%Y年%-m月%-d日' }}</span></h2>
+  <ul>
+  {%- for it in c.items -%}
+    <li><span class="badge {% if it.type == 'updated' %}upd{% else %}new{% endif %}" data-read-url="{{ it.url | relative_url }}">{% if it.type == 'updated' %}更新{% else %}NEW{% endif %}</span> <a href="{{ it.url | relative_url }}">{{ it.title }}</a></li>
+  {%- endfor -%}
+  </ul>
+  <p class="muted"><a href="{{ '/changelog/' | relative_url }}">查看全部更新日志 →</a></p>
+</section>
+{%- endif -%}

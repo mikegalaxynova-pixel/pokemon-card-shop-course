@@ -1,0 +1,54 @@
+---
+layout: default
+title: 首页
+nav: home
+description: 面向零基础新手的宝可梦卡牌店开店课程：每日更新新闻与小课，系统的基础知识库，覆盖卡牌入门、PSA 评级、日本开店实务、定价与社群宣传。
+---
+<section class="prose">
+  <h1>宝可梦卡牌店实战课</h1>
+  <p class="lead">写给零基础、准备在东京西新宿开实体宝可梦卡牌店的新手：以 PSA 评级卡为主，之后扩展到收购、新卡和周边。每天 20:00（日本时间）更新。</p>
+</section>
+
+{% include today.html %}
+
+<section aria-labelledby="latest-h">
+  <h2 id="latest-h">最新每日更新</h2>
+  <ul class="cards-list">
+  {% for p in site.posts limit: 3 %}
+    <li class="card">
+      <p class="kind"><time datetime="{{ p.date | date: '%Y-%m-%d' }}">{{ p.date | date: '%-m月%-d日' }}</time> · 第 {{ p.issue }} 期 {% include badge.html date=p.date updated=p.last_updated url=p.url %}</p>
+      <h3><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h3>
+      <p>{{ p.summary }}</p>
+    </li>
+  {% endfor %}
+  </ul>
+  <p><a href="{{ '/daily/' | relative_url }}">全部每日更新 →</a></p>
+</section>
+
+<section aria-labelledby="kb-h">
+  <h2 id="kb-h">基础知识</h2>
+  <ul class="grid">
+  {% for s in site.data.kb.sections %}
+    {% assign pub = s.articles | where: "status", "published" %}
+    <li class="card">
+      <h3><a href="{{ '/kb/' | relative_url }}#{{ s.id }}">{{ s.title }}</a></h3>
+      <p class="muted">{{ s.desc }}</p>
+      <p class="src">已发布 {{ pub.size }} / {{ s.articles.size }} 篇</p>
+    </li>
+  {% endfor %}
+    <li class="card">
+      <h3><a href="{{ '/glossary/' | relative_url }}">术语表</a></h3>
+      <p class="muted">日文 / 英文 / 中文对照，店里接待和查价常用词。</p>
+    </li>
+  </ul>
+</section>
+
+<section class="prose" aria-labelledby="how-h">
+  <h2 id="how-h">怎么用这个网站</h2>
+  <ol>
+    <li><strong>每天看一期<a href="{{ '/daily/' | relative_url }}">每日更新</a></strong>：今日新闻、视频推荐、市场动态、今日小课和行动建议，约 20〜30 分钟。</li>
+    <li><strong>按<a href="{{ '/path/' | relative_url }}">学习路径</a>推进</strong>：6 周从卡牌基础走到开业准备，每天新增或加深一篇基础知识。</li>
+    <li><strong>把<a href="{{ '/kb/' | relative_url }}">基础知识</a>当速查手册</strong>：接待客人、盘点库存、去警察署前随时翻。</li>
+    <li>带 <span class="badge new">NEW</span> / <span class="badge upd">更新</span> 标记的是近 2 天的内容，打开过的会变成灰色。</li>
+  </ol>
+</section>

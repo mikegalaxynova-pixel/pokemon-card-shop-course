@@ -1,0 +1,8 @@
+- { id: home, title: 首页, url: / }
+- { id: daily, title: 每日更新, url: /daily/ }
+- { id: kb, title: 基础知识, url: /kb/ }
+- { id: path, title: 学习路径, url: /path/ }
+- { id: recs, title: 推荐, url: /recommendations/ }
+- { id: news, title: 新闻, url: /news/ }
+- { id: glossary, title: 术语表, url: /glossary/ }
+- { id: search, title: 搜索, url: /search/ }

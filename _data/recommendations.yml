@@ -1,0 +1,66 @@
+# 推荐库（唯一数据源）。新条目追加到最上面。type: video | podcast | account | tool | site | community
+- id: yt-special-deck-set-mega
+  type: video
+  title: 『【ポケカ新商品】スペシャルデッキセットだって～～～～！？【ポケモンカード】』
+  creator: 【公式】ポケモンカードチャンネル
+  url: https://www.youtube.com/watch?v=8MdwGqVOoP0
+  note: 官方介绍 11/13 上市的「スペシャルデッキセットMEGA」，快速搞懂三套卡组各有什么、在打什么。
+  tags: [官方, 新商品, 日语]
+  added: 2026-11-14
+- id: yt-rules-beginner
+  type: video
+  title: 『【公式動画】これからポケカを始めるキミに！ルール解説【ポケモンカード】』
+  creator: 【公式】ポケモンカードチャンネル
+  url: https://www.youtube.com/watch?v=3Ixc4sKaABA
+  note: 官方入门讲解，从卡的种类、HP、属性、进化讲到对战流程。看时对照实物暂停，找左上进化、右上 HP、底部标记。
+  tags: [官方, 入门, 规则, 日语]
+  added: 2026-11-14
+- id: snkrdunk
+  type: tool
+  title: SNKRDUNK（スニダン）
+  url: https://snkrdunk.com/
+  note: 看日文卡（含部分评级卡）在日本的近期成交和挂牌。成交价不是你的自动售价，还要算成色、手续费和利润。
+  tags: [查价, 日本市场]
+  added: 2026-11-14
+- id: pricecharting
+  type: tool
+  title: PriceCharting
+  url: https://www.pricecharting.com/category/pokemon-cards
+  note: 主要追踪国际成交，按未评级、PSA 等级给价格曲线。接待海外客人和日英比价时有用，注意选对语言和套装。
+  tags: [查价, 海外市场, PSA]
+  added: 2026-11-14
+- id: psa-pop
+  type: tool
+  title: PSA Population Report
+  url: https://www.psacard.com/pop
+  note: 查某张卡被评为各等级的数量，判断 10 分是否稀缺。
+  tags: [PSA, Pop]
+  added: 2026-11-14
+- id: psa-cert
+  type: tool
+  title: PSA 官网（认证编号查询）
+  url: https://www.psacard.com/
+  note: 盘点库存的「身份证系统」：先核认证编号真伪，再看等级与 Pop。
+  tags: [PSA, 认证号, 防伪]
+  added: 2026-11-14
+- id: psa-grading-standards
+  type: site
+  title: PSA Grading Standards
+  url: https://www.psacard.com/gradingstandards
+  note: PSA 官方等级标准原文，向客人解释等级前先核对这里。
+  tags: [PSA, 等级, 官方]
+  added: 2026-11-14
+- id: pokemon-card-official
+  type: site
+  title: 宝可梦卡牌官网（ポケモンカードゲーム公式）
+  url: https://www.pokemon-card.com/
+  note: 新商品、收录卡、发售日的第一手来源，新闻和商品确认以这里为准。
+  tags: [官方, 新商品]
+  added: 2026-11-14
+- id: x-pokemon-cojp
+  type: account
+  title: "@pokemon_cojp（ポケモン公式 X）"
+  url: https://x.com/pokemon_cojp
+  note: 官方 X 账号，发售、活动等消息确认渠道之一。
+  tags: [官方, X]
+  added: 2026-11-14

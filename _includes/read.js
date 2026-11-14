@@ -1,0 +1,1 @@
+(function(){try{var k="pcsc-read",r=JSON.parse(localStorage.getItem(k)||"{}"),p=location.pathname;r[p]=Date.now();localStorage.setItem(k,JSON.stringify(r));document.querySelectorAll("[data-read-url]").forEach(function(e){if(r[e.getAttribute("data-read-url")]){e.classList.add("read");e.title="已读";}});}catch(e){}})();

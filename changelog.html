@@ -1,0 +1,17 @@
+---
+layout: default
+title: 更新日志
+permalink: /changelog/
+description: 宝可梦卡牌店实战课每天新增和更新的内容记录。
+---
+<div class="prose"><h1>更新日志</h1><p class="lead">每天新增和更新了什么。</p></div>
+{% for c in site.data.changelog %}
+<section aria-labelledby="c-{{ c.date | date: '%Y%m%d' }}">
+  <h2 id="c-{{ c.date | date: '%Y%m%d' }}">{{ c.date | date: '%Y年%-m月%-d日' }} · {{ c.title }}</h2>
+  <ul class="list">
+  {% for it in c.items %}
+    <li><span class="badge {% if it.type == 'updated' %}upd{% else %}new{% endif %}">{% if it.type == 'updated' %}更新{% else %}新增{% endif %}</span> <a href="{{ it.url | relative_url }}">{{ it.title }}</a></li>
+  {% endfor %}
+  </ul>
+</section>
+{% endfor %}

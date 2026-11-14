@@ -1,0 +1,6 @@
+---
+layout: null
+permalink: /search.json
+sitemap: false
+---
+[{% for d in site.kb %}{"t":{{ d.title | jsonify }},"u":{{ d.url | relative_url | jsonify }},"k":"基础知识","c":{{ d.content | strip_html | strip_newlines | truncate: 3000 | jsonify }}},{% endfor %}{% for p in site.posts %}{% capture nt %}{% for n in p.news %}{{ n.title }} {{ n.summary }} {% endfor %}{% endcapture %}{"t":{{ p.title | jsonify }},"u":{{ p.url | relative_url | jsonify }},"k":"每日更新","c":{{ p.content | strip_html | strip_newlines | append: " " | append: nt | jsonify }}},{% endfor %}{% assign g = site.pages | where: "url", "/glossary/" | first %}{"t":"术语表","u":{{ '/glossary/' | relative_url | jsonify }},"k":"术语表","c":{{ g.content | strip_html | strip_newlines | jsonify }}}{% for r in site.data.recommendations %},{"t":{{ r.title | jsonify }},"u":{{ r.url | jsonify }},"k":"推荐","c":{{ r.note | append: " " | append: r.creator | jsonify }}}{% endfor %}]

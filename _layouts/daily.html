@@ -1,0 +1,37 @@
+---
+layout: default
+nav: daily
+---
+<nav class="crumbs" aria-label="面包屑"><a href="{{ '/daily/' | relative_url }}">每日更新</a></nav>
+<article class="prose">
+  <h1>{{ page.title }} {% include badge.html date=page.date updated=page.last_updated url=page.url %}</h1>
+  <p class="meta"><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%Y年%-m月%-d日' }}</time>{% if page.issue %} · 第 {{ page.issue }} 期{% endif %}</p>
+  {% if page.summary %}<p class="lead">{{ page.summary }}</p>{% endif %}
+
+  {% if page.news %}
+  <h2 id="news">今日新闻</h2>
+  <ol class="news">
+  {% for n in page.news %}
+    <li><h3>{{ n.title }}</h3><p>{{ n.summary }}</p>
+    <p class="src">来源：<a href="{{ n.url }}" rel="noopener">{{ n.source }}</a>{% if n.tags %} · {% for t in n.tags %}<span class="tag">{{ t }}</span>{% endfor %}{% endif %}</p></li>
+  {% endfor %}
+  </ol>
+  {% endif %}
+
+  {% if page.recs %}
+  <h2 id="recs">视频 / 播客推荐</h2>
+  <ul class="cards-list">
+  {% for rid in page.recs %}{% assign r = site.data.recommendations | where: "id", rid | first %}{% if r %}
+    {% include rec.html r=r %}
+  {% endif %}{% endfor %}
+  </ul>
+  {% endif %}
+
+  {{ content }}
+</article>
+{% if page.previous or page.next %}
+<nav class="pager" aria-label="上一期/下一期">
+  {% if page.previous %}<a href="{{ page.previous.url | relative_url }}">← {{ page.previous.title }}</a>{% endif %}
+  {% if page.next %}<a href="{{ page.next.url | relative_url }}">{{ page.next.title }} →</a>{% endif %}
+</nav>
+{% endif %}

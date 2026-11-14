@@ -1,0 +1,10 @@
+{%- comment -%}用法：{% include badge.html date=x updated=y url=z %}。构建时 2 天内新增显示 NEW，2 天内更新显示「更新」。{%- endcomment -%}
+{%- assign _now = site.time | date: '%s' | plus: 0 -%}
+{%- assign _win = site.new_badge_days | default: 2 | times: 86400 -%}
+{%- assign _d = include.date | date: '%s' | plus: 0 -%}
+{%- assign _u = include.updated | default: include.date | date: '%s' | plus: 0 -%}
+{%- assign _ad = _now | minus: _d -%}
+{%- assign _au = _now | minus: _u -%}
+{%- if include.date and _ad < _win -%}<span class="badge new" data-read-url="{{ include.url | relative_url }}">NEW</span>
+{%- elsif include.updated and _au < _win -%}<span class="badge upd" data-read-url="{{ include.url | relative_url }}">更新</span>
+{%- endif -%}

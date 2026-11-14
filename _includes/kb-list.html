@@ -1,0 +1,13 @@
+<ul class="list">
+{%- for a in include.sec.articles -%}
+{%- assign a_url = '/kb/' | append: include.sec.id | append: '/' | append: a.slug | append: '/' -%}
+{%- unless a_url == include.exclude -%}
+{%- if a.status == "published" -%}
+{%- assign doc = site.kb | where: "url", a_url | first -%}
+<li><a href="{{ a_url | relative_url }}">{{ a.title }}</a> {% if doc %}{% include badge.html date=doc.date updated=doc.last_updated url=a_url %}{% endif %}</li>
+{%- else -%}
+<li><span class="muted">{{ a.title }}</span> <span class="badge soon">即将更新{% if a.planned %} · {{ a.planned | date: '%-m/%-d' }}{% endif %}</span></li>
+{%- endif -%}
+{%- endunless -%}
+{%- endfor -%}
+</ul>

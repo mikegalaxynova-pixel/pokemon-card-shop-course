@@ -1,0 +1,20 @@
+---
+layout: default
+title: 每日更新
+nav: daily
+permalink: /daily/
+description: 每天 20:00（日本时间）一期：今日新闻、视频/播客推荐、市场动态、今日小课与行动建议。
+---
+<div class="prose">
+  <h1>每日更新</h1>
+  <p class="lead">每天 20:00（日本时间）一期。也可以用 <a href="{{ '/feed.xml' | relative_url }}">RSS</a> 订阅。</p>
+</div>
+<ul class="cards-list">
+{% for p in site.posts %}
+  <li class="card">
+    <p class="kind"><time datetime="{{ p.date | date: '%Y-%m-%d' }}">{{ p.date | date: '%Y年%-m月%-d日' }}</time> · 第 {{ p.issue }} 期 {% include badge.html date=p.date updated=p.last_updated url=p.url %}</p>
+    <h3><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h3>
+    <p>{{ p.summary }}</p>
+  </li>
+{% endfor %}
+</ul>

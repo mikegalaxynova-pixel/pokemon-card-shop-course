@@ -1,0 +1,23 @@
+---
+layout: default
+title: 基础知识
+nav: kb
+permalink: /kb/
+description: 系统的宝可梦卡牌店基础知识库：卡牌入门、PSA 与评级、开店实务、定价与市场、社群与宣传、收购、新卡与周边、店铺运营。
+---
+<div class="prose">
+  <h1>基础知识</h1>
+  <p class="lead">可以反复查阅的长期文章，按主题分组。标「即将更新」的文章会按<a href="{{ '/path/' | relative_url }}">学习路径</a>逐日上线。</p>
+</div>
+{% for s in site.data.kb.sections %}
+{% assign pub = s.articles | where: "status", "published" %}
+<section aria-labelledby="{{ s.id }}">
+  <h2 id="{{ s.id }}">{{ s.title }} <span class="muted">（{{ pub.size }} / {{ s.articles.size }}）</span></h2>
+  <p class="muted">{{ s.desc }}</p>
+  {% include kb-list.html sec=s %}
+</section>
+{% endfor %}
+<section aria-labelledby="g">
+  <h2 id="g">术语表</h2>
+  <p><a href="{{ '/glossary/' | relative_url }}">日文 / 英文 / 中文术语对照 →</a></p>
+</section>

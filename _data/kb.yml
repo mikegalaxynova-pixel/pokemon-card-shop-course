@@ -1,0 +1,90 @@
+# 基础知识目录（唯一数据源）。status: published | planned。published 必须有对应 _kb/<section>/<slug>.md。
+weeks:
+  - { n: 1, title: "卡牌基础与 PSA 评级", range: "11/14–11/20", goal: "看懂一张卡、系列与稀有度、日英版差异、PSA 等级与 Pop、认证号与假壳。" }
+  - { n: 2, title: "开店法规与运营", range: "11/21–11/27", goal: "古物商许可、古物台账与入货记录、选址、开业手续、POS 与库存、税务、展示与防盗。" }
+  - { n: 3, title: "热门卡与市场定价", range: "11/28–12/4", goal: "查价渠道、定价策略、PSA 10/9 溢价、新弹发售周期、库存周转、海外买家。" }
+  - { n: 4, title: "社群与宣传", range: "12/5–12/11", goal: "X 账号、Discord 与论坛、Google 商家资料、店铺活动、KOL 合作、游客引流。" }
+  - { n: 5, title: "收购、新卡与周边", range: "12/12–12/18", goal: "收购流程、真伪鉴别、收购定价、寄售、新品与抽选、周边、正规进货渠道。" }
+  - { n: 6, title: "店铺运营进阶", range: "12/19–12/25", goal: "员工规则、客户接待、多语言接待、合规要点、开业清单、案例复盘。" }
+sections:
+  - id: cards
+    title: "卡牌入门"
+    desc: "看懂一张卡：卡面结构、系列与弹、稀有度、日英版差异。"
+    articles:
+      - { slug: anatomy, title: "卡面结构：一张卡要看哪些位置", week: 1, status: published }
+      - { slug: series, title: "系列、弹与包装（パック / BOX / 构筑套装）", week: 1, status: published }
+      - { slug: rarity, title: "稀有度速查（C〜UR、SAR、MUR）", week: 1, status: published }
+      - { slug: jp-vs-en, title: "日文版 vs 英文版：五个关键差别", week: 1, status: published }
+      - { slug: eras, title: "历代系列年表：从旧裏面到 MEGA", week: 1, status: planned, planned: 2026-11-17 }
+      - { slug: condition, title: "未评级卡（生カード）成色判断", week: 1, status: planned, planned: 2026-11-19 }
+      - { slug: popular-cards, title: "高人气角色与常流通高价卡", week: 1, status: planned, planned: 2026-11-20 }
+  - id: psa
+    title: "PSA 与评级"
+    desc: "你店里最核心的商品语言：等级标准、Pop、认证号与假壳。"
+    articles:
+      - { slug: what-is-psa, title: "PSA 是什么：评级卡生意的优势与风险", week: 1, status: published }
+      - { slug: grades, title: "PSA 等级标准速查（10 / 9 及其他）", week: 1, status: published }
+      - { slug: pop-report, title: "Pop Report（鉴定数量报告）怎么看", week: 1, status: published }
+      - { slug: cert-and-fake, title: "认证号核验与假壳识别", week: 1, status: planned, planned: 2026-11-15 }
+      - { slug: grading-companies, title: "PSA、BGS、CGC 等评级公司对比", week: 1, status: planned, planned: 2026-11-16 }
+      - { slug: submission, title: "PSA Japan 送评流程与费用", week: 1, status: planned, planned: 2026-11-18 }
+  - id: shop
+    title: "开店实务"
+    desc: "在日本合法开卡牌店：古物商许可、入货记录、选址、POS、税务。"
+    articles:
+      - { slug: kobutsusho, title: "古物商许可要点（新宿警察署）", week: 2, status: published }
+      - { slug: kobutsu-records, title: "古物台账、本人确认与入货记录", week: 2, status: planned, planned: 2026-11-21 }
+      - { slug: friend-stock, title: "朋友提供的库存：买取、寄售怎样合法安排", week: 2, status: planned, planned: 2026-11-22 }
+      - { slug: location, title: "西新宿选址：客流、租金与竞争", week: 2, status: planned, planned: 2026-11-23 }
+      - { slug: opening-procedures, title: "开业手续：开业届、青色申告等", week: 2, status: planned, planned: 2026-11-24 }
+      - { slug: pos-inventory, title: "POS 与库存管理", week: 2, status: planned, planned: 2026-11-25 }
+      - { slug: tax, title: "税务基础：消费税、发票制度、免税销售", week: 2, status: planned, planned: 2026-11-26 }
+      - { slug: display-security, title: "展示柜、陈列与防盗", week: 2, status: planned, planned: 2026-11-27 }
+  - id: market
+    title: "定价与市场"
+    desc: "怎样查价、定价、判断压货与周转。"
+    articles:
+      - { slug: price-sources, title: "查价渠道与读法", week: 3, status: planned, planned: 2026-11-28 }
+      - { slug: pricing-strategy, title: "店头定价策略", week: 3, status: planned, planned: 2026-11-29 }
+      - { slug: grade-premium, title: "PSA 10 与 9 的价差逻辑", week: 3, status: planned, planned: 2026-11-30 }
+      - { slug: release-cycle, title: "新弹发售前后的行情周期", week: 3, status: planned, planned: 2026-12-01 }
+      - { slug: inventory-rotation, title: "库存周转与压货判断", week: 3, status: planned, planned: 2026-12-02 }
+      - { slug: overseas-buyers, title: "海外买家与日英卡比价", week: 3, status: planned, planned: 2026-12-03 }
+      - { slug: risk, title: "市场风险：炒作、复刻与汇率", week: 3, status: planned, planned: 2026-12-04 }
+  - id: community
+    title: "社群与宣传"
+    desc: "店铺怎样被找到：X、Discord、地图、活动、KOL、游客。"
+    articles:
+      - { slug: x-accounts, title: "X（Twitter）账号运营与值得关注的账号", week: 4, status: planned, planned: 2026-12-05 }
+      - { slug: discord-forums, title: "Discord、论坛与本地社群", week: 4, status: planned, planned: 2026-12-06 }
+      - { slug: google-business, title: "Google 商家资料与地图评价", week: 4, status: planned, planned: 2026-12-07 }
+      - { slug: events, title: "店铺活动与对战会", week: 4, status: planned, planned: 2026-12-08 }
+      - { slug: kol, title: "YouTuber / KOL 合作", week: 4, status: planned, planned: 2026-12-09 }
+      - { slug: inbound, title: "游客引流与海外宣传", week: 4, status: planned, planned: 2026-12-10 }
+      - { slug: content-plan, title: "店铺内容日历", week: 4, status: planned, planned: 2026-12-11 }
+  - id: buy
+    title: "收购与进货"
+    desc: "买取（收购）流程、真伪鉴别、收购定价与寄售。"
+    articles:
+      - { slug: buyback-flow, title: "收购（買取）流程", week: 5, status: planned, planned: 2026-12-12 }
+      - { slug: authenticity, title: "真伪鉴别实操", week: 5, status: planned, planned: 2026-12-13 }
+      - { slug: buy-pricing, title: "收购定价与利润", week: 5, status: planned, planned: 2026-12-14 }
+      - { slug: consignment, title: "寄售（委託販売）模式", week: 5, status: planned, planned: 2026-12-15 }
+  - id: products
+    title: "新卡与周边"
+    desc: "新品、抽选、周边与正规进货渠道。"
+    articles:
+      - { slug: sealed, title: "新品与抽选销售", week: 5, status: planned, planned: 2026-12-16 }
+      - { slug: supplies, title: "卡套、卡盒等周边", week: 5, status: planned, planned: 2026-12-17 }
+      - { slug: distributor, title: "正规进货渠道与批发", week: 5, status: planned, planned: 2026-12-18 }
+  - id: ops
+    title: "店铺运营进阶"
+    desc: "员工、接待、多语言、合规与案例。"
+    articles:
+      - { slug: staff-rules, title: "员工规则与权限", week: 6, status: planned, planned: 2026-12-19 }
+      - { slug: customer-service, title: "客户接待与纠纷处理", week: 6, status: planned, planned: 2026-12-20 }
+      - { slug: multilingual, title: "多语言接待（英 / 中 / 日）", week: 6, status: planned, planned: 2026-12-21 }
+      - { slug: compliance, title: "合规要点汇总", week: 6, status: planned, planned: 2026-12-22 }
+      - { slug: opening-checklist, title: "开业准备清单", week: 6, status: planned, planned: 2026-12-23 }
+      - { slug: cases, title: "案例拆解：成功与失败的卡牌店", week: 6, status: planned, planned: 2026-12-24 }
+      - { slug: review, title: "六周复盘与下一阶段", week: 6, status: planned, planned: 2026-12-25 }
