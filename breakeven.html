@@ -1,0 +1,152 @@
+---
+layout: default
+title: 收支平衡路线图
+permalink: /breakeven/
+description: 高田马场 PSA 评级卡店的收支平衡模型：用你自己的租金、人工和毛利率假设，计算回本所需的月销售额。所有输入都是可改假设，不是行情事实。
+---
+<div class="prose">
+  <h1>收支平衡路线图</h1>
+  <p class="lead">目标不是把店开起来就算完成，而是尽快让月毛利盖过月固定成本。下面的公式通用；<strong>所有输入都是你填的假设或你已掌握的成本</strong>，本页不提供高田马场（高田馬場 / Takadanobaba）的租金或客流数字，也不把示例当成事实。</p>
+
+  {% include figure.html src="/assets/img/breakeven-formula.svg" alt="月度收支平衡公式示意图：月固定成本等于租金加人工加其他固定开支；回本所需月销售额等于月固定成本除以毛利率。所有数字都是可改假设" width="600" height="260" credit="本站示意图（通用公式，不是行情数据）" %}
+
+  <h2>先记住这条公式</h2>
+  <p><strong>回本所需月销售额 = 月固定成本 ÷ 毛利率</strong>。</p>
+  <ul>
+    <li><strong>月固定成本</strong>：租金 + 人工 + 其他固定开支（水电、通信、保险、软件等）。只要店开着，这些钱大致每月都会出去，和当月卖多卖少关系较小。</li>
+    <li><strong>毛利率</strong>：（售价 − 变动成本）÷ 售价。变动成本包括进货成本、支付手续费、平台费、寄售分成等。</li>
+    <li><strong>不同渠道要分开算</strong>：店头卖自有 PSA 库存、收购后再出售、寄售抽成、网上售卖的手续费结构不同，不要用一个毛利率硬套全部生意。</li>
+  </ul>
+  <p>库存还会占用现金。周转越慢，同样要达到回本销售额，你需要垫付的货值就越多。一个可改的观察公式是：<strong>周转次数（假设）≈ 当期销售成本 ÷ 平均库存</strong>。没有你自己的进货和库存数字时，不要填写假的周转率。</p>
+
+  <h2>怎样更快走到回本（判断，不是事实）</h2>
+  <ol>
+    <li><strong>先卖已经在手里的朋友 PSA 库存。</strong> 这是从零到第一笔收入最快的路：核验、定价、上架，不需要再把现金变成新货。</li>
+    <li><strong>许可下来之前，不要以古物商身份收购。</strong> 过早把现金锁进来路不清或无法合法记录的货，既有合规风险，也会拖慢回本。</li>
+    <li><strong>不要用抽选和新弹预测价去建核心库存。</strong> 现货偏紧时，盒子和追捧卡更容易占款、价格波动也大。</li>
+    <li><strong>高田马场是学生街和换乘点</strong>（JR、西武新宿线、东京 Metro 东西线；附近大学、专科学校和补习班集中，这是一般地理事实，也与警视厅交番介绍中的「学生街」表述一致）。客群偏学生和年轻人，定价要让人看得懂；不要按商务区或观光热点去假设客单价。本站不编造租金或人流量。</li>
+    <li><strong>活动先小范围试。</strong> 官方健身房活动能带来客流，但场地、人手和转化到 PSA 成交的效果因店而异，官方也没有公布统一费用或保证客流。先做低成本的评级卡展示或交换会，再决定要不要申请官方健身房。</li>
+  </ol>
+  <p class="src">学生街表述可参考：<a href="https://www.keishicho.metro.tokyo.lg.jp/about_mpd/shokai/ichiran/kankatsu/totsuka/koban/takadanobabaekimae.html" rel="noopener">警視庁 高田馬場駅前交番</a>。租金和工资请用你的合同或报价填入，不要用网上传闻。</p>
+</div>
+
+<form class="calc" id="be-calc" action="#" method="get">
+  <fieldset>
+    <legend>月固定成本（请填你的假设或已签约数字）</legend>
+    <label for="rent">月租金（日元）
+      <span class="hint">假设或合同额。留空表示这项暂不计入。不要使用本站未提供的「行情租金」。</span>
+    </label>
+    <input id="rent" name="rent" type="number" inputmode="decimal" min="0" step="1" placeholder="例如你自己的报价">
+    <label for="staff">月人工（日元）
+      <span class="hint">含自己若按月给自己开的生活费或工资假设，以及计划雇人的成本。</span>
+    </label>
+    <input id="staff" name="staff" type="number" inputmode="decimal" min="0" step="1">
+    <label for="other">其他月固定开支（日元）
+      <span class="hint">水电、通信、保险、软件等。没有把握就先填 0，并在结果里注明这项是缺省。</span>
+    </label>
+    <input id="other" name="other" type="number" inputmode="decimal" min="0" step="1" value="0">
+  </fieldset>
+  <fieldset>
+    <legend>毛利率假设（百分比）</legend>
+    <p class="hint">下面只是你自己设定的假设，不是高田马场或日本卡店的统计平均值。没有把握时，可以用偏保守的数字做压力测试。</p>
+    <label for="m-floor">店头自有库存毛利率（%）
+      <span class="hint">售价减去该卡进货或入账成本、再减去支付手续费等变动成本后，占售价的比例。</span>
+    </label>
+    <input id="m-floor" name="m-floor" type="number" inputmode="decimal" min="0" max="100" step="0.1" placeholder="例如 25">
+    <label for="m-buy">收购再售毛利率（%）
+      <span class="hint">要扣收购款、未售出风险和手续费。许可前不要把收购当计划中的收入。</span>
+    </label>
+    <input id="m-buy" name="m-buy" type="number" inputmode="decimal" min="0" max="100" step="0.1">
+    <label for="m-consign">寄售抽成率（%）
+      <span class="hint">若走寄售，这里填你计划留给店里的佣金比例，不是货主收入。</span>
+    </label>
+    <input id="m-consign" name="m-consign" type="number" inputmode="decimal" min="0" max="100" step="0.1">
+    <label for="m-online">网上售卖毛利率（%）
+      <span class="hint">要扣除平台费、支付费和运费假设。</span>
+    </label>
+    <input id="m-online" name="m-online" type="number" inputmode="decimal" min="0" max="100" step="0.1">
+    <label for="mix">若多渠道并行，用于总回本估算的综合毛利率（%）
+      <span class="hint">没有自己的渠道结构时，先用「店头自有库存」那一项，或填一个更保守的综合假设。</span>
+    </label>
+    <input id="mix" name="mix" type="number" inputmode="decimal" min="0" max="100" step="0.1">
+  </fieldset>
+  <fieldset>
+    <legend>可选：把销售额翻译成「要卖多少张」（仍是假设）</legend>
+    <label for="ticket">假设的平均客单价或平均单卡售价（日元）
+      <span class="hint">这不是高田马场的实际客单价。填了才能估算大约要成交多少笔或多少张。</span>
+    </label>
+    <input id="ticket" name="ticket" type="number" inputmode="decimal" min="0" step="1">
+  </fieldset>
+  <p>
+    <button type="submit">计算回本销售额</button>
+    <button type="reset" class="secondary">清空</button>
+  </p>
+  <div class="result" id="be-out" role="status" aria-live="polite">填写你的数字后点计算。没有填写的项目不会被当成事实或行情。</div>
+</form>
+
+<div class="prose">
+  <h2>怎么读结果</h2>
+  <ul>
+    <li>如果综合毛利率只有 20%，月固定成本是你填的 F，那么回本销售额就是 <code>F ÷ 0.20</code>。毛利率越低，需要卖得越多。</li>
+    <li>同样的销售额，走高手续费的网上渠道，可能仍盖不住固定成本；要把渠道毛利率分开看。</li>
+    <li>结果只在你的假设成立时有意义。租金一改、人工一加，回本线会立刻移动。</li>
+  </ul>
+  <p>更细的进货定价、寄售分成和店头定价，会作为<a href="{{ '/path/' | relative_url }}">学习路径</a>里「建议优先」的基础文章，等你点名后再写。每日更新文末也会回到这条回本线。</p>
+  <p class="muted">本页是学习工具，不构成投资、财务或法律建议。</p>
+</div>
+<script>
+(function () {
+  var form = document.getElementById('be-calc');
+  var out = document.getElementById('be-out');
+  function num(id) {
+    var el = document.getElementById(id);
+    if (!el || el.value === '') return null;
+    var n = Number(el.value);
+    return isFinite(n) ? n : null;
+  }
+  function yen(n) {
+    return Math.round(n).toLocaleString('ja-JP') + ' 日元';
+  }
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var rent = num('rent') || 0;
+    var staff = num('staff') || 0;
+    var other = num('other') || 0;
+    var filledFixed = (num('rent') !== null) || (num('staff') !== null) || (num('other') !== null);
+    var fixed = rent + staff + other;
+    var mix = num('mix');
+    if (mix === null) mix = num('m-floor');
+    var parts = [];
+    if (!filledFixed) {
+      parts.push('你还没有填写任何固定成本。请至少填租金或人工（可以是假设）。');
+    } else {
+      parts.push('按你输入的假设，月固定成本为 ' + yen(fixed) + '（租金 ' + yen(rent) + ' + 人工 ' + yen(staff) + ' + 其他 ' + yen(other) + '）。');
+    }
+    function line(label, rate) {
+      if (rate === null) return;
+      if (rate <= 0) {
+        parts.push(label + '：毛利率为 0 或未填有效值，无法计算回本销售额。');
+        return;
+      }
+      var sales = fixed / (rate / 100);
+      var t = num('ticket');
+      var extra = t ? ('若平均单价假设为 ' + yen(t) + '，大约需要 ' + Math.ceil(sales / t) + ' 笔（或张）。这只是用你的单价假设做的除法。') : '';
+      parts.push(label + '：回本所需月销售额约为 ' + yen(sales) + '。' + extra);
+    }
+    if (mix !== null && filledFixed) line('综合（或店头）毛利率 ' + mix + '%', mix);
+    line('收购再售毛利率', num('m-buy'));
+    line('寄售抽成率', num('m-consign'));
+    line('网上售卖毛利率', num('m-online'));
+    if (mix === null && filledFixed) {
+      parts.push('还没有填写综合或店头毛利率，所以没有给出总回本销售额。请补一个保守的百分比假设。');
+    }
+    parts.push('以上全部是根据你刚才输入的假设计算的，不是高田马场的租金、客流或行业平均毛利率。');
+    out.innerHTML = parts.map(function (p) { return '<p>' + p + '</p>'; }).join('');
+  });
+  form.addEventListener('reset', function () {
+    setTimeout(function () {
+      out.textContent = '填写你的数字后点计算。没有填写的项目不会被当成事实或行情。';
+    }, 0);
+  });
+})();
+</script>

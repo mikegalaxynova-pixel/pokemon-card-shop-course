@@ -1,11 +1,12 @@
 # 基础知识目录（唯一数据源）。status: published | planned。published 必须有对应 _kb/<section>/<slug>.md。
+# planned 文章改为按需撰写，不再按日期每晚自动写。recommended: true 表示每日更新会优先推荐。
 weeks:
-  - { n: 1, title: "卡牌基础与 PSA 评级", range: "11/14–11/20", goal: "看懂一张卡、系列与稀有度、日英版差异、PSA 等级与 Pop、认证号与假壳。" }
-  - { n: 2, title: "开店法规与运营", range: "11/21–11/27", goal: "古物商许可、古物台账与入货记录、开业手续、POS 与库存、税务、展示与防盗。" }
-  - { n: 3, title: "热门卡与市场定价", range: "11/28–12/4", goal: "查价渠道、定价策略、PSA 10/9 溢价、新弹发售周期、库存周转、海外买家。" }
-  - { n: 4, title: "社群与宣传", range: "12/5–12/11", goal: "X 账号、Discord 与论坛、Google 商家资料、店铺活动、KOL 合作、游客引流。" }
-  - { n: 5, title: "收购、新卡与周边", range: "12/12–12/18", goal: "收购流程、真伪鉴别、收购定价、寄售、新品与抽选、周边、正规进货渠道。" }
-  - { n: 6, title: "店铺运营进阶", range: "12/19–12/25", goal: "员工规则、客户接待、多语言接待、合规要点、开业清单、案例复盘。" }
+  - { n: 1, title: "卡牌基础与 PSA 评级", range: "已大部分发布", goal: "看懂一张卡、系列与稀有度、日英版差异、PSA 等级与 Pop、认证号与假壳。" }
+  - { n: 2, title: "买卖交易与合规（优先）", range: "按需撰写", goal: "许可后的台账与本人确认、朋友库存、收购定价、查价、寄售、真伪鉴别。" }
+  - { n: 3, title: "店铺运营与收支平衡（优先）", range: "按需撰写", goal: "收支平衡模型、店头定价、活动引流与复购、POS 与库存、陈列防盗、周转。" }
+  - { n: 4, title: "渠道、新品与税务", range: "按需撰写", goal: "正规进货、新品与抽选销售、周边、消费税与发票、免税销售。" }
+  - { n: 5, title: "社群与宣传", range: "按需撰写", goal: "X、地图资料、收藏家活动宣传、内容日历。" }
+  - { n: 6, title: "团队、接待与复盘", range: "按需撰写", goal: "员工规则、客户接待、多语言接待、复盘。" }
 sections:
   - id: cards
     title: "卡牌入门"
@@ -15,9 +16,9 @@ sections:
       - { slug: series, title: "系列、弹与包装（パック / BOX / 构筑套装）", week: 1, status: published }
       - { slug: rarity, title: "稀有度速查（C〜UR、SAR、MUR）", week: 1, status: published }
       - { slug: jp-vs-en, title: "日文版 vs 英文版：五个关键差别", week: 1, status: published }
-      - { slug: eras, title: "历代系列年表：从旧裏面到 MEGA", week: 1, status: planned, planned: 2026-11-17 }
-      - { slug: condition, title: "未评级卡（生カード）成色判断", week: 1, status: planned, planned: 2026-11-19 }
-      - { slug: popular-cards, title: "高人气角色与常流通高价卡", week: 1, status: planned, planned: 2026-11-20 }
+      - { slug: eras, title: "历代系列年表：从旧裏面到 MEGA", week: 1, status: planned }
+      - { slug: condition, title: "未评级卡（生カード）成色判断", week: 1, status: planned, recommended: true }
+      - { slug: popular-cards, title: "高人气角色与常流通高价卡", week: 1, status: planned }
   - id: psa
     title: "PSA 与评级"
     desc: "你店里最核心的商品语言：等级标准、Pop、认证号与假壳。"
@@ -26,64 +27,66 @@ sections:
       - { slug: grades, title: "PSA 等级标准速查（10 / 9 及其他）", week: 1, status: published }
       - { slug: pop-report, title: "Pop Report（鉴定数量报告）怎么看", week: 1, status: published }
       - { slug: cert-and-fake, title: "认证号核验与假壳识别", week: 1, status: published }
-      - { slug: grading-companies, title: "PSA、BGS、CGC 等评级公司对比", week: 1, status: planned, planned: 2026-11-16 }
-      - { slug: submission, title: "PSA Japan 送评流程与费用", week: 1, status: planned, planned: 2026-11-18 }
+      - { slug: grading-companies, title: "PSA、BGS、CGC 等评级公司对比", week: 1, status: planned }
+      - { slug: submission, title: "PSA Japan 送评流程与费用", week: 1, status: planned }
   - id: shop
-    title: "开店实务"
-    desc: "在日本合法开卡牌店：古物商许可、入货记录、POS、税务。"
+    title: "开店实务与运营"
+    desc: "许可后的买卖合规、收支平衡、陈列、活动与日常运营。申请步骤不再展开，已发布的许可要点仅作参考。"
     articles:
-      - { slug: kobutsusho, title: "古物商许可要点（新宿警察署）", week: 2, status: published }
-      - { slug: kobutsu-records, title: "古物台账、本人确认与入货记录", week: 2, status: planned, planned: 2026-11-21 }
-      - { slug: friend-stock, title: "朋友提供的库存：买取、寄售怎样合法安排", week: 2, status: planned, planned: 2026-11-22 }
-      - { slug: opening-procedures, title: "开业手续：开业届、青色申告等", week: 2, status: planned, planned: 2026-11-24 }
-      - { slug: pos-inventory, title: "POS 与库存管理", week: 2, status: planned, planned: 2026-11-25 }
-      - { slug: tax, title: "税务基础：消费税、发票制度、免税销售", week: 2, status: planned, planned: 2026-11-26 }
-      - { slug: display-security, title: "展示柜、陈列与防盗", week: 2, status: planned, planned: 2026-11-27 }
+      - { slug: kobutsusho, title: "古物商许可要点（参考）", week: 2, status: published }
+      - { slug: kobutsu-records, title: "古物台账、本人确认与入货记录", week: 2, status: published }
+      - { slug: breakeven, title: "收支平衡路线图：高田马场 PSA 店模型", week: 3, status: planned, recommended: true }
+      - { slug: friend-stock, title: "朋友提供的库存：买取、寄售怎样安排", week: 2, status: planned, recommended: true }
+      - { slug: shop-events, title: "店铺活动：引流与复购", week: 3, status: planned, recommended: true }
+      - { slug: pos-inventory, title: "POS 与库存管理", week: 3, status: planned }
+      - { slug: display-security, title: "展示柜、陈列与防盗", week: 3, status: planned }
+      - { slug: tax, title: "税务基础：消费税、发票制度、免税接待", week: 4, status: planned }
+      - { slug: security-insurance, title: "防盗与保险", week: 3, status: planned }
   - id: market
     title: "定价与市场"
     desc: "怎样查价、定价、判断压货与周转。"
     articles:
-      - { slug: price-sources, title: "查价渠道与读法", week: 3, status: planned, planned: 2026-11-28 }
-      - { slug: pricing-strategy, title: "店头定价策略", week: 3, status: planned, planned: 2026-11-29 }
-      - { slug: grade-premium, title: "PSA 10 与 9 的价差逻辑", week: 3, status: planned, planned: 2026-11-30 }
-      - { slug: release-cycle, title: "新弹发售前后的行情周期", week: 3, status: planned, planned: 2026-12-01 }
-      - { slug: inventory-rotation, title: "库存周转与压货判断", week: 3, status: planned, planned: 2026-12-02 }
-      - { slug: overseas-buyers, title: "海外买家与日英卡比价", week: 3, status: planned, planned: 2026-12-03 }
-      - { slug: risk, title: "市场风险：炒作、复刻与汇率", week: 3, status: planned, planned: 2026-12-04 }
+      - { slug: price-sources, title: "查价渠道与读法", week: 2, status: planned, recommended: true }
+      - { slug: pricing-strategy, title: "店头定价与改价", week: 3, status: planned, recommended: true }
+      - { slug: grade-premium, title: "PSA 10 与 9 的价差逻辑", week: 2, status: planned }
+      - { slug: release-cycle, title: "新弹发售前后的行情周期", week: 4, status: planned }
+      - { slug: inventory-rotation, title: "库存周转与压货判断", week: 3, status: planned }
+      - { slug: overseas-buyers, title: "海外买家与日英卡比价", week: 4, status: planned }
+      - { slug: risk, title: "市场风险：炒作、复刻与汇率", week: 4, status: planned }
   - id: community
     title: "社群与宣传"
-    desc: "店铺怎样被找到：X、Discord、地图、活动、KOL、游客。"
+    desc: "店铺怎样被找到：X、地图、活动宣传、内容日历。"
     articles:
-      - { slug: x-accounts, title: "X（Twitter）账号运营与值得关注的账号", week: 4, status: planned, planned: 2026-12-05 }
-      - { slug: discord-forums, title: "Discord、论坛与本地社群", week: 4, status: planned, planned: 2026-12-06 }
-      - { slug: google-business, title: "Google 商家资料与地图评价", week: 4, status: planned, planned: 2026-12-07 }
-      - { slug: collector-events, title: "收藏家活动与开箱直播", week: 4, status: planned, planned: 2026-12-08 }
-      - { slug: kol, title: "YouTuber / KOL 合作", week: 4, status: planned, planned: 2026-12-09 }
-      - { slug: inbound, title: "游客引流与海外宣传", week: 4, status: planned, planned: 2026-12-10 }
-      - { slug: content-plan, title: "店铺内容日历", week: 4, status: planned, planned: 2026-12-11 }
+      - { slug: x-accounts, title: "X（Twitter）账号运营与值得关注的账号", week: 5, status: planned }
+      - { slug: discord-forums, title: "Discord、论坛与本地社群", week: 5, status: planned }
+      - { slug: google-business, title: "Google 商家资料与地图评价", week: 5, status: planned }
+      - { slug: collector-events, title: "收藏家活动与开箱直播", week: 5, status: planned }
+      - { slug: kol, title: "YouTuber / KOL 合作", week: 5, status: planned }
+      - { slug: inbound, title: "沿线客群与海外宣传", week: 5, status: planned }
+      - { slug: content-plan, title: "店铺内容日历", week: 5, status: planned }
   - id: buy
     title: "收购与进货"
-    desc: "买取（收购）流程、真伪鉴别、收购定价与寄售。"
+    desc: "买取流程、PSA 卡进货判断、收购定价、高额交易、卖出渠道与毛利、寄售与正规渠道。按需撰写，不是每日栏目。"
     articles:
-      - { slug: buyback-flow, title: "收购（買取）流程", week: 5, status: planned, planned: 2026-12-12 }
-      - { slug: authenticity, title: "真伪鉴别实操", week: 5, status: planned, planned: 2026-12-13 }
-      - { slug: buy-pricing, title: "收购定价与利润", week: 5, status: planned, planned: 2026-12-14 }
-      - { slug: consignment, title: "寄售（委託販売）模式", week: 5, status: planned, planned: 2026-12-15 }
+      - { slug: buyback-flow, title: "收购（買取）流程", week: 2, status: planned, recommended: true }
+      - { slug: authenticity, title: "真伪鉴别实操", week: 2, status: planned }
+      - { slug: buy-pricing, title: "收购定价与利润", week: 2, status: planned, recommended: true }
+      - { slug: psa-intake, title: "PSA 卡进货判断", week: 2, status: planned, recommended: true }
+      - { slug: high-value-trades, title: "高额 PSA 交易怎么做", week: 2, status: planned, recommended: true }
+      - { slug: sales-channels, title: "卖出渠道与毛利", week: 2, status: planned, recommended: true }
+      - { slug: consignment, title: "寄售（委託販売）模式", week: 2, status: planned, recommended: true }
   - id: products
     title: "新卡与周边"
     desc: "新品、抽选、周边与正规进货渠道。"
     articles:
-      - { slug: sealed, title: "新品与抽选销售", week: 5, status: planned, planned: 2026-12-16 }
-      - { slug: supplies, title: "卡套、卡盒等周边", week: 5, status: planned, planned: 2026-12-17 }
-      - { slug: distributor, title: "正规进货渠道与批发", week: 5, status: planned, planned: 2026-12-18 }
+      - { slug: sealed, title: "新品与抽选销售", week: 4, status: planned }
+      - { slug: supplies, title: "卡套、卡盒等周边", week: 4, status: planned }
+      - { slug: distributor, title: "正规进货渠道与批发", week: 4, status: planned }
   - id: ops
     title: "店铺运营进阶"
-    desc: "员工、接待、多语言、合规与案例。"
+    desc: "陈列、库存 POS、活动引流、免税接待、防盗保险、员工与复盘。按需撰写，不是每日栏目。"
     articles:
-      - { slug: staff-rules, title: "员工规则与权限", week: 6, status: planned, planned: 2026-12-19 }
-      - { slug: customer-service, title: "客户接待与纠纷处理", week: 6, status: planned, planned: 2026-12-20 }
-      - { slug: multilingual, title: "多语言接待（英 / 中 / 日）", week: 6, status: planned, planned: 2026-12-21 }
-      - { slug: compliance, title: "合规要点汇总", week: 6, status: planned, planned: 2026-12-22 }
-      - { slug: opening-checklist, title: "开业准备清单", week: 6, status: planned, planned: 2026-12-23 }
-      - { slug: cases, title: "案例拆解：成功与失败的卡牌店", week: 6, status: planned, planned: 2026-12-24 }
-      - { slug: review, title: "六周复盘与下一阶段", week: 6, status: planned, planned: 2026-12-25 }
+      - { slug: staff-rules, title: "员工规则与权限", week: 6, status: planned }
+      - { slug: customer-service, title: "客户接待与纠纷处理", week: 6, status: planned }
+      - { slug: multilingual, title: "多语言接待（英 / 中 / 日）", week: 6, status: planned }
+      - { slug: review, title: "阶段复盘与下一阶段", week: 6, status: planned }

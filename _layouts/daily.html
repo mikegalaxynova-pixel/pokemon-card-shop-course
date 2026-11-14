@@ -30,7 +30,62 @@ nav: daily
   </ul>
   {% endif %}
 
+  {% if page.shop_case %}
+  <section class="shop-case" id="shop-case" aria-labelledby="case-h">
+    <p class="kicker">店铺案例（店舗ケーススタディ）</p>
+    <h2 id="case-h">{{ page.shop_case.title }}</h2>
+    {% include media.html item=page.shop_case %}
+    <div class="mentor-body">{{ page.shop_case.body | markdownify }}</div>
+    {% if page.shop_case.borrow %}
+    <h3>值得借鉴的地方</h3>
+    <div class="mentor-body">{{ page.shop_case.borrow | markdownify }}</div>
+    {% endif %}
+    {% if page.shop_case.next_steps %}
+    <h3>你可以怎么推进</h3>
+    <div class="mentor-body">{{ page.shop_case.next_steps | markdownify }}</div>
+    {% endif %}
+    {% if page.shop_case.source %}
+    <p class="src">来源：{% if page.shop_case.url %}<a href="{{ page.shop_case.url }}" rel="noopener">{{ page.shop_case.source }}</a>{% else %}{{ page.shop_case.source }}{% endif %}</p>
+    {% endif %}
+    {% include comment.html text=page.shop_case.comment %}
+  </section>
+  {% endif %}
+
   {{ content }}
+
+  {% if page.next_kb %}
+  <section class="next-kb" id="next-kb" aria-labelledby="next-kb-h">
+    <h2 id="next-kb-h">推荐下一篇基础文章</h2>
+    <p>基础知识改为按需撰写：下面是本期建议优先看或点名撰写的题目，不会在每晚自动写成文章。你选定后再写。</p>
+    <ul>
+    {% for k in page.next_kb %}
+      <li>
+        {% if k.url %}<a href="{{ k.url | relative_url }}">{{ k.title }}</a>{% else %}<strong>{{ k.title }}</strong>{% endif %}
+        {% if k.reason %} — {{ k.reason }}{% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if page.breakeven %}
+  <section class="be-box" id="breakeven" aria-labelledby="be-h">
+    <p class="kicker">面向收支平衡</p>
+    <h2 id="be-h">本期对收支平衡的启示</h2>
+    {% if page.breakeven.intro %}<div class="mentor-body">{{ page.breakeven.intro | markdownify }}</div>{% endif %}
+    <ol>
+    {% for item in page.breakeven.items %}
+      <li>
+        {% if item.priority %}<span class="priority">优先 {{ item.priority }}.</span>{% endif %}
+        {{ item.action }}
+        {% if item.math %}<p class="assume">{{ item.math }}</p>{% endif %}
+      </li>
+    {% endfor %}
+    </ol>
+    <p class="src">公式和可改假设见<a href="{{ '/breakeven/' | relative_url }}">收支平衡路线图</a>。没有标成假设或来源的数字，不要当成事实。</p>
+    {% include comment.html text=page.breakeven.comment %}
+  </section>
+  {% endif %}
 </article>
 {% if page.previous or page.next %}
 <nav class="pager" aria-label="上一期/下一期">

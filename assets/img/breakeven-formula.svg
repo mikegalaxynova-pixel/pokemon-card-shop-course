@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="260" viewBox="0 0 600 260" role="img" aria-labelledby="t d">
+<title id="t">月度收支平衡公式示意图</title>
+<desc id="d">月固定成本等于租金加人工加其他固定开支。达到收支平衡所需的月销售额，等于月固定成本除以毛利率。所有数字都是你填入的假设，不是高田马场的行情事实。</desc>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC",sans-serif;fill:#1f2328}.muted{fill:#57606a}</style>
+<rect width="600" height="260" fill="#f6f8fa"/>
+<text x="24" y="28" font-size="16" font-weight="700">收支平衡怎么算（公式，不是行情）</text>
+<text x="24" y="48" font-size="11" class="muted">All inputs are your assumptions. Do not treat placeholders as Takadanobaba rent or sales facts.</text>
+<rect x="24" y="64" width="552" height="64" rx="8" fill="#fff" stroke="#d0d7de"/>
+<text x="300" y="90" text-anchor="middle" font-size="14" font-weight="700">月固定成本 = 租金 + 人工 + 其他固定开支</text>
+<text x="300" y="112" text-anchor="middle" font-size="12" class="muted">Monthly fixed cost = rent + staff + other fixed costs</text>
+<rect x="24" y="140" width="552" height="64" rx="8" fill="#fff" stroke="#b3001b"/>
+<text x="300" y="166" text-anchor="middle" font-size="14" font-weight="700">回本所需月销售额 = 月固定成本 ÷ 毛利率</text>
+<text x="300" y="188" text-anchor="middle" font-size="12" class="muted">Break-even sales = fixed cost ÷ gross margin rate</text>
+<text x="24" y="230" font-size="12">毛利率 =（售价 − 进货及变动成本）÷ 售价。不同渠道的手续费和佣金不同，要分开算。</text>
+<text x="24" y="248" font-size="11" class="muted">示意图。请到收支平衡路线图页填入你自己的数字。</text>
+</svg>

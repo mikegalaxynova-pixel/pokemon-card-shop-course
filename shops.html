@@ -1,0 +1,20 @@
+---
+layout: default
+title: 店铺案例
+permalink: /shops/
+description: 每日更新里拆解过的真实卡牌店案例，供高田马场 PSA 店借鉴运营和买卖做法。只写有来源的事实。
+---
+<div class="prose">
+  <h1>店铺案例</h1>
+  <p class="lead">每日更新的「店铺运营」里，会不定期拆解一家真实卡牌店。这里汇总已经写过的案例，避免重复。只采用公司官网、访谈或新闻里能核对的事实，不编造销售额或客流。</p>
+</div>
+<ul class="cards-list">
+{% for s in site.data.shops %}
+  <li class="card">
+    <p class="kind">{{ s.name_ja }}{% if s.name_en %}（{{ s.name_en }}）{% endif %}</p>
+    <h2><a href="{{ s.issue | relative_url }}">{{ s.name_zh | default: s.name_ja }}</a></h2>
+    <p>{% if s.operator %}运营：{{ s.operator }}。{% endif %}{% if s.area %}地区：{{ s.area }}。{% endif %}</p>
+    <p class="src">写入日期：{{ s.featured }}{% if s.official %} · <a href="{{ s.official }}" rel="noopener">官方网站</a>{% endif %}</p>
+  </li>
+{% endfor %}
+</ul>

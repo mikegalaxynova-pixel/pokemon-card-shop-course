@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="260" viewBox="0 0 600 260" role="img" aria-labelledby="t d">
+<title id="t">卡牌店活动类型与运营目的示意图</title>
+<desc id="d">四种引流活动：官方健身房对战类活动、开封活动、交换会、评级卡展示。本图只谈客流和转化，不讲解对战规则。费用和客流量因店而异，图中不写具体数字。</desc>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC",sans-serif;fill:#1f2328}.muted{fill:#57606a}</style>
+<rect width="600" height="260" fill="#f6f8fa"/>
+<text x="24" y="28" font-size="16" font-weight="700">活动只是引流工具，不是自动赚钱</text>
+<text x="24" y="48" font-size="11" class="muted">Traffic and conversion only. No gameplay. Costs and footfall are not published as a standard fee.</text>
+<g font-size="12">
+  <rect x="24" y="64" width="270" height="80" rx="8" fill="#fff" stroke="#d0d7de"/>
+  <text x="40" y="90" font-weight="700">官方健身房活动</text>
+  <text x="40" y="110" font-size="11">可上官方活动检索、卖健身房商品</text>
+  <text x="40" y="128" font-size="11" class="muted">占场地和人手，加盟费用未公开</text>
+  <rect x="306" y="64" width="270" height="80" rx="8" fill="#fff" stroke="#d0d7de"/>
+  <text x="322" y="90" font-weight="700">开封活动</text>
+  <text x="322" y="110" font-size="11">带动新包关注，库存和秩序成本高</text>
+  <text x="322" y="128" font-size="11" class="muted">现货紧时不要靠它承诺开出追捧卡</text>
+  <rect x="24" y="156" width="270" height="80" rx="8" fill="#fff" stroke="#0b5cad"/>
+  <text x="40" y="182" font-weight="700">交换会 / 交流会</text>
+  <text x="40" y="202" font-size="11">学生街较容易聚人，可顺便询价收购</text>
+  <text x="40" y="220" font-size="11" class="muted">要有台账和真伪核验准备</text>
+  <rect x="306" y="156" width="270" height="80" rx="8" fill="#fff" stroke="#0b5cad"/>
+  <text x="322" y="182" font-weight="700">评级卡展示</text>
+  <text x="322" y="202" font-size="11">更贴近 PSA 店的主力商品</text>
+  <text x="322" y="220" font-size="11" class="muted">成本相对低，适合先小范围试</text>
+</g>
+</svg>

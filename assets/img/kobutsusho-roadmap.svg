@@ -1,16 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="230" viewBox="0 0 600 230" role="img" aria-labelledby="t d">
-<title id="t">古物商许可与开店步骤示意图</title>
-<desc id="d">六个步骤的开店路线图：许可、资金、选址、入货记录、收银与库存、开业。强调必须先取得许可，且营业所地址与许可申请绑定。</desc>
+<title id="t">高田马场开店后买卖与运营路线图</title>
+<desc id="d">六个步骤：许可办理中、准备资金、高田马场选址、入货与台账、收银库存、开业买卖。重点转向许可后的记录和交易，而不是申请步骤。</desc>
 <style>
   text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Noto Sans SC",sans-serif;fill:#1f2328}
   .muted{fill:#57606a}
-  .w{fill:#fff}
-  .accent{fill:#b3001b}
 </style>
-
 <rect width="600" height="230" fill="#f6f8fa"/>
-<text x="24" y="28" font-size="16" font-weight="700">西新宿开店路线图</text>
-<text x="24" y="48" font-size="11" class="muted">Permit first. Address and license are tied together.</text>
+<text x="24" y="28" font-size="16" font-weight="700">高田马场店：许可之后做什么</text>
+<text x="24" y="48" font-size="11" class="muted">Takadanobaba. After licensing, records and trading come first.</text>
 <rect x="24" y="70" width="86" height="86" rx="10" fill="#fff" stroke="#b3001b" stroke-width="2"/>
     <text x="67" y="100" font-size="16" font-weight="700" text-anchor="middle" fill="#b3001b">1</text>
     <text x="67" y="122" font-size="11" font-weight="700" text-anchor="middle">许可</text>
@@ -20,24 +17,22 @@
     <text x="161" y="122" font-size="11" font-weight="700" text-anchor="middle">资金</text>
     <text x="161" y="140" font-size="10" class="muted" text-anchor="middle">Funds</text>
     <rect x="212" y="70" width="86" height="86" rx="10" fill="#fff" stroke="#d0d7de" stroke-width="2"/>
-    <text x="255" y="100" font-size="16" font-weight="700" text-anchor="middle" fill="#b3001b">3</text>
-    <text x="255" y="122" font-size="11" font-weight="700" text-anchor="middle">选址</text>
+    <text x="255" y="100" font-size="16" font-weight="700" text-anchor="middle">3</text>
+    <text x="255" y="122" font-size="11" font-weight="700" text-anchor="middle">高田马场</text>
     <text x="255" y="140" font-size="10" class="muted" text-anchor="middle">Location</text>
-    <rect x="306" y="70" width="86" height="86" rx="10" fill="#fff" stroke="#d0d7de" stroke-width="2"/>
+    <rect x="306" y="70" width="86" height="86" rx="10" fill="#fff" stroke="#0b5cad" stroke-width="2"/>
     <text x="349" y="100" font-size="16" font-weight="700" text-anchor="middle" fill="#b3001b">4</text>
-    <text x="349" y="122" font-size="11" font-weight="700" text-anchor="middle">入货记录</text>
-    <text x="349" y="140" font-size="10" class="muted" text-anchor="middle">Records</text>
-    <rect x="400" y="70" width="86" height="86" rx="10" fill="#fff" stroke="#d0d7de" stroke-width="2"/>
+    <text x="349" y="122" font-size="11" font-weight="700" text-anchor="middle">台账入货</text>
+    <text x="349" y="140" font-size="10" class="muted" text-anchor="middle">Ledger</text>
+    <rect x="400" y="70" width="86" height="86" rx="10" fill="#fff" stroke="#0b5cad" stroke-width="2"/>
     <text x="443" y="100" font-size="16" font-weight="700" text-anchor="middle" fill="#b3001b">5</text>
-    <text x="443" y="122" font-size="11" font-weight="700" text-anchor="middle">收银库存</text>
-    <text x="443" y="140" font-size="10" class="muted" text-anchor="middle">POS</text>
+    <text x="443" y="122" font-size="11" font-weight="700" text-anchor="middle">定价出货</text>
+    <text x="443" y="140" font-size="10" class="muted" text-anchor="middle">Sell</text>
     <rect x="494" y="70" width="86" height="86" rx="10" fill="#fff" stroke="#d0d7de" stroke-width="2"/>
     <text x="537" y="100" font-size="16" font-weight="700" text-anchor="middle" fill="#b3001b">6</text>
-    <text x="537" y="122" font-size="11" font-weight="700" text-anchor="middle">开业</text>
-    <text x="537" y="140" font-size="10" class="muted" text-anchor="middle">Open</text>
-    
-<text x="24" y="182" font-size="12">营业所地址要写进申请书，所以选址和许可是绑在一起的。</text>
-<text x="24" y="202" font-size="12">许可下来之前，不能以古物商身份营业。</text>
-<text x="24" y="220" font-size="11" class="muted">示意图。具体以警視庁、新宿警察署的最新说明为准。</text>
-
+    <text x="537" y="122" font-size="11" font-weight="700" text-anchor="middle">回本</text>
+    <text x="537" y="140" font-size="10" class="muted" text-anchor="middle">Break-even</text>
+<text x="24" y="182" font-size="12">你已在自行办理许可。下一步是把现货变成可售库存，并准备好买取台账。</text>
+<text x="24" y="202" font-size="12">许可下来之前，不能以古物商身份收购二手卡。</text>
+<text x="24" y="220" font-size="11" class="muted">示意图。窗口按店址管辖警察署确认，细节以警視庁最新说明为准。</text>
 </svg>

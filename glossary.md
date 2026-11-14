@@ -3,7 +3,7 @@ title: 术语表
 nav: glossary
 permalink: /glossary/
 date: 2026-11-14
-last_updated: 2026-11-14
+last_updated: 2026-11-15
 description: 宝可梦卡牌店常用日文 / 英文 / 中文术语对照：卡面、商品、评级、开店法规。
 lead: 店里接待、查价、办手续时最常见的词。新词随每日更新追加。日文专名后都附英文；没有官方英文商品名的会标明暂译。
 ---
@@ -82,3 +82,8 @@ lead: 店里接待、查价、办手续时最常见的词。新词随每日更�
 | 誓約書 | written pledge | 誓约书 | |
 | 行政書士 | administrative scrivener | 行政书士 | 可代办许可申请的专业人士 |
 | 不正品の申告 | reporting suspected illicit goods | 可疑物品申告 | 《古物営業法》第 15 条第 3 项：买入时怀疑是不正品，须立即向警察申告 |
+| 古物台帳 | transaction ledger (Antique Business Act) | 古物台账 | 买入等交易的法定记录，保存 3 年，见[古物台账、本人确认与入货记录]({{ '/kb/shop/kobutsu-records/' | relative_url }}) |
+| 本人確認 | identity verification of the seller | 本人确认 | 买入时确认对方住所、姓名、职业和年龄 |
+| 収支分岐 / 収支平衡 | break-even | 收支平衡 | 月毛利盖过月固定成本；公式见[收支平衡路线图]({{ '/breakeven/' | relative_url }}) |
+| 粗利率 / 毛利率 | gross margin | 毛利率 | （售价 − 变动成本）÷ 售价，是回本公式里的分母 |
+

@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="250" viewBox="0 0 600 250" role="img" aria-labelledby="t d">
-<title id="t">西新宿古物商申请要点示意图</title>
-<desc id="d">四个要点卡片：新宿警察署申请、手续费 19000 日元不退、标准处理 40 日、品目需向警察署确认。</desc>
+<title id="t">古物商许可要点示意图（参考）</title>
+<desc id="d">四个参考要点：向店址管辖警察署办理、手续费 19000 日元不退、标准处理 40 日、品目须向管辖警察署确认。本图不是官方表格，也不再展开申请步骤。</desc>
 <style>text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC",sans-serif;fill:#1f2328}.muted{fill:#57606a}</style>
 <rect width="600" height="250" fill="#f6f8fa"/>
-<text x="24" y="30" font-size="16" font-weight="700">西新宿申请，先记住这四条</text>
-<text x="24" y="50" font-size="11" class="muted">Check with Shinjuku Police Station. This is a study diagram, not an official form.</text>
+<text x="24" y="30" font-size="16" font-weight="700">许可要点（参考，不再展开申请步骤）</text>
+<text x="24" y="50" font-size="11" class="muted">Apply at the police station with jurisdiction over the shop address. Study diagram only.</text>
 <g>
   <rect x="24" y="68" width="270" height="76" rx="10" fill="#fff" stroke="#d0d7de"/>
-  <text x="40" y="94" font-size="13" font-weight="700">窗口：新宿警察署</text>
-  <text x="40" y="114" font-size="12">西新宿 1〜8 丁目管辖</text>
-  <text x="40" y="132" font-size="11" class="muted">电话 03-3346-0110，先预约确认</text>
+  <text x="40" y="94" font-size="13" font-weight="700">窗口：管辖警察署</text>
+  <text x="40" y="114" font-size="12">按营业所地址确定管辖</text>
+  <text x="40" y="132" font-size="11" class="muted">东京多为防犯係，先确认受理方式</text>
   <rect x="306" y="68" width="270" height="76" rx="10" fill="#fff" stroke="#d0d7de"/>
   <text x="322" y="94" font-size="13" font-weight="700">手续费：19,000 日元</text>
   <text x="322" y="114" font-size="12">不许可或撤回也不退</text>
@@ -19,7 +19,7 @@
   <text x="40" y="202" font-size="12">不含行政机关休息日</text>
   <text x="40" y="220" font-size="11" class="muted">补件会更久</text>
   <rect x="306" y="156" width="270" height="76" rx="10" fill="#fff" stroke="#d0d7de"/>
-  <text x="322" y="182" font-size="13" font-weight="700">品目：向警察署确认</text>
+  <text x="322" y="182" font-size="13" font-weight="700">品目：向管辖署确认</text>
   <text x="322" y="202" font-size="12">实务上常按「道具類」申报</text>
   <text x="322" y="220" font-size="11" class="muted">条文未单独写「卡片」</text>
 </g>

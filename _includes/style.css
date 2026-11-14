@@ -80,3 +80,32 @@ input[type=search]{width:100%;font:inherit;padding:.7rem .9rem;border:1px solid 
 .fig-pair{grid-template-columns:1fr 1fr}
 .fig-row .fig,.fig-pair .fig{margin:0}
 @media(max-width:32rem){.fig-pair{grid-template-columns:1fr}}
+
+.practice,.ops,.shop-case,.next-kb,.be-box{margin:1.1rem 0;padding:.85rem 1rem;border-radius:0 10px 10px 0;border:1px solid var(--line);border-left-width:4px;background:#fff}
+.practice{border-left-color:#0b5cad;background:#f5f9fc}
+.ops{border-left-color:#116329;background:#f4faf6}
+.shop-case{border-left-color:#7a4a00;background:#fffaf0}
+.next-kb{border-left-color:var(--line);background:var(--soft)}
+.be-box{border:2px solid var(--accent);border-left-width:4px;background:#fff8f8}
+.practice h2,.ops h2,.shop-case h2,.next-kb h2,.be-box h2{border:0;margin:.1rem 0 .6rem;padding:0}
+.kicker{margin:0 0 .35rem;font-size:.8rem;font-weight:700;letter-spacing:.02em;color:var(--muted)}
+.practice .kicker{color:#0b5cad}
+.ops .kicker{color:#116329}
+.shop-case .kicker{color:#7a4a00}
+.be-box .kicker{color:var(--accent)}
+.priority{font-weight:700;margin-right:.25rem}
+.be-box ol{padding-left:1.2rem;margin:.4rem 0}
+.be-box li{margin:.45rem 0}
+.assume{font-size:.9rem;color:var(--muted)}
+.calc{margin:1rem 0;padding:1rem;border:1px solid var(--line);border-radius:10px;background:#fff}
+.calc fieldset{border:0;margin:0 0 1rem;padding:0}
+.calc legend{font-weight:700;margin:0 0 .5rem}
+.calc label{display:block;margin:.65rem 0 .2rem;font-weight:600}
+.calc .hint{display:block;font-weight:400;color:var(--muted);font-size:.85rem}
+.calc input{width:100%;max-width:20rem;font:inherit;padding:.55rem .7rem;border:1px solid var(--line);border-radius:8px;min-height:44px}
+.calc button{font:inherit;min-height:44px;padding:.55rem 1rem;margin:.4rem .5rem .4rem 0;border-radius:8px;border:1px solid var(--accent);background:var(--accent);color:#fff;cursor:pointer}
+.calc button.secondary{background:#fff;color:var(--fg);border-color:var(--line)}
+.calc output,.calc .result{display:block;margin-top:.75rem;padding:.75rem .9rem;background:var(--soft);border-radius:8px}
+.status.rec{background:#fff4d6;color:var(--upd)}
+.channels{width:100%;}
+@media(max-width:40rem){.calc input{max-width:100%}}

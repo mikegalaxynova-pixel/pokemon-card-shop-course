@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="280" viewBox="0 0 600 280" role="img" aria-labelledby="t d">
+<title id="t">古物台账法定记载事项示意图</title>
+<desc id="d">依据古物营业法第十六条，买入或受托时台账应记载：交易年月日、品目和数量、特征、对方住所姓名职业年龄、本人确认措施的区分。保存三年。本图是学习示意图，不是官方账簿格式。</desc>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC",sans-serif;fill:#1f2328}.muted{fill:#57606a}.w{fill:#fff}</style>
+<rect width="600" height="280" fill="#f6f8fa"/>
+<text x="24" y="28" font-size="16" font-weight="700">买入时台账要记什么</text>
+<text x="24" y="48" font-size="11" class="muted">Antique Business Act Art. 16. Study diagram, not the official ledger form.</text>
+<g font-size="12">
+  <rect x="24" y="64" width="176" height="70" rx="8" fill="#fff" stroke="#d0d7de"/>
+  <text x="112" y="92" text-anchor="middle" font-weight="700">1. 交易年月日</text>
+  <text x="112" y="112" text-anchor="middle" class="muted">Date of trade</text>
+  <rect x="212" y="64" width="176" height="70" rx="8" fill="#fff" stroke="#d0d7de"/>
+  <text x="300" y="92" text-anchor="middle" font-weight="700">2. 品目与数量</text>
+  <text x="300" y="112" text-anchor="middle" class="muted">Type and quantity</text>
+  <rect x="400" y="64" width="176" height="70" rx="8" fill="#fff" stroke="#d0d7de"/>
+  <text x="488" y="92" text-anchor="middle" font-weight="700">3. 特征</text>
+  <text x="488" y="112" text-anchor="middle" class="muted">Identifying features</text>
+  <rect x="24" y="146" width="274" height="70" rx="8" fill="#fff" stroke="#d0d7de"/>
+  <text x="161" y="174" text-anchor="middle" font-weight="700">4. 对方住所、姓名、职业、年龄</text>
+  <text x="161" y="194" text-anchor="middle" class="muted">Seller identity details</text>
+  <rect x="310" y="146" width="266" height="70" rx="8" fill="#fff" stroke="#d0d7de"/>
+  <text x="443" y="174" text-anchor="middle" font-weight="700">5. 本人确认措施的区分</text>
+  <text x="443" y="194" text-anchor="middle" class="muted">How you verified the person</text>
+</g>
+<text x="24" y="242" font-size="12">PSA 卡建议把认证号、等级、卡名写入「特征」。账簿或电磁记录均须自最后记载日起保存 3 年。</text>
+<text x="24" y="262" font-size="11" class="muted">对价总额不满 1 万日元时，确认和记载义务原则上免除（特定品目除外）。高价 PSA 卡通常不适用这项免除。</text>
+</svg>
