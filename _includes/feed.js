@@ -8,11 +8,20 @@
   var statusEl = document.getElementById("feed-status");
   var emptyEl = document.getElementById("feed-empty");
   var markBtn = document.getElementById("feed-mark-read");
-  var searchInput = document.getElementById("feed-search");
+  var searchInput = document.getElementById("site-search") || document.getElementById("feed-search");
+  var toast = document.getElementById("feed-toast");
   var READ_KEY = "pcsc-read";
   var VIEW_KEY = "pcsc-views";
-  var THEME_KEY = "pcsc-theme";
-  var validTabs = { featured: 1, all: 1, news: 1, shops: 1, videos: 1, kb: 1 };
+  var validTabs = { featured: 1, all: 1 };
+  tabs.forEach(function (btn) {
+    var id = btn.getAttribute("data-tab");
+    if (id) validTabs[id] = 1;
+  });
+  var tabLabels = { featured: "今日推荐", all: "全部" };
+  tabs.forEach(function (btn) {
+    var id = btn.getAttribute("data-tab");
+    if (id) tabLabels[id] = btn.textContent.trim();
+  });
 
   function norm(u) {
     if (!u) return "";
@@ -31,16 +40,24 @@
   function ts(el) { return parseInt(el.getAttribute("data-ts"), 10) || 0; }
   function kind(el) { return el.getAttribute("data-kind") || ""; }
   function urlOf(el) { return norm(el.getAttribute("data-url")); }
+  function dayOf(el) { return el.getAttribute("data-day") || ""; }
   function rankOf(el) {
     var r = el.getAttribute("data-featured-rank");
     return r === null || r === "" ? 999 : parseInt(r, 10);
+  }
+  function hasTopic(el, id) {
+    var t = " " + (el.getAttribute("data-topics") || "") + " ";
+    return t.indexOf(" " + id + " ") !== -1;
+  }
+  function formatDay(day) {
+    var p = String(day).split("-");
+    if (p.length < 3) return day;
+    return parseInt(p[1], 10) + "/" + parseInt(p[2], 10);
   }
 
   function newestFirst(nodes) {
     return nodes.slice().sort(function (a, b) { return ts(b) - ts(a); });
   }
-
-  /* Keep given order, but never allow 3+ consecutive items of the same kind. */
   function interleavePreserve(nodes) {
     var remaining = nodes.slice();
     var out = [];
@@ -57,27 +74,33 @@
     }
     return out;
   }
-
-  /* Newest first, skipping an item if it would make 3 in a row of the same kind. */
   function interleaveNewest(nodes) {
     return interleavePreserve(newestFirst(nodes));
   }
-
-  function splitUnreadFirst(nodes) {
-    var readMap = getMap(READ_KEY);
+  function sortRead(nodes) {
     var views = getMap(VIEW_KEY);
-    var unread = [], read = [];
-    nodes.forEach(function (n) {
-      if (readMap[urlOf(n)]) read.push(n);
-      else unread.push(n);
-    });
-    read.forEach(function (n, i) { n._stable = i; });
-    read.sort(function (a, b) {
+    var arr = nodes.slice();
+    arr.forEach(function (n, i) { n._stable = i; });
+    arr.sort(function (a, b) {
       var dv = (views[urlOf(b)] || 0) - (views[urlOf(a)] || 0);
       if (dv) return dv;
       return a._stable - b._stable;
     });
-    return unread.concat(read);
+    return arr;
+  }
+  function groupByDayInterleaved(nodes) {
+    var days = {};
+    var order = [];
+    newestFirst(nodes).forEach(function (el) {
+      var d = dayOf(el) || "0";
+      if (!days[d]) { days[d] = []; order.push(d); }
+      days[d].push(el);
+    });
+    var out = [];
+    order.forEach(function (d) {
+      out = out.concat(interleaveNewest(days[d]));
+    });
+    return out;
   }
 
   function applyMeta() {
@@ -103,14 +126,21 @@
       if (freq) freq.hidden = n < 3;
       if (readBadge) readBadge.hidden = !isRead;
       el.querySelectorAll("[data-read-url]").forEach(function (badge) {
-        if (isRead) {
-          badge.classList.add("read");
-          if (!badge.getAttribute("data-feed-read") && !badge.getAttribute("data-feed-frequent")) {
-            /* keep NEW/更新 text but mark as read */
-          }
-        }
+        if (isRead) badge.classList.add("read");
       });
     });
+  }
+
+  function clearHelpers() {
+    list.querySelectorAll(".feed-day, .feed-read-split").forEach(function (n) { n.remove(); });
+  }
+  function appendDayHead(day, lastRef) {
+    if (!day || day === lastRef.value) return;
+    var sep = document.createElement("p");
+    sep.className = "feed-day";
+    sep.textContent = formatDay(day);
+    list.appendChild(sep);
+    lastRef.value = day;
   }
 
   function currentTab() {
@@ -135,6 +165,8 @@
         history.replaceState(null, "", location.pathname + location.search);
       }
     }
+    var on = root.querySelector('.feed-tab[aria-selected="true"]');
+    if (on && on.scrollIntoView) on.scrollIntoView({ inline: "nearest", block: "nearest", behavior: "smooth" });
     render();
   }
 
@@ -143,30 +175,54 @@
     var q = (searchInput && searchInput.value || "").trim().toLowerCase();
     var vis = items.filter(function (el) {
       if (tab === "featured" && el.getAttribute("data-featured") !== "1") return false;
-      if (tab !== "featured" && tab !== "all" && kind(el) !== tab) return false;
+      if (tab !== "featured" && tab !== "all" && !hasTopic(el, tab)) return false;
       if (q) {
         var hay = (el.getAttribute("data-search") || "").toLowerCase();
         if (hay.indexOf(q) === -1) return false;
       }
       return true;
     });
+    var readMap = getMap(READ_KEY);
+    var unread = vis.filter(function (el) { return !readMap[urlOf(el)]; });
+    var read = vis.filter(function (el) { return readMap[urlOf(el)]; });
+
     if (tab === "featured") {
-      vis = vis.slice().sort(function (a, b) { return rankOf(a) - rankOf(b); });
-      vis = interleavePreserve(vis);
+      unread.sort(function (a, b) { return rankOf(a) - rankOf(b); });
+      unread = interleavePreserve(unread);
+      read.sort(function (a, b) { return rankOf(a) - rankOf(b); });
+      read = sortRead(interleavePreserve(read));
     } else if (tab === "all") {
-      vis = interleaveNewest(vis);
+      unread = groupByDayInterleaved(unread);
+      read = sortRead(groupByDayInterleaved(read));
     } else {
-      vis = newestFirst(vis);
+      unread = newestFirst(unread);
+      read = sortRead(newestFirst(read));
     }
-    vis = splitUnreadFirst(vis);
+
+    clearHelpers();
     items.forEach(function (el) { el.hidden = true; });
-    vis.forEach(function (el) {
+    var withDates = tab === "all";
+    var last = { value: "" };
+    unread.forEach(function (el) {
+      if (withDates) appendDayHead(dayOf(el), last);
       el.hidden = false;
       list.appendChild(el);
     });
+    if (read.length && (unread.length || vis.length)) {
+      var div = document.createElement("p");
+      div.className = "feed-read-split";
+      div.textContent = "以下为已读";
+      list.appendChild(div);
+    }
+    last.value = "";
+    read.forEach(function (el) {
+      el.hidden = false;
+      list.appendChild(el);
+    });
+
     if (emptyEl) emptyEl.hidden = vis.length > 0;
     if (statusEl) {
-      var label = tab === "featured" ? "今日推荐" : tab === "all" ? "全部" : ({ news: "新闻", shops: "店铺案例", videos: "视频", kb: "基础知识" }[tab] || "");
+      var label = tabLabels[tab] || "";
       if (q) statusEl.textContent = "找到 " + vis.length + " 条（" + label + "）";
       else if (tab === "featured") statusEl.textContent = vis.length ? "今天先看这 " + vis.length + " 条" : "今日推荐暂无内容";
       else statusEl.textContent = vis.length + " 条";
@@ -181,92 +237,100 @@
   if (searchInput) {
     searchInput.addEventListener("input", function () {
       var q = searchInput.value.trim();
-      if (q && (root.getAttribute("data-tab") === "featured")) setTab("all", true);
+      if (q && root.getAttribute("data-tab") === "featured") setTab("all", true);
       else render();
     });
-    searchInput.closest("form") && searchInput.closest("form").addEventListener("submit", function (e) {
-      e.preventDefault();
-      render();
+    var form = searchInput.closest("form");
+    if (form) form.addEventListener("submit", function (e) {
+      if (document.getElementById("feed")) { e.preventDefault(); render(); }
+    });
+  }
+
+  var undoRead = null;
+  var toastTimer = null;
+  function hideToast() {
+    if (toast) toast.hidden = true;
+    undoRead = null;
+  }
+  function showToast(msg, snapshot) {
+    if (!toast) return;
+    var msgEl = toast.querySelector("[data-toast-msg]");
+    if (msgEl) msgEl.textContent = msg;
+    undoRead = snapshot;
+    toast.hidden = false;
+    if (toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(hideToast, 8000);
+  }
+  if (toast) {
+    toast.addEventListener("click", function (e) {
+      if (!e.target.closest("[data-toast-undo]")) return;
+      if (undoRead) {
+        setMap(READ_KEY, undoRead);
+        hideToast();
+        applyMeta();
+        render();
+        if (statusEl) statusEl.textContent = "已撤销";
+      }
     });
   }
 
   if (markBtn) {
     markBtn.addEventListener("click", function () {
       var readMap = getMap(READ_KEY);
+      var snapshot = JSON.parse(JSON.stringify(readMap));
       var now = Date.now();
       var n = 0;
       items.forEach(function (el) {
         var u = urlOf(el);
         if (u && !readMap[u]) { readMap[u] = now; n++; }
       });
-      /* 一键已读只标记已读，不增加「看过 N 次」 */
+      if (!n) {
+        if (statusEl) statusEl.textContent = "没有未读内容";
+        return;
+      }
       setMap(READ_KEY, readMap);
       applyMeta();
       render();
-      if (statusEl) statusEl.textContent = n ? "已把 " + n + " 条标为已读" : "没有未读内容";
+      if (statusEl) statusEl.textContent = "已把 " + n + " 条标为已读";
+      showToast("已把 " + n + " 条标为已读", snapshot);
     });
   }
 
-  function bumpView(u) {
-    u = norm(u);
-    if (!u) return;
-    var views = getMap(VIEW_KEY);
-    views[u] = (views[u] || 0) + 1;
-    setMap(VIEW_KEY, views);
-    var readMap = getMap(READ_KEY);
-    if (!readMap[u]) {
-      readMap[u] = Date.now();
-      setMap(READ_KEY, readMap);
-    }
-    applyMeta();
+  var POS_KEY = "pcsc-feed-pos";
+  function savePos() {
+    try {
+      sessionStorage.setItem(POS_KEY, JSON.stringify({
+        tab: root.getAttribute("data-tab") || "featured",
+        y: window.scrollY || 0,
+        t: Date.now()
+      }));
+    } catch (e) {}
   }
-
   list.addEventListener("click", function (e) {
-    var btn = e.target.closest(".feed-yt-btn");
-    if (!btn) return;
-    var box = btn.closest(".feed-yt");
-    if (!box || box.querySelector("iframe")) return;
-    e.preventDefault();
-    var id = box.getAttribute("data-yt");
-    if (!id) return;
-    var title = box.getAttribute("data-title") || "YouTube 视频播放器";
-    var f = document.createElement("iframe");
-    f.src = "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(id) + "?autoplay=1&rel=0";
-    f.title = title;
-    f.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
-    f.setAttribute("allowfullscreen", "");
-    f.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
-    box.innerHTML = "";
-    box.appendChild(f);
-    if (!box.getAttribute("data-viewed")) {
-      box.setAttribute("data-viewed", "1");
-      bumpView(box.getAttribute("data-url"));
-    }
+    var a = e.target.closest("a");
+    if (!a || !a.getAttribute("href")) return;
+    try { sessionStorage.setItem("pcsc-feed-back", "1"); } catch (err) {}
+    savePos();
   });
-
-  var themeBtn = document.getElementById("theme-toggle");
-  function themeLabel(t) {
-    return t === "dark" ? "切换到浅色模式" : "切换到深色模式";
-  }
-  function applyTheme(t) {
-    document.documentElement.setAttribute("data-theme", t);
-    var meta = document.querySelector('meta[name="theme-color"]');
-    if (meta) meta.setAttribute("content", t === "dark" ? "#121212" : "#ffffff");
-    if (themeBtn) {
-      themeBtn.setAttribute("aria-label", themeLabel(t));
-      themeBtn.setAttribute("data-theme-now", t);
-    }
-  }
-  if (themeBtn) {
-    themeBtn.addEventListener("click", function () {
-      var now = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
-      try { localStorage.setItem(THEME_KEY, now); } catch (e) {}
-      applyTheme(now);
-    });
-    applyTheme(document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light");
-  }
+  window.addEventListener("pagehide", savePos);
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState === "hidden") savePos();
+  });
 
   window.addEventListener("hashchange", function () { setTab(currentTab(), false); });
   applyMeta();
-  setTab(currentTab(), false);
+
+  var navType = "";
+  try { navType = performance.getEntriesByType("navigation")[0].type; } catch (e) {}
+  var shouldRestore = false;
+  try { shouldRestore = navType === "back_forward" || sessionStorage.getItem("pcsc-feed-back") === "1"; sessionStorage.removeItem("pcsc-feed-back"); } catch (e) {}
+  var saved = null;
+  try { saved = JSON.parse(sessionStorage.getItem(POS_KEY) || "null"); } catch (e) {}
+  var startTab = currentTab();
+  if (shouldRestore && saved && saved.tab && validTabs[saved.tab] && !location.hash) startTab = saved.tab;
+  setTab(startTab, false);
+  if (shouldRestore && saved && typeof saved.y === "number") {
+    requestAnimationFrame(function () { window.scrollTo(0, saved.y); });
+    setTimeout(function () { window.scrollTo(0, saved.y); }, 50);
+  }
 })();

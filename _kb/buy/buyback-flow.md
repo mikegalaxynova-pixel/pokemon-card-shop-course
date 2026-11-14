@@ -1,6 +1,20 @@
 ---
 title: 收购（買取）流程
 section: buy
+topics: [买卖交易]
+images:
+  - src: /assets/img/buyback-flow.svg
+    alt: "店头收购流程示意图：在营业所或对方住所收货、本人确认、核验认证号或成色、报价、付款并记台账；怀疑不正品则停手并向警察申告"
+    width: 600
+    height: 250
+    credit: "本站示意图（依据古物营业法第 14〜16 条整理）"
+    credit_url: https://laws.e-gov.go.jp/law/324AC0000000108
+  - src: /assets/img/kobutsu-ledger-fields.svg
+    alt: "古物台账法定记载事项示意图：交易年月日、品目和数量、特征、对方住所姓名职业年龄、本人确认措施的区分。保存三年。本图不是官方账簿格式"
+    width: 600
+    height: 280
+    credit: "本站示意图（依据古物营业法第十六条整理）"
+    credit_url: https://laws.e-gov.go.jp/law/324AC0000000108
 date: 2026-11-15
 last_updated: 2026-11-15
 description: 古物商许可办妥后，店头收购 PSA 卡或未评级卡的标准顺序：在合法地点收货、本人确认、核验、报价、付款并记台账。怀疑不正品则停手申告。

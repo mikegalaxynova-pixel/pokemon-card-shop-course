@@ -1,6 +1,20 @@
 ---
 title: 古物商许可要点（参考）
 section: shop
+topics: [开店基础]
+images:
+  - src: /assets/img/kobutsusho-roadmap.svg
+    alt: "高田马场开店后路线图示意图：许可、资金、选址、台账入货、定价出货、回本。重点转向许可之后的记录和买卖"
+    width: 600
+    height: 230
+    credit: "本站示意图（依据警視庁公开说明整理）"
+    credit_url: https://www.keishicho.metro.tokyo.lg.jp/tetsuzuki/kobutsu/tetsuzuki/kyoka.html
+  - src: /assets/img/kobutsusho-points.svg
+    alt: "许可要点示意图：窗口按店址管辖警察署办理，手续费 19000 日元且不退，标准处理期间 40 日，品目须向管辖警察署确认。本图不是官方表格，也不再展开申请步骤"
+    width: 600
+    height: 250
+    credit: "本站示意图（依据警視庁公开说明整理）"
+    credit_url: https://www.keishicho.metro.tokyo.lg.jp/tetsuzuki/kobutsu/tetsuzuki/kyoka.html
 date: 2026-11-14
 last_updated: 2026-11-15
 description: 卖二手 PSA 卡为什么需要古物商许可。申请步骤不再展开；本文只保留许可后仍要用到的要点，买卖时的台账和本人确认见另一篇。

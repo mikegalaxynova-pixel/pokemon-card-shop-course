@@ -1,6 +1,19 @@
 ---
 title: 查价渠道与读法
 section: market
+topics: [买卖交易, 行情新闻]
+images:
+  - src: /assets/img/price-sources-flow.svg
+    alt: "查价顺序示意图：先确认弹、编号、语言和评级，再查近期成交价而不是在售标价，至少对照两个来源并排除异常值，最后记下查询日期和来源"
+    width: 600
+    height: 280
+    credit: "本站示意图"
+  - src: /assets/img/mega-gengar-ex.webp
+    alt: "メガゲンガー ex（Mega Gengar ex）日文卡正面，可用于练习确认卡名、阶段和编号后再去查价。本图是官方商品图，不是成交价截图"
+    width: 400
+    height: 559
+    credit: "ポケモンカードゲーム公式 商品页"
+    credit_url: https://www.pokemon-card.com/products/mega/mg.html
 date: 2026-11-15
 last_updated: 2026-11-15
 description: 给 PSA 卡定价或收购前，先确认弹、编号、语言和等级，再查近期成交价。常用来源包括 SNKRDUNK、メルカリ、ヤフオク和 PriceCharting，不要把在售标价当成行情。

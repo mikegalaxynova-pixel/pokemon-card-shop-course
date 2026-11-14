@@ -1,30 +1,13 @@
 {%- assign claimed = "," -%}
-{%- assign latest = site.posts | first -%}
-
-{%- if latest and latest.breakeven -%}
-<aside class="next-mini" aria-labelledby="next-mini-h">
-  <div class="next-mini-top">
-    <p class="next-mini-kicker">下一步行动 · 面向收支平衡</p>
-    <a class="next-mini-link" href="{{ '/breakeven/' | relative_url }}">打开路线图</a>
-  </div>
-  <h2 id="next-mini-h" class="sr">本周重点 / 下一步行动</h2>
-  <ol>
-  {%- for item in latest.breakeven.items limit: 3 -%}
-    <li>{% if item.priority %}<span class="priority">{{ item.priority }}.</span>{% endif %}{{ item.action }}</li>
-  {%- endfor -%}
-  </ol>
-</aside>
-{%- endif -%}
 
 <div class="feed" id="feed" data-tab="featured">
   <div class="feed-tabs-wrap">
     <div class="feed-tabs" role="tablist" aria-label="信息流分类">
       <button type="button" class="feed-tab" role="tab" id="tab-featured" data-tab="featured" aria-controls="feed-list" aria-selected="true">今日推荐</button>
       <button type="button" class="feed-tab" role="tab" id="tab-all" data-tab="all" aria-controls="feed-list" aria-selected="false">全部</button>
-      <button type="button" class="feed-tab" role="tab" id="tab-news" data-tab="news" aria-controls="feed-list" aria-selected="false">新闻</button>
-      <button type="button" class="feed-tab" role="tab" id="tab-shops" data-tab="shops" aria-controls="feed-list" aria-selected="false">店铺案例</button>
-      <button type="button" class="feed-tab" role="tab" id="tab-videos" data-tab="videos" aria-controls="feed-list" aria-selected="false">视频</button>
-      <button type="button" class="feed-tab" role="tab" id="tab-kb" data-tab="kb" aria-controls="feed-list" aria-selected="false">基础知识</button>
+      {%- for tp in site.data.topics -%}
+      <button type="button" class="feed-tab" role="tab" id="tab-{{ tp.id }}" data-tab="{{ tp.id }}" aria-controls="feed-list" aria-selected="false">{{ tp.label }}</button>
+      {%- endfor -%}
     </div>
   </div>
   <div class="feed-toolbar">
@@ -32,6 +15,7 @@
     <button type="button" class="feed-mark-read" id="feed-mark-read">一键已读</button>
   </div>
   <div class="feed-list" id="feed-list">
+
 
 {%- for post in site.posts -%}
   {%- if post.news -%}
@@ -79,6 +63,8 @@
           ntype=n.type
           prev=n.prev
           topic=n.topic
+          topics=n.topics
+          images=n.images
           reason=feat_reason
           featured=is_featured
           rank=feat_rank -%}
@@ -119,6 +105,8 @@
       image_width=s.image_width
       image_height=s.image_height
       source=_src
+      topics=s.topics
+      images=s.images
       reason=feat_reason
       featured=is_featured
       rank=feat_rank -%}
@@ -159,6 +147,8 @@
       source=v.creator
       watch=v.watch
       creator=v.creator
+      topics=v.topics
+      images=v.images
       reason=feat_reason
       featured=is_featured
       rank=feat_rank -%}
@@ -198,6 +188,8 @@
       image_width=k.image_width
       image_height=k.image_height
       source=_ksrc
+      topics=k.topics
+      images=k.images
       reason=feat_reason
       featured=is_featured
       rank=feat_rank -%}
@@ -208,4 +200,8 @@
   <p class="feed-more muted">完整归档：<a href="{{ '/news/' | relative_url }}">新闻</a> · <a href="{{ '/shops/' | relative_url }}">店铺案例</a> · <a href="{{ '/videos/' | relative_url }}">视频</a> · <a href="{{ '/kb/' | relative_url }}">基础知识</a> · <a href="{{ '/changelog/' | relative_url }}">更新日志</a></p>
 </div>
 
+<div class="feed-toast" id="feed-toast" hidden role="status">
+  <span data-toast-msg></span>
+  <button type="button" class="feed-toast-undo" data-toast-undo>撤销</button>
+</div>
 <script type="application/json" id="feed-featured-data">{"date":{{ site.data.featured.date | jsonify }},"items":[{% for f in site.data.featured.items %}{"url":{{ f.url | relative_url | jsonify }},"reason":{{ f.reason | jsonify }}{% if f.topic %},"topic":{{ f.topic | jsonify }}{% endif %}}{% unless forloop.last %},{% endunless %}{% endfor %}]}</script>

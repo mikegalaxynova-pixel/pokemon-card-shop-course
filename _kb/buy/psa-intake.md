@@ -1,6 +1,24 @@
 ---
 title: PSA 卡进货判断
 section: buy
+topics: [买卖交易, PSA/评级]
+images:
+  - src: /assets/img/psa-intake-checklist.svg
+    alt: "PSA 卡进货五步示意图：核验认证号、核对等级与限定符、查看 Pop、检查壳况、对照近期成交价，再决定上架、寄售、退回或停手申告"
+    width: 600
+    height: 250
+    credit: "本站示意图"
+  - src: /assets/img/cert-check-flow.svg
+    alt: "认证号核验流程示意图：先在壳上找到认证编号，再到 PSA 官网查询，并与标签上的卡名、系列、等级和壳内卡片逐项对照"
+    width: 600
+    height: 280
+    credit: "本站示意图"
+  - src: /assets/img/psa-label-photo-wagner.webp
+    alt: "PSA 标签放大裁切：可见系列与卡名、等级和认证编号字段，用作认识标签的实拍。这是公有领域棒球卡照片的裁切，不是宝可梦卡"
+    width: 582
+    height: 180
+    credit: "Wikimedia Commons（公有领域），本站裁切放大"
+    credit_url: https://commons.wikimedia.org/wiki/File:1909_T206_Honus_Wagner_Baseball_Card_with_PSA_grade_EX_5-MC.jpg
 date: 2026-11-15
 last_updated: 2026-11-15
 description: 收下朋友库存、寄售或收购 PSA 卡之前，按认证号、等级、Pop、壳况和近期成交价逐项判断，再决定上架、退回或停手。

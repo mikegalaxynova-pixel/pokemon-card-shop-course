@@ -1,6 +1,19 @@
 ---
 title: 朋友提供的库存：买取、寄售怎样安排
 section: shop
+topics: [买卖交易, 开店基础]
+images:
+  - src: /assets/img/friend-stock-decision.svg
+    alt: "示意图：朋友提供的 PSA 库存可买断或寄售。买断要先付货款，毛利和跌价风险归店铺；寄售少占现金，店铺只拿约定分成。两种在开展营业时都要做本人确认和台账。图中不含分成数字"
+    width: 600
+    height: 280
+    credit: "本站示意图"
+  - src: /assets/img/psa-slab-photo-wagner.webp
+    alt: "真实 PSA 评级壳照片：1909 年 T206 Honus Wagner 棒球卡，顶部标签含等级和认证编号。用作认识壳标字段的实拍示例，不是宝可梦卡，也不是本店商品"
+    width: 448
+    height: 744
+    credit: "Wikimedia Commons（公有领域）"
+    credit_url: https://commons.wikimedia.org/wiki/File:1909_T206_Honus_Wagner_Baseball_Card_with_PSA_grade_EX_5-MC.jpg
 date: 2026-11-15
 last_updated: 2026-11-15
 description: 开业第一批 PSA 库存如果来自朋友，先分清买断还是寄售，写清对价、分成、未售退还和保管责任，并在许可后依法确认和记账。

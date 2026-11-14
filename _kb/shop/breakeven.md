@@ -1,6 +1,18 @@
 ---
 title: 收支平衡路线图：高田马场 PSA 店模型
 section: shop
+topics: [开店基础]
+images:
+  - src: /assets/img/breakeven-formula.svg
+    alt: "月度收支平衡公式示意图：月固定成本等于租金加人工加其他固定开支；回本所需月销售额等于月固定成本除以毛利率。所有数字都是可改假设"
+    width: 600
+    height: 260
+    credit: "本站示意图（通用公式，不是行情数据）"
+  - src: /assets/img/breakeven-channels.svg
+    alt: "示意图：自有库存店头销售毛利是售价减进货成本，但占用现金；寄售收入是约定分成，少占现金；网上销售要扣除平台手续费和运费，回款通常更慢。回本要按渠道分开算毛利率，图中不写具体百分比"
+    width: 600
+    height: 250
+    credit: "本站示意图"
 date: 2026-11-15
 last_updated: 2026-11-15
 description: 用「回本所需月销售额 = 月固定成本 ÷ 毛利率」理解高田马场 PSA 店怎样走到收支平衡；按自有库存、寄售和网上渠道分开算，所有数字都是可改假设。

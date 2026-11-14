@@ -1,6 +1,32 @@
 ---
 title: 系列、弹与包装（パック / BOX / 构筑套装）
 section: cards
+topics: [卡牌知识]
+images:
+  - src: /assets/img/hadou-seeker-pack.webp
+    alt: "扩展包「ハドウシーカー」（暂译：Aura Seeker）的官方包装：一包 5 张，系列为ポケモンカードゲーム MEGA（Pokémon Card Game MEGA），编号 M7"
+    width: 420
+    height: 780
+    credit: "ポケモンカードゲーム公式 商品页"
+    credit_url: https://www.pokemon-card.com/ex/m7/
+  - src: /assets/img/hadou-seeker-key.webp
+    alt: "「ハドウシーカー」（暂译：Aura Seeker）官方宣传图：左侧是卡包，右侧是メガルカリオZ ex（Mega Lucario Z ex）、メガガブリアスZ ex（Mega Garchomp Z ex）、メガアブソルZ ex（Mega Absol Z ex）"
+    width: 600
+    height: 371
+    credit: "ポケモンカードゲーム公式"
+    credit_url: https://www.pokemon-card.com/about/
+  - src: /assets/img/special-deck-set-mega.webp
+    alt: "「スペシャルデッキセットMEGA」（暂译：Special Deck Set MEGA）官方商品图：外盒和メガオーダイル ex（Mega Feraligatr ex）、メガカイリュー ex（Mega Dragonite ex）、メガゲンガー ex（Mega Gengar ex）三张主打卡"
+    width: 600
+    height: 371
+    credit: "ポケモンカードゲーム公式 商品页"
+    credit_url: https://www.pokemon-card.com/products/mega/mg.html
+  - src: /assets/img/special-deck-set-mega-contents.webp
+    alt: "同一套「スペシャルデッキセットMEGA」的盒内物官方图：外盒、三套固定卡组及卡盒、垫子、伤害指示物、币和玩家指南"
+    width: 600
+    height: 424
+    credit: "ポケモンカードゲーム公式 商品页"
+    credit_url: https://www.pokemon-card.com/products/mega/mg.html
 date: 2026-11-14
 last_updated: 2026-11-14
 description: 「新弹」是什么、日本现在处于哪个系列，以及一包、一箱、构筑套装的区别。

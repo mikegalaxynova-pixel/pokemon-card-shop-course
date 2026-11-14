@@ -1,6 +1,20 @@
 ---
 title: 未评级卡（生カード）成色判断
 section: cards
+topics: [卡牌知识]
+images:
+  - src: /assets/img/condition-4points.svg
+    alt: "未评级卡成色四个观察点示意图：四角、边缘、表面和居中。PSA 十分要求几乎完美，正面居中约不超过五十五比四十五，背面约不超过七十五比二十五。本图是观察位置示意图，不是某张卡的评级结果"
+    width: 600
+    height: 260
+    credit: "本站示意图（依据 PSA Grading Standards 整理居中公差）"
+    credit_url: https://www.psacard.com/gradingstandards
+  - src: /assets/img/jp-front-back.webp
+    alt: "日文版宝可梦卡正面与背面示例，可用于练习观察边缘白缺、四角和背面居中。本图是卡背和卡面对照，不是成色评级结果"
+    width: 331
+    height: 243
+    credit: "ポケモンカードゲーム公式「あそびかた」"
+    credit_url: https://www.pokemon-card.com/howtoplay/
 date: 2026-11-15
 last_updated: 2026-11-15
 description: 未评级卡要从四角、边缘、表面和居中四处判断成色。PSA 10 要求几乎完美，正面居中约不超过 55/45。本店主卖评级卡，但仍需在收购活页夹或决定是否送评时用到这些标准。

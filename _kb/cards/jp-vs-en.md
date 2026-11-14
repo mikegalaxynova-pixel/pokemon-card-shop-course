@@ -1,6 +1,25 @@
 ---
 title: 日文版 vs 英文版：五个关键差别
 section: cards
+topics: [卡牌知识]
+images:
+  - src: /assets/img/jp-front-back.webp
+    alt: "日文版卡片正面与背面：正面是ミミロル（Buneary），背面为现行日文版金框卡背，带七颗能量球"
+    width: 331
+    height: 243
+    credit: "ポケモンカードゲーム公式「あそびかた」"
+    credit_url: https://www.pokemon-card.com/howtoplay/
+  - src: /assets/img/jp-card-backs.webp
+    alt: "两叠日文版宝可梦卡的背面，可见金色边框、宝可梦标志和七颗能量球"
+    width: 520
+    height: 360
+    credit: "ポケモンカードゲーム公式「あそびかた」"
+    credit_url: https://www.pokemon-card.com/howtoplay/
+  - src: /assets/img/jp-vs-en-backs.svg
+    alt: "日文版与英文版卡背区别示意图：左边现行日文版为金框和七颗能量球，右边英文版为深蓝框和白色旋涡、没有能量球。本图是示意图，不是实物照片"
+    width: 600
+    height: 340
+    credit: "本站示意图"
 date: 2026-11-14
 last_updated: 2026-11-14
 description: 尺寸相同，但背面、编号、稀有度写法、发售节奏和市场偏好都不同，查价必须分开。

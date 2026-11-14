@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="精灵球图标">
+  <circle cx="256" cy="256" r="236" fill="#fff" stroke="#1a1a1a" stroke-width="28"/>
+  <path d="M20 256A236 236 0 0 1 492 256" fill="#d6001c"/>
+  <rect x="20" y="232" width="472" height="48" fill="#1a1a1a"/>
+  <circle cx="256" cy="256" r="62" fill="#1a1a1a"/>
+  <circle cx="256" cy="256" r="42" fill="#fff"/>
+  <circle cx="256" cy="256" r="18" fill="#1a1a1a"/>
+</svg>

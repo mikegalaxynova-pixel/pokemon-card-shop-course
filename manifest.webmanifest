@@ -1,0 +1,38 @@
+{
+  "name": "宝可梦卡牌店课程",
+  "short_name": "卡牌店课",
+  "description": "给准备在东京高田马场开 PSA 评级卡店的新手：新闻、店铺案例、视频和开店基础知识。",
+  "start_url": "/pokemon-card-shop-course/",
+  "scope": "/pokemon-card-shop-course/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#d6001c",
+  "background_color": "#d6001c",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "/pokemon-card-shop-course/assets/icons/pokeball-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pokemon-card-shop-course/assets/icons/pokeball-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pokemon-card-shop-course/assets/icons/pokeball-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/pokemon-card-shop-course/assets/icons/pokeball-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

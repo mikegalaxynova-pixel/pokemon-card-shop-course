@@ -1,6 +1,84 @@
 ---
 title: 卡面结构：一张卡要看哪些位置
 section: cards
+topics: [卡牌知识]
+images:
+  - src: /assets/img/jp-front-back.webp
+    alt: "日文版宝可梦卡的正面与背面：正面是ミミロル（Buneary），背面是现行日文版卡背，金色边框并带有七颗能量球"
+    width: 331
+    height: 243
+    credit: "ポケモンカードゲーム公式「あそびかた」"
+    credit_url: https://www.pokemon-card.com/howtoplay/
+  - src: /assets/img/magnemite-c.webp
+    alt: "宝可梦卡示例：コイル（Magnemite），左上写着たね（Basic），右上有 HP，底部稀有度为 C"
+    width: 316
+    height: 442
+    credit: "ポケモンカードゲーム公式「あそびかた」"
+    credit_url: https://www.pokemon-card.com/howtoplay/
+  - src: /assets/img/basic-grass-energy.webp
+    alt: "能量卡示例：基本草エネルギー（Basic Grass Energy）"
+    width: 316
+    height: 442
+    credit: "ポケモンカードゲーム公式「あそびかた」"
+    credit_url: https://www.pokemon-card.com/howtoplay/
+  - src: /assets/img/trainer-subtypes.webp
+    alt: "训练家卡四例：リーリエの決心（Lillie's Determination，支援 / Supporter）、ハイパーボール（Ultra Ball，物品 / Item）、ふうせん（Air Balloon，宝可梦道具）、ミステリーガーデン（暂译：Mystery Garden，场地 / Stadium）"
+    width: 316
+    height: 446
+    credit: "ポケモンカードゲーム公式「あそびかた」"
+    credit_url: https://www.pokemon-card.com/howtoplay/
+  - src: /assets/img/evolution-stages.webp
+    alt: "官方进化阶段对照：线圈コイル（Magnemite）为たね（Basic），稀有线圈レアコイル（Magneton）为1進化（Stage 1），自爆磁怪ジバコイル（Magnezone）为2進化（Stage 2）"
+    width: 550
+    height: 410
+    credit: "ポケモンカードゲーム公式「あそびかた」"
+    credit_url: https://www.pokemon-card.com/howtoplay/
+  - src: /assets/img/type-examples.webp
+    alt: "十张不同属性的日文宝可梦卡示例，用于辨认卡面右上的属性符号（Type）"
+    width: 540
+    height: 339
+    credit: "ポケモンカードゲーム公式「あそびかた」"
+    credit_url: https://www.pokemon-card.com/howtoplay/
+  - src: /assets/img/card-anatomy-diagram.svg
+    alt: "卡面位置示意图：左上进化阶段，右上 HP 与属性，中部名称与招式，下方弱点抵抗撤退，最底部为规则标记、扩展标记、收藏编号和稀有度"
+    width: 600
+    height: 420
+    credit: "本站示意图"
+  - src: /assets/img/alakazam-name-hp.webp
+    alt: "官方标注图：フーディン（Alakazam）卡面上，名称和右上 HP 140 被框出"
+    width: 600
+    height: 503
+    credit: "ポケモンカードゲーム公式「あそびかた」"
+    credit_url: https://www.pokemon-card.com/howtoplay/
+  - src: /assets/img/alakazam-stage-type.webp
+    alt: "官方标注图：同一张フーディン（Alakazam）卡，左上「2進化」（Stage 2）和右上属性符号被框出"
+    width: 600
+    height: 488
+    credit: "ポケモンカードゲーム公式「あそびかた」"
+    credit_url: https://www.pokemon-card.com/howtoplay/
+  - src: /assets/img/alakazam-regulation.webp
+    alt: "官方标注图：フーディン（Alakazam）卡面底部，圆圈里的规则标记 I（Regulation Mark）被框出，旁边是扩展标记和编号 038/063 R"
+    width: 600
+    height: 508
+    credit: "ポケモンカードゲーム公式「あそびかた」"
+    credit_url: https://www.pokemon-card.com/howtoplay/
+  - src: /assets/img/alakazam-number-rarity.webp
+    alt: "官方标注图：同一张卡的收藏编号 038/063 和稀有度字母 R（Rare）被框出，说明稀有度在编号旁边，不是那个圆圈字母"
+    width: 600
+    height: 502
+    credit: "ポケモンカードゲーム公式「あそびかた」"
+    credit_url: https://www.pokemon-card.com/howtoplay/
+  - src: /assets/img/rarity-vs-regulation.svg
+    alt: "示意图：卡片底部圆圈里的字母是规则标记，用来辅助判断时期，不是稀有度；收藏编号旁边的 C、R、RR、SAR 等字母才是稀有度"
+    width: 600
+    height: 260
+    credit: "本站示意图"
+  - src: /assets/img/mega-gengar-ex.webp
+    alt: "メガゲンガー ex（Mega Gengar ex）日文卡正面，左上为2進化（Stage 2），右上为 HP 350，可用于练习找出卡面各标记"
+    width: 400
+    height: 559
+    credit: "ポケモンカードゲーム公式 商品页"
+    credit_url: https://www.pokemon-card.com/products/mega/mg.html
 date: 2026-11-14
 last_updated: 2026-11-14
 description: 先认识「ポケカ」和三种卡，再学会从左上到最下方一排小标记逐一读懂一张卡。

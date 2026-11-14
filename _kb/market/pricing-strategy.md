@@ -1,6 +1,13 @@
 ---
 title: 店头定价与改价
 section: market
+topics: [买卖交易]
+images:
+  - src: /assets/img/pricing-ladder.svg
+    alt: "店头定价三层示意图：先算进货成本加变动费用加最低毛利得到底线，再对照同卡同级近期成交价，最后给出能够向客人说明的店头标价。底线以下不卖"
+    width: 600
+    height: 260
+    credit: "本站示意图"
 date: 2026-11-15
 last_updated: 2026-11-15
 description: 店头标价先算成本底线，再对照同卡同级近期成交，标出能向客人说明的价格；滞销或行情变化时再改价，而不是跟在售最低价对敲。

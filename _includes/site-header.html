@@ -1,0 +1,31 @@
+<header class="feed-header">
+  <div class="feed-header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <form class="head-search" role="search" action="{{ '/search/' | relative_url }}" method="get">
+      <label class="sr" for="site-search">搜索本站内容</label>
+      <input id="site-search" type="search" name="q" placeholder="搜索新闻、案例、视频和文章" autocomplete="off"{% if page.nav == 'search' %} value=""{% endif %}>
+    </form>
+    <button type="button" class="pwa-install" id="pwa-install" hidden>添加到桌面</button>
+    <button type="button" class="theme-btn" id="theme-toggle" aria-label="切换深浅色" data-theme-now="light">
+      <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 14.5A8.5 8.5 0 1 1 9.5 3 7 7 0 0 0 21 14.5z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M5 12H3M21 12h-2M6 6l1.5 1.5M16.5 16.5 18 18M18 6l-1.5 1.5M7.5 16.5 6 18"/></svg>
+    </button>
+  </div>
+</header>
+{%- unless page.nav == "home" -%}
+<nav class="site-subnav-wrap" aria-label="主导航">
+  {%- assign _now = site.time | date: '%s' | plus: 0 -%}
+  {%- assign _win = site.new_badge_days | default: 2 | times: 86400 -%}
+  {%- assign _latest = site.data.changelog | first -%}
+  {%- assign _ld = _latest.date | date: '%s' | plus: 0 -%}
+  {%- assign _lage = _now | minus: _ld -%}
+  <ul class="site-subnav">
+    {% for item in site.data.nav %}
+    {%- assign item_url = item.url | relative_url -%}
+    {%- assign _hits = _latest.items | where: "kind", item.id -%}
+    <li><a class="feed-tab" href="{{ item_url }}"{% if page.url == item.url or page.nav == item.id or layout.nav == item.id %} aria-current="page"{% endif %}>{{ item.title }}{% if _lage < _win and _hits.size > 0 %}<span class="dot" title="近 2 天有新内容"><span class="sr">（有新内容）</span></span>{% endif %}</a></li>
+    {% endfor %}
+  </ul>
+</nav>
+{%- endunless -%}
+<div class="pwa-hint" id="pwa-hint" hidden role="status">在 Safari 点「分享」，再选「添加到主屏幕」。<button type="button" data-hint-close>知道了</button></div>

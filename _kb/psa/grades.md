@@ -1,6 +1,20 @@
 ---
 title: PSA 等级标准速查（10 / 9 及其他）
 section: psa
+topics: [PSA/评级]
+images:
+  - src: /assets/img/psa-grade-scale.svg
+    alt: "PSA 1 到 10 分等级尺示意图，并分别说明 10 分 Gem Mint 与 9 分 Mint 的要点和居中公差，依据官方 Grading Standards"
+    width: 600
+    height: 280
+    credit: "本站示意图（依据 PSA Grading Standards）"
+    credit_url: https://www.psacard.com/gradingstandards
+  - src: /assets/img/psa-slab-label.svg
+    alt: "PSA 壳标签示意图，② 处为等级如 GEM MT 10，③ 处为认证编号。本图不是实物照片"
+    width: 600
+    height: 380
+    credit: "本站示意图（依据 PSA 官方说明）"
+    credit_url: https://www.psacard.com/articles/articleview/10241/psa-update-journey-card
 date: 2026-11-14
 last_updated: 2026-11-14
 description: Gem Mint 10 与 Mint 9 的官方标准要点、居中公差，以及 10 分和 9 分在价格上的差别逻辑。

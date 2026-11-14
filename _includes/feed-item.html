@@ -1,7 +1,6 @@
-{%- comment -%}一条信息流卡片。参数：kind title url date updated excerpt image image_alt image_width image_height source ntype prev watch creator reason rank topic{%- endcomment -%}
+{%- comment -%}一条信息流卡片。整卡一个可点链接。images 为预览图列表。{%- endcomment -%}
 {%- assign _url = include.url | relative_url -%}
 {%- assign _kind = include.kind -%}
-{%- assign _media = "none" -%}
 {%- assign yt_id = "" -%}
 {%- if include.watch and include.watch != blank -%}
   {%- if include.watch contains "youtu.be/" -%}
@@ -11,58 +10,117 @@
   {%- elsif include.watch contains "youtube.com/embed/" -%}
     {%- assign yt_id = include.watch | split: "embed/" | last | split: "?" | first -%}
   {%- endif -%}
-  {%- if yt_id != blank -%}{%- assign _media = "video" -%}{%- endif -%}
 {%- endif -%}
-{%- if _media == "none" and include.image and include.image != blank -%}
+{%- assign _gallery = include.images -%}
+{%- assign _gcount = 0 -%}
+{%- if _gallery and _gallery.size > 0 -%}
+  {%- assign _gcount = _gallery.size -%}
+{%- endif -%}
+{%- assign _one_src = include.image -%}
+{%- assign _one_alt = include.image_alt -%}
+{%- assign _one_w = include.image_width -%}
+{%- assign _one_h = include.image_height -%}
+{%- if _gcount == 1 -%}
+  {%- assign _im0 = _gallery | first -%}
+  {%- assign _one_src = _im0.src | default: _im0.image | default: _one_src -%}
+  {%- assign _one_alt = _im0.alt | default: _one_alt -%}
+  {%- assign _one_w = _im0.width | default: _one_w -%}
+  {%- assign _one_h = _im0.height | default: _one_h -%}
+{%- endif -%}
+{%- assign _media = "none" -%}
+{%- if yt_id != blank -%}
+  {%- assign _media = "video" -%}
+{%- elsif _gcount >= 4 -%}
+  {%- assign _media = "grid" -%}
+{%- elsif _gcount >= 2 -%}
+  {%- assign _media = "row" -%}
+{%- elsif _one_src and _one_src != blank -%}
   {%- assign _media = "thumb" -%}
-  {%- if include.image_width and include.image_height and include.image_height != 0 -%}
-    {%- assign _ratio = include.image_width | times: 100 | divided_by: include.image_height -%}
+  {%- assign _is_svg = false -%}
+  {%- if _one_src contains ".svg" -%}{%- assign _is_svg = true -%}{%- endif -%}
+  {%- if _is_svg -%}
+    {%- assign _media = "hero" -%}
+  {%- elsif _one_w and _one_h and _one_h != 0 -%}
+    {%- assign _ratio = _one_w | times: 100 | divided_by: _one_h -%}
     {%- if _ratio >= 110 -%}{%- assign _media = "hero" -%}{%- endif -%}
+  {%- else -%}
+    {%- assign _media = "hero" -%}
   {%- endif -%}
 {%- endif -%}
 {%- assign _excerpt = include.excerpt | default: "" | strip_html | strip_newlines | truncate: 72 -%}
 {%- case _kind -%}
-  {%- when "news" -%}{%- assign _klabel = "每日新闻" -%}
-  {%- when "shops" -%}{%- assign _klabel = "店铺案例" -%}
+  {%- when "news" -%}{%- assign _klabel = "新闻" -%}
+  {%- when "shops" -%}{%- assign _klabel = "案例" -%}
   {%- when "videos" -%}{%- assign _klabel = "视频" -%}
-  {%- when "kb" -%}{%- assign _klabel = "基础知识" -%}
+  {%- when "kb" -%}{%- assign _klabel = "基础" -%}
   {%- else -%}{%- assign _klabel = _kind -%}
 {%- endcase -%}
-{%- assign _search = include.title | append: " " | append: include.excerpt | append: " " | append: include.source | append: " " | append: include.creator | append: " " | append: _klabel | strip_html | strip_newlines -%}
+{%- assign _when = include.updated | default: include.date -%}
+{%- assign _topic_ids = "" -%}
+{%- assign _topic_labels = "" -%}
+{%- for t in include.topics -%}
+  {%- assign _meta = site.data.topics | where: "label", t | first -%}
+  {%- if _meta == nil -%}{%- assign _meta = site.data.topics | where: "id", t | first -%}{%- endif -%}
+  {%- if _meta -%}
+    {%- assign _topic_ids = _topic_ids | append: " " | append: _meta.id -%}
+    {%- assign _topic_labels = _topic_labels | append: " " | append: _meta.label -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign _topic_ids = _topic_ids | strip -%}
+{%- assign _search = include.title | append: " " | append: include.excerpt | append: " " | append: include.source | append: " " | append: include.creator | append: " " | append: _klabel | append: " " | append: _topic_labels | strip_html | strip_newlines -%}
 {%- assign _feat = include.featured | default: "no" -%}
-<article class="feed-item media-{{ _media }}" data-kind="{{ _kind }}"{% if include.ntype %} data-ntype="{{ include.ntype }}"{% endif %}{% if include.topic %} data-topic="{{ include.topic }}"{% endif %} data-url="{{ _url }}" data-read-url="{{ _url }}" data-ts="{{ include.date | date: '%s' }}"{% if _feat == "yes" %} data-featured="1" data-featured-rank="{{ include.rank }}"{% endif %} data-search="{{ _search | escape }}">
+{%- assign _tid = include.url | slugify | append: "-" | append: _kind -%}
+<article class="feed-item media-{{ _media }}" data-kind="{{ _kind }}" data-topics="{{ _topic_ids }}"{% if include.ntype %} data-ntype="{{ include.ntype }}"{% endif %}{% if include.topic %} data-topic="{{ include.topic }}"{% endif %} data-url="{{ _url }}" data-read-url="{{ _url }}" data-ts="{{ _when | date: '%s' }}" data-day="{{ _when | date: '%Y-%m-%d' }}"{% if _feat == "yes" %} data-featured="1" data-featured-rank="{{ include.rank }}"{% endif %} data-search="{{ _search | escape }}">
   <div class="feed-row">
     <div class="feed-body">
-      <h2 class="feed-title"><a href="{{ _url }}">{{ include.title }}</a></h2>
+      <h2 class="feed-title" id="ft-{{ _tid }}"><a class="feed-stretch" href="{{ _url }}">{{ include.title }}</a></h2>
       <p class="feed-kicker">
-        <span class="stream stream-{{ _kind }}">{{ _klabel }}</span>
+        {%- for t in include.topics -%}
+          {% include topic.html label=t %}
+        {%- endfor -%}
+        <span class="feed-fmt stream stream-{{ _kind }}">{{ _klabel }}</span>
         {%- if _kind == "news" -%}{% include news-type.html id=include.ntype prev=include.prev %}{%- endif -%}
         {%- if include.source -%}<span class="feed-source">{{ include.source }}</span>{%- endif -%}
       </p>
       {%- if _excerpt != "" -%}<p class="feed-excerpt">{{ _excerpt }}</p>{%- endif -%}
     </div>
-    {%- if _media == "thumb" -%}
-    <a class="feed-thumb" href="{{ _url }}" tabindex="-1" aria-hidden="true">
-      <img src="{{ include.image | relative_url }}" alt="" width="{{ include.image_width | default: 160 }}" height="{{ include.image_height | default: 160 }}" loading="lazy" decoding="async">
-    </a>
+    {%- if _media == "thumb" and _one_src -%}
+    <div class="feed-thumb">
+      <img src="{{ _one_src | relative_url }}" alt="" width="{{ _one_w | default: 160 }}" height="{{ _one_h | default: 160 }}" loading="lazy" decoding="async">
+    </div>
     {%- endif -%}
   </div>
-  {%- if _media == "hero" -%}
-  <a class="feed-hero" href="{{ _url }}">
-    <img src="{{ include.image | relative_url }}" alt="{{ include.image_alt | default: include.title | escape }}" width="{{ include.image_width }}" height="{{ include.image_height }}" loading="lazy" decoding="async">
-  </a>
+  {%- if _media == "hero" and _one_src -%}
+  <div class="feed-hero{% if _one_src contains '.svg' %} is-diagram{% endif %}">
+    <img src="{{ _one_src | relative_url }}" alt="{{ _one_alt | default: include.title | escape }}" width="{{ _one_w | default: 16 }}" height="{{ _one_h | default: 9 }}" loading="lazy" decoding="async">
+  </div>
+  {%- endif -%}
+  {%- if _media == "row" or _media == "grid" -%}
+    {%- if _gcount == 2 -%}{%- assign _gclass = "feed-igrid-2" -%}
+    {%- elsif _gcount == 3 -%}{%- assign _gclass = "feed-igrid-3" -%}
+    {%- else -%}{%- assign _gclass = "feed-igrid-3x" -%}
+    {%- endif -%}
+  <div class="feed-igrid {{ _gclass }}" aria-hidden="true">
+    {%- for im in _gallery limit: 9 -%}
+      {%- assign _src = im.src | default: im.image -%}
+      {%- assign _more = 0 -%}
+      {%- if forloop.last and _gcount > 9 -%}{%- assign _more = _gcount | minus: 9 -%}{%- endif -%}
+    <div class="feed-igrid-cell{% if _src contains '.svg' %} is-diagram{% endif %}">
+      <img src="{{ _src | relative_url }}" alt="" width="{{ im.width | default: 200 }}" height="{{ im.height | default: 200 }}" loading="lazy" decoding="async">
+      {%- if _more > 0 -%}<span class="feed-igrid-more">+{{ _more }}</span>{%- endif -%}
+    </div>
+    {%- endfor -%}
+  </div>
   {%- endif -%}
   {%- if _media == "video" and yt_id != blank -%}
-  <div class="feed-yt" data-yt="{{ yt_id }}" data-title="{{ include.title | escape }}" data-url="{{ _url }}">
-    <button type="button" class="feed-yt-btn" aria-label="在本页播放：{{ include.title | escape }}">
-      <img src="https://i.ytimg.com/vi/{{ yt_id }}/hqdefault.jpg" alt="视频「{{ include.title | escape }}」的缩略图（来源 YouTube）" width="480" height="360" loading="lazy" decoding="async">
-      <span class="yt-play" aria-hidden="true"></span>
-    </button>
+  <div class="feed-yt feed-yt-preview" aria-hidden="true">
+    <img src="https://i.ytimg.com/vi/{{ yt_id }}/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async">
+    <span class="yt-play" aria-hidden="true"></span>
   </div>
   {%- endif -%}
   {%- if _feat == "yes" and include.reason -%}<p class="feed-reason"><span class="feed-reason-label">为什么今天先看</span>{{ include.reason }}</p>{%- endif -%}
   <p class="feed-meta">
-    <time datetime="{{ include.date | date: '%Y-%m-%d' }}">{{ include.date | date: '%Y年%-m月%-d日' }}</time>
+    <time datetime="{{ _when | date: '%Y-%m-%d' }}">{{ _when | date: '%-m/%-d' }} 更新</time>
     {% include badge.html date=include.date updated=include.updated url=include.url %}
     <span class="badge read" data-feed-read hidden>已读</span>
     <span class="badge freq" data-feed-frequent hidden>常看</span>

@@ -1,6 +1,13 @@
 ---
 title: 高额 PSA 交易怎么做
 section: buy
+topics: [买卖交易, PSA/评级]
+images:
+  - src: /assets/img/high-value-checklist.svg
+    alt: "高额 PSA 交易检查点示意图：核验认证号与实物、优先银行转账、做好台账和交易备忘、卡片不离开视线并预约当面交割。金额门槛由店铺自定"
+    width: 600
+    height: 250
+    credit: "本站示意图（店内规矩，不是法令表格）"
 date: 2026-11-15
 last_updated: 2026-11-15
 description: 高额 PSA 买入、寄售或店头出售时，把核验、书面记录、付款方式和交割安排做完整。金额门槛由店铺自定；优先银行转账，卡片不要离开视线。

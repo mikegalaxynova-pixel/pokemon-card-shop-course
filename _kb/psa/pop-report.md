@@ -1,6 +1,20 @@
 ---
 title: Pop Report（鉴定数量报告）怎么看
 section: psa
+topics: [PSA/评级]
+images:
+  - src: /assets/img/pop-report-diagram.svg
+    alt: "Pop Report 读法示意图：用假想的示例卡 A，列出 8、9、10 分的数量，并注明这些数字只代表 PSA 评出的数量"
+    width: 600
+    height: 300
+    credit: "本站示意图（数字为假想，非真实 Pop）"
+    credit_url: https://www.psacard.com/pop
+  - src: /assets/img/psa-slab-label.svg
+    alt: "PSA 壳标签示意图，③ 为认证编号 cert number，是到官网核对真伪并跳转查阅 Pop 的关键。本图不是实物照片"
+    width: 600
+    height: 380
+    credit: "本站示意图（依据 PSA 官方说明）"
+    credit_url: https://www.psacard.com/articles/articleview/10241/psa-update-journey-card
 date: 2026-11-14
 last_updated: 2026-11-14
 description: Pop 数字代表什么、不代表什么，以及它在进货和定价中的用法。

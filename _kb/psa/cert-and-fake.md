@@ -1,6 +1,32 @@
 ---
 title: 认证号核验与假壳识别
 section: psa
+topics: [PSA/评级]
+images:
+  - src: /assets/img/psa-slab-photo-wagner.webp
+    alt: "真实 PSA 评级壳照片：1909 年 T206 Honus Wagner 棒球卡，顶部红框标签写着 T206 SWEET CAPORAL HONUS WAGNER、等级 EX 5(MC) 和认证编号 15385994，下方是封装的卡片"
+    width: 448
+    height: 744
+    credit: "Wikimedia Commons（公有领域）"
+    credit_url: https://commons.wikimedia.org/wiki/File:1909_T206_Honus_Wagner_Baseball_Card_with_PSA_grade_EX_5-MC.jpg
+  - src: /assets/img/psa-label-photo-wagner.webp
+    alt: "同一张照片中 PSA 标签的放大裁切：左侧两行为卡片系列和人物名，左下为条码，右侧为等级 EX 5(MC)，右下为认证编号 15385994"
+    width: 582
+    height: 180
+    credit: "Wikimedia Commons（公有领域），本站裁切放大"
+    credit_url: https://commons.wikimedia.org/wiki/File:1909_T206_Honus_Wagner_Baseball_Card_with_PSA_grade_EX_5-MC.jpg
+  - src: /assets/img/cert-check-flow.svg
+    alt: "认证号核验四步示意图：一读号码，二到 PSA 官网或官方 App 查询，三逐项对照卡名、年份系列、编号、等级和官方图片，四再检查壳和标签本身；底部引用 PSA 官方提醒：证明番号的确认不能排除伪造风险"
+    width: 600
+    height: 300
+    credit: "本站示意图（依据 PSA 官方说明）"
+    credit_url: https://www.psacard.com/ja-JP/cert
+  - src: /assets/img/fake-slab-checkpoints.svg
+    alt: "PSA 评级壳六个检查点示意图：一标签内容与官网一致；二对强光看标签是否能透出背面文字；三倾斜看 Lighthouse 全息标；四背面 QR 码用官方 App 扫描；五壳边缘有没有白雾、裂纹、缝隙或胶痕；六壳体坚硬不晃、按边缘不会响或弹开"
+    width: 600
+    height: 436
+    credit: "本站示意图（依据 PSA Security: A Buyer's Guide 与 2017 年标签说明）"
+    credit_url: https://www.psacard.com/services/psasecurityabuyersguide
 date: 2026-11-14
 last_updated: 2026-11-15
 description: 认证编号（証明番号 / cert number）在哪、怎样在官网逐项核对，为什么「查得到」还不够，以及评级壳和标签的六个检查点、店里的入库与收购规矩。

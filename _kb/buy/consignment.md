@@ -1,6 +1,13 @@
 ---
 title: 寄售（委託販売）模式
 section: buy
+topics: [买卖交易]
+images:
+  - src: /assets/img/consignment-flow.svg
+    alt: "寄售流程示意图：收下委托时先做本人确认并记台账，书面约定标价、分成、保管责任和未售退还，上架出售后再按约定结算，未售出则退还委托人"
+    width: 600
+    height: 230
+    credit: "本站示意图"
 date: 2026-11-15
 last_updated: 2026-11-15
 description: 寄售是店铺接受出售委托、卖出后按约定分成的方式。许可后在收下委托时就要做本人确认和台账；分成没有法定统一费率，须书面约定标价、结算和未售退还。

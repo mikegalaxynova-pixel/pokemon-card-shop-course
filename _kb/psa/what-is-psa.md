@@ -1,6 +1,19 @@
 ---
 title: PSA 是什么：评级卡生意的优势与风险
 section: psa
+topics: [PSA/评级]
+images:
+  - src: /assets/img/psa-three-steps.svg
+    alt: "PSA 三步示意图：第一步判断真伪，第二步按 1 到 10 分评分，第三步封进带认证编号的硬壳"
+    width: 600
+    height: 180
+    credit: "本站示意图（依据 PSA 官方说明）"
+  - src: /assets/img/psa-slab-label.svg
+    alt: "PSA 评级壳标签示意图：顶部标签上标出卡名与系列、等级如 GEM MT 10、认证编号 cert number 和条码，下方是封装中的卡片轮廓。本图不是实物照片"
+    width: 600
+    height: 380
+    credit: "本站示意图（依据 PSA 官方说明）"
+    credit_url: https://www.psacard.com/articles/articleview/10241/psa-update-journey-card
 date: 2026-11-14
 last_updated: 2026-11-15
 description: PSA 怎样鉴定和封壳、认证编号的作用，以及评级卡作为店铺主力商品的优势、风险和送评成本。

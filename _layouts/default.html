@@ -1,39 +1,43 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" class="feed-html" data-sw="{{ '/sw.js' | relative_url }}" data-sw-scope="{{ '/' | relative_url }}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#b3001b">
+<meta name="theme-color" content="#d6001c">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="卡牌店课">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="manifest" href="{{ '/manifest.webmanifest' | relative_url }}">
+<link rel="apple-touch-icon" href="{{ '/assets/icons/pokeball-180.png' | relative_url }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/icons/pokeball-32.png' | relative_url }}">
+<link rel="icon" type="image/svg+xml" href="{{ '/assets/icons/pokeball.svg' | relative_url }}">
+<script>
+(function(){try{var t=localStorage.getItem("pcsc-theme");if(t!=="dark"&&t!=="light")t=window.matchMedia&&matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light";document.documentElement.setAttribute("data-theme",t);var c=t==="dark"?"#121212":"#d6001c";var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute("content",c);}catch(e){}})();
+</script>
 {% seo %}
 <link rel="alternate" type="application/atom+xml" title="{{ site.title }} 新闻" href="{{ '/feed.xml' | relative_url }}">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%23fff' stroke='%23222' stroke-width='8'/%3E%3Cpath d='M4 50h92' stroke='%23222' stroke-width='8'/%3E%3Cpath d='M8 46A42 42 0 0 1 92 46Z' fill='%23d6001c'/%3E%3Ccircle cx='50' cy='50' r='12' fill='%23fff' stroke='%23222' stroke-width='8'/%3E%3C/svg%3E">
 <style>{% include style.css %}</style>
+<style>{% include feed.css %}</style>
+<style>
+.site-subnav .feed-tab{display:inline-flex;align-items:center;text-decoration:none;color:var(--feed-muted)}
+.site-subnav .feed-tab[aria-current=page]{color:var(--feed-fg);font-weight:700;border-bottom-color:var(--feed-fg)}
+</style>
 </head>
-<body>
+<body class="feed-home">
 <a class="skip" href="#main">跳到正文</a>
-<header class="site-header">
-  <div class="wrap header-inner">
-    <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-  </div>
-  <nav class="site-nav" aria-label="主导航">
-    {%- assign _now = site.time | date: '%s' | plus: 0 -%}
-    {%- assign _win = site.new_badge_days | default: 2 | times: 86400 -%}
-    {%- assign _latest = site.data.changelog | first -%}
-    {%- assign _ld = _latest.date | date: '%s' | plus: 0 -%}
-    {%- assign _lage = _now | minus: _ld -%}
-    <ul class="wrap">
-      {% for item in site.data.nav %}
-      {%- assign item_url = item.url | relative_url -%}
-      {%- assign _hits = _latest.items | where: "kind", item.id -%}
-      <li><a href="{{ item_url }}"{% if page.url == item.url or page.nav == item.id or layout.nav == item.id %} aria-current="page"{% endif %}>{{ item.title }}{% if _lage < _win and _hits.size > 0 %}<span class="dot" title="近 2 天有新内容"><span class="sr">（有新内容）</span></span>{% endif %}</a></li>
-      {% endfor %}
-    </ul>
+<div class="feed-shell">
+{% include site-header.html %}
+<main id="main" class="{% if page.nav == 'home' %}feed-main{% else %}page-main{% endif %}">
+{% if page.collection %}
+  <nav class="page-back" aria-label="返回">
+    <a id="page-back" class="page-back-link" href="{% if page.collection == 'posts' %}{{ '/news/' | relative_url }}{% elsif page.collection == 'videos' %}{{ '/videos/' | relative_url }}{% elsif page.collection == 'shops' %}{{ '/shops/' | relative_url }}{% elsif page.collection == 'kb' %}{{ '/kb/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">返回</a>
+    <a href="{{ '/' | relative_url }}">今日</a>
   </nav>
-</header>
-<main id="main" class="wrap">
+{% endif %}
 {{ content }}
 </main>
-{% include yt-modal.html %}
+<button type="button" class="back-to-top" id="back-to-top" hidden aria-label="回到顶部">顶部</button>
 <footer class="site-footer">
   <div class="wrap">
     <nav class="foot-nav" aria-label="其他页面">
@@ -42,13 +46,19 @@
       <a href="{{ '/glossary/' | relative_url }}">术语表</a>
       <a href="{{ '/search/' | relative_url }}">搜索</a>
       <a href="{{ '/changelog/' | relative_url }}">更新日志</a>
+      <a href="{{ '/news/' | relative_url }}">新闻归档</a>
       <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
     </nav>
     <p class="muted">内容为学习整理，法规与价格以官方和主管机关最新信息为准。宝可梦相关名称归其权利人所有，本站为非官方学习笔记。</p>
   </div>
 </footer>
+</div>
+{% include yt-modal.html %}
 <script>{% include read.js %}</script>
 <script>{% include news-filter.js %}</script>
 <script>{% include video-player.js %}</script>
+<script>{% include theme.js %}</script>
+<script>{% include site-ux.js %}</script>
+{% if page.nav == "home" %}<script>{% include feed.js %}</script>{% endif %}
 </body>
 </html>

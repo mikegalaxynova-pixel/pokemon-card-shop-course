@@ -1,6 +1,14 @@
 ---
 title: 古物台账、本人确认与入货记录
 section: shop
+topics: [开店基础]
+images:
+  - src: /assets/img/kobutsu-ledger-fields.svg
+    alt: "古物台账法定记载事项示意图：交易年月日、品目和数量、特征、对方住所姓名职业年龄、本人确认措施的区分。保存三年。本图不是官方账簿格式"
+    width: 600
+    height: 280
+    credit: "本站示意图（依据古物营业法第十六条整理）"
+    credit_url: https://laws.e-gov.go.jp/law/324AC0000000108
 date: 2026-11-15
 last_updated: 2026-11-15
 description: 古物商许可办下来之后，买入二手 PSA 卡时要如何做本人确认、台账记哪些项、保存多久，以及朋友库存怎样入账。这是买卖交易的合规底线，不是申请教程。
