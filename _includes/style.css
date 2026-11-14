@@ -65,3 +65,9 @@ hr{border:0;border-top:1px solid var(--line);margin:2rem 0}
 input[type=search]{width:100%;font:inherit;padding:.7rem .9rem;border:1px solid var(--line);border-radius:8px;min-height:48px}
 .site-footer{border-top:1px solid var(--line);background:var(--soft);padding:1rem 0;font-size:.9rem}
 .site-footer p{margin:.4rem 0}
+.mentor{margin:.75rem 0 .35rem;padding:.7rem .9rem;border:1px solid #e3c06b;border-left:4px solid var(--upd);background:var(--updbg);border-radius:0 8px 8px 0}
+.mentor-label{font-weight:700;font-size:.9rem;color:var(--upd);margin:0 0 .35rem;line-height:1.4}
+.mentor-body>p{margin:.35rem 0;color:var(--fg)}
+.mentor-body>p:first-child{margin-top:0}
+.mentor-body>p:last-child{margin-bottom:0}
+.card .mentor{margin:.6rem 0}

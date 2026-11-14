@@ -1,0 +1,6 @@
+{%- if include.text and include.text != blank -%}
+<aside class="mentor">
+  <p class="mentor-label">导师点评 <span class="muted">（个人判断，与上方事实分开）</span></p>
+  <div class="mentor-body">{{ include.text | markdownify }}</div>
+</aside>
+{%- endif -%}
