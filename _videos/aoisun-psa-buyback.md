@@ -10,6 +10,9 @@ published: 2026-04-16
 date: 2026-11-15
 last_updated: 2026-11-15
 official: false
+language: 日文
+rating: 4
+rating_reason: 直接对上 PSA 买取和壳体损伤减额，报价仍要另查当天来源。
 topics: [买卖交易, PSA/评级]
 description: 作者拿一张 PSA 10 到多家店比较买取价，并提醒壳体损伤可能被减额。后半记录在店里看到高价特价卡疑似被涂改（インクド）的经过。
 tldr: |

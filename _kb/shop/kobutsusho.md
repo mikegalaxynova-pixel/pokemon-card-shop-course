@@ -2,6 +2,8 @@
 title: 古物商许可要点（参考）
 section: shop
 topics: [开店基础]
+rating: 2
+rating_reason: 只保留许可要点作参考，申请步骤不再展开，对下一步买卖帮助有限。
 images:
   - src: /assets/img/kobutsusho-roadmap.svg
     alt: "高田马场开店后路线图示意图：许可、资金、选址、台账入货、定价出货、回本。重点转向许可之后的记录和买卖"

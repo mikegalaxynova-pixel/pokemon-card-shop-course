@@ -8,6 +8,9 @@ youtube_id: 8MdwGqVOoP0
 duration: "9:42"
 published: 2026-10-16
 official: true
+language: 日文
+rating: 2
+rating_reason: 官方商品介绍，记下名称即可，不是现在进货的理由。
 topics: [卡牌知识]
 date: 2026-11-14
 last_updated: 2026-11-14

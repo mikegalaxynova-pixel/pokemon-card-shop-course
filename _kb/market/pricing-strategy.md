@@ -2,6 +2,8 @@
 title: 店头定价与改价
 section: market
 topics: [买卖交易]
+rating: 4
+rating_reason: 店头怎么标、何时改价，实用但要配合自己的成本。
 images:
   - src: /assets/img/pricing-ladder.svg
     alt: "店头定价三层示意图：先算进货成本加变动费用加最低毛利得到底线，再对照同卡同级近期成交价，最后给出能够向客人说明的店头标价。底线以下不卖"

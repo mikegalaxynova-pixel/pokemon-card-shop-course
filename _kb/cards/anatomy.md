@@ -2,6 +2,8 @@
 title: 卡面结构：一张卡要看哪些位置
 section: cards
 topics: [卡牌知识]
+rating: 3
+rating_reason: 认卡的基础，开业前看一次即可。
 images:
   - src: /assets/img/jp-front-back.webp
     alt: "日文版宝可梦卡的正面与背面：正面是ミミロル（Buneary），背面是现行日文版卡背，金色边框并带有七颗能量球"

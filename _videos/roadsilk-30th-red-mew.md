@@ -10,6 +10,9 @@ published: 2026-09-17
 date: 2026-11-15
 last_updated: 2026-11-15
 official: false
+language: 日文
+rating: 3
+rating_reason: 热度高、标题刺激，但「100 万」要对照当天公开行情，不能当报价。
 topics: [娱乐/开箱, 行情新闻]
 description: 发售后第二天就有七十多万次观看的开箱片。标题里的「100 万日元」很刺激，更值得对照当天的公开行情来看。
 tldr: |

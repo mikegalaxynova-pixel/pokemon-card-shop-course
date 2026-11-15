@@ -10,6 +10,9 @@ published: 2026-03-26
 date: 2026-11-15
 last_updated: 2026-11-15
 official: false
+language: 日文
+rating: 5
+rating_reason: 开业前最该对照的失败清单，尤其是现金流断裂。
 topics: [开店基础, 店铺运营]
 description: Tomohappy 谈卡店常见的失败原因：资金被挪用、展示柜被砸、启动资金不够，以及最致命的现金流断裂。适合开业前做风险清单。
 tldr: |

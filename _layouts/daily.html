@@ -6,6 +6,7 @@ nav: news
 <article class="prose">
   <p class="kicker">{% include stream.html id="news" %}{% if page.issue %} 第 {{ page.issue }} 期{% endif %}</p>
   <h1>{{ page.title }} {% include badge.html date=page.date updated=page.last_updated url=page.url %}</h1>
+  {% include rating.html rating=page.rating reason=page.rating_reason %}
   <p class="meta"><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%Y年%-m月%-d日' }}</time></p>
   {% include tldr.html %}
 
@@ -17,6 +18,7 @@ nav: news
   {% for n in page.news %}
     <li data-news-type="{{ n.type }}"{% if n.prev %} data-news-followup="1"{% endif %}>
       <div class="news-title">{% include news-type.html id=n.type prev=n.prev %}<h3>{{ n.title }}</h3></div>
+      {% include rating.html rating=n.rating reason=n.rating_reason %}
       {% include media.html item=n %}
       <p>{{ n.summary }}</p>
       <p class="src">来源：<a href="{{ n.url }}" rel="noopener">{{ n.source }}</a>{% if n.prev %} · <a href="{{ n.prev | relative_url }}">见此前报道</a>{% endif %}</p>

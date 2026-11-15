@@ -2,6 +2,8 @@
 title: 高额 PSA 交易怎么做
 section: buy
 topics: [买卖交易, PSA/评级]
+rating: 4
+rating_reason: 高额 PSA 成交时的核验和交割安排，用得上但不天天发生。
 images:
   - src: /assets/img/high-value-checklist.svg
     alt: "高额 PSA 交易检查点示意图：核验认证号与实物、优先银行转账、做好台账和交易备忘、卡片不离开视线并预约当面交割。金额门槛由店铺自定"

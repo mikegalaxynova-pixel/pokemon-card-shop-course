@@ -10,6 +10,9 @@ published: 2026-03-21
 date: 2026-11-15
 last_updated: 2026-11-15
 official: false
+language: 日文
+rating: 4
+rating_reason: 真实经营者长访谈，有借鉴处；片中营业额和起步资金都是口述。
 topics: [开店基础, 店铺运营, 店铺案例]
 description: 长访谈。秋叶原卡店经营者口述近年营业额、用数千万日元起步、泡泡后库存减值，以及 PSA 在收藏市场里的位置。数字全是当事人口述，须单独看待。
 tldr: |

@@ -2,6 +2,8 @@
 title: PSA 等级标准速查（10 / 9 及其他）
 section: psa
 topics: [PSA/评级]
+rating: 4
+rating_reason: 10 分和 9 分差在哪里，定价前需要建立这个概念。
 images:
   - src: /assets/img/psa-grade-scale.svg
     alt: "PSA 1 到 10 分等级尺示意图，并分别说明 10 分 Gem Mint 与 9 分 Mint 的要点和居中公差，依据官方 Grading Standards"

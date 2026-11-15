@@ -10,6 +10,9 @@ published: 2026-10-16
 date: 2026-11-15
 last_updated: 2026-11-15
 official: false
+language: 日文
+rating: 4
+rating_reason: 把接客、库存和利润讲清楚了，但那是大型专卖店的语境。
 topics: [店铺运营]
 description: トレカキャンプ（Toreca Camp）经营者从接客、库存、活动和利润出发，讲怎样把店做稳，而不是只追新品周期。
 tldr: |

@@ -8,6 +8,9 @@ youtube_id: 7aWExr5oHD8
 duration: "6:09"
 published: 2026-11-14
 official: false
+language: 日文
+rating: 4
+rating_reason: 送评取舍的思路有用，费用和交期必须以 PSA 官网为准。
 topics: [PSA/评级, 买卖交易]
 date: 2026-11-14
 last_updated: 2026-11-14

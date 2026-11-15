@@ -1,0 +1,17 @@
+{%- comment -%}推荐指数。用法：{% include rating.html rating=page.rating reason=page.rating_reason %} 或 compact=true 只显示星星。无评分则什么都不输出。{%- endcomment -%}
+{%- assign _r = include.rating | plus: 0 -%}
+{%- if include.rating and _r >= 1 and _r <= 5 -%}
+  {%- capture _stars -%}
+    {%- for i in (1..5) -%}
+      {%- if i <= _r -%}★{%- else -%}☆{%- endif -%}
+    {%- endfor -%}
+  {%- endcapture -%}
+  {%- if include.compact -%}
+<span class="rating is-compact" aria-label="推荐指数 {{ _r }}/5"><span class="rating-stars" aria-hidden="true">{{ _stars }}</span></span>
+  {%- else -%}
+<div class="rating-block">
+  <p class="rating" aria-label="推荐指数 {{ _r }}/5"><span class="rating-stars" aria-hidden="true">{{ _stars }}</span> <span class="rating-label">推荐指数 {{ _r }}/5</span></p>
+  {%- if include.reason and include.reason != blank -%}<p class="rating-reason">{{ include.reason }}</p>{%- endif -%}
+</div>
+  {%- endif -%}
+{%- endif -%}

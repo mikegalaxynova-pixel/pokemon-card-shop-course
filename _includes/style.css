@@ -209,3 +209,13 @@ input[type=search]{width:100%;font:inherit;padding:.7rem .9rem;border:1px solid 
 
 .official-block{margin-top:2.25rem;padding-top:1rem;border-top:1px solid var(--line)}
 .official-block h2{border:0;margin:0 0 .4rem;padding:0}
+
+/* Recommendation rating and language badge */
+.rating{display:inline-flex;flex-wrap:wrap;align-items:baseline;gap:.15rem .4rem;margin:0;line-height:1.3}
+.rating-stars{color:#c98900;letter-spacing:.06em;font-weight:700;font-size:.95em}
+.rating.is-compact{font-size:.82rem}
+.rating.is-compact .rating-stars{font-size:1em}
+.rating-label{font-size:.8rem;font-weight:700;color:var(--muted)}
+.rating-reason{margin:.15rem 0 0;font-size:.9rem;color:var(--muted);line-height:1.55}
+.rating-block{margin:.2rem 0 .85rem}
+.lang-badge{display:inline-block;font-size:.72rem;font-weight:700;line-height:1;padding:.28em .48em;border-radius:4px;border:1px solid #c5d0da;background:#eef2f6;color:#3d4a57;vertical-align:middle;letter-spacing:.02em}

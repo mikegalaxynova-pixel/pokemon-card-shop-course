@@ -4,8 +4,9 @@ nav: videos
 ---
 <nav class="crumbs" aria-label="面包屑"><a href="{{ '/videos/' | relative_url }}">视频</a></nav>
 <article class="prose">
-  <p class="kicker">{% include stream.html id="videos" %}{% for t in page.topics %} {% include topic.html label=t %}{% endfor %}</p>
+  <p class="kicker">{% include stream.html id="videos" %}{% for t in page.topics %} {% include topic.html label=t %}{% endfor %} {% include lang-badge.html language=page.language %}</p>
   <h1>{{ page.title_zh | default: page.title }} {% include badge.html date=page.date updated=page.last_updated url=page.url %}</h1>
+  {% include rating.html rating=page.rating reason=page.rating_reason %}
   {%- if page.title_zh and page.title_zh != page.title -%}
   <p class="enname">原标题：{{ page.title }}</p>
   {%- endif -%}
@@ -28,6 +29,8 @@ nav: videos
     {%- if page.creator -%}<p><strong>{% if page.platform == "x" %}账号{% else %}频道{% endif %}</strong>：{{ page.creator }}</p>{%- endif -%}
     {%- if page.duration -%}<p><strong>时长</strong>：{{ page.duration }}</p>{%- endif -%}
     {%- if page.published -%}<p><strong>发布日期</strong>：{{ page.published | date: "%Y年%-m月%-d日" }}（以{% if page.platform == "x" %} X 原帖{% else %} YouTube 页面{% endif %}为准）</p>{%- endif -%}
+    {%- if page.language -%}<p><strong>语言</strong>：{% include lang-badge.html language=page.language %}</p>{%- endif -%}
+    {%- if page.rating -%}<p><strong>推荐指数</strong>：{% include rating.html rating=page.rating compact=true %}</p>{%- endif -%}
     {%- if page.topics -%}<p><strong>主题</strong>：{% for t in page.topics %}{% include topic.html label=t %}{% endfor %}</p>{%- endif -%}
     {%- if page.platform == "x" -%}
     <p class="muted">这是日本卡片圈的 X 动态，不是 YouTube 视频。请点上面的链接查看原帖（含对方发布的对比视频，如有）。</p>

@@ -2,6 +2,8 @@
 title: 朋友提供的库存：买取、寄售怎样安排
 section: shop
 topics: [买卖交易, 开店基础]
+rating: 5
+rating_reason: 开业第一批货怎么算，直接决定前几个月的现金流。
 images:
   - src: /assets/img/friend-stock-decision.svg
     alt: "示意图：朋友提供的 PSA 库存可买断或寄售。买断要先付货款，毛利和跌价风险归店铺；寄售少占现金，店铺只拿约定分成。两种在开展营业时都要做本人确认和台账。图中不含分成数字"

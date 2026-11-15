@@ -2,6 +2,8 @@
 title: 稀有度速查（C〜UR、SAR、MUR）
 section: cards
 topics: [卡牌知识]
+rating: 3
+rating_reason: 稀有度不等于价格，建立概念即可。
 images:
   - src: /assets/img/magnemite-c.webp
     alt: "线圈コイル（Magnemite），底部收藏编号 027/063，稀有度字母 C（Common）"

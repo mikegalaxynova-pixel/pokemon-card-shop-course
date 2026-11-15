@@ -8,6 +8,9 @@ youtube_id: xVablhq1Cfk
 duration: "3:20"
 published: 2026-08-18
 official: true
+language: 日文
+rating: 2
+rating_reason: 用来对上 FUR 和主打卡名字即可，不是进货或经营课。
 topics: [卡牌知识]
 date: 2026-11-15
 last_updated: 2026-11-15

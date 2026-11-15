@@ -2,6 +2,8 @@
 title: PSA 卡进货判断
 section: buy
 topics: [买卖交易, PSA/评级]
+rating: 5
+rating_reason: 收下朋友库存或收购 PSA 之前的判断清单。
 images:
   - src: /assets/img/psa-intake-checklist.svg
     alt: "PSA 卡进货五步示意图：核验认证号、核对等级与限定符、查看 Pop、检查壳况、对照近期成交价，再决定上架、寄售、退回或停手申告"

@@ -253,3 +253,12 @@ html[data-theme=dark] .vtopic-fun{background:#3a1528;color:#f9a8d4;border-color:
 .feed-x-handle{margin:.15rem 0 .4rem;font-size:.85rem;font-weight:700}
 .feed-x-quote{margin:0;font-size:.9rem;line-height:1.45;color:#e2e8f0}
 .feed-fmt.stream-x{opacity:.9}
+
+/* Recommendation rating — readable in light and dark, including mobile */
+html[data-theme=dark] .rating-stars{color:#f0c14b}
+html[data-theme=dark] .rating-label,html[data-theme=dark] .rating-reason{color:var(--feed-muted,#9a9a9a)}
+html[data-theme=dark] .lang-badge{background:#2a2a2a;color:#d0d0d0;border-color:#555}
+.feed-kicker .rating{margin:0}
+.feed-kicker .lang-badge{margin:0}
+.vcard-body .rating-block{margin:.15rem 0 .4rem}
+.vcard-body .rating-reason{display:none}

@@ -9,6 +9,9 @@ published: 2026-09-16
 date: 2026-11-15
 last_updated: 2026-11-15
 official: false
+language: 日文
+rating: 5
+rating_reason: 直接关系到收货和真伪，开业前就该会向客人讲这件事。
 topics: [娱乐/开箱, 行情新闻]
 description: 发售当晚的官方注意喚起，还配了真伪对比视频。浏览量很高，是当时日本卡片圈绕不开的一条。
 quote: 今日発売のポケカ30th「ミュウex FUR」の精巧な偽造品がフリマ等で複数確認されています！(弊社鑑定士による目視確認) 見た目での判別は困難なレベルです。

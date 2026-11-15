@@ -2,6 +2,8 @@
 title: 古物台账、本人确认与入货记录
 section: shop
 topics: [开店基础]
+rating: 4
+rating_reason: 许可后的台账和本人确认是合规底线。
 images:
   - src: /assets/img/kobutsu-ledger-fields.svg
     alt: "古物台账法定记载事项示意图：交易年月日、品目和数量、特征、对方住所姓名职业年龄、本人确认措施的区分。保存三年。本图不是官方账簿格式"

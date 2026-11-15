@@ -75,7 +75,7 @@
 {%- assign _tid = include.url | slugify | append: "-" | append: _kind -%}
 {%- assign _dkind = _kind -%}
 {%- if include.platform == "x" -%}{%- assign _dkind = "x" -%}{%- endif -%}
-<article class="feed-item media-{{ _media }}" data-kind="{{ _dkind }}" data-topics="{{ _topic_ids }}"{% if include.ntype %} data-ntype="{{ include.ntype }}"{% endif %}{% if include.topic %} data-topic="{{ include.topic }}"{% endif %} data-url="{{ _url }}" data-read-url="{{ _url }}" data-ts="{{ _when | date: '%s' }}" data-day="{{ _when | date: '%Y-%m-%d' }}"{% if _feat == "yes" %} data-featured="1" data-featured-rank="{{ include.rank }}"{% endif %} data-search="{{ _search | escape }}">
+<article class="feed-item media-{{ _media }}" data-kind="{{ _dkind }}" data-topics="{{ _topic_ids }}"{% if include.ntype %} data-ntype="{{ include.ntype }}"{% endif %}{% if include.topic %} data-topic="{{ include.topic }}"{% endif %} data-url="{{ _url }}" data-read-url="{{ _url }}" data-ts="{{ _when | date: '%s' }}" data-day="{{ _when | date: '%Y-%m-%d' }}"{% if _feat == "yes" %} data-featured="1" data-featured-rank="{{ include.rank }}"{% endif %}{% if include.rating %} data-rating="{{ include.rating }}"{% endif %} data-search="{{ _search | escape }}">
   <div class="feed-row">
     <div class="feed-body">
       <h2 class="feed-title" id="ft-{{ _tid }}"><a class="feed-stretch" href="{{ _url }}">{{ include.title }}</a></h2>
@@ -83,6 +83,8 @@
         {%- for t in include.topics -%}
           {% include topic.html label=t %}
         {%- endfor -%}
+        {% include lang-badge.html language=include.language %}
+        {% include rating.html rating=include.rating compact=true %}
         <span class="feed-fmt stream stream-{{ _dkind }}">{{ _klabel }}</span>
         {%- if _kind == "news" -%}{% include news-type.html id=include.ntype prev=include.prev %}{%- endif -%}
         {%- if include.source -%}<span class="feed-source">{{ include.source }}</span>{%- endif -%}

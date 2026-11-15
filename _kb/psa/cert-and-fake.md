@@ -2,6 +2,8 @@
 title: 认证号核验与假壳识别
 section: psa
 topics: [PSA/评级]
+rating: 5
+rating_reason: 假壳识别是高额交易的底线，不能省。
 images:
   - src: /assets/img/psa-slab-photo-wagner.webp
     alt: "真实 PSA 评级壳照片：1909 年 T206 Honus Wagner 棒球卡，顶部红框标签写着 T206 SWEET CAPORAL HONUS WAGNER、等级 EX 5(MC) 和认证编号 15385994，下方是封装的卡片"

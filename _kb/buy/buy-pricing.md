@@ -2,6 +2,8 @@
 title: 收购定价与利润
 section: buy
 topics: [买卖交易]
+rating: 4
+rating_reason: 用预期净售价倒推收购上限，避免买得太满。
 images:
   - src: /assets/img/buy-pricing-formula.svg
     alt: "收购定价上限公式示意图：收购价上限等于预期净售价减去目标毛利再减去滞销或跌价缓冲；预期净售价等于预期售价减去卖出手续费和运费。这是经营假设公式，不是市场统一买取率"

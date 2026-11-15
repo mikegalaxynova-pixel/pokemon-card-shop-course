@@ -1,6 +1,16 @@
 # 更新日志（唯一数据源）。每次每日更新在最上面新增一条。
 # kind 取值与导航 id 对应：news | shops | videos | kb | tools（旧条目可能仍是 daily / recs / path / glossary，首页会归入「其他」）；type: new | updated
 - date: 2026-11-15
+  title: 新增中英文视频，并上线「推荐指数」
+  items:
+    - { kind: videos, type: new, title: "日本卡店月入千万台币？开卡店真的那么好赚吗", url: /videos/cardholics-shop-profit/ }
+    - { kind: videos, type: new, title: "零基础走一遍日本 PSA 自送评", url: /videos/alpha-japan-psa-submit/ }
+    - { kind: videos, type: new, title: "入手鉴定卡前一定要知道的五件事", url: /videos/cardholics-graded-buy/ }
+    - { kind: videos, type: new, title: "鉴定卡也会被仿冒？2023 年日本卡店一度停收 PSA", url: /videos/cardholics-psa-fakes/ }
+    - { kind: videos, type: new, title: "到东京买宝可梦卡：逛店、验卡，少玩盲抽", url: /videos/kennethk-tokyo-shops/ }
+    - { kind: videos, type: new, title: "一千包挑战：先抽到追击卡的人，拿走全部", url: /videos/leonhart-1000-packs/ }
+    - { kind: videos, type: updated, title: "全站内容增加推荐指数（1–5 星）和视频语言标签", url: /videos/ }
+- date: 2026-11-15
   title: 新增「娱乐/开箱」：开箱视频与卡片圈 X 帖
   items:
     - { kind: videos, type: new, title: "两箱开「100 万的红色梦幻」？标题很猛，行情要另算", url: /videos/roadsilk-30th-red-mew/ }

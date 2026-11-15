@@ -10,6 +10,9 @@ published: 2026-04-17
 date: 2026-11-15
 last_updated: 2026-11-15
 official: false
+language: 日文
+rating: 5
+rating_reason: 目前最完整的开店入门讲解，适合建立全局；片中的资金和规模不要照搬。
 topics: [开店基础, 店铺运营]
 description: 秋叶原卡店ポンポコ店长讲开店资金、选址、单卡周转和买取，是目前比较完整的日文入门讲解。
 tldr: |

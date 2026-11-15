@@ -10,6 +10,9 @@ published: 2026-11-13
 date: 2026-11-15
 last_updated: 2026-11-15
 official: false
+language: 日文
+rating: 3
+rating_reason: 量大、节奏快，当时缺少字幕，不宜当作抽出或行情依据。
 topics: [娱乐/开箱]
 description: 刚刚上传的大份量开箱：十分钟拆完 100 包メガシンフォニア。本篇还没有字幕，先看气氛，不剧透抽出。
 tldr: |

@@ -10,6 +10,9 @@ published: 2026-11-09
 date: 2026-11-15
 last_updated: 2026-11-15
 official: false
+language: 日文
+rating: 4
+rating_reason: 揭壳好看，还提醒送评期间行情会变；片中价格是口述快照。
 topics: [娱乐/开箱, PSA/评级]
 description: 最近的鑑定結果開封：30 枚常规方案送评，18 枚拿到 PSA 10。她还一边报素体买入价和当时的 PSA 10 行情，很好看也很好对照。
 tldr: |

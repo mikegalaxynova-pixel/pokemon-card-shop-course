@@ -10,6 +10,9 @@ published: 2026-11-13
 date: 2026-11-15
 last_updated: 2026-11-15
 official: false
+language: 日文
+rating: 3
+rating_reason: 开箱反转好看，对回本帮助有限。
 topics: [娱乐/开箱]
 description: 刚拆完纸箱就先补齐两张缺号皮卡丘，后面 18 包的结果却没有标题听起来那么狂。看开箱反转刚刚好。
 tldr: |

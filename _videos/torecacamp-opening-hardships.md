@@ -10,6 +10,9 @@ published: 2025-10-22
 date: 2026-11-15
 last_updated: 2026-11-15
 official: false
+language: 日文
+rating: 4
+rating_reason: 能提醒开业难度和防犯成本，数字属于大型店，不能直接套用。
 topics: [开店基础, 店铺运营]
 description: 同一家トレカキャンプ店主谈开业资金规模、进货难、防犯成本，以及先用メルカリ店铺练手。数字属于大型店语境，不能直接套用。
 tldr: |

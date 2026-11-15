@@ -10,6 +10,9 @@ published: 2026-05-29
 date: 2026-11-15
 last_updated: 2026-11-15
 official: false
+language: 日文
+rating: 3
+rating_reason: 一次有用的平台与店头对照，不能当成普遍结论。
 topics: [买卖交易]
 description: 用同一张（或同一比较）对照メルカリ行情和店头买取。作者的印象是：行情上涨后，部分店铺买取已经能接近平台价格，但结果仍取决于卡和店。
 tldr: |

@@ -2,6 +2,8 @@
 title: PSA 是什么：评级卡生意的优势与风险
 section: psa
 topics: [PSA/评级]
+rating: 4
+rating_reason: 评级卡生意的优势和风险总览，适合先建立框架。
 images:
   - src: /assets/img/psa-three-steps.svg
     alt: "PSA 三步示意图：第一步判断真伪，第二步按 1 到 10 分评分，第三步封进带认证编号的硬壳"

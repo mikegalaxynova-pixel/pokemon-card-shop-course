@@ -1,0 +1,4 @@
+{%- assign _lang = include.language | default: include.lang -%}
+{%- if _lang and _lang != blank -%}
+<span class="lang-badge">{{ _lang }}</span>
+{%- endif -%}

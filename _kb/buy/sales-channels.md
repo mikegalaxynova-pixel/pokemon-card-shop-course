@@ -2,6 +2,8 @@
 title: 卖出渠道与毛利
 section: buy
 topics: [买卖交易]
+rating: 4
+rating_reason: 把各渠道费率和回款节奏摆清楚，费率仍以官方页为准。
 images:
   - src: /assets/img/sales-channels-fees.svg
     alt: "主要卖出渠道平台手续费示意图：店头无平台手续费；メルカリ销售手续费为售价百分之十；雅虎拍卖落札系统利用料为落札价百分之十含税；SNKRDUNK 销售手续费按会员等级约为百分之九点五到百分之七。另有运费和提现手续费，以官方说明为准"

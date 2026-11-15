@@ -8,6 +8,9 @@ youtube_id: 1jW5MWxW4jQ
 duration: "0:30"
 published: 2026-10-29
 official: true
+language: 日文
+rating: 2
+rating_reason: 30 秒宣传片，认包装和角色就够，对回本几乎没有帮助。
 topics: [卡牌知识]
 date: 2026-11-14
 last_updated: 2026-11-14

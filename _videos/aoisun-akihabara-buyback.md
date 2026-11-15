@@ -10,6 +10,9 @@ published: 2025-12-12
 date: 2026-11-15
 last_updated: 2026-11-15
 official: false
+language: 日文
+rating: 3
+rating_reason: 能看出区域差价，对象主要是未评级卡，不是 PSA 进货课。
 topics: [买卖交易, 行情新闻]
 description: 作者把三张未评级卡拿到秋叶原多家店，再和当天池袋的报价对照，差额可以到数倍。用来理解「同一张卡、不同店、不同区域」的买取差异。
 tldr: |

@@ -2,6 +2,8 @@
 title: 收支平衡路线图：高田马场 PSA 店模型
 section: shop
 topics: [开店基础]
+rating: 5
+rating_reason: 回本怎么算的主干，先代入自己的租金和人工。
 images:
   - src: /assets/img/breakeven-formula.svg
     alt: "月度收支平衡公式示意图：月固定成本等于租金加人工加其他固定开支；回本所需月销售额等于月固定成本除以毛利率。所有数字都是可改假设"

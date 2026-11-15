@@ -2,6 +2,8 @@
 title: Pop Report（鉴定数量报告）怎么看
 section: psa
 topics: [PSA/评级]
+rating: 4
+rating_reason: Pop 能辅助判断，但不能单独拿来定价。
 images:
   - src: /assets/img/pop-report-diagram.svg
     alt: "Pop Report 读法示意图：用假想的示例卡 A，列出 8、9、10 分的数量，并注明这些数字只代表 PSA 评出的数量"

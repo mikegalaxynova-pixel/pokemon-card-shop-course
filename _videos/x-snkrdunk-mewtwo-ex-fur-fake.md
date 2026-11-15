@@ -9,6 +9,9 @@ published: 2026-09-17
 date: 2026-11-15
 last_updated: 2026-11-15
 official: false
+language: 日文
+rating: 4
+rating_reason: 同一风险的续报，和前一条一起看更完整，本身重复度较高。
 topics: [娱乐/开箱, 行情新闻]
 description: 超梦 FUR 示警的次日续报，对象换成ミュウツーex FUR，同样附上真伪对比视频。两条连着看更完整。
 quote: 昨日に続きポケカ30thの商品から「ミュウツーex FUR」の真贋比較動画をPOST！ ポケカ30th「ミュウツーex FUR」の精巧な偽造品がフリマ等で複数確認されています！(弊社鑑定士による目視確認)

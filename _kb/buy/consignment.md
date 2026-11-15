@@ -2,6 +2,8 @@
 title: 寄售（委託販売）模式
 section: buy
 topics: [买卖交易]
+rating: 4
+rating_reason: 和朋友合作很可能用到寄售，要把分成和退还写清楚。
 images:
   - src: /assets/img/consignment-flow.svg
     alt: "寄售流程示意图：收下委托时先做本人确认并记台账，书面约定标价、分成、保管责任和未售退还，上架出售后再按约定结算，未售出则退还委托人"

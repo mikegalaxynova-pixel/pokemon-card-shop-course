@@ -2,6 +2,8 @@
 title: 查价渠道与读法
 section: market
 topics: [买卖交易, 行情新闻]
+rating: 5
+rating_reason: 定价和收购前先会查价，是每天都要用的本事。
 images:
   - src: /assets/img/price-sources-flow.svg
     alt: "查价顺序示意图：先确认弹、编号、语言和评级，再查近期成交价而不是在售标价，至少对照两个来源并排除异常值，最后记下查询日期和来源"

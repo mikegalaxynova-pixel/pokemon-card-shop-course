@@ -2,6 +2,8 @@
 title: 店铺活动：引流与复购
 section: shop
 topics: [店铺运营]
+rating: 3
+rating_reason: 活动能引流，开业初期不是回本的第一优先。
 images:
   - src: /assets/img/shop-events-ops.svg
     alt: "卡牌店活动类型与运营目的示意图：官方健身房活动、开封活动、交换会或交流会、评级卡展示。只谈客流和转化，不讲解对战规则。费用和客流量因店而异，图中不写具体数字"

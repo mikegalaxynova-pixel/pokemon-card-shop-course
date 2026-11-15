@@ -2,6 +2,8 @@
 title: 系列、弹与包装（パック / BOX / 构筑套装）
 section: cards
 topics: [卡牌知识]
+rating: 3
+rating_reason: 帮助听懂新弹和包装用语，不是进货清单。
 images:
   - src: /assets/img/hadou-seeker-pack.webp
     alt: "扩展包「ハドウシーカー」（暂译：Aura Seeker）的官方包装：一包 5 张，系列为ポケモンカードゲーム MEGA（Pokémon Card Game MEGA），编号 M7"

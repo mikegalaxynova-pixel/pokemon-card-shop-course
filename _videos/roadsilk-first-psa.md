@@ -10,6 +10,9 @@ published: 2026-05-02
 date: 2026-11-15
 last_updated: 2026-11-15
 official: false
+language: 日文
+rating: 4
+rating_reason: 在东京 PSA Lounge 送评并开结果，场面接近你会遇到的情况。
 topics: [娱乐/开箱, PSA/评级]
 description: 拍摄得到 PSA Lounge Tokyo 协助。先看现场怎么送，再看 35 件结果开封，反应很大，娱乐性很强。
 tldr: |

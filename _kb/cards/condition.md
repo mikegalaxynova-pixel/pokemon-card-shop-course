@@ -2,6 +2,8 @@
 title: 未评级卡（生カード）成色判断
 section: cards
 topics: [卡牌知识]
+rating: 3
+rating_reason: 主卖评级卡时用得较少，收购素体或决定送评时才关键。
 images:
   - src: /assets/img/condition-4points.svg
     alt: "未评级卡成色四个观察点示意图：四角、边缘、表面和居中。PSA 十分要求几乎完美，正面居中约不超过五十五比四十五，背面约不超过七十五比二十五。本图是观察位置示意图，不是某张卡的评级结果"

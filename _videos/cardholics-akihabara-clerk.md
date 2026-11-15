@@ -10,6 +10,9 @@ published: 2026-11-13
 date: 2026-11-15
 last_updated: 2026-11-15
 official: false
+language: 中文
+rating: 5
+rating_reason: 最接近日本店现场的中文讲解，开业前值得先建立印象；不要照搬大型综合店的库存规模。
 topics: [店铺运营, 开店基础, 店铺案例]
 description: 台湾频道请来在秋叶原 Cardon 店实习一个多月的店员，讲后台拆包、买取和库存压力，适合开店前先建立现场印象。
 tldr: |

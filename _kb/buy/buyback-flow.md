@@ -2,6 +2,8 @@
 title: 收购（買取）流程
 section: buy
 topics: [买卖交易]
+rating: 4
+rating_reason: 许可后做买取的标准顺序，开业后就会用到。
 images:
   - src: /assets/img/buyback-flow.svg
     alt: "店头收购流程示意图：在营业所或对方住所收货、本人确认、核验认证号或成色、报价、付款并记台账；怀疑不正品则停手并向警察申告"

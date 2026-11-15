@@ -2,6 +2,8 @@
 title: 日文版 vs 英文版：五个关键差别
 section: cards
 topics: [卡牌知识]
+rating: 3
+rating_reason: 日英版本要分开查价，是重要提醒但不是每天的操作手册。
 images:
   - src: /assets/img/jp-front-back.webp
     alt: "日文版卡片正面与背面：正面是ミミロル（Buneary），背面为现行日文版金框卡背，带七颗能量球"
