@@ -12,13 +12,14 @@ date: 这次推荐的日期（日本时间，YYYY-MM-DD）
 # 若今天没有更合适的新内容，可沿用仍成立的推荐，不必为了改而改。
 date: 2026-11-15
 items:
-  - url: /kb/shop/friend-stock/
-    reason: 朋友库存怎么分账，直接决定前几个月的现金流。
-  - url: /videos/cardholics-shop-profit/
-    reason: 中文拆开店成本和毛利，别把名店营业额当成自己的回本目标。
-  - url: /videos/leonhart-1000-packs/
-    reason: 英文一千包开箱很好看，中段还出现疑似假包，当娱乐看即可。
+  - url: /daily/2026-11-15/
+    topic: m6a-psa10-supply-2026-11-12
+    reason: 新弹 PSA 10 一周多出一两倍、价格在松，朋友库存里的新弹 PSA 该先卖。
+  - url: /shops/torecahimitsu/
+    reason: 秋叶原新店开业一周被盗 2,500 万，你签约前就该把防盗和保险算进成本。
+  - url: /videos/psa-trainer-court-story/
+    reason: 6 分钟英文短片：从卧室卖卡到实体店，先小规模跑通再加固定成本。
   - url: /kb/shop/breakeven/
-    reason: 先用自己的租金和人工假设，算出回本要卖多少。
-  - url: /videos/cardholics-graded-buy/
-    reason: 买 PSA 前先分清分数、公司和成交；片中 2023 年的价格不要照抄。
+    reason: 把保费和防盗设备也填进去，看回本线会移多少。
+  - url: /videos/nuv-30th-hk1500/
+    reason: 粤语开箱，最后抽到喷火龙尖叫；正好对照今天新闻里这张卡的 PSA 10 价。

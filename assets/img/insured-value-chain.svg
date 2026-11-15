@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="250" viewBox="0 0 600 250" role="img" aria-labelledby="t d">
+<title id="t">寄出评级卡时，能拿回多少取决于哪一层</title>
+<desc id="d">示意图：送评申报价值、承运商赔付上限、自己的保险三层。依据 Sports Collectors Digest 2026年11月12日报道中保险从业者的说法：PSA 按送评时申报价值负责，不是保险；FedEx 收藏品类包裹赔付上限约 1,000 美元。本图不是法律或保险建议。</desc>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC",sans-serif;fill:#1f2328}.m{fill:#57606a}</style>
+<rect width="600" height="250" fill="#f6f8fa"/>
+<text x="20" y="28" font-size="16" font-weight="700">卡在路上丢了，能拿回多少？看这三层</text>
+<text x="20" y="47" font-size="11" class="m">示意图，依据 SCD 2026/11/12 报道中保险从业者的说法整理；非法律或保险建议。</text>
+<rect x="20" y="64" width="180" height="140" rx="8" fill="#fff" stroke="#d0d7de"/>
+<text x="34" y="90" font-size="13" font-weight="700">① 送评申报价值</text>
+<text x="34" y="112" font-size="11">评级公司按你填的</text><text x="34" y="128" font-size="11">申报价值负责</text>
+<text x="34" y="150" font-size="11" class="m">填低了省费用，</text><text x="34" y="166" font-size="11" class="m">丢了也只按低价算</text>
+<rect x="210" y="64" width="180" height="140" rx="8" fill="#fff" stroke="#d0d7de"/>
+<text x="224" y="90" font-size="13" font-weight="700">② 承运商赔付</text>
+<text x="224" y="112" font-size="11">「申报价值」不等于保险</text><text x="224" y="128" font-size="11">报道称 FedEx 收藏品</text><text x="224" y="144" font-size="11">上限约 1,000 美元/件</text>
+<text x="224" y="166" font-size="11" class="m">日本快递条款以各家为准</text>
+<rect x="400" y="64" width="180" height="140" rx="8" fill="#fff" stroke="#cf222e"/>
+<text x="414" y="90" font-size="13" font-weight="700" fill="#cf222e">③ 你自己的保险</text>
+<text x="414" y="112" font-size="11">店铺/动产保险是否</text><text x="414" y="128" font-size="11">覆盖商品、运输中、</text><text x="414" y="144" font-size="11">升值后的评级卡</text>
+<text x="414" y="166" font-size="11" class="m">开业前向保险公司确认</text>
+<text x="20" y="232" font-size="11" class="m">来源：sportscollectorsdigest.com（2026-11-12）；PSA 赔付个案见 x.com/KevinRashidi（2026-11-12 JST）</text>
+</svg>

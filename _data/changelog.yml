@@ -1,6 +1,13 @@
 # 更新日志（唯一数据源）。每次每日更新在最上面新增一条。
 # kind 取值与导航 id 对应：news | shops | videos | kb | tools（旧条目可能仍是 daily / recs / path / glossary，首页会归入「其他」）；type: new | updated
 - date: 2026-11-15
+  title: 第 4 期 · 新弹 PSA 10 变多与防盗保险
+  items:
+    - { kind: news, type: new, title: "每日新闻 第 4 期（11/15）：新弹 PSA 10 越送越多，先防库存在路上丢了", url: /daily/2026-11-15/ }
+    - { kind: shops, type: new, title: "店铺案例：トレカ秘密基地（Toreca Himitsu Kichi）", url: /shops/torecahimitsu/ }
+    - { kind: videos, type: new, title: "视频：从卧室卖卡到纽约实体店 The Trainer Court（英文）", url: /videos/psa-trainer-court-story/ }
+    - { kind: videos, type: new, title: "视频：香港 YouTuber 花 1,500 港元开 30 周年（粤语）", url: /videos/nuv-30th-hk1500/ }
+- date: 2026-11-15
   title: 新增中英文视频，并上线「推荐指数」
   items:
     - { kind: videos, type: new, title: "日本卡店月入千万台币？开卡店真的那么好赚吗", url: /videos/cardholics-shop-profit/ }

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300" viewBox="0 0 600 300" role="img" aria-labelledby="t d">
+<title id="t">30th CELEBRATION 三张卡：一周内 PSA 10 枚数大增、PSA 10 成交中位价回落</title>
+<desc id="d">数据来自トレギャラ 11/6〜11/12 周报：リザードン 137/103 PSA10 枚数 92→252，中位价 14.9万→13.7万日元；ピカチュウex SAR 127/103 枚数 64→278，80,000→75,000日元；ミュウex FUR 135/103 枚数 117→292，70,999→68,500日元。本图是数据示意图，不是行情预测。</desc>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC",sans-serif;fill:#1f2328}.m{fill:#57606a}</style>
+<rect width="600" height="300" fill="#f6f8fa"/>
+<text x="20" y="28" font-size="16" font-weight="700">新弹 PSA 10 越多，PSA 10 价越松（一周数据）</text>
+<text x="20" y="47" font-size="11" class="m">トレギャラ 11/6〜11/12 周报（成交中位价）。数据示意图，非预测。</text>
+<text x="200" y="74" font-size="12" font-weight="700">PSA 10 枚数（7 天前 → 现在）</text>
+<text x="430" y="74" font-size="12" font-weight="700">PSA 10 中位价</text>
+<g font-size="12">
+<text x="20" y="108" font-weight="700">リザードン</text><text x="20" y="124" class="m" font-size="10">Charizard 137/103</text>
+<rect x="200" y="96" width="37" height="12" fill="#8c959f"/><rect x="200" y="112" width="101" height="12" fill="#cf222e"/>
+<text x="242" y="107" font-size="10" class="m">92</text><text x="306" y="123" font-size="10">252</text>
+<text x="430" y="112">14.9万 → <tspan font-weight="700" fill="#cf222e">13.7万</tspan></text><text x="430" y="127" font-size="10" class="m">−8.1%</text>
+<text x="20" y="168" font-weight="700">ピカチュウex SAR</text><text x="20" y="184" class="m" font-size="10">Pikachu ex 127/103</text>
+<rect x="200" y="156" width="26" height="12" fill="#8c959f"/><rect x="200" y="172" width="111" height="12" fill="#cf222e"/>
+<text x="231" y="167" font-size="10" class="m">64</text><text x="316" y="183" font-size="10">278</text>
+<text x="430" y="172">80,000 → <tspan font-weight="700" fill="#cf222e">75,000</tspan></text><text x="430" y="187" font-size="10" class="m">−6.2%（日元）</text>
+<text x="20" y="228" font-weight="700">ミュウex FUR</text><text x="20" y="244" class="m" font-size="10">Mew ex 135/103</text>
+<rect x="200" y="216" width="47" height="12" fill="#8c959f"/><rect x="200" y="232" width="117" height="12" fill="#cf222e"/>
+<text x="252" y="227" font-size="10" class="m">117</text><text x="322" y="243" font-size="10">292</text>
+<text x="430" y="232">70,999 → <tspan font-weight="700" fill="#cf222e">68,500</tspan></text><text x="430" y="247" font-size="10" class="m">−3.5%（日元）</text>
+</g>
+<rect x="200" y="268" width="12" height="10" fill="#8c959f"/><text x="216" y="277" font-size="10" class="m">7 天前</text>
+<rect x="270" y="268" width="12" height="10" fill="#cf222e"/><text x="286" y="277" font-size="10" class="m">现在（11/12）</text>
+<text x="20" y="294" font-size="10" class="m">来源：toregyara.com/column/weekly-2026-11-12</text>
+</svg>

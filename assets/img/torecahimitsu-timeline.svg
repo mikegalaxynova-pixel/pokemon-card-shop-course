@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="280" viewBox="0 0 600 280" role="img" aria-labelledby="t d">
+<title id="t">トレカ秘密基地（Toreca Himitsu Kichi）公开时间线</title>
+<desc id="d">2022年11月12日秋叶原开业（原定11月1日）；开业不到一周遭盗，商品损失24,718,189日元、合计25,752,069日元；2022年12月15日至2023年1月31日众筹，目标250万日元，募得58.3万日元、20人，未达标全额退还；之后继续营业，现址外神田4丁目大楼5层，对战空间64席；第二次遭窃时犯人当场被捕。本图是事实整理，不是店面照片。</desc>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC",sans-serif;fill:#1f2328}.m{fill:#57606a}</style>
+<rect width="600" height="280" fill="#f6f8fa"/>
+<text x="20" y="28" font-size="16" font-weight="700">トレカ秘密基地（Toreca Himitsu Kichi）时间线</text>
+<text x="20" y="47" font-size="11" class="m">依据 CAMPFIRE 项目页、エルミタージュ秋葉原、トレカの地図 访谈整理。事实卡片，非店面照片。</text>
+<line x1="40" y1="70" x2="40" y2="262" stroke="#d0d7de" stroke-width="3"/>
+<circle cx="40" cy="80" r="6" fill="#0969da"/><text x="58" y="84" font-size="13" font-weight="700">2022/11/12 秋叶原开业</text><text x="250" y="84" font-size="11" class="m">原定 11/1，晚约 10 天；开业前先办「先行买取」</text>
+<circle cx="40" cy="120" r="6" fill="#cf222e"/><text x="58" y="124" font-size="13" font-weight="700" fill="#cf222e">开业不到 1 周遭盗</text><text x="250" y="118" font-size="11">商品损失 24,718,189 日元</text><text x="250" y="134" font-size="11" class="m">展示柜、保险箱、现金等合计 25,752,069 日元</text>
+<circle cx="40" cy="168" r="6" fill="#8c959f"/><text x="58" y="172" font-size="13" font-weight="700">2022/12/15–2023/1/31 众筹</text><text x="250" y="166" font-size="11">目标 250 万，募得 58.3 万（20 人，23%）</text><text x="250" y="182" font-size="11" class="m">All-or-Nothing 未达标，全额退还</text>
+<circle cx="40" cy="214" r="6" fill="#1a7f37"/><text x="58" y="218" font-size="13" font-weight="700">之后继续营业、加强防盗</text><text x="250" y="212" font-size="11">第二次遭窃时，犯人当场被捕（店长访谈）</text>
+<circle cx="40" cy="254" r="6" fill="#1a7f37"/><text x="58" y="258" font-size="13" font-weight="700">现址：外神田 4 丁目大楼 5 层</text><text x="250" y="258" font-size="11" class="m">对战空间 64 席；课题：楼外没有袖看板，难找</text>
+</svg>

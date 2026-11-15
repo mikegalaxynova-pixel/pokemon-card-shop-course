@@ -38,7 +38,7 @@ comment: |
 - **毛利率**：（售价 − 变动成本）÷ 售价。变动成本包括进货成本、支付手续费、平台费、运费、寄售分成等。
 - **库存还会占用现金**。周转越慢，同样要达到回本销售额，你需要垫付的货值就越多。一个可改的观察公式是：周转次数（假设）≈ 当期销售成本 ÷ 平均库存。没有自己的进货和库存数字时，不要填写假的周转率。
 
-高田马场是学生街和换乘点（JR、西武新宿线、东京 Metro 东西线；附近大学、专科学校和补习班集中）。这是一般地理事实，也与警视厅交番介绍中的「学生街」表述一致（[警視庁 高田馬場駅前交番](https://www.keishicho.metro.tokyo.lg.jp/about_mpd/shokai/ichiran/kankatsu/totsuka/koban/takadanobabaekimae.html)）。客群偏学生和年轻人，不要按商务区或观光热点去假设客单价。
+高田马场是学生街和换乘点（JR、西武新宿线、东京 Metro 东西线；附近大学、专科学校和补习班集中）。这是一般地理事实，也与警视厅交番介绍中的「学生街」表述一致（[警視庁 高田馬場駅前交番](https://www.keishicho.metro.tokyo.lg.jp/about_mpd/shokai/ichiran/kankatsu/totsuka/koban/02.html)）。客群偏学生和年轻人，不要按商务区或观光热点去假设客单价。
 
 ## 按渠道分开算
 
@@ -75,5 +75,5 @@ comment: |
 ## 来源
 
 - 本站[收支平衡路线图工具]({{ '/breakeven/' | relative_url }})（公式与计算器）
-- [警視庁 高田馬場駅前交番](https://www.keishicho.metro.tokyo.lg.jp/about_mpd/shokai/ichiran/kankatsu/totsuka/koban/takadanobabaekimae.html)（学生街表述）
+- [警視庁 高田馬場駅前交番](https://www.keishicho.metro.tokyo.lg.jp/about_mpd/shokai/ichiran/kankatsu/totsuka/koban/02.html)（学生街表述）
 - 平台费率来源见[卖出渠道与毛利]({{ '/kb/buy/sales-channels/' | relative_url }})
