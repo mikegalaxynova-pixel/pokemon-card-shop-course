@@ -1,6 +1,13 @@
 # 更新日志（唯一数据源）。每次每日更新在最上面新增一条。
 # kind 取值与导航 id 对应：news | shops | research | videos | kb | tools（旧条目可能仍是 daily / recs / path / glossary，首页会归入「其他」）；type: new | updated
 - date: 2026-11-16
+  title: 第 5 期 · 买取价店间差与新弹盒子回落
+  items:
+    - { kind: news, type: new, title: "每日新闻 第 5 期（11/16）：同一张卡各店买取差到几倍；新弹前别高价囤盒", url: /daily/2026-11-16/ }
+    - { kind: shops, type: new, title: "店铺案例：カードボックス／トレコロ（CARD BOX / Torecolo）", url: /shops/cardbox-torecolo/ }
+    - { kind: videos, type: new, title: "视频：英国 PSA 小店开业半年，开店成本和评级卡陈列（英文）", url: /videos/maxdoespokemon-6-months/ }
+    - { kind: videos, type: new, title: "视频：Leonhart 让五家卡店「随便给我惊喜」（英文）", url: /videos/leonhart-surprise-me/ }
+- date: 2026-11-16
   title: 新增「调研」标签：卡店收支与盈亏平衡调研
   items:
     - { kind: research, type: new, title: "调研：日本卡牌店的收支结构与盈亏平衡（含倒闭和苦撑案例）", url: /research/card-shop-economics-2026/ }
