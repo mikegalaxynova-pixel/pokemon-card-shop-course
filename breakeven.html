@@ -2,16 +2,16 @@
 layout: default
 title: 收支平衡路线图
 permalink: /breakeven/
-description: 高田马场 PSA 评级卡店的收支平衡模型：用你自己的租金、人工和毛利率假设，计算回本所需的月销售额。所有输入都是可改假设，不是行情事实。
+description: PSA 评级卡店的收支平衡模型：用你自己的租金、人工和毛利率假设，计算回本所需的月销售额。所有输入都是可改假设，不是行情事实。
 tldr: |
-  **结论**：回本销售额 = 月固定成本 ÷ 毛利率。本页不提供高田马场租金或客流数字。
+  **结论**：回本销售额 = 月固定成本 ÷ 毛利率。本页不提供任何地区的租金或客流数字。
   **你该做什么**：把正在谈的租金和计划人工填进去（没有合同就标成假设），先得到一条回本线。
 
 ---
 <div class="prose">
   {% include tldr.html %}
   <h1>收支平衡路线图</h1>
-  <p class="lead">目标不是把店开起来就算完成，而是尽快让月毛利盖过月固定成本。下面的公式通用；<strong>所有输入都是你填的假设或你已掌握的成本</strong>，本页不提供高田马场（高田馬場 / Takadanobaba）的租金或客流数字，也不把示例当成事实。</p>
+  <p class="lead">目标不是把店开起来就算完成，而是尽快让月毛利盖过月固定成本。下面的公式通用；<strong>所有输入都是你填的假设或你已掌握的成本</strong>，本页不提供东京的租金或客流数字，也不把示例当成事实。</p>
 
   {% include figure.html src="/assets/img/breakeven-formula.svg" alt="月度收支平衡公式示意图：月固定成本等于租金加人工加其他固定开支；回本所需月销售额等于月固定成本除以毛利率。所有数字都是可改假设" width="600" height="260" credit="本站示意图（通用公式，不是行情数据）" %}
 
@@ -26,13 +26,12 @@ tldr: |
 
   <h2>怎样更快走到回本（判断，不是事实）</h2>
   <ol>
-    <li><strong>先卖已经在手里的朋友 PSA 库存。</strong> 这是从零到第一笔收入最快的路：核验、定价、上架，不需要再把现金变成新货。</li>
+    <li><strong>先卖已经在手里的现有 PSA 库存。</strong> 这是从零到第一笔收入最快的路：核验、定价、上架，不需要再把现金变成新货。</li>
     <li><strong>许可下来之前，不要以古物商身份收购。</strong> 过早把现金锁进来路不清或无法合法记录的货，既有合规风险，也会拖慢回本。</li>
     <li><strong>不要用抽选和新弹预测价去建核心库存。</strong> 现货偏紧时，盒子和追捧卡更容易占款、价格波动也大。</li>
-    <li><strong>高田马场是学生街和换乘点</strong>（JR、西武新宿线、东京 Metro 东西线；附近大学、专科学校和补习班集中，这是一般地理事实，也与警视厅交番介绍中的「学生街」表述一致）。客群偏学生和年轻人，定价要让人看得懂；不要按商务区或观光热点去假设客单价。本站不编造租金或人流量。</li>
     <li><strong>活动先小范围试。</strong> 官方健身房活动能带来客流，但场地、人手和转化到 PSA 成交的效果因店而异，官方也没有公布统一费用或保证客流。先做低成本的评级卡展示或交换会，再决定要不要申请官方健身房。</li>
   </ol>
-  <p class="src">学生街表述可参考：<a href="https://www.keishicho.metro.tokyo.lg.jp/about_mpd/shokai/ichiran/kankatsu/totsuka/koban/02.html" rel="noopener">警視庁 高田馬場駅前交番</a>。租金和工资请用你的合同或报价填入，不要用网上传闻。</p>
+  <p class="src">租金和工资请用你的合同或报价填入，不要用网上传闻。</p>
 </div>
 
 <form class="calc" id="be-calc" action="#" method="get">
@@ -53,7 +52,7 @@ tldr: |
   </fieldset>
   <fieldset>
     <legend>毛利率假设（百分比）</legend>
-    <p class="hint">下面只是你自己设定的假设，不是高田马场或日本卡店的统计平均值。没有把握时，可以用偏保守的数字做压力测试。</p>
+    <p class="hint">下面只是你自己设定的假设，不是日本卡店的统计平均值。没有把握时，可以用偏保守的数字做压力测试。</p>
     <label for="m-floor">店头自有库存毛利率（%）
       <span class="hint">售价减去该卡进货或入账成本、再减去支付手续费等变动成本后，占售价的比例。</span>
     </label>
@@ -78,7 +77,7 @@ tldr: |
   <fieldset>
     <legend>可选：把销售额翻译成「要卖多少张」（仍是假设）</legend>
     <label for="ticket">假设的平均客单价或平均单卡售价（日元）
-      <span class="hint">这不是高田马场的实际客单价。填了才能估算大约要成交多少笔或多少张。</span>
+      <span class="hint">这不是任何店的实际客单价。填了才能估算大约要成交多少笔或多少张。</span>
     </label>
     <input id="ticket" name="ticket" type="number" inputmode="decimal" min="0" step="1">
   </fieldset>
@@ -145,7 +144,7 @@ tldr: |
     if (mix === null && filledFixed) {
       parts.push('还没有填写综合或店头毛利率，所以没有给出总回本销售额。请补一个保守的百分比假设。');
     }
-    parts.push('以上全部是根据你刚才输入的假设计算的，不是高田马场的租金、客流或行业平均毛利率。');
+    parts.push('以上全部是根据你刚才输入的假设计算的，不是真实的租金、客流或行业平均毛利率。');
     out.innerHTML = parts.map(function (p) { return '<p>' + p + '</p>'; }).join('');
   });
   form.addEventListener('reset', function () {

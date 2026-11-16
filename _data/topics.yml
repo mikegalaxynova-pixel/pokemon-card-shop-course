@@ -1,5 +1,8 @@
 # 全站内容主题（新闻、视频、案例等共用同一组名称）。
 # 视频 front matter 的 topics 使用下面的 label（也可写 id，模板两边都能识别）。
+- id: research
+  label: 调研
+  hint: 有出处的行业调研报告（收支、市场、案例数据），放在 /research/
 - id: cards
   label: 卡牌知识
   hint: 卡种、稀有度、商品认识

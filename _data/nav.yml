@@ -1,4 +1,5 @@
 - { id: home, title: 今日, url: / }
+- { id: research, title: 调研, url: /research/ }
 - { id: news, title: 新闻, url: /news/ }
 - { id: shops, title: 店铺案例, url: /shops/ }
 - { id: videos, title: 视频, url: /videos/ }

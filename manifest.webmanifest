@@ -1,7 +1,7 @@
 {
   "name": "宝可梦卡牌店课程",
   "short_name": "卡牌店课",
-  "description": "给准备在东京高田马场开 PSA 评级卡店的新手：新闻、店铺案例、视频和开店基础知识。",
+  "description": "给准备在东京开 PSA 评级卡店的新手：新闻、店铺案例、视频和开店基础知识。",
   "start_url": "/pokemon-card-shop-course/",
   "scope": "/pokemon-card-shop-course/",
   "display": "standalone",

@@ -1,0 +1,18 @@
+---
+layout: default
+title: 调研
+nav: research
+permalink: /research/
+description: 有出处的行业调研：卡店的收支结构、市场规模、倒闭与转型案例。每个数字标明来源与日期，推算会单独标注。
+tldr: |
+  **结论**：这里放「查过资料、标了出处」的长篇调研，和每日新闻、基础知识分开。
+  **你该做什么**：先看每篇开头的「先看这里」和关键数字表，再看来源。
+---
+<div class="prose"><h1>调研</h1></div>
+{% include tldr.html %}
+<ul class="list">
+{%- assign rs = site.research | sort: "date" | reverse -%}
+{%- for r in rs -%}
+  <li><a href="{{ r.url | relative_url }}">{{ r.title }}</a> {% include badge.html date=r.date updated=r.last_updated url=r.url %}<br><span class="muted">{{ r.date | date: '%Y-%m-%d' }} · {{ r.description }}</span></li>
+{%- endfor -%}
+</ul>

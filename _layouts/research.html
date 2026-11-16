@@ -1,0 +1,20 @@
+---
+layout: default
+nav: research
+---
+<nav class="crumbs" aria-label="面包屑"><a href="{{ '/research/' | relative_url }}">调研</a></nav>
+<article class="prose research">
+  <h1>{{ page.title }} {% include badge.html date=page.date updated=page.last_updated url=page.url %}</h1>
+  {% include rating.html rating=page.rating reason=page.rating_reason %}
+  <p class="meta">发布 <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%Y年%-m月%-d日' }}</time>{% if page.last_updated and page.last_updated != page.date %} · 最后更新 <time datetime="{{ page.last_updated | date: '%Y-%m-%d' }}">{{ page.last_updated | date: '%Y年%-m月%-d日' }}</time>{% endif %}{% if page.data_as_of %} · 数据截至 {{ page.data_as_of }}{% endif %}{% if page.tags %} · {% for t in page.tags %}<span class="tag">{{ t }}</span>{% endfor %}{% endif %}</p>
+  {% include tldr.html %}
+  {{ content }}
+  {% include comment.html text=page.comment %}
+</article>
+{%- assign others = site.research | where_exp: "r", "r.url != page.url" -%}
+{%- if others.size > 0 -%}
+<aside class="related" aria-labelledby="rel-h">
+  <h2 id="rel-h">其他调研</h2>
+  <ul class="list">{% for r in others %}<li><a href="{{ r.url | relative_url }}">{{ r.title }}</a> <span class="muted">· {{ r.date | date: '%Y-%m-%d' }}</span></li>{% endfor %}</ul>
+</aside>
+{%- endif -%}

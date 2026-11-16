@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="260" viewBox="0 0 640 260" role="img" aria-labelledby="t d">
+<title id="t">卡店各业务线毛利率区间</title>
+<desc id="d">单卡30到60%，买取再贩卖实测约27到30%，オリパ20到40%，新品BOX只有5到15%。平台出货要再扣7到10%手续费。</desc>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Noto Sans SC",sans-serif;fill:#1f2328}.m{fill:#57606a}</style>
+<rect width="640" height="260" fill="#f6f8fa"/>
+<text x="16" y="26" font-size="15" font-weight="700">各业务线毛利率区间</text>
+<line x1="230.0" y1="40" x2="230.0" y2="218" stroke="#d0d7de"/><text x="230.0" y="230" font-size="10" class="m" text-anchor="middle">0%</text>
+<line x1="284.3" y1="40" x2="284.3" y2="218" stroke="#d0d7de"/><text x="284.3" y="230" font-size="10" class="m" text-anchor="middle">10%</text>
+<line x1="338.6" y1="40" x2="338.6" y2="218" stroke="#d0d7de"/><text x="338.6" y="230" font-size="10" class="m" text-anchor="middle">20%</text>
+<line x1="392.9" y1="40" x2="392.9" y2="218" stroke="#d0d7de"/><text x="392.9" y="230" font-size="10" class="m" text-anchor="middle">30%</text>
+<line x1="447.1" y1="40" x2="447.1" y2="218" stroke="#d0d7de"/><text x="447.1" y="230" font-size="10" class="m" text-anchor="middle">40%</text>
+<line x1="501.4" y1="40" x2="501.4" y2="218" stroke="#d0d7de"/><text x="501.4" y="230" font-size="10" class="m" text-anchor="middle">50%</text>
+<line x1="555.7" y1="40" x2="555.7" y2="218" stroke="#d0d7de"/><text x="555.7" y="230" font-size="10" class="m" text-anchor="middle">60%</text>
+<line x1="610.0" y1="40" x2="610.0" y2="218" stroke="#d0d7de"/><text x="610.0" y="230" font-size="10" class="m" text-anchor="middle">70%</text>
+<text x="16" y="61" font-size="12" font-weight="700">单卡（シングル）</text><text x="16" y="75" font-size="9.5" class="m">DMMマイカポス 指南</text>
+<rect x="392.9" y="52" width="162.9" height="16" rx="3" fill="#0b5cad"/>
+<text x="16" y="95" font-size="12" font-weight="700">买取→再贩卖（实测）</text><text x="16" y="109" font-size="9.5" class="m">ラム FC 资料</text>
+<rect x="376.6" y="86" width="16.3" height="16" rx="3" fill="#116329"/>
+<text x="16" y="129" font-size="12" font-weight="700">オリパ</text><text x="16" y="143" font-size="9.5" class="m">DMMマイカポス 指南</text>
+<rect x="338.6" y="120" width="108.6" height="16" rx="3" fill="#0b5cad"/>
+<text x="16" y="163" font-size="12" font-weight="700">新品 BOX / 包</text><text x="16" y="177" font-size="9.5" class="m">DMMマイカポス 指南</text>
+<rect x="257.1" y="154" width="54.3" height="16" rx="3" fill="#0b5cad"/>
+<text x="16" y="197" font-size="12" font-weight="700">平台寄卖出货（扣手续费）</text><text x="16" y="211" font-size="9.5" class="m">SNKRDUNK 7–9.5%、メルカリShops 10%</text>
+<rect x="268.0" y="188" width="16.3" height="16" rx="3" fill="#b3001b"/>
+<text x="16" y="248" font-size="10.5" class="m">红色一行是「成本」：在平台卖出要从毛利里再扣掉的手续费。DMMマイカポス 为厂商指南，非统计。</text>
+</svg>

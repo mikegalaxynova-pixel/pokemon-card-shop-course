@@ -1,5 +1,11 @@
 # 更新日志（唯一数据源）。每次每日更新在最上面新增一条。
-# kind 取值与导航 id 对应：news | shops | videos | kb | tools（旧条目可能仍是 daily / recs / path / glossary，首页会归入「其他」）；type: new | updated
+# kind 取值与导航 id 对应：news | shops | research | videos | kb | tools（旧条目可能仍是 daily / recs / path / glossary，首页会归入「其他」）；type: new | updated
+- date: 2026-11-16
+  title: 新增「调研」标签：卡店收支与盈亏平衡调研
+  items:
+    - { kind: research, type: new, title: "调研：日本卡牌店的收支结构与盈亏平衡（含倒闭和苦撑案例）", url: /research/card-shop-economics-2026/ }
+    - { kind: tools, type: updated, title: "首页在「今日推荐」旁新增「调研」标签", url: /research/ }
+    - { kind: tools, type: updated, title: "全站改为通用表述，去掉具体开店地点和货源等个人信息", url: / }
 - date: 2026-11-15
   title: 第 4 期 · 新弹 PSA 10 变多与防盗保险
   items:
@@ -44,8 +50,8 @@
 - date: 2026-11-15
   title: 落实建议优先：12 篇买卖与回本文章全部发布
   items:
-    - { kind: kb, type: new, title: "朋友提供的库存：买取、寄售怎样安排", url: /kb/shop/friend-stock/ }
-    - { kind: kb, type: new, title: "收支平衡路线图：高田马场 PSA 店模型", url: /kb/shop/breakeven/ }
+    - { kind: kb, type: new, title: "整批到手的库存：买取、寄售怎样安排", url: /kb/shop/friend-stock/ }
+    - { kind: kb, type: new, title: "收支平衡路线图：以 PSA 评级卡为主的小店模型", url: /kb/shop/breakeven/ }
     - { kind: kb, type: new, title: "查价渠道与读法", url: /kb/market/price-sources/ }
     - { kind: kb, type: new, title: "PSA 卡进货判断", url: /kb/buy/psa-intake/ }
     - { kind: kb, type: new, title: "店头定价与改价", url: /kb/market/pricing-strategy/ }
@@ -68,10 +74,10 @@
     - { kind: kb, type: updated, title: "基础知识增加「先看这里」，学习路径并入本页", url: /kb/ }
     - { kind: tools, type: new, title: "工具入口：收支平衡路线图、术语表、搜索", url: /tools/ }
 - date: 2026-11-15
-  title: 第 3 期 · 抽选截止、カードラッシュ案例、高田马场与收支平衡
+  title: 第 3 期 · 抽选截止、カードラッシュ案例与收支平衡
   items:
     - { kind: daily, type: new, title: "每日更新 第 3 期（11/15）", url: /daily/2026-11-15-2/ }
-    - { kind: daily, type: updated, title: "第 1、2 期更正开店地点为高田马场，去掉申请窗口电话", url: /daily/ }
+    - { kind: daily, type: updated, title: "第 1、2 期去掉申请窗口电话", url: /daily/ }
     - { kind: kb, type: new, title: "古物台账、本人确认与入货记录", url: /kb/shop/kobutsu-records/ }
     - { kind: kb, type: updated, title: "古物商许可要点改为参考页，不再展开申请步骤", url: /kb/shop/kobutsusho/ }
     - { kind: path, type: updated, title: "学习路径改为按需撰写，买卖与运营优先", url: /path/ }

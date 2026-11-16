@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="400" viewBox="0 0 640 400" role="img" aria-labelledby="t d">
+<title id="t">卡店营业利润率：宣传材料与公开披露对比</title>
+<desc id="d">店方或加盟本部自报的营业利润率约16%到25%；上市公司决算和并购开示里的真实账目约负20%到5%。</desc>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Noto Sans SC",sans-serif;fill:#1f2328}.m{fill:#57606a}</style>
+<rect width="640" height="400" fill="#f6f8fa"/>
+<text x="16" y="26" font-size="15" font-weight="700">营业利润率：宣传材料 vs 公开披露</text>
+<text x="16" y="63" font-size="11.5">ラム 直营店 2025/3（FC 宣传资料）</text>
+<rect x="447.6" y="51" width="92.4" height="16" fill="#c69026"/>
+<text x="544.0" y="63" font-size="11" font-weight="700">16.5%</text>
+<text x="16" y="93" font-size="11.5">ラム 买取贩卖店 2026/5（FC 宣传资料）</text>
+<rect x="447.6" y="81" width="92.4" height="16" fill="#c69026"/>
+<text x="544.0" y="93" font-size="11" font-weight="700">16.5%</text>
+<text x="16" y="123" font-size="11.5">ラム 买取专门店 2026/5（FC 宣传资料）</text>
+<rect x="447.6" y="111" width="137.2" height="16" fill="#c69026"/>
+<text x="588.8" y="123" font-size="11" font-weight="700">24.5%</text>
+<text x="16" y="153" font-size="11.5">クリモ 秋叶原店（访谈口述）</text>
+<rect x="447.6" y="141" width="91.9" height="16" fill="#c69026"/>
+<text x="543.5" y="153" font-size="11" font-weight="700">16.4%</text>
+<text x="16" y="183" font-size="11.5">道楽 2024/8 期（并购开示）</text>
+<rect x="447.6" y="171" width="26.9" height="16" fill="#0b5cad"/>
+<text x="478.5" y="183" font-size="11" font-weight="700">4.8%</text>
+<text x="16" y="213" font-size="11.5">道楽 2025/3 期（并购开示）</text>
+<rect x="447.6" y="201" width="10.1" height="16" fill="#0b5cad"/>
+<text x="461.7" y="213" font-size="11" font-weight="700">1.8%</text>
+<text x="16" y="243" font-size="11.5">HATO 2024/6 期（并购开示）</text>
+<rect x="445.9" y="231" width="1.7" height="16" fill="#b3001b"/>
+<text x="451.6" y="243" font-size="11" font-weight="700">-0.1%</text>
+<text x="16" y="273" font-size="11.5">HATO 2025/6 期（并购开示）</text>
+<rect x="447.6" y="261" width="1.7" height="16" fill="#0b5cad"/>
+<text x="453.4" y="273" font-size="11" font-weight="700">0.3%</text>
+<text x="16" y="303" font-size="11.5">BOOKOFF 全公司 2026/5 期（决算）</text>
+<rect x="447.6" y="291" width="19.1" height="16" fill="#0b5cad"/>
+<text x="470.7" y="303" font-size="11" font-weight="700">3.4%</text>
+<text x="16" y="333" font-size="11.5">Accelmark 卡牌事业 2026/9 期（决算）</text>
+<rect x="334.5" y="321" width="113.1" height="16" fill="#b3001b"/>
+<text x="451.6" y="333" font-size="11" font-weight="700">-20.2%</text>
+<line x1="447.6" y1="44" x2="447.6" y2="348" stroke="#57606a"/><text x="447.6" y="360" font-size="10" class="m" text-anchor="middle">0%</text>
+<rect x="16" y="368" width="12" height="12" fill="#c69026"/><text x="34" y="378" font-size="11" class="m">店方/加盟本部自报，未经审计</text>
+<rect x="240" y="368" width="12" height="12" fill="#0b5cad"/><text x="258" y="378" font-size="11" class="m">上市公司决算或适时开示（红色为亏损）</text>
+<text x="16" y="398" font-size="10.5" class="m">营业利润 ÷ 销售额。来源与日期见正文「来源」。本站制图，2026-11-16。</text>
+</svg>

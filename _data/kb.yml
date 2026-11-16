@@ -17,7 +17,7 @@ priority_path:
 
 weeks:
   - { n: 1, title: "卡牌基础与 PSA 评级", range: "已大部分发布", goal: "看懂一张卡、系列与稀有度、日英版差异、PSA 等级与 Pop、认证号与假壳。" }
-  - { n: 2, title: "买卖交易与合规（优先）", range: "建议优先已发布", goal: "许可后的台账与本人确认、朋友库存、收购定价、查价、寄售、真伪鉴别。" }
+  - { n: 2, title: "买卖交易与合规（优先）", range: "建议优先已发布", goal: "许可后的台账与本人确认、现有库存、收购定价、查价、寄售、真伪鉴别。" }
   - { n: 3, title: "店铺运营与收支平衡（优先）", range: "建议优先已发布", goal: "收支平衡模型、店头定价、活动引流与复购、POS 与库存、陈列防盗、周转。" }
   - { n: 4, title: "渠道、新品与税务", range: "按需撰写", goal: "正规进货、新品与抽选销售、周边、消费税与发票、免税销售。" }
   - { n: 5, title: "社群与宣传", range: "按需撰写", goal: "X、地图资料、收藏家活动宣传、内容日历。" }
@@ -50,8 +50,8 @@ sections:
     articles:
       - { slug: kobutsusho, title: "古物商许可要点（参考）", week: 2, status: published }
       - { slug: kobutsu-records, title: "古物台账、本人确认与入货记录", week: 2, status: published }
-      - { slug: breakeven, title: "收支平衡路线图：高田马场 PSA 店模型", week: 3, status: published, recommended: true }
-      - { slug: friend-stock, title: "朋友提供的库存：买取、寄售怎样安排", week: 2, status: published, recommended: true }
+      - { slug: breakeven, title: "收支平衡路线图：以 PSA 评级卡为主的小店模型", week: 3, status: published, recommended: true }
+      - { slug: friend-stock, title: "整批到手的库存：买取、寄售怎样安排", week: 2, status: published, recommended: true }
       - { slug: shop-events, title: "店铺活动：引流与复购", week: 3, status: published, recommended: true }
       - { slug: pos-inventory, title: "POS 与库存管理", week: 3, status: planned }
       - { slug: display-security, title: "展示柜、陈列与防盗", week: 3, status: planned }

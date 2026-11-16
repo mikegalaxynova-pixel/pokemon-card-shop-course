@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="330" viewBox="0 0 640 330" role="img" aria-labelledby="t d">
+<title id="t">三种店型的盈亏平衡月流水（推算）</title>
+<desc id="d">在毛利率30%、一半刷卡的假设下，小店盈亏平衡月流水约97到185万日元，中店约332到420万，大店约1284到1408万日元。</desc>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Noto Sans SC",sans-serif;fill:#1f2328}.m{fill:#57606a}</style>
+<rect width="640" height="330" fill="#f6f8fa"/>
+<text x="16" y="26" font-size="15" font-weight="700">盈亏平衡月流水（推算，毛利率 30%）</text>
+<rect x="16" y="36" width="12" height="10" fill="#0b5cad"/><text x="32" y="45" font-size="11" class="m">含店主工资 25–35 万</text>
+<rect x="160" y="36" width="12" height="10" fill="#8bb4e0"/><text x="176" y="45" font-size="11" class="m">不含店主工资　单位：万日元/月</text>
+<text x="16" y="74" font-size="12" font-weight="700">A 小店：6 坪、楼上、店主 1 人</text>
+<rect x="16" y="80" width="63.1" height="14" fill="#0b5cad"/><text x="85.1" y="92" font-size="11" font-weight="700">185</text>
+<rect x="16" y="98" width="33.1" height="14" fill="#8bb4e0"/><text x="55.1" y="110" font-size="11">97</text>
+<text x="16" y="128" font-size="10.5" class="m">压在库存里的现金（按原价）：月周转 1 次 130 万；4 个月才周转 1 次 518 万</text>
+<text x="16" y="158" font-size="12" font-weight="700">B 中店：15 坪、1 楼、店主+1 名兼职</text>
+<rect x="16" y="164" width="143.2" height="14" fill="#0b5cad"/><text x="165.2" y="176" font-size="11" font-weight="700">420</text>
+<rect x="16" y="182" width="113.2" height="14" fill="#8bb4e0"/><text x="135.2" y="194" font-size="11">332</text>
+<text x="16" y="212" font-size="10.5" class="m">压在库存里的现金（按原价）：月周转 1 次 294 万；4 个月才周转 1 次 1,176 万</text>
+<text x="16" y="242" font-size="12" font-weight="700">C 大店：30 坪、秋叶原 1 楼、4 名兼职</text>
+<rect x="16" y="248" width="480.0" height="14" fill="#0b5cad"/><text x="502.0" y="260" font-size="11" font-weight="700">1,408</text>
+<rect x="16" y="266" width="437.7" height="14" fill="#8bb4e0"/><text x="459.7" y="278" font-size="11">1,284</text>
+<text x="16" y="296" font-size="10.5" class="m">压在库存里的现金（按原价）：月周转 1 次 986 万；4 个月才周转 1 次 3,942 万</text>
+<text x="16" y="318" font-size="10" class="m">租金：at home 2025 上期中位数、TEMPOLY 秋叶原挂牌均价；人工：东京最低工资 1,280 日元推算；其余为假设。本站制图。</text>
+</svg>

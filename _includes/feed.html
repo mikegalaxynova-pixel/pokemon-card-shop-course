@@ -4,8 +4,13 @@
   <div class="feed-tabs-wrap">
     <div class="feed-tabs" role="tablist" aria-label="信息流分类">
       <button type="button" class="feed-tab" role="tab" id="tab-featured" data-tab="featured" aria-controls="feed-list" aria-selected="true">今日推荐</button>
+      {%- assign _rtp = site.data.topics | where: "id", "research" | first -%}
+      {%- if _rtp -%}
+      <button type="button" class="feed-tab" role="tab" id="tab-research" data-tab="research" aria-controls="feed-list" aria-selected="false">{{ _rtp.label }}</button>
+      {%- endif -%}
       <button type="button" class="feed-tab" role="tab" id="tab-all" data-tab="all" aria-controls="feed-list" aria-selected="false">全部</button>
       {%- for tp in site.data.topics -%}
+      {%- if tp.id == "research" -%}{%- continue -%}{%- endif -%}
       <button type="button" class="feed-tab" role="tab" id="tab-{{ tp.id }}" data-tab="{{ tp.id }}" aria-controls="feed-list" aria-selected="false">{{ tp.label }}</button>
       {%- endfor -%}
     </div>
@@ -162,6 +167,47 @@
       rank=feat_rank -%}
 {%- endfor -%}
 
+{%- assign rs = site.research | sort: "date" | reverse -%}
+{%- for r in rs -%}
+  {%- assign feat_reason = "" -%}
+  {%- assign feat_rank = "" -%}
+  {%- assign is_featured = "no" -%}
+  {%- assign _fu = r.url | relative_url -%}
+  {%- assign _key = "," | append: _fu | append: "," -%}
+  {%- unless claimed contains _key -%}
+    {%- for f in site.data.featured.items -%}
+      {%- assign _furl = f.url | relative_url -%}
+      {%- if _furl == _fu -%}
+        {%- assign feat_reason = f.reason -%}
+        {%- assign feat_rank = forloop.index0 -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- if feat_reason != "" -%}
+      {%- assign is_featured = "yes" -%}
+      {%- assign claimed = claimed | append: _fu | append: "," -%}
+    {%- endif -%}
+  {%- endunless -%}
+  {%- include feed-item.html
+      kind="research"
+      title=r.title
+      url=r.url
+      date=r.date
+      updated=r.last_updated
+      excerpt=r.description
+      image=r.image
+      image_alt=r.image_alt
+      image_width=r.image_width
+      image_height=r.image_height
+      source="调研报告"
+      topics=r.topics
+      rating=r.rating
+      watch=""
+      images=r.images
+      reason=feat_reason
+      featured=is_featured
+      rank=feat_rank -%}
+{%- endfor -%}
+
 {%- assign kbs = site.kb | sort: "date" | reverse -%}
 {%- for k in kbs -%}
   {%- assign feat_reason = "" -%}
@@ -207,7 +253,7 @@
 
   </div>
   <p class="feed-empty" id="feed-empty" hidden>这一类暂时没有内容。</p>
-  <p class="feed-more muted">完整归档：<a href="{{ '/news/' | relative_url }}">新闻</a> · <a href="{{ '/shops/' | relative_url }}">店铺案例</a> · <a href="{{ '/videos/' | relative_url }}">视频</a> · <a href="{{ '/kb/' | relative_url }}">基础知识</a> · <a href="{{ '/changelog/' | relative_url }}">更新日志</a></p>
+  <p class="feed-more muted">完整归档：<a href="{{ '/news/' | relative_url }}">新闻</a> · <a href="{{ '/shops/' | relative_url }}">店铺案例</a> · <a href="{{ '/videos/' | relative_url }}">视频</a> · <a href="{{ '/kb/' | relative_url }}">基础知识</a> · <a href="{{ '/research/' | relative_url }}">调研</a> · <a href="{{ '/changelog/' | relative_url }}">更新日志</a></p>
 </div>
 
 <div class="feed-toast" id="feed-toast" hidden role="status">
