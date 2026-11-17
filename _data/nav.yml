@@ -1,7 +1,10 @@
-- { id: home, title: 今日, url: / }
-- { id: research, title: 调研, url: /research/ }
-- { id: news, title: 新闻, url: /news/ }
-- { id: shops, title: 店铺案例, url: /shops/ }
-- { id: videos, title: 视频, url: /videos/ }
-- { id: kb, title: 基础知识, url: /kb/ }
-- { id: tools, title: 工具, url: /tools/ }
+# 全站顶栏（内页显示；首页显示同样的 6 个栏目标签）。与 _data/tabs.yml 一一对应，最多 6 项。
+# url 指向首页对应栏目；match 列出哪些页面（layout/page 的 nav 值或 kb 分区）算「当前栏目」。
+# kinds：更新日志里哪些 kind 会让该项显示「有新内容」小红点。
+# 调研、店铺案例、视频、基础知识、工具等归档页仍在原地址，从页脚和首页底部「完整归档」进入。
+- { id: home, tab: featured, title: 今日推荐, short: 推荐, url: /, match: [home], kinds: [] }
+- { id: cardlab, tab: cardlab, title: 名卡研究, short: 名卡, url: /#cardlab, match: [cardlab], kinds: [cardlab] }
+- { id: market, tab: market, title: 行情新闻, short: 行情, url: /#market, match: [news, daily], kinds: [news] }
+- { id: cards, tab: cards, title: 卡牌与评级, short: 卡牌评级, url: /#cards, match: [kb, kb-cards, kb-psa, kb-buy, kb-market, glossary], kinds: [kb] }
+- { id: biz, tab: biz, title: 开店经营, short: 开店经营, url: /#biz, match: [shops, research, kb-shop, breakeven, tools], kinds: [shops, research] }
+- { id: fun, tab: fun, title: 视频趣味, short: 视频趣味, url: /#fun, match: [videos], kinds: [videos] }

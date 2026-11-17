@@ -1,0 +1,50 @@
+# 首页与全站顶栏的大栏目（最多 6 个，今日推荐固定第一）。
+# 一条内容只要满足任一条件就出现在该栏目：topics 含所列主题 id，或体裁（kind）在 kinds 里。
+# 同一条内容可以同时出现在多个栏目（例如讲 PSA 的视频，既在「卡牌与评级」也在「视频趣味」）。
+# chips：栏目内的小筛选按钮（可选）。topic 按主题 id 筛，kind 按体裁筛（news / videos / x / shops / kb / research / cardlab）。
+# short：手机窄屏显示的短名。
+# 旧的主题标签地址（如 /#grading、/#research）由 feed.js 自动跳到对应栏目和小按钮，不必改旧链接。
+- id: featured
+  label: 今日推荐
+  short: 推荐
+- id: cardlab
+  label: 名卡研究
+  short: 名卡
+  topics: [famous]
+  kinds: [cardlab]
+  archive: /cardlab/
+- id: market
+  label: 行情新闻
+  short: 行情
+  topics: [news]
+  kinds: [news]
+  archive: /news/
+- id: cards
+  label: 卡牌与评级
+  short: 卡牌评级
+  topics: [cards, grading, trade]
+  archive: /kb/
+  chips:
+    - { label: 卡牌知识, topic: cards }
+    - { label: PSA/评级, topic: grading }
+    - { label: 买卖交易, topic: trade }
+- id: biz
+  label: 开店经营
+  short: 开店经营
+  topics: [startup, ops, shops, research]
+  archive: /shops/
+  chips:
+    - { label: 开店基础, topic: startup }
+    - { label: 店铺运营, topic: ops }
+    - { label: 店铺案例, topic: shops }
+    - { label: 调研, topic: research }
+- id: fun
+  label: 视频趣味
+  short: 视频趣味
+  topics: [fun]
+  kinds: [videos, x]
+  archive: /videos/
+  chips:
+    - { label: 视频, kind: videos }
+    - { label: X 帖, kind: x }
+    - { label: 娱乐/开箱, topic: fun }

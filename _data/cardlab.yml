@@ -1,0 +1,24 @@
+# 名卡研究：已写过的卡（查重用，唯一数据源）。新写一篇前先在这里查，同一张卡（含日英版同一张画）不要重复开篇。
+# 有新进展时更新原文并改 last_updated，不新开文章。
+# 字段：slug（= _cardlab/<slug>.md）、card_en、card_ja、versions（覆盖的版本/编号）、date、renaiss（Renaiss Index 卡片页）
+- slug: pikachu-grey-felt-hat
+  card_en: Pikachu with Grey Felt Hat
+  card_ja: —（英文限定，俗称ゴッホピカチュウ）
+  versions: [SVP 085]
+  date: 2026-11-18
+  renaiss: https://index.renaissos.com/card/pokemon/scarlet-violet-promos/085-pikachu-with-grey-felt-hat-psa-10-1ac559f4
+- slug: mega-charizard-x-ex
+  card_en: Mega Charizard X ex
+  card_ja: メガリザードンXex
+  versions: [M2 110/080 SAR, PFL 125/094 SIR, M2 116/080 MUR, M2 094/080 SR, M2a 223, MEP 023]
+  date: 2026-11-18
+  renaiss: https://index.renaissos.com/card/pokemon/inferno-x/110-mega-charizard-x-ex-psa-10-japanese-85e83673
+- slug: umbreon-ex-terastal-festival
+  card_en: Umbreon ex
+  card_ja: ブラッキーex
+  versions: [SV8a 217/187 SAR, Prismatic Evolutions 161/131 SIR]
+  date: 2026-11-18
+  renaiss: https://index.renaissos.com/card/pokemon/terastal-fest-ex/217-umbreon-ex-psa-10-japanese-ae0f293b
+# 候选（Renaiss Index 宝可梦指数成分里出现过、尚未写）：Pikachu ex（MC 764）、Mega Gengar ex（M2A 240）、
+# Mega Rayquaza ex（M6 110）、Detective Pikachu（SV-P 98）、Hiroshima's Pikachu（SV-P 261）等地区限定皮卡丘、
+# Magikarp（SV1A 80）、Gengar（简中 CBB3 07）。

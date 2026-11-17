@@ -1,0 +1,31 @@
+---
+layout: default
+nav: cardlab
+---
+<nav class="crumbs" aria-label="面包屑"><a href="{{ '/cardlab/' | relative_url }}">名卡研究</a></nav>
+<article class="prose cardlab">
+  <h1>{{ page.title }} {% include badge.html date=page.date updated=page.last_updated url=page.url %}</h1>
+  {% include rating.html rating=page.rating reason=page.rating_reason %}
+  <p class="meta">发布 <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%Y年%-m月%-d日' }}</time>{% if page.last_updated and page.last_updated != page.date %} · 最后更新 <time datetime="{{ page.last_updated | date: '%Y-%m-%d' }}">{{ page.last_updated | date: '%Y年%-m月%-d日' }}</time>{% endif %}{% if page.data_as_of %} · 价格数据截至 {{ page.data_as_of }}{% endif %}{% if page.tags %} · {% for t in page.tags %}<span class="tag">{{ t }}</span>{% endfor %}{% endif %}</p>
+  {%- if page.card_en -%}
+  <table class="cardlab-facts">
+    <tbody>
+      <tr><th scope="row">卡名</th><td>{{ page.card_en }}{% if page.card_ja %}（{{ page.card_ja }}）{% endif %}</td></tr>
+      {%- if page.card_set -%}<tr><th scope="row">系列 / 编号</th><td>{{ page.card_set }}</td></tr>{%- endif -%}
+      {%- if page.card_release -%}<tr><th scope="row">发售</th><td>{{ page.card_release }}</td></tr>{%- endif -%}
+      {%- if page.card_artist -%}<tr><th scope="row">插画师</th><td>{{ page.card_artist }}</td></tr>{%- endif -%}
+      {%- if page.renaiss_url -%}<tr><th scope="row">Renaiss Index</th><td><a href="{{ page.renaiss_url }}" rel="noopener">卡片页</a>{% if page.renaiss_note %} · {{ page.renaiss_note }}{% endif %}</td></tr>{%- endif -%}
+    </tbody>
+  </table>
+  {%- endif -%}
+  {% include tldr.html %}
+  {{ content }}
+  {% include comment.html text=page.comment %}
+</article>
+{%- assign others = site.cardlab | where_exp: "r", "r.url != page.url" | sort: "date" | reverse -%}
+{%- if others.size > 0 -%}
+<aside class="related" aria-labelledby="rel-h">
+  <h2 id="rel-h">其他名卡研究</h2>
+  <ul class="list">{% for r in others %}<li><a href="{{ r.url | relative_url }}">{{ r.title }}</a> <span class="muted">· {{ r.card_en }}</span></li>{% endfor %}</ul>
+</aside>
+{%- endif -%}

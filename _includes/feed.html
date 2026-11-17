@@ -2,19 +2,13 @@
 
 <div class="feed" id="feed" data-tab="featured">
   <div class="feed-tabs-wrap">
-    <div class="feed-tabs" role="tablist" aria-label="信息流分类">
-      <button type="button" class="feed-tab" role="tab" id="tab-featured" data-tab="featured" aria-controls="feed-list" aria-selected="true">今日推荐</button>
-      {%- assign _rtp = site.data.topics | where: "id", "research" | first -%}
-      {%- if _rtp -%}
-      <button type="button" class="feed-tab" role="tab" id="tab-research" data-tab="research" aria-controls="feed-list" aria-selected="false">{{ _rtp.label }}</button>
-      {%- endif -%}
-      <button type="button" class="feed-tab" role="tab" id="tab-all" data-tab="all" aria-controls="feed-list" aria-selected="false">全部</button>
-      {%- for tp in site.data.topics -%}
-      {%- if tp.id == "research" -%}{%- continue -%}{%- endif -%}
-      <button type="button" class="feed-tab" role="tab" id="tab-{{ tp.id }}" data-tab="{{ tp.id }}" aria-controls="feed-list" aria-selected="false">{{ tp.label }}</button>
+    <div class="feed-tabs" role="tablist" aria-label="信息流栏目">
+      {%- for tb in site.data.tabs limit: 6 -%}
+      <button type="button" class="feed-tab" role="tab" id="tab-{{ tb.id }}" data-tab="{{ tb.id }}" aria-controls="feed-list" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"><span class="tab-full">{{ tb.label }}</span><span class="tab-short" aria-hidden="true">{{ tb.short | default: tb.label }}</span></button>
       {%- endfor -%}
     </div>
   </div>
+  <div class="feed-chips" id="feed-chips" role="group" aria-label="栏目内筛选" hidden></div>
   <div class="feed-toolbar">
     <p class="feed-status" id="feed-status" aria-live="polite"></p>
     <button type="button" class="feed-mark-read" id="feed-mark-read">一键已读</button>
@@ -167,6 +161,48 @@
       rank=feat_rank -%}
 {%- endfor -%}
 
+{%- assign cls = site.cardlab | sort: "date" | reverse -%}
+{%- for c in cls -%}
+  {%- assign feat_reason = "" -%}
+  {%- assign feat_rank = "" -%}
+  {%- assign is_featured = "no" -%}
+  {%- assign _fu = c.url | relative_url -%}
+  {%- assign _key = "," | append: _fu | append: "," -%}
+  {%- unless claimed contains _key -%}
+    {%- for f in site.data.featured.items -%}
+      {%- assign _furl = f.url | relative_url -%}
+      {%- if _furl == _fu -%}
+        {%- assign feat_reason = f.reason -%}
+        {%- assign feat_rank = forloop.index0 -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- if feat_reason != "" -%}
+      {%- assign is_featured = "yes" -%}
+      {%- assign claimed = claimed | append: _fu | append: "," -%}
+    {%- endif -%}
+  {%- endunless -%}
+  {%- assign _csrc = c.card_en | default: "名卡研究" -%}
+  {%- include feed-item.html
+      kind="cardlab"
+      title=c.title
+      url=c.url
+      date=c.date
+      updated=c.last_updated
+      excerpt=c.description
+      image=c.image
+      image_alt=c.image_alt
+      image_width=c.image_width
+      image_height=c.image_height
+      source=_csrc
+      topics=c.topics
+      rating=c.rating
+      watch=""
+      images=c.images
+      reason=feat_reason
+      featured=is_featured
+      rank=feat_rank -%}
+{%- endfor -%}
+
 {%- assign rs = site.research | sort: "date" | reverse -%}
 {%- for r in rs -%}
   {%- assign feat_reason = "" -%}
@@ -253,11 +289,13 @@
 
   </div>
   <p class="feed-empty" id="feed-empty" hidden>这一类暂时没有内容。</p>
-  <p class="feed-more muted">完整归档：<a href="{{ '/news/' | relative_url }}">新闻</a> · <a href="{{ '/shops/' | relative_url }}">店铺案例</a> · <a href="{{ '/videos/' | relative_url }}">视频</a> · <a href="{{ '/kb/' | relative_url }}">基础知识</a> · <a href="{{ '/research/' | relative_url }}">调研</a> · <a href="{{ '/changelog/' | relative_url }}">更新日志</a></p>
+  <p class="feed-more muted">完整归档：<a href="#all" data-tab-link="all">全部（按日期）</a> · <a href="{{ '/cardlab/' | relative_url }}">名卡研究</a> · <a href="{{ '/news/' | relative_url }}">新闻</a> · <a href="{{ '/shops/' | relative_url }}">店铺案例</a> · <a href="{{ '/videos/' | relative_url }}">视频</a> · <a href="{{ '/kb/' | relative_url }}">基础知识</a> · <a href="{{ '/research/' | relative_url }}">调研</a> · <a href="{{ '/changelog/' | relative_url }}">更新日志</a></p>
 </div>
 
 <div class="feed-toast" id="feed-toast" hidden role="status">
   <span data-toast-msg></span>
   <button type="button" class="feed-toast-undo" data-toast-undo>撤销</button>
 </div>
+<script type="application/json" id="feed-tabs-data">{{ site.data.tabs | jsonify }}</script>
+<script type="application/json" id="feed-topics-data">{{ site.data.topics | jsonify }}</script>
 <script type="application/json" id="feed-featured-data">{"date":{{ site.data.featured.date | jsonify }},"items":[{% for f in site.data.featured.items %}{"url":{{ f.url | relative_url | jsonify }},"reason":{{ f.reason | jsonify }}{% if f.topic %},"topic":{{ f.topic | jsonify }}{% endif %}}{% unless forloop.last %},{% endunless %}{% endfor %}]}</script>

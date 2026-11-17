@@ -37,7 +37,9 @@
 | `_data/shops.yml` | 已写过的店铺，避免重复 |
 | `_data/recommendations.yml` | 查价工具、网站、账号（视频已改到 `_videos`） |
 | `_data/changelog.yml` | 更新日志；首页「今日新增」读最上面一条，`kind` 用 `news` / `shops` / `videos` / `kb` / `tools` |
-| `_data/nav.yml` | 主导航 |
+| `_data/nav.yml` | 内页顶栏（6 项，对应首页栏目） |
+| `_data/tabs.yml` | 首页 6 个栏目和栏目内小按钮 |
+| `_data/cardlab.yml` | 名卡研究已写清单（查重） |
 | `breakeven.html` | 收支平衡路线图与计算器（输入均为假设） |
 | `tools.html` | 工具入口 |
 | `glossary.md` | 术语表 |

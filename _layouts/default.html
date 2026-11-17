@@ -31,7 +31,7 @@
 <main id="main" class="{% if page.nav == 'home' %}feed-main{% else %}page-main{% endif %}">
 {% if page.collection %}
   <nav class="page-back" aria-label="返回">
-    <a id="page-back" class="page-back-link" href="{% if page.collection == 'posts' %}{{ '/news/' | relative_url }}{% elsif page.collection == 'videos' %}{{ '/videos/' | relative_url }}{% elsif page.collection == 'shops' %}{{ '/shops/' | relative_url }}{% elsif page.collection == 'kb' %}{{ '/kb/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">返回</a>
+    <a id="page-back" class="page-back-link" href="{% if page.collection == 'posts' %}{{ '/news/' | relative_url }}{% elsif page.collection == 'videos' %}{{ '/videos/' | relative_url }}{% elsif page.collection == 'shops' %}{{ '/shops/' | relative_url }}{% elsif page.collection == 'kb' %}{{ '/kb/' | relative_url }}{% elsif page.collection == 'cardlab' %}{{ '/cardlab/' | relative_url }}{% elsif page.collection == 'research' %}{{ '/research/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">返回</a>
     <a href="{{ '/' | relative_url }}">今日</a>
   </nav>
 {% endif %}
@@ -41,13 +41,17 @@
 <footer class="site-footer">
   <div class="wrap">
     <nav class="foot-nav" aria-label="其他页面">
+      <a href="{{ '/cardlab/' | relative_url }}">名卡研究</a>
+      <a href="{{ '/news/' | relative_url }}">新闻归档</a>
+      <a href="{{ '/kb/' | relative_url }}">基础知识</a>
+      <a href="{{ '/shops/' | relative_url }}">店铺案例</a>
       <a href="{{ '/research/' | relative_url }}">调研</a>
+      <a href="{{ '/videos/' | relative_url }}">视频</a>
       <a href="{{ '/tools/' | relative_url }}">工具</a>
       <a href="{{ '/breakeven/' | relative_url }}">收支平衡路线图</a>
       <a href="{{ '/glossary/' | relative_url }}">术语表</a>
       <a href="{{ '/search/' | relative_url }}">搜索</a>
       <a href="{{ '/changelog/' | relative_url }}">更新日志</a>
-      <a href="{{ '/news/' | relative_url }}">新闻归档</a>
       <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
     </nav>
     <p class="muted">内容为学习整理，法规与价格以官方和主管机关最新信息为准。宝可梦相关名称归其权利人所有，本站为非官方学习笔记。</p>

@@ -56,6 +56,7 @@
   {%- when "videos" -%}{%- assign _klabel = "视频" -%}
   {%- when "kb" -%}{%- assign _klabel = "基础" -%}
   {%- when "research" -%}{%- assign _klabel = "报告" -%}
+  {%- when "cardlab" -%}{%- assign _klabel = "名卡" -%}
   {%- else -%}{%- assign _klabel = _kind -%}
 {%- endcase -%}
 {%- if include.platform == "x" -%}{%- assign _klabel = "帖子" -%}{%- endif -%}

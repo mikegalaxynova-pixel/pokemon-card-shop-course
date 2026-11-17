@@ -19,11 +19,17 @@
   {%- assign _latest = site.data.changelog | first -%}
   {%- assign _ld = _latest.date | date: '%s' | plus: 0 -%}
   {%- assign _lage = _now | minus: _ld -%}
+  {%- assign _navkey = page.nav | default: layout.nav | default: "" -%}
+  {%- if page.collection == "kb" and page.section -%}{%- assign _navkey = "kb-" | append: page.section -%}{%- endif -%}
+  {%- if page.collection == "cardlab" -%}{%- assign _navkey = "cardlab" -%}{%- endif -%}
   <ul class="site-subnav">
-    {% for item in site.data.nav %}
+    {% for item in site.data.nav limit: 6 %}
     {%- assign item_url = item.url | relative_url -%}
-    {%- assign _hits = _latest.items | where: "kind", item.id -%}
-    <li><a class="feed-tab" href="{{ item_url }}"{% if page.url == item.url or page.nav == item.id or layout.nav == item.id %} aria-current="page"{% endif %}>{{ item.title }}{% if _lage < _win and _hits.size > 0 %}<span class="dot" title="近 2 天有新内容"><span class="sr">（有新内容）</span></span>{% endif %}</a></li>
+    {%- assign _hit = false -%}
+    {%- for k in item.kinds -%}{%- assign _h = _latest.items | where: "kind", k -%}{%- if _h.size > 0 -%}{%- assign _hit = true -%}{%- endif -%}{%- endfor -%}
+    {%- assign _cur = false -%}
+    {%- if item.match contains _navkey -%}{%- assign _cur = true -%}{%- endif -%}
+    <li><a class="feed-tab" href="{{ item_url }}"{% if _cur %} aria-current="page"{% endif %}><span class="tab-full">{{ item.title }}</span><span class="tab-short" aria-hidden="true">{{ item.short | default: item.title }}</span>{% if _lage < _win and _hit %}<span class="dot" title="近 2 天有新内容"><span class="sr">（有新内容）</span></span>{% endif %}</a></li>
     {% endfor %}
   </ul>
 </nav>

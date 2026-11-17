@@ -1,5 +1,12 @@
 # 更新日志（唯一数据源）。每次每日更新在最上面新增一条。
-# kind 取值与导航 id 对应：news | shops | research | videos | kb | tools（旧条目可能仍是 daily / recs / path / glossary，首页会归入「其他」）；type: new | updated
+# kind 取值：news | shops | research | videos | kb | cardlab | tools（顶栏小红点按 _data/nav.yml 的 kinds 归到 6 个栏目）（旧条目可能仍是 daily / recs / path / glossary，首页会归入「其他」）；type: new | updated
+- date: 2026-11-18
+  title: 新栏目「名卡研究」上线；首页栏目精简为 6 个
+  items:
+    - { kind: cardlab, type: new, title: "名卡研究：メガリザードンXex（Mega Charizard X ex）——日版 PSA 10 为什么只有英版的六成", url: /cardlab/mega-charizard-x-ex/ }
+    - { kind: cardlab, type: new, title: "名卡研究：梵高皮卡丘（Pikachu with Grey Felt Hat）——博物馆免费卡涨到两千多美元", url: /cardlab/pikachu-grey-felt-hat/ }
+    - { kind: cardlab, type: new, title: "名卡研究：ブラッキーex SAR（Umbreon ex）「Sunbreon」——英版 PSA 10 是日版的近十倍", url: /cardlab/umbreon-ex-terastal-festival/ }
+    - { kind: tools, type: updated, title: "首页和顶栏精简为 6 个栏目：今日推荐、名卡研究、行情新闻、卡牌与评级、开店经营、视频趣味；原来的主题改成栏目内的小筛选按钮，旧链接自动跳转", url: / }
 - date: 2026-11-17
   title: 第 6 期 · 2027 年 5 月起新包 230 日元与 ex★ 新系列
   items:

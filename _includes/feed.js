@@ -12,6 +12,15 @@
   var toast = document.getElementById("feed-toast");
   var READ_KEY = "pcsc-read";
   var VIEW_KEY = "pcsc-views";
+  // 大栏目（_data/tabs.yml）与细分主题（_data/topics.yml）。顶栏 ≤6 个栏目；"all" 是不显示在顶栏的隐藏视图。
+  var tabCfg = [];
+  var topicCfg = [];
+  try { tabCfg = JSON.parse((document.getElementById("feed-tabs-data") || {}).textContent || "[]") || []; } catch (e) {}
+  try { topicCfg = JSON.parse((document.getElementById("feed-topics-data") || {}).textContent || "[]") || []; } catch (e) {}
+  var tabById = {};
+  tabCfg.forEach(function (t) { tabById[t.id] = t; });
+  var topicById = {};
+  topicCfg.forEach(function (t) { topicById[t.id] = t; });
   var validTabs = { featured: 1, all: 1 };
   tabs.forEach(function (btn) {
     var id = btn.getAttribute("data-tab");
@@ -20,8 +29,12 @@
   var tabLabels = { featured: "今日推荐", all: "全部" };
   tabs.forEach(function (btn) {
     var id = btn.getAttribute("data-tab");
-    if (id) tabLabels[id] = btn.textContent.trim();
+    var full = btn.querySelector(".tab-full");
+    if (id) tabLabels[id] = (full || btn).textContent.trim();
   });
+  var chipsEl = document.getElementById("feed-chips");
+  var currentChip = "";
+  function chipKey(c) { return c.topic ? c.topic : (c.kind ? "k-" + c.kind : ""); }
 
   function norm(u) {
     if (!u) return "";
@@ -48,6 +61,18 @@
   function hasTopic(el, id) {
     var t = " " + (el.getAttribute("data-topics") || "") + " ";
     return t.indexOf(" " + id + " ") !== -1;
+  }
+  function inTab(el, tab) {
+    var cfg = tabById[tab];
+    if (!cfg) return hasTopic(el, tab);
+    var k = kind(el);
+    if (cfg.kinds && cfg.kinds.indexOf(k) !== -1) return true;
+    return (cfg.topics || []).some(function (t) { return hasTopic(el, t); });
+  }
+  function inChip(el, key) {
+    if (!key) return true;
+    if (key.indexOf("k-") === 0) return kind(el) === key.slice(2);
+    return hasTopic(el, key);
   }
   function formatDay(day) {
     var p = String(day).split("-");
@@ -173,39 +198,88 @@
     lastRef.value = day;
   }
 
-  function currentTab() {
-    var t = (location.hash || "").replace(/^#/, "");
+  // 解析地址 #hash：栏目 id，或栏目内小按钮（主题 id / k-体裁）。旧的主题标签地址（#grading、#research 等）自动落到新栏目。
+  function parseHash(raw) {
+    var t = String(raw || "").replace(/^#/, "");
+    try { t = decodeURIComponent(t); } catch (e) {}
     if (t === "recommended") t = "featured";
-    return validTabs[t] ? t : "featured";
+    if (validTabs[t]) return { tab: t, chip: "" };
+    if (topicById[t] && topicById[t].tab && validTabs[topicById[t].tab]) {
+      var tb = tabById[topicById[t].tab];
+      var hasChip = tb && (tb.chips || []).some(function (c) { return chipKey(c) === t; });
+      return { tab: topicById[t].tab, chip: hasChip ? t : "" };
+    }
+    for (var i = 0; i < tabCfg.length; i++) {
+      var chips = tabCfg[i].chips || [];
+      for (var j = 0; j < chips.length; j++) {
+        if (chipKey(chips[j]) === t && validTabs[tabCfg[i].id]) return { tab: tabCfg[i].id, chip: t };
+      }
+    }
+    return { tab: "featured", chip: "" };
+  }
+  function currentState() { return parseHash(location.hash); }
+  function currentTab() { return currentState().tab; }
+
+  function renderChips(tab) {
+    if (!chipsEl) return;
+    var cfg = tabById[tab];
+    var chips = (cfg && cfg.chips) || [];
+    if (!chips.length) { chipsEl.hidden = true; chipsEl.innerHTML = ""; return; }
+    var html = '<button type="button" class="feed-chip" data-chip="" aria-pressed="' + (currentChip ? "false" : "true") + '">全部</button>';
+    chips.forEach(function (c) {
+      var key = chipKey(c);
+      var cls = c.topic ? " vtopic-" + c.topic : "";
+      html += '<button type="button" class="feed-chip' + cls + '" data-chip="' + key + '" aria-pressed="' + (currentChip === key ? "true" : "false") + '">' + c.label + "</button>";
+    });
+    chipsEl.innerHTML = html;
+    chipsEl.hidden = false;
+  }
+  function writeHash(tab) {
+    var hash = currentChip ? "#" + currentChip : (tab === "featured" ? "" : "#" + tab);
+    if (hash) {
+      if (history.replaceState) history.replaceState(null, "", hash);
+      else location.hash = hash;
+    } else if (history.replaceState) {
+      history.replaceState(null, "", location.pathname + location.search);
+    }
   }
 
-  function setTab(tab, pushHash) {
+  function setTab(tab, pushHash, chip) {
     if (!validTabs[tab]) tab = "featured";
+    currentChip = chip || "";
     root.setAttribute("data-tab", tab);
     tabs.forEach(function (btn) {
       var on = btn.getAttribute("data-tab") === tab;
       btn.setAttribute("aria-selected", on ? "true" : "false");
     });
-    if (pushHash) {
-      var hash = tab === "featured" ? "" : "#" + tab;
-      if (hash) {
-        if (history.replaceState) history.replaceState(null, "", hash);
-        else location.hash = hash;
-      } else if (history.replaceState) {
-        history.replaceState(null, "", location.pathname + location.search);
-      }
-    }
+    renderChips(tab);
+    if (pushHash) writeHash(tab);
     var on = root.querySelector('.feed-tab[aria-selected="true"]');
     if (on && on.scrollIntoView) on.scrollIntoView({ inline: "nearest", block: "nearest", behavior: "smooth" });
     render();
   }
+  if (chipsEl) {
+    chipsEl.addEventListener("click", function (e) {
+      var b = e.target.closest("[data-chip]");
+      if (!b) return;
+      setTab(root.getAttribute("data-tab") || "featured", true, b.getAttribute("data-chip"));
+    });
+  }
+  root.addEventListener("click", function (e) {
+    var a = e.target.closest("[data-tab-link]");
+    if (!a) return;
+    e.preventDefault();
+    setTab(a.getAttribute("data-tab-link"), true);
+    window.scrollTo(0, 0);
+  });
 
   function render() {
     var tab = root.getAttribute("data-tab") || "featured";
     var q = (searchInput && searchInput.value || "").trim().toLowerCase();
     var vis = items.filter(function (el) {
       if (tab === "featured" && el.getAttribute("data-featured") !== "1") return false;
-      if (tab !== "featured" && tab !== "all" && !hasTopic(el, tab)) return false;
+      if (tab !== "featured" && tab !== "all" && !inTab(el, tab)) return false;
+      if (currentChip && tab !== "featured" && tab !== "all" && !inChip(el, currentChip)) return false;
       if (q) {
         var hay = (el.getAttribute("data-search") || "").toLowerCase();
         if (hay.indexOf(q) === -1) return false;
@@ -253,6 +327,10 @@
     if (emptyEl) emptyEl.hidden = vis.length > 0;
     if (statusEl) {
       var label = tabLabels[tab] || "";
+      if (currentChip && chipsEl) {
+        var cb = chipsEl.querySelector('[data-chip="' + currentChip + '"]');
+        if (cb) label += " · " + cb.textContent.trim();
+      }
       if (q) statusEl.textContent = "找到 " + vis.length + " 条（" + label + "）";
       else if (tab === "featured") statusEl.textContent = vis.length ? "今天先看这 " + vis.length + " 条" : "今日推荐暂无内容";
       else statusEl.textContent = vis.length + " 条";
@@ -331,6 +409,7 @@
     try {
       sessionStorage.setItem(POS_KEY, JSON.stringify({
         tab: root.getAttribute("data-tab") || "featured",
+        chip: currentChip || "",
         y: window.scrollY || 0,
         t: Date.now()
       }));
@@ -347,7 +426,7 @@
     if (document.visibilityState === "hidden") savePos();
   });
 
-  window.addEventListener("hashchange", function () { setTab(currentTab(), false); });
+  window.addEventListener("hashchange", function () { var st = currentState(); setTab(st.tab, false, st.chip); });
   applyMeta();
   ensureFunFeatured();
 
@@ -357,9 +436,9 @@
   try { shouldRestore = navType === "back_forward" || sessionStorage.getItem("pcsc-feed-back") === "1"; sessionStorage.removeItem("pcsc-feed-back"); } catch (e) {}
   var saved = null;
   try { saved = JSON.parse(sessionStorage.getItem(POS_KEY) || "null"); } catch (e) {}
-  var startTab = currentTab();
-  if (shouldRestore && saved && saved.tab && validTabs[saved.tab] && !location.hash) startTab = saved.tab;
-  setTab(startTab, false);
+  var start = currentState();
+  if (shouldRestore && saved && saved.tab && validTabs[saved.tab] && !location.hash) start = { tab: saved.tab, chip: saved.chip || "" };
+  setTab(start.tab, !!location.hash && location.hash !== "#" + start.tab && location.hash !== "#" + start.chip, start.chip);
   if (shouldRestore && saved && typeof saved.y === "number") {
     requestAnimationFrame(function () { window.scrollTo(0, saved.y); });
     setTimeout(function () { window.scrollTo(0, saved.y); }, 50);

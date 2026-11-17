@@ -1,0 +1,24 @@
+---
+layout: default
+title: 名卡研究
+nav: cardlab
+permalink: /cardlab/
+description: 一张卡一篇：从价格网站上的热门宝可梦卡出发，讲它的故事、版本、PSA Pop、价格走势，以及对评级卡店的进货和定价意味着什么。
+tldr: |
+  **结论**：名卡研究是「一张卡一篇」的长文。事实和价格都标来源与日期，导师点评单独放。
+  **你该做什么**：先看每篇的「先看这里」和价格表；进货或定价前，再到文中的查价链接核对当天价格。
+---
+<div class="prose"><h1>名卡研究</h1></div>
+{% include tldr.html %}
+<ul class="cards-list">
+{%- assign cls = site.cardlab | sort: "date" | reverse -%}
+{%- for c in cls -%}
+  <li class="card">
+    <p class="kind">{% include stream.html id="cardlab" %} {% include rating.html rating=c.rating compact=true %} <time datetime="{{ c.date | date: '%Y-%m-%d' }}">{{ c.date | date: '%Y年%-m月%-d日' }}</time> {% include badge.html date=c.date updated=c.last_updated url=c.url %}</p>
+    <h2><a href="{{ c.url | relative_url }}">{{ c.title }}</a></h2>
+    <p>{{ c.card_en }}{% if c.card_ja %}（{{ c.card_ja }}）{% endif %}{% if c.card_set %} · {{ c.card_set }}{% endif %}</p>
+    <p>{{ c.description }}</p>
+  </li>
+{%- endfor -%}
+</ul>
+<p class="muted">卡片的选题来自 <a href="https://index.renaissos.com/" rel="noopener">Renaiss Index</a> 等价格网站上出现的宝可梦卡（只写宝可梦）。已写过的卡记录在仓库的 <code>_data/cardlab.yml</code>，同一张卡不重复开篇，只在价格或故事有新进展时更新原文。</p>

@@ -31,6 +31,9 @@ collections:
   research:
     output: true
     permalink: /research/:name/
+  cardlab:
+    output: true
+    permalink: /cardlab/:name/
 defaults:
   - scope: { path: "", type: kb }
     values: { layout: kb, nav: kb }
@@ -38,6 +41,8 @@ defaults:
     values: { layout: shop, nav: shops }
   - scope: { path: "", type: research }
     values: { layout: research, nav: research }
+  - scope: { path: "", type: cardlab }
+    values: { layout: cardlab, nav: cardlab }
   - scope: { path: "", type: videos }
     values: { layout: video, nav: videos }
   - scope: { path: "", type: posts }

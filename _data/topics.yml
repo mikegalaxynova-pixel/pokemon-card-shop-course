@@ -1,29 +1,44 @@
-# 全站内容主题（新闻、视频、案例等共用同一组名称）。
-# 视频 front matter 的 topics 使用下面的 label（也可写 id，模板两边都能识别）。
-- id: research
-  label: 调研
-  hint: 有出处的行业调研报告（收支、市场、案例数据），放在 /research/
+# 全站内容主题（细分标签）。新闻、视频、案例、名卡研究等共用同一组名称。
+# front matter 的 topics 使用下面的 label（也可写 id，模板两边都能识别）。
+# 每个主题都归入一个首页大栏目（tab，定义在 _data/tabs.yml）。首页顶栏只显示大栏目（≤6 个），
+# 主题本身作为卡片上的小标签和栏目内的筛选小按钮保留。
+- id: famous
+  label: 名卡研究
+  tab: cardlab
+  hint: 一张卡一篇：背景故事、版本、Pop、价格走势与对评级卡店的意义，放在 /cardlab/
+- id: news
+  label: 行情新闻
+  tab: market
+  hint: 价格、市场与近期动态
 - id: cards
   label: 卡牌知识
+  tab: cards
   hint: 卡种、稀有度、商品认识
 - id: grading
   label: PSA/评级
+  tab: cards
   hint: 评级公司、送评、鉴定品买卖
 - id: trade
   label: 买卖交易
+  tab: cards
   hint: 收购、寄售、定价、卖出渠道
+- id: startup
+  label: 开店基础
+  tab: biz
+  hint: 开业资金、选址、回本准备
 - id: ops
   label: 店铺运营
+  tab: biz
   hint: 日常经营、陈列、客流、人员
 - id: shops
   label: 店铺案例
+  tab: biz
   hint: 真实店铺探访与成长路径
-- id: news
-  label: 行情新闻
-  hint: 价格、市场与近期动态
-- id: startup
-  label: 开店基础
-  hint: 开业资金、选址、回本准备
+- id: research
+  label: 调研
+  tab: biz
+  hint: 有出处的行业调研报告（收支、市场、案例数据），放在 /research/
 - id: fun
   label: 娱乐/开箱
+  tab: fun
   hint: 开箱、趣味内容和社区动态（含 X 帖）

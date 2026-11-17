@@ -10,16 +10,16 @@
 # 选取原则：优先仍待落实的「建议优先」基础知识（如现有库存、收支平衡），再加上当天最重要的一条新闻、店铺案例或视频。同等条件下优先选推荐指数更高的。
 # 类型要交错：同一类型（新闻 / 案例 / 视频 / 基础知识）不要连续超过 2 条。首页脚本也会再做一次交错，避免刷起来单调。
 # 若今天没有更合适的新内容，可沿用仍成立的推荐，不必为了改而改。
-date: 2026-11-17
+date: 2026-11-18
 items:
-  - url: /videos/leonhart-grim-reality/
-    reason: 美国卡店开业第一年就被破门砸柜；以评级卡为主的店，库存都在几个柜子里，防盗预算要在装修前定下来。
+  - url: /cardlab/mega-charizard-x-ex/
+    reason: 新栏目「名卡研究」首篇：日版 PSA 10 发售首月从约 30 万日元跌到 12.9 万；新弹热门卡头一个月别按首发价收。
   - url: /daily/2026-11-17/
     topic: pack-price-230-2027-05
     reason: 官方确认 2027 年 5 月起新包 230 日元；先看清「旧价盒子不会自动升值」，别为涨价消息压现金。
-  - url: /shops/torecachihou/
-    reason: 大学生在地方城市开的ポケカ小店，一年开出第二家；150 日元一抽让孩子也能来，入门商品开业前就能设计。
-  - url: /research/card-shop-economics-2026/
-    reason: 看完被盗和配货的现实，再用调研里的真实卡店收支算一遍：现金要撑几个月才打平。
+  - url: /cardlab/pikachu-grey-felt-hat/
+    reason: 博物馆免费送的梵高皮卡丘，PSA 10 现在约 2,500 美元，但 7 天跌了 13.7%；附 5 条能跟客人聊的话题。
   - url: /videos/jayswingler-biggest-psa-return/
     reason: 轻松一下：17 张自认 9〜10 的卡送 PSA，10 分不到一半——收裸卡时别按 PSA 10 算价。
+  - url: /research/card-shop-economics-2026/
+    reason: 看完名卡的价格起伏，再用调研里的真实卡店收支算一遍：现金要撑几个月才打平。
