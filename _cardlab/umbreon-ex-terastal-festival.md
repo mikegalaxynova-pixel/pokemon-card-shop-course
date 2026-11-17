@@ -72,13 +72,15 @@ comment: |
 2. **2026 年 3 月的急涨**：本站没有找到能解释原因的可靠来源。同一时期 [メガリザードンXex SAR]({{ '/cardlab/mega-charizard-x-ex/' | relative_url }}) 也大涨过。两张卡后来都跌回去，说明当时的高价没有撑住。
 3. **最近单独在跌**：10〜11 月同弹其他 SAR 的价格几乎不动，只有月亮伊布和仙子伊布（ニンフィア，Sylveon）在跌。热门卡跌得比冷门卡更快，这点要留意。
 
-## 五、聊天话题：跟客人聊什么
+## 五、趣闻与轶事
 
-1. **「Moonbreon 和 Sunbreon」。** 卡友常把 2021 年 VMAX 那张月下月亮伊布叫「Moonbreon」（日版 S6a イーブイヒーローズ 095/069，英版 Evolving Skies 215/203）。这张背后是太阳般的光环，所以被叫作「Sunbreon」，也有人叫「Moonbreon 2.0」。这些都是卡友之间的叫法，不是官方名称。（[Tsuki Cards](https://tsukicards.com/en/blogs/news/terastal-festival-ex-sv8a)、[Samurai Sword Tokyo](https://samuraiswordtokyo.com/blogs/news/top-umbreon-cards-guide)）
-2. **「英版 PSA 10 是日版的近十倍。」** 同一张画，英版 PSA 10 约 $3,800〜5,000，日版约 $428。客人问「日版是不是被低估了」时，用 PSA 10 率（87% 对 29%）来解释最直观。
-3. **「店里卖 ¥49,800，收只给 ¥25,000。」** 遊々亭 11/12 对同一张未评级卡的售价和收购价，差了约一半。可以借这个跟客人解释，为什么卖给店里的价格和店里的售价差这么多，以及评级卡的价差为什么比较小。（[Tokyo Card Report](https://tokyocardreport.com/articles/terastal-festival-ex-card-prices-japan/)）
-4. **「Black Label 一张一万美元。」** 日版 BGS 10 Black Label 约有 139 张，TCGCharts 参考价约 $7,600，pokeinvest 记录的 8 笔成交中位数约 $10,100。和普通 PSA 10 的 $428 一比，就知道「完美品」的溢价有多大。（[TCGCharts](https://tcgcharts.com/pokemon/terastal-festival-ex-japanese/umbreon-ex-217)、[pokeinvest](https://www.pokeinvest.io/card/japanese-terastal-festival/umbreon-ex-217)）
-5. **「同一个家族，只有它最贵。」** 遊々亭 11/12 的价格：月亮伊布 SAR ¥49,800，第二名仙子伊布 SAR 只有 ¥14,800，其他伊布进化型的 SAR 大多在 ¥6,000〜8,000 左右。可以借这个话题，问客人喜欢哪一只伊布进化型。（[Tokyo Card Report](https://tokyocardreport.com/articles/terastal-festival-ex-card-prices-japan/)）
+以下为与这张卡相关的叫法、纪录和行情轶事，每条附来源。
+
+1. **「Moonbreon」与「Sunbreon」。** 2021 年 VMAX 那张月下月亮伊布（日版 S6a イーブイヒーローズ 095/069，英版 Evolving Skies 215/203）在玩家间被称为「Moonbreon」。这张背后是太阳般的光环，因此被叫作「Sunbreon」，也有人称「Moonbreon 2.0」。这些都是社群叫法，不是官方名称。（[Tsuki Cards](https://tsukicards.com/en/blogs/news/terastal-festival-ex-sv8a)、[Samurai Sword Tokyo](https://samuraiswordtokyo.com/blogs/news/top-umbreon-cards-guide)）
+2. **英版 PSA 10 约为日版的十倍。** 同一张画，英版 PSA 10 约 $3,800〜5,000，日版约 $428；主要差异之一是 PSA 10 率（日版约 87%，英版约 29%）。数据见上文第三节。
+3. **零售价与收购价相差约一半。** 遊々亭 11/12 对同一张未评级卡的售价为 ¥49,800，收购价为 ¥25,000。（[Tokyo Card Report](https://tokyocardreport.com/articles/terastal-festival-ex-card-prices-japan/)）
+4. **Black Label 约一万美元。** 日版 BGS 10 Black Label 约 139 张，TCGCharts 参考价约 $7,600，pokeinvest 记录的 8 笔成交中位数约 $10,100，对比普通 PSA 10 的 $428。（[TCGCharts](https://tcgcharts.com/pokemon/terastal-festival-ex-japanese/umbreon-ex-217)、[pokeinvest](https://www.pokeinvest.io/card/japanese-terastal-festival/umbreon-ex-217)）
+5. **伊布家族中价格最高。** 遊々亭 11/12 的价格：月亮伊布 SAR ¥49,800，第二名仙子伊布 SAR ¥14,800，其他伊布进化型 SAR 大多在 ¥6,000〜8,000。（[Tokyo Card Report](https://tokyocardreport.com/articles/terastal-festival-ex-card-prices-japan/)）
 
 ## 六、对评级卡店意味着什么
 

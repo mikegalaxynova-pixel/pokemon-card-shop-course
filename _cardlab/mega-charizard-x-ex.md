@@ -87,13 +87,15 @@ comment: |
 2. **日版太容易拿 10。** 日版 PSA 10 率 86.8%，英版 59.7%。PSA 10 越容易拿到，就越不稀缺，所以同一张画，日版 PSA 10 只有英版的约六成（$719 ÷ $1,151 ≈ 0.62）。
 3. **2026 年 3〜4 月的大涨**：本站没有找到能解释原因的可靠来源。同一时期，[ブラッキーex SAR]({{ '/cardlab/umbreon-ex-terastal-festival/' | relative_url }}) 也大涨过，可能是整体市场在动，但这只是推测，不要当成结论。
 
-## 五、聊天话题：跟客人聊什么
+## 五、趣闻与轶事
 
-1. **「四个月的新卡，一张卖了 5.4 万美元。」** 英版 SIR 的 BGS 10 Black Label，2026-03-30 在 eBay 以 **$54,100** 成交，1 月还有一笔 $50,000。之后在 Goldin 拍卖越卖越低：4/6 $43,920、5/4 $32,440、5/11 $34,892。连「完美品」都会回落。（[Wargamer](https://www.wargamer.com/pokemon-trading-card-game/phantasmal-flames-bgs-10-charizard)、[figoca 4/6](https://figoca.com/news/mega-charizard-x-ex-sir-bgs-10-sale-at-goldin)、[figoca 5/4](https://figoca.com/news/2025-mega-charizard-x-ex-bgs-black-label-sale)、[figoca 5/11](https://figoca.com/news/bgs-black-label-mega-charizard-x-ex-sir-hits-34-9k)）
-2. **「发售前就被黄牛扫光 4.2 万件。」** 2025 年 9 月，Pokémon Center 官网的商品在正式开卖前，就被一个叫「Hidden Society」的 Discord 黄牛群钻漏洞买了至少 4.2 万件，官方后来是否取消订单并不清楚。（[PokeBeach](https://www.pokebeach.com/2025/09/scalper-groups-clear-out-phantasmal-flames-from-pokemon-center-before-release)）
-3. **「首发那个月追高的人最惨。」** 日版 PSA 10 在发售首月，月初约 30 万日元，月底 12.9 万。客人问「现在能不能买」时，这是最直观的例子。（[psaprice.jp](https://psaprice.jp/cards/790/)）
-4. **「日版为什么比英版便宜？」** 用 PSA 10 率来解释：日版 86.8%，英版 59.7%。日版 Black Label 在 TCGCharts 上约 $13,400，也比英版便宜得多。（[TCGCharts 日版](https://tcgcharts.com/pokemon/inferno-x-japanese/mega-charizard-x-ex-110)、[TCGCharts 英版](https://tcgcharts.com/pokemon/phantasmal-flames/mega-charizard-x-ex-125)）
-5. **「一弹的价值全压在一只喷火龙上。」** Quaza Collect 统计，英版这一弹 25 美元以上的卡全是这只喷火龙的不同版本。可以借这个话题，带客人看柜里其他「一弹一王」的卡。（[Quaza Collect](https://quazacollect.com/en-gb/blogs/news/pokemon-tcg-phantasmal-flames-set-guide-mega-charizard-x-ex)）
+以下为与这张卡相关的新闻、纪录和轶事，每条附来源。
+
+1. **上市四个月的 5.4 万美元成交。** 英版 SIR 的 BGS 10 Black Label，2026-03-30 在 eBay 以 **$54,100** 成交，1 月另有一笔 $50,000。之后在 Goldin 拍卖价格逐次走低：4/6 $43,920、5/4 $32,440、5/11 $34,892。（[Wargamer](https://www.wargamer.com/pokemon-trading-card-game/phantasmal-flames-bgs-10-charizard)、[figoca 4/6](https://figoca.com/news/mega-charizard-x-ex-sir-bgs-10-sale-at-goldin)、[figoca 5/4](https://figoca.com/news/2025-mega-charizard-x-ex-bgs-black-label-sale)、[figoca 5/11](https://figoca.com/news/bgs-black-label-mega-charizard-x-ex-sir-hits-34-9k)）
+2. **发售前被黄牛扫走 4.2 万件。** 2025 年 9 月，Pokémon Center 官网的 Phantasmal Flames 商品在正式开卖前，被名为「Hidden Society」的 Discord 黄牛群利用漏洞买走至少 4.2 万件；官方后来是否取消订单未见公开说明。（[PokeBeach](https://www.pokebeach.com/2025/09/scalper-groups-clear-out-phantasmal-flames-from-pokemon-center-before-release)）
+3. **首月价格腰斩。** 日版 PSA 10 在发售首月，月初约 30 万日元，月底降到 12.9 万日元。（[psaprice.jp](https://psaprice.jp/cards/790/)）
+4. **日版比英版便宜的原因之一。** PSA 10 率日版 86.8%、英版 59.7%；日版 Black Label 在 TCGCharts 上约 $13,400，同样明显低于英版。（[TCGCharts 日版](https://tcgcharts.com/pokemon/inferno-x-japanese/mega-charizard-x-ex-110)、[TCGCharts 英版](https://tcgcharts.com/pokemon/phantasmal-flames/mega-charizard-x-ex-125)）
+5. **一弹价值集中在一只喷火龙上。** 据 Quaza Collect 统计，英版这一弹 25 美元以上的卡全是这只喷火龙的不同版本。（[Quaza Collect](https://quazacollect.com/en-gb/blogs/news/pokemon-tcg-phantasmal-flames-set-guide-mega-charizard-x-ex)）
 
 ## 六、对评级卡店意味着什么
 

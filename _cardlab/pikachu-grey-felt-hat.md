@@ -92,15 +92,15 @@ comment: |
 - **2025〜2026 年的上涨**：本站没有找到能单独解释上涨的可靠来源。可以确定的是，**PSA 10 已有五万多张，PSA 10 价格却仍是未评级的约 2.6 倍**（$2,390 对 $924，PriceCharting）。这说明买的人不只是卡牌玩家，还有冲着梵高、联名和皮卡丘来的收藏者，需求面很广。
 - **最近在跌**：Renaiss 显示 7 天 −13.7%。TCGCharts 也说，价格从 5 月高点回落了约五分之一，而 PSA 每个月还在新增几百张 PSA 10。供给一直在增加，所以这张卡不能当成「只涨不跌」。
 
-## 六、聊天话题：跟客人聊什么
+## 六、趣闻与轶事
 
-店员可以拿下面几条跟客人聊，每条都有出处。说到价格时要加一句「这是某天某个网站的数字」，不要当成店里的报价。
+以下为与这张卡相关的新闻、纪录和轶事，每条附来源。文中价格均为对应网站在标注日期的数字。
 
-1. **「一张免费卡，加起来比梵高的画还贵？」** TCGCharts 把所有评过级的这张卡按近期价格加起来，算出约 **2.046 亿美元**（2026-10-24）。梵高作品的拍卖纪录是 1.172 亿美元（佳士得，2022 年 11 月）。不过 TCGCharts 也提到，苏富比 **2026-11-18** 要拍梵高的《Châtaigniers en fleurs》，预估连佣金约 2.07 亿美元，结果出来后这个比较可能会反过来。（[TCGCharts](https://tcgcharts.com/research/van-gogh-pikachu-worth-more-than-van-gogh)）本文写作时拍卖结果还没出来。
-2. **「五张里的一张，出价 15 万美元。」** BGS Black Label 全球只有 5 张，2026-10-23 其中一张在 Fanatics Collect 被出价到 15 万美元，但报道时买家还没付款。可以顺便跟客人解释，为什么同一张卡 PSA 10 只要两千多美元。（[TCGCharts](https://tcgcharts.com/research/van-gogh-pikachu-worth-more-than-van-gogh)）
-3. **「博物馆被黄牛挤到停发，还辞退了员工。」** 黄牛整天守在馆外收卡，大约两周后博物馆就停止发放；后来有员工因为拿走整盒卡、给外人通风报信而离职。（[NOS](https://nos.nl/artikel/2506045-medewerkers-van-gogh-museum-weg-na-wangedrag-bij-pokemon-expositie)、[artnet](https://news.artnet.com/art-world/van-gogh-museum-fires-workers-pokemon-2422901)）
-4. **「最近价格在回落。」** Card Ladder 统计 2026-08-17〜11-17 的 PSA 10 拍卖成交，从 $2,800 降到 $2,315（−17.3%），共 267 笔；Fanatics Collect 每周拍卖 11/9 的一张 PSA 10，25 次出价，成交 $2,400（含买家佣金）。客人如果说「这张只涨不跌」，可以拿这两个数字跟他聊。（[Card Ladder](https://www.cardladder.com/ladder/card/oEHnCc0HQgxjxVda89Ze)、[Fanatics Collect](https://www.fanaticscollect.com/weekly/206f08aa-d2f2-11f1-b785-06fff8e7c64b)）
-5. **「画皮卡丘的是谁？」** 插画师 Naoyo Kimura 从 2001 年起就给宝可梦卡画画；同一个展览里，sowsow 画了躺在《卧室》床上的卡比兽（Snorlax）。可以借这个话题，把客人带到同一位插画师的其他卡上。（[artnet](https://news.artnet.com/art-world/van-gogh-museum-pokemon-exhibition-2370765)、[梵高博物馆](https://www.vangoghmuseum.nl/en/about/collaborate/van-gogh-museum-brand-licenses/a-z/pokemon-x-van-gogh-museum)）
+1. **市值与梵高画作的比较。** TCGCharts 把所有评过级的这张卡按近期价格加总，估算约 **2.046 亿美元**（2026-10-24），高于梵高作品的拍卖纪录 1.172 亿美元（佳士得，2022 年 11 月）。TCGCharts 同时指出，苏富比 **2026-11-18** 拍卖梵高《Châtaigniers en fleurs》，预估连佣金约 2.07 亿美元，结果出来后这个比较可能反转；本文写作时拍卖结果尚未公布。（[TCGCharts](https://tcgcharts.com/research/van-gogh-pikachu-worth-more-than-van-gogh)）
+2. **BGS Black Label 出价 15 万美元。** 这张卡的 BGS Black Label 全球约 5 张；2026-10-23 其中一张在 Fanatics Collect 被出价到 15 万美元，报道时买家尚未付款。同一张卡的 PSA 10 只要两千多美元，可见「完美品」溢价之大。（[TCGCharts](https://tcgcharts.com/research/van-gogh-pikachu-worth-more-than-van-gogh)）
+3. **博物馆停发与员工离职。** 展览期间黄牛整天守在馆外收卡，约两周后博物馆停止发放；之后有员工因拿走整盒卡、向外人通风报信而离职。（[NOS](https://nos.nl/artikel/2506045-medewerkers-van-gogh-museum-weg-na-wangedrag-bij-pokemon-expositie)、[artnet](https://news.artnet.com/art-world/van-gogh-museum-fires-workers-pokemon-2422901)）
+4. **近三个月价格回落。** Card Ladder 统计 2026-08-17〜11-17 的 PSA 10 拍卖成交，从 $2,800 降到 $2,315（−17.3%），共 267 笔；Fanatics Collect 每周拍卖中，11/9 一张 PSA 10 经 25 次出价以 $2,400（含买家佣金）成交。（[Card Ladder](https://www.cardladder.com/ladder/card/oEHnCc0HQgxjxVda89Ze)、[Fanatics Collect](https://www.fanaticscollect.com/weekly/206f08aa-d2f2-11f1-b785-06fff8e7c64b)）
+5. **插画师与同展作品。** 插画师 Naoyo Kimura 自 2001 年起为宝可梦卡作画；同一展览中，sowsow 画了躺在《卧室》床上的卡比兽（Snorlax）。（[artnet](https://news.artnet.com/art-world/van-gogh-museum-pokemon-exhibition-2370765)、[梵高博物馆](https://www.vangoghmuseum.nl/en/about/collaborate/van-gogh-museum-brand-licenses/a-z/pokemon-x-van-gogh-museum)）
 
 ## 七、对评级卡店意味着什么
 
