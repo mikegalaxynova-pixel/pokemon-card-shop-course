@@ -69,6 +69,8 @@
   if ("serviceWorker" in navigator) {
     var swUrl = document.documentElement.getAttribute("data-sw") || "sw.js";
     var swScope = document.documentElement.getAttribute("data-sw-scope") || "./";
-    navigator.serviceWorker.register(swUrl, { scope: swScope }).catch(function () {});
+    navigator.serviceWorker.register(swUrl, { scope: swScope, updateViaCache: "none" }).then(function (reg) {
+      if (reg && reg.update) reg.update().catch(function () {});
+    }).catch(function () {});
   }
 })();

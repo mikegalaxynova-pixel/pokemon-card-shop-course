@@ -151,7 +151,7 @@
     if (!pick.querySelector(".feed-reason")) {
       var p = document.createElement("p");
       p.className = "feed-reason";
-      p.innerHTML = '<span class="feed-reason-label">为什么今天先看</span>轻松看一条开箱或社区动态，也能感觉客人现在在聊什么。';
+      p.innerHTML = '<span class="feed-reason-label">为什么今天先看</span>轻松看一条开箱或社区动态，了解收藏圈最近的热点。';
       var meta = pick.querySelector(".feed-meta");
       if (meta) pick.insertBefore(p, meta);
       else pick.appendChild(p);
@@ -235,6 +235,8 @@
     chipsEl.hidden = false;
   }
   function writeHash(tab) {
+    // 宽屏右侧打开了文章时，地址栏是文章网址，不要改写成 #栏目
+    if (document.documentElement.classList.contains("pane-open")) return;
     var hash = currentChip ? "#" + currentChip : (tab === "featured" ? "" : "#" + tab);
     if (hash) {
       if (history.replaceState) history.replaceState(null, "", hash);
@@ -426,6 +428,11 @@
     if (document.visibilityState === "hidden") savePos();
   });
 
+  // 右侧窗格（iframe）里读完文章会写 localStorage，这里同步已读标记，但不重新排序
+  window.addEventListener("storage", function (e) {
+    if (e.key === READ_KEY || e.key === VIEW_KEY) applyMeta();
+  });
+  window.PCSCFeed = { refreshMeta: applyMeta };
   window.addEventListener("hashchange", function () { var st = currentState(); setTab(st.tab, false, st.chip); });
   applyMeta();
   ensureFunFeatured();
