@@ -6,6 +6,7 @@
     - { kind: cardlab, type: new, title: "名卡研究：メガリザードンXex（Mega Charizard X ex）——日版 PSA 10 为什么只有英版的六成", url: /cardlab/mega-charizard-x-ex/ }
     - { kind: cardlab, type: new, title: "名卡研究：梵高皮卡丘（Pikachu with Grey Felt Hat）——博物馆免费卡涨到两千多美元", url: /cardlab/pikachu-grey-felt-hat/ }
     - { kind: cardlab, type: new, title: "名卡研究：ブラッキーex SAR（Umbreon ex）「Sunbreon」——英版 PSA 10 是日版的近十倍", url: /cardlab/umbreon-ex-terastal-festival/ }
+    - { kind: tools, type: updated, title: "宽屏和折叠屏展开时改成左右双栏：左边列表，右边直接读文章，列表位置和栏目不丢；中等宽度时文章从右侧滑出", url: / }
     - { kind: tools, type: updated, title: "首页和顶栏精简为 6 个栏目：今日推荐、名卡研究、行情新闻、卡牌与评级、开店经营、视频趣味；原来的主题改成栏目内的小筛选按钮，旧链接自动跳转", url: / }
 - date: 2026-11-17
   title: 第 6 期 · 2027 年 5 月起新包 230 日元与 ex★ 新系列

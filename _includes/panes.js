@@ -86,7 +86,11 @@
 
   function esc(s) { return String(s || "").replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
   function fillEmpty() {
-    var top = document.querySelector('.feed-item[data-featured-rank="1"]') || document.querySelector(".feed-item[data-featured]");
+    var top = null, best = Infinity;
+    document.querySelectorAll(".feed-item[data-featured-rank]").forEach(function (el) {
+      var r = parseFloat(el.getAttribute("data-featured-rank"));
+      if (!isNaN(r) && r < best) { best = r; top = el; }
+    });
     var html = '<div class="pane-empty-inner"><p class="pane-empty-kicker">今日推荐</p>';
     if (top) {
       var t = top.querySelector(".feed-title a");
@@ -158,8 +162,9 @@
     loaded: function (path, title) {
       loading.hidden = true;
       if (!d.classList.contains("pane-open")) return;
-      titleEl.textContent = title || "";
-      if (title) document.title = title;
+      title = String(title || "").replace(/\s*[|｜]\s*[^|｜]*$/, "");
+      titleEl.textContent = title;
+      if (title) document.title = title + " · " + homeTitle.replace(/^.*[|｜]\s*/, "");
       newTab.href = path;
       if (path !== current) {
         current = path;
