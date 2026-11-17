@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" width="640" height="420" font-family="-apple-system,Segoe UI,Hiragino Sans,Noto Sans CJK SC,sans-serif" role="img" aria-label="日本扩展包（5张入）希望零售价：2026年4月前180日元，2026年5月起200日元，2027年5月起230日元；以及2026年11月到2027年5月的发售时间表">
+<rect width="640" height="420" fill="#fff"/>
+<text x="16" y="28" font-size="17" font-weight="700" fill="#111">日本扩展包（5 张入）希望零售价与接下来的发售表</text>
+<text x="16" y="48" font-size="12" fill="#666">价格：官方价格改定通知（2026/1/30、11/6）；发售表：PokeBeach 11/16 报道</text>
+<line x1="60" y1="220" x2="600" y2="220" stroke="#ccc"/>
+<rect x="80" y="190" width="90" height="30" fill="#bdbdbd"/>
+<text x="125" y="182" font-size="15" font-weight="700" text-anchor="middle" fill="#333">180 日元</text>
+<text x="125" y="240" font-size="12" text-anchor="middle" fill="#444">〜2026 年 4 月发售</text>
+<rect x="270" y="170" width="90" height="50" fill="#ef9a9a"/>
+<text x="315" y="162" font-size="15" font-weight="700" text-anchor="middle" fill="#333">200 日元</text>
+<text x="315" y="240" font-size="12" text-anchor="middle" fill="#444">2026 年 5 月〜2027 年 4 月</text>
+<text x="315" y="256" font-size="11" text-anchor="middle" fill="#888">（+11.1%）</text>
+<rect x="460" y="140" width="90" height="80" fill="#d32f2f"/>
+<text x="505" y="132" font-size="15" font-weight="700" text-anchor="middle" fill="#b71c1c">230 日元</text>
+<text x="505" y="240" font-size="12" text-anchor="middle" fill="#444">2027 年 5 月起发售的新商品</text>
+<text x="505" y="256" font-size="11" text-anchor="middle" fill="#888">（+15%）</text>
+<text x="16" y="80" font-size="11" fill="#888">柱高按价格比例（从 150 日元起画）</text>
+<line x1="16" y1="282" x2="624" y2="282" stroke="#eee"/>
+<text x="16" y="304" font-size="13" font-weight="700" fill="#111">接下来的日本发售表（11/16 报道，以官方为准）</text>
+<line x1="40" y1="345" x2="610" y2="345" stroke="#999" stroke-width="2"/>
+<circle cx="60" cy="345" r="6" fill="#d32f2f"/><text x="60" y="330" font-size="11" text-anchor="middle" fill="#111">11/27</text><text x="60" y="368" font-size="11" text-anchor="middle" fill="#333">ハドウシーカー</text><text x="60" y="383" font-size="10" text-anchor="middle" fill="#888">200 日元/包（官方）</text>
+<circle cx="230" cy="345" r="6" fill="#999"/><text x="230" y="330" font-size="11" text-anchor="middle" fill="#111">2027 年 2 月</text><text x="230" y="368" font-size="11" text-anchor="middle" fill="#333">MEGA x MEGA Parade（报道名）</text><text x="230" y="383" font-size="10" text-anchor="middle" fill="#888">高档包（ハイクラスパック）</text>
+<circle cx="390" cy="345" r="6" fill="#999"/><text x="390" y="330" font-size="11" text-anchor="middle" fill="#111">3/19</text><text x="390" y="368" font-size="11" text-anchor="middle" fill="#333">MEGA Attack Special Set</text><text x="390" y="383" font-size="10" text-anchor="middle" fill="#888">盒装商品，细节未知</text>
+<circle cx="560" cy="345" r="6" fill="#d32f2f"/><text x="560" y="330" font-size="11" text-anchor="middle" fill="#111">5/21</text><text x="560" y="368" font-size="11" text-anchor="middle" fill="#333">ex★ 系列三弹同发</text><text x="560" y="383" font-size="10" text-anchor="middle" fill="#888">预计适用 230 日元</text>
+<text x="16" y="410" font-size="10" fill="#999">本站制图。示意图，不是官方商品图。</text>
+</svg>

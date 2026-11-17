@@ -1,5 +1,12 @@
 # 更新日志（唯一数据源）。每次每日更新在最上面新增一条。
 # kind 取值与导航 id 对应：news | shops | research | videos | kb | tools（旧条目可能仍是 daily / recs / path / glossary，首页会归入「其他」）；type: new | updated
+- date: 2026-11-17
+  title: 第 6 期 · 2027 年 5 月起新包 230 日元与 ex★ 新系列
+  items:
+    - { kind: news, type: new, title: "每日新闻 第 6 期（11/17）：2027 年 5 月起新包 230 日元，ex★ 新系列三弹同发", url: /daily/2026-11-17/ }
+    - { kind: shops, type: new, title: "店铺案例：トレカ地方（Toreca Chiho）", url: /shops/torecachihou/ }
+    - { kind: videos, type: new, title: "视频：美国卡店店主讲开店的真实代价：被盗、配货、每周 90 小时（英文）", url: /videos/leonhart-grim-reality/ }
+    - { kind: videos, type: new, title: "视频：英国 UP 主开 17 张 PSA 送评，连号双 10（英文）", url: /videos/jayswingler-biggest-psa-return/ }
 - date: 2026-11-16
   title: 第 5 期 · 买取价店间差与新弹盒子回落
   items:
