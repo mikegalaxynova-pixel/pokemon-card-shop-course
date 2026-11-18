@@ -19,6 +19,18 @@
   versions: [SV8a 217/187 SAR, Prismatic Evolutions 161/131 SIR]
   date: 2026-11-18
   renaiss: https://index.renaissos.com/card/pokemon/terastal-fest-ex/217-umbreon-ex-psa-10-japanese-ae0f293b
-# 候选（Renaiss Index 宝可梦指数成分里出现过、尚未写）：Pikachu ex（MC 764）、Mega Gengar ex（M2A 240）、
+- slug: magikarp-triplet-beat-ar
+  card_en: Magikarp
+  card_ja: コイキング
+  versions: [SV1a 080/073 AR, Paldea Evolved 203/193 IR]
+  date: 2026-11-18
+  renaiss: https://index.renaissos.com/card/pokemon/triplet-beat/80-magikarp-psa-10-japanese-44dbf5d6
+- slug: mega-gengar-ex-mega-dream
+  card_en: Mega Gengar ex
+  card_ja: メガゲンガーex
+  versions: [M2a 240/193 SAR, M2a 230/193 MA, Ascended Heroes 284/217 SIR, Ascended Heroes 269/217 MA]
+  date: 2026-11-18
+  renaiss: https://index.renaissos.com/card/pokemon/mega-dream-ex/240-mega-gengar-ex-psa-10-japanese-094085d7
+# 候选（Renaiss Index 宝可梦指数成分里出现过、尚未写）：Pikachu ex（MC 764）、
 # Mega Rayquaza ex（M6 110）、Detective Pikachu（SV-P 98）、Hiroshima's Pikachu（SV-P 261）等地区限定皮卡丘、
-# Magikarp（SV1A 80）、Gengar（简中 CBB3 07）。
+# Gengar（简中 CBB3 07）、Mew ex（SV4A 347，11/1 移出指数）、Mega Dragonite ex（M2A 246）。

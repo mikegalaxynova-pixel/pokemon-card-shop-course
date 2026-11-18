@@ -1,6 +1,15 @@
 # 更新日志（唯一数据源）。每次每日更新在最上面新增一条。
 # kind 取值：news | shops | research | videos | kb | cardlab | tools（顶栏小红点按 _data/nav.yml 的 kinds 归到 6 个栏目）（旧条目可能仍是 daily / recs / path / glossary，首页会归入「其他」）；type: new | updated
 - date: 2026-11-18
+  title: 第 7 期 · 2,200 万日元盗卡案三人落网与 PSA 积压 610 万件
+  items:
+    - { kind: news, type: new, title: "每日新闻 第 7 期（11/18）：高松卡店盗卡案三人全部落网；PSA 积压降到 610 万件", url: /daily/2026-11-18/ }
+    - { kind: cardlab, type: new, title: "名卡研究：メガゲンガーex SAR（Mega Gengar ex）——一年跌掉六成，PSA 10 每天还在增加", url: /cardlab/mega-gengar-ex-mega-dream/ }
+    - { kind: cardlab, type: new, title: "名卡研究：コイキング AR（Magikarp）——英版 PSA 10 是日版的约 19 倍", url: /cardlab/magikarp-triplet-beat-ar/ }
+    - { kind: shops, type: new, title: "店铺案例：スニダントレカ（SNKRDUNK Trading Card）", url: /shops/snkrdunk-toreca/ }
+    - { kind: videos, type: new, title: "视频：英国周末卡店的柜台实况：店内额度八成、免费散卡本（英文）", url: /videos/mastersets-shop-owner-pov/ }
+    - { kind: videos, type: new, title: "视频：十个被监控拍下的盗卡小偷（英文）", url: /videos/gtc-thieves-caught-4k/ }
+- date: 2026-11-18
   title: 新栏目「名卡研究」上线；首页栏目精简为 6 个
   items:
     - { kind: cardlab, type: new, title: "名卡研究：メガリザードンXex（Mega Charizard X ex）——日版 PSA 10 为什么只有英版的六成", url: /cardlab/mega-charizard-x-ex/ }

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" width="640" height="300" role="img" aria-labelledby="t d" font-family="system-ui,-apple-system,'PingFang SC','Noto Sans CJK SC',sans-serif">
+<title id="t">高松卡店盗窃案时间线（2026 年）</title><desc id="d">8 月 11 日晚约 10 点三人破门偷走 63 张宝可梦卡，约 2,200 万日元；10 月 22 日前两人被捕；11 月 18 日第三人被捕</desc>
+<rect width="640" height="300" fill="#fff"/>
+<text x="32" y="30" font-size="16" font-weight="700" fill="#121212">高松卡店盗窃案时间线（2026 年）</text>
+<text x="32" y="50" font-size="12" fill="#646464">香川县高松市瓦町的卡牌专门店 · 宝可梦卡 63 张 · 时价约 2,200 万日元（其中 1 张约 480 万）</text>
+<line x1="70" y1="130" x2="590" y2="130" stroke="#bbb" stroke-width="3"/>
+<circle cx="90" cy="130" r="9" fill="#b3001b"/><circle cx="380" cy="130" r="9" fill="#1a5fb4"/><circle cx="570" cy="130" r="9" fill="#1a5fb4"/>
+<text x="90" y="105" font-size="13" font-weight="700" fill="#121212" text-anchor="middle">8/11 晚约 10 点</text>
+<text x="90" y="160" font-size="12" fill="#333" text-anchor="middle">打烊后用撬棍类工具</text>
+<text x="90" y="176" font-size="12" fill="#333" text-anchor="middle">破坏出入口门</text>
+<text x="90" y="192" font-size="12" fill="#333" text-anchor="middle">偷走展示柜里的卡</text>
+<text x="380" y="105" font-size="13" font-weight="700" fill="#121212" text-anchor="middle">10/22 前</text>
+<text x="380" y="160" font-size="12" fill="#333" text-anchor="middle">两名男子被捕</text>
+<text x="380" y="176" font-size="12" fill="#333" text-anchor="middle">（互不认识，警方怀疑</text>
+<text x="380" y="192" font-size="12" fill="#333" text-anchor="middle">是「トクリュウ」）</text>
+<text x="570" y="105" font-size="13" font-weight="700" fill="#121212" text-anchor="middle">11/18</text>
+<text x="570" y="160" font-size="12" fill="#333" text-anchor="middle">第三人被捕</text>
+<text x="570" y="176" font-size="12" fill="#333" text-anchor="middle">靠监控画面锁定</text>
+<text x="570" y="192" font-size="12" fill="#333" text-anchor="middle">警方继续查指挥者</text>
+<rect x="32" y="222" width="576" height="46" rx="6" fill="#fff4f4" stroke="#f1c2c2"/>
+<text x="48" y="243" font-size="12.5" fill="#121212">报道没有提到被盗的卡是否追回。破门 → 打开展示柜 → 离开，全程发生在打烊后。</text>
+<text x="48" y="260" font-size="12" fill="#646464">对评级卡店：夜间把最贵的几张收进保险柜，比加一台摄像头更直接减少损失。</text>
+<text x="32" y="290" font-size="11" fill="#646464">数据：産経ニュース（10/22）、KSB 瀬戸内海放送・日テレNEWS（11/18）。本站制图，非现场照片。</text>
+</svg>

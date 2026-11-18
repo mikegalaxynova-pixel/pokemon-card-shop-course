@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-labelledby="t d" font-family="system-ui,-apple-system,'PingFang SC','Noto Sans CJK SC',sans-serif">
+<title id="t">PSA 全球积压件数（active grading backlog）</title><desc id="d">PSA 官方 Backlog Tracker · 2026-08-25 至 2026-11-17 · 单位：万件</desc>
+<rect width="640" height="360" fill="#fff"/>
+<text x="64" y="26" font-size="16" font-weight="700" fill="#121212">PSA 全球积压件数（active grading backlog）</text>
+<text x="64" y="46" font-size="12" fill="#646464">PSA 官方 Backlog Tracker · 2026-08-25 至 2026-11-17 · 单位：万件</text>
+<line x1="64" y1="296.0" x2="606" y2="296.0" stroke="#ececec"/>
+<text x="56" y="300.0" font-size="11" fill="#646464" text-anchor="end">0万</text>
+<line x1="64" y1="257.3" x2="606" y2="257.3" stroke="#ececec"/>
+<text x="56" y="261.3" font-size="11" fill="#646464" text-anchor="end">200万</text>
+<line x1="64" y1="218.7" x2="606" y2="218.7" stroke="#ececec"/>
+<text x="56" y="222.7" font-size="11" fill="#646464" text-anchor="end">400万</text>
+<line x1="64" y1="180.0" x2="606" y2="180.0" stroke="#ececec"/>
+<text x="56" y="184.0" font-size="11" fill="#646464" text-anchor="end">600万</text>
+<line x1="64" y1="141.3" x2="606" y2="141.3" stroke="#ececec"/>
+<text x="56" y="145.3" font-size="11" fill="#646464" text-anchor="end">800万</text>
+<line x1="64" y1="102.7" x2="606" y2="102.7" stroke="#ececec"/>
+<text x="56" y="106.7" font-size="11" fill="#646464" text-anchor="end">1000万</text>
+<line x1="64" y1="64.0" x2="606" y2="64.0" stroke="#ececec"/>
+<text x="56" y="68.0" font-size="11" fill="#646464" text-anchor="end">1200万</text>
+<polyline points="64.0,85.3 154.3,104.6 244.7,122.0 335.0,137.5 425.3,156.8 515.7,164.5 606.0,178.1" fill="none" stroke="#1a5fb4" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="64.0" cy="85.3" r="3.2" fill="#1a5fb4"/>
+<text x="64.0" y="314" font-size="11" fill="#646464" text-anchor="middle">8/25</text>
+<circle cx="154.3" cy="104.6" r="3.2" fill="#1a5fb4"/>
+<text x="154.3" y="314" font-size="11" fill="#646464" text-anchor="middle">9/08</text>
+<circle cx="244.7" cy="122.0" r="3.2" fill="#1a5fb4"/>
+<text x="244.7" y="314" font-size="11" fill="#646464" text-anchor="middle">9/22</text>
+<circle cx="335.0" cy="137.5" r="3.2" fill="#1a5fb4"/>
+<text x="335.0" y="314" font-size="11" fill="#646464" text-anchor="middle">10/06</text>
+<circle cx="425.3" cy="156.8" r="3.2" fill="#1a5fb4"/>
+<text x="425.3" y="314" font-size="11" fill="#646464" text-anchor="middle">10/20</text>
+<circle cx="515.7" cy="164.5" r="3.2" fill="#1a5fb4"/>
+<text x="515.7" y="314" font-size="11" fill="#646464" text-anchor="middle">11/03</text>
+<circle cx="606.0" cy="178.1" r="3.2" fill="#1a5fb4"/>
+<text x="606.0" y="314" font-size="11" fill="#646464" text-anchor="middle">11/17</text>
+<text x="70.0" y="75.3" font-size="11.5" font-weight="700" fill="#121212" text-anchor="start">1,090万</text>
+<text x="431.3" y="146.8" font-size="11.5" font-weight="700" fill="#121212" text-anchor="start">720万</text>
+<text x="600.0" y="168.1" font-size="11.5" font-weight="700" fill="#121212" text-anchor="end">610万</text>
+<text x="64" y="346" font-size="11" fill="#646464">数据：PSA Backlog Tracker（psacard.com），双周更新。本站制图。</text></svg>
