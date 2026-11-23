@@ -10,16 +10,16 @@
 # 选取原则：优先仍待落实的「建议优先」基础知识（如现有库存、收支平衡），再加上当天最重要的一条新闻、店铺案例或视频。同等条件下优先选推荐指数更高的。
 # 类型要交错：同一类型（新闻 / 案例 / 视频 / 基础知识）不要连续超过 2 条。首页脚本也会再做一次交错，避免刷起来单调。
 # 若今天没有更合适的新内容，可沿用仍成立的推荐，不必为了改而改。
-date: 2026-11-18
+date: 2026-11-24
 items:
-  - url: /daily/2026-11-18/
-    topic: takamatsu-card-theft-arrest-2026-11-18
-    reason: 日本卡店一夜被偷 63 张卡、约 2,200 万日元，一张就占两成；先定好打烊收柜规则，再问清保险怎么赔。
-  - url: /cardlab/mega-gengar-ex-mega-dream/
-    reason: 去年最热的新卡之一，PSA 10 从 13.6 万跌到 5.6 万、每天还多一百多张；收「近一年热门卡」前先看这篇。
-  - url: /shops/snkrdunk-toreca/
-    reason: 交易平台开的秋叶原评级卡店：开业前两周先买取、把真伪保证当卖点、37㎡ 只卖评级卡和盒子。
-  - url: /videos/gtc-thieves-caught-4k/
-    reason: 轻松一下：十个被监控拍得一清二楚的盗卡小偷，看完顺手检查一下门锁和报警推送。
-  - url: /cardlab/magikarp-triplet-beat-ar/
-    reason: 一条只会水溅跃的鱼：同一张画英版 PSA 10 约 3,662 美元、日版约 3 万日元，附 113 万美元鲤鱼王纪录。
+  - url: /daily/2026-11-24/
+    topic: flowing-fists-early-leak-2026-11-17
+    reason: 11/27 新弹发售前，三个收盒业者的报价都是越接近发售日越低；过往四个弹有两个一个月后更便宜。进盒子前先看这条。
+  - url: /cardlab/pikachu-ex-battle-collection-764/
+    reason: 891 日元一副的预组里抽出的皮卡丘，PSA 10 半年从 68 万跌到 18 万；还提醒了称重挑卡的风险。
+  - url: /shops/hareruya2/
+    reason: 整栋楼按「客人来干什么」分层：少量快收和大量买取分开、一进门是 200 多张评级卡的旋转展柜，小店也能按比例借。
+  - url: /videos/x-130point-990k-charizard/
+    reason: 轻松一下：初版喷火龙 PSA 10 成交 99 万美元，其实比 10 月的纪录低约三成。
+  - url: /cardlab/mega-rayquaza-ex-storm-emeralda/
+    reason: 今年夏天最热的新卡，发售日买取 11 万日元，三个月后 PSA 10 只剩约 5.4 万；收热门新卡前先看。

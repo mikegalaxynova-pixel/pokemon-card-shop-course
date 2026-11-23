@@ -29,7 +29,8 @@
 
 - 2026-11-18：Pikachu with Grey Felt Hat（SVP 085）、Mega Charizard X ex（M2 110 SAR / PFL 125 SIR）、Umbreon ex（SV8a 217 SAR / PRE 161 SIR）
 - 2026-11-18（晚）：Magikarp（SV1a 080 AR / PAL 203 IR）、Mega Gengar ex（M2a 240 SAR / ASC 284 SIR）
-- 候选：Pikachu ex（MC 764）、Mega Rayquaza ex（M6 110）、Detective Pikachu（SV-P 98）、地区限定皮卡丘（SV-P 260/261/289）、Mega Dragonite ex（M2A 246）、Mew ex（SV4A 347）
+- 2026-11-24：Mega Rayquaza ex（M6 110 SAR / DRI 138 SIR）、Pikachu ex（MC 764 SAR / ASC 276 SIR）
+- 候选：Detective Pikachu（SV-P 98）、地区限定皮卡丘（SV-P 260/261/289）、Mega Dragonite ex（M2A 246）、Mew ex（SV4A 347）
 
 ### 已发布（可当参考）
 

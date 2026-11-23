@@ -1,5 +1,14 @@
 # 更新日志（唯一数据源）。每次每日更新在最上面新增一条。
 # kind 取值：news | shops | research | videos | kb | cardlab | tools（顶栏小红点按 _data/nav.yml 的 kinds 归到 6 个栏目）（旧条目可能仍是 daily / recs / path / glossary，首页会归入「其他」）；type: new | updated
+- date: 2026-11-24
+  title: 第 8 期 · 新弹收盒报价逐日走低、广岛卡店盗窃案与 99 万美元喷火龙
+  items:
+    - { kind: news, type: new, title: "每日新闻 第 8 期（11/24）：「ハドウシーカー」收盒报价逐日走低；广岛卡店盗窃案嫌犯落网；初版喷火龙 PSA 10 成交 99 万美元", url: /daily/2026-11-24/ }
+    - { kind: cardlab, type: new, title: "名卡研究：メガレックウザex SAR（Mega Rayquaza ex）——发售日买取 11 万，三个月后 PSA 10 只剩 5.4 万", url: /cardlab/mega-rayquaza-ex-storm-emeralda/ }
+    - { kind: cardlab, type: new, title: "名卡研究：ピカチュウex SAR（Pikachu ex，MC 764）——891 日元预组里的皮卡丘，PSA 10 半年从 68 万跌到 18 万", url: /cardlab/pikachu-ex-battle-collection-764/ }
+    - { kind: shops, type: new, title: "店铺案例：晴れる屋2（Hareruya 2）", url: /shops/hareruya2/ }
+    - { kind: videos, type: new, title: "视频：大阪日本橋 C-Labo 巡店：旧卡全贴黄标签、品相差一级价差一倍（英文）", url: /videos/vivian-osaka-clabo-2026/ }
+    - { kind: videos, type: new, title: "X 帖：130 Point 播报初版喷火龙 PSA 10 成交 99 万美元（英文）", url: /videos/x-130point-990k-charizard/ }
 - date: 2026-11-18
   title: 第 7 期 · 2,200 万日元盗卡案三人落网与 PSA 积压 610 万件
   items:
