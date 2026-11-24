@@ -10,16 +10,16 @@
 # 选取原则：优先仍待落实的「建议优先」基础知识（如现有库存、收支平衡），再加上当天最重要的一条新闻、店铺案例或视频。同等条件下优先选推荐指数更高的。
 # 类型要交错：同一类型（新闻 / 案例 / 视频 / 基础知识）不要连续超过 2 条。首页脚本也会再做一次交错，避免刷起来单调。
 # 若今天没有更合适的新内容，可沿用仍成立的推荐，不必为了改而改。
-date: 2026-11-24
+date: 2026-11-25
 items:
-  - url: /daily/2026-11-24/
+  - url: /daily/2026-11-25/
     topic: flowing-fists-early-leak-2026-11-17
-    reason: 11/27 新弹发售前，三个收盒业者的报价都是越接近发售日越低；过往四个弹有两个一个月后更便宜。进盒子前先看这条。
-  - url: /cardlab/pikachu-ex-battle-collection-764/
-    reason: 891 日元一副的预组里抽出的皮卡丘，PSA 10 半年从 68 万跌到 18 万；还提醒了称重挑卡的风险。
-  - url: /shops/hareruya2/
-    reason: 车站步行 2 分钟、开在 6 楼的连锁小店：每天 100 日元起的活动、只给参加者买的热门卡包、半小时一条的 X 帖，把人带上楼。
-  - url: /videos/x-130point-990k-charizard/
-    reason: 轻松一下：初版喷火龙 PSA 10 成交 99 万美元，其实比 10 月的纪录低约三成。
-  - url: /cardlab/mega-rayquaza-ex-storm-emeralda/
-    reason: 今年夏天最热的新卡，发售日买取 11 万日元，三个月后 PSA 10 只剩约 5.4 万；收热门新卡前先看。
+    reason: 11/27 新弹发售前，四个网站对头奖 MUR 的买取预测差 2.5 倍；首周收卡按实际买取出价，别按预测。
+  - url: /cardlab/detective-pikachu-sv-p-098/
+    reason: 买游戏送的皮卡丘，配布时 2,800 日元，两年后涨到 3 万；PSA 10 已有约 5 万张，送评期待利益只有约 5,000 日元。
+  - url: /shops/tsutaya-tc-matsudo/
+    reason: 连锁书店做的卡牌专门店：叫号买取、自助查价、绑定二手消费的开业抽奖，小店能借两三招。
+  - url: /videos/x-pokeguardian-gold-pikachu/
+    reason: 轻松一下：30 张纯金皮卡丘卡，每张 30 克，只展不卖。
+  - url: /cardlab/mega-dragonite-ex-mega-dream/
+    reason: 同一张画，英版 PSA 10 是日版的约 4.5 倍；收英版别按日版价。

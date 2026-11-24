@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 366" width="640" height="366" role="img" aria-labelledby="t d" font-family="system-ui,-apple-system,'PingFang SC','Noto Sans CJK SC',sans-serif">
+<title id="t">TSUTAYA Trading Card：1 号店 vs 7 号店</title><desc id="d">錦糸町（2023-12 开业）对比 松戸（2026-11 开业），按开业新闻稿</desc>
+<rect width="640" height="366" fill="#fff"/>
+<text x="24" y="26" font-size="16" font-weight="700" fill="#121212">TSUTAYA Trading Card：1 号店 vs 7 号店</text>
+<text x="24" y="46" font-size="12" fill="#646464">錦糸町（2023-12 开业）对比 松戸（2026-11 开业），按开业新闻稿</text>
+<text x="190" y="94" font-size="12" font-weight="700" fill="#121212" text-anchor="end">卖场面积（坪）</text>
+<rect x="200" y="72" width="230.6" height="20" rx="3" fill="#9a9a9a"/>
+<text x="436.6" y="87" font-size="11.5" fill="#121212">錦糸町 41</text>
+<rect x="200" y="96" width="360.0" height="20" rx="3" fill="#b3001b"/>
+<text x="566.0" y="111" font-size="11.5" fill="#121212">松戸 64</text>
+<text x="190" y="158" font-size="12" font-weight="700" fill="#121212" text-anchor="end">对战席（席）</text>
+<rect x="200" y="136" width="270.0" height="20" rx="3" fill="#9a9a9a"/>
+<text x="476.0" y="151" font-size="11.5" fill="#121212">錦糸町 54</text>
+<rect x="200" y="160" width="360.0" height="20" rx="3" fill="#b3001b"/>
+<text x="566.0" y="175" font-size="11.5" fill="#121212">松戸 72</text>
+<text x="190" y="222" font-size="12" font-weight="700" fill="#121212" text-anchor="end">库存（万张）</text>
+<rect x="200" y="200" width="153.0" height="20" rx="3" fill="#9a9a9a"/>
+<text x="359.0" y="215" font-size="11.5" fill="#121212">錦糸町 8.5</text>
+<rect x="200" y="224" width="360.0" height="20" rx="3" fill="#b3001b"/>
+<text x="566.0" y="239" font-size="11.5" fill="#121212">松戸 20</text>
+<text x="190" y="286" font-size="12" font-weight="700" fill="#121212" text-anchor="end">每月活动（场，新闻稿）</text>
+<rect x="200" y="264" width="225.0" height="20" rx="3" fill="#9a9a9a"/>
+<text x="431.0" y="279" font-size="11.5" fill="#121212">錦糸町 50</text>
+<rect x="200" y="288" width="360.0" height="20" rx="3" fill="#b3001b"/>
+<text x="566.0" y="303" font-size="11.5" fill="#121212">松戸 80</text>
+<text x="24" y="352" font-size="11" fill="#646464">本站制图；数据：CCC／カルチュア・エクスペリエンス新闻稿（2023-12-01、2026-11-13）。錦糸町现在每月 200 场以上。</text></svg>

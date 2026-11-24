@@ -1,5 +1,14 @@
 # 更新日志（唯一数据源）。每次每日更新在最上面新增一条。
 # kind 取值：news | shops | research | videos | kb | cardlab | tools（顶栏小红点按 _data/nav.yml 的 kinds 归到 6 个栏目）（旧条目可能仍是 daily / recs / path / glossary，首页会归入「其他」）；type: new | updated
+- date: 2026-11-25
+  title: 第 9 期 · 新弹 MUR 预测四站差 2.5 倍、30 周年皮卡丘手办附卡与纯金皮卡丘
+  items:
+    - { kind: news, type: new, title: "每日新闻 第 9 期（11/25）：「ハドウシーカー」MUR 买取预测四站差 2.5 倍、英文版改 2/6 周六发售；30 周年皮卡丘手办附卡 11/27 发售；30 张纯金皮卡丘只展不卖", url: /daily/2026-11-25/ }
+    - { kind: cardlab, type: new, title: "名卡研究：名探偵ピカチュウ（Detective Pikachu，SV-P 098）——游戏特典卡从 2,800 涨到 3 万", url: /cardlab/detective-pikachu-sv-p-098/ }
+    - { kind: cardlab, type: new, title: "名卡研究：メガカイリューex SAR（Mega Dragonite ex）——半年跌一半，英版 PSA 10 是日版的约 4.5 倍", url: /cardlab/mega-dragonite-ex-mega-dream/ }
+    - { kind: shops, type: new, title: "店铺案例：TSUTAYA Trading Card 松戸（TSUTAYA Trading Card Matsudo）——商场 3 楼 72 席的连锁卡牌专门店", url: /shops/tsutaya-tc-matsudo/ }
+    - { kind: videos, type: new, title: "X 帖：PokeGuardian 播报 30 张纯金皮卡丘卡（英文）", url: /videos/x-pokeguardian-gold-pikachu/ }
+    - { kind: videos, type: new, title: "视频：一天逛 17 家秋叶原、池袋卡店（中文）", url: /videos/xiaozui-tokyo-17-shops/ }
 - date: 2026-11-24
   title: 第 8 期 · 新弹收盒报价逐日走低、广岛卡店盗窃案与 99 万美元喷火龙
   items:
