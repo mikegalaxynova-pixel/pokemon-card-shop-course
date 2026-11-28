@@ -31,7 +31,8 @@
 - 2026-11-18（晚）：Magikarp（SV1a 080 AR / PAL 203 IR）、Mega Gengar ex（M2a 240 SAR / ASC 284 SIR）
 - 2026-11-24：Mega Rayquaza ex（M6 110 SAR / DRI 138 SIR）、Pikachu ex（MC 764 SAR / ASC 276 SIR）
 - 2026-11-25：Detective Pikachu（SV-P 098）、Mega Dragonite ex（M2a 246 SAR / ASC 290 SIR）
-- 候选：地区限定皮卡丘（SV-P 260/261/289）、Mew ex（SV4A 347）、Gengar（简中 CBB3 07）
+- 2026-11-28：Hiroshima's Pikachu（SV-P 261，含 260/289 和旧版 SM-P 088）、Mega Darkrai ex（M5 114 SAR / PBL 116 SIR / 120 MHR）
+- 候选：Mew ex（SV4A 347）、Gengar（简中 CBB3 07）、Pikachu（M-P 20）
 
 ### 已发布（可当参考）
 

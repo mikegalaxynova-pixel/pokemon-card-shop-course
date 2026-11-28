@@ -10,7 +10,7 @@ renaiss_url: https://index.renaissos.com/card/pokemon/storm-emeralda/110-mega-ra
 renaiss_note: 日版 PSA 10 是 Renaiss 宝可梦指数成分第 8 位，7 天跌幅是成分里最大的（−15.38%，2026-11-24 查询）
 topics: [名卡研究, 行情新闻]
 date: 2026-11-24
-last_updated: 2026-11-24
+last_updated: 2026-11-28
 data_as_of: 2026-11-23
 rating: 3
 rating_reason: 「首发价不可靠」的又一个清楚例子，数字完整、适合定收购价；但结论和メガゲンガーex 那篇相近，下跌原因也只能推断。
@@ -38,6 +38,8 @@ comment: |
 ---
 
 > 下面每个数字都写了来源和日期。不同网站的 PSA 10 数量差很多，本篇两个都写。
+
+> **更新 11/28**：PSA 11/25 宣布不再接收英文版 Mega Hyper Rare，本页的英版 **Delta Reign 141/103 MHR** 在名单里（日版 SAR / MUR 不受影响）。PokeInvest 11/28：141/103 PSA 10 约 $1,532，未评级约 $201（未显示成交笔数，不确定是否已反映停评）。详见 [今日新闻]({{ '/daily/2026-11-28/' | relative_url }})。
 
 {% include figure.html src="/assets/img/cardlab-mega-rayquaza-ex-m6-110-sar.webp" alt="日版 メガレックウザex SAR 110/076 卡面" width="400" height="559" caption="日版 M6 110/076 SAR。" credit="ポケモンカードゲーム公式 カード検索" credit_url="https://www.pokemon-card.com/card-search/details.php/card/50551/regu/all" %}
 {% include figure.html src="/assets/img/cardlab-mega-rayquaza-ex-m6-113-mur.webp" alt="日版 メガレックウザex MUR 113/076 金卡卡面" width="400" height="559" caption="同弹的 MUR（メガウルトラレア）113/076 金卡。" credit="ポケモンカードゲーム公式 カード検索" credit_url="https://www.pokemon-card.com/card-search/details.php/card/50554/regu/all" %}

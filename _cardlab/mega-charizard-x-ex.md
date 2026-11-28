@@ -10,7 +10,7 @@ renaiss_url: https://index.renaissos.com/card/pokemon/inferno-x/110-mega-chariza
 renaiss_note: 日版 PSA 10 是 Renaiss 宝可梦指数成分第 1 位；英版 PFL 125 第 3 位
 topics: [名卡研究, 行情新闻]
 date: 2026-11-18
-last_updated: 2026-11-18
+last_updated: 2026-11-28
 data_as_of: 2026-11-18
 rating: 5
 rating_reason: 日本店最常经手的现代热门评级卡之一；「首发价陷阱」和「日英版 PSA 10 价差」两课会直接改变新弹的进货价和定价方式。
@@ -38,6 +38,8 @@ comment: |
 ---
 
 > 价格每天变，下面每个数字都写了来源和日期。日版和英版是两种不同的商品，编号、Pop、价格都要分开看。
+
+> **更新 11/28**：PSA 11/25 宣布不再接收英文版 Mega Hyper Rare，名单里有 **Phantasmal Flames 130/094 MHR**（本页写的 PFL 125/094 SIR 和日版 SAR / MUR 都不受影响）。PokeInvest 11/28：130/094 PSA 10 成交中位 $2,194（61 笔，最近一笔 11/17，早于公告），未评级 $194。详见 [今日新闻]({{ '/daily/2026-11-28/' | relative_url }})。
 
 {% include figure.html src="/assets/img/cardlab-mega-charizard-x-ex-m2-110-sar.webp" alt="日版 メガリザードンXex SAR 110/080 卡面" width="400" height="559" caption="日版 M2 インフェルノX 110/080 SAR。" credit="ポケモンカードゲーム公式 カード検索" credit_url="https://www.pokemon-card.com/card-search/details.php/card/48516/regu/all" %}
 {% include figure.html src="/assets/img/cardlab-mega-charizard-x-ex-pfl-125-sir.webp" alt="英版 Mega Charizard X ex SIR 125/094 卡面" width="400" height="559" caption="英版 Phantasmal Flames 125/094 SIR。" credit="Pokémon TCG API（pokemontcg.io）· 卡图 ©Pokémon" credit_url="https://pokemontcg.io/" %}

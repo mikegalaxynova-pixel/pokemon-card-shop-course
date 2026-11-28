@@ -10,7 +10,7 @@ renaiss_url: https://index.renaissos.com/card/pokemon/mega-dream-ex/246-mega-dra
 renaiss_note: 日版 SAR 的 PSA 10 是 Renaiss 宝可梦指数成分第 11 位（$189，−2.86%，2026-11-25 查询）；指数里还有日版 MA 232 和英版 271
 topics: [名卡研究, PSA/评级]
 date: 2026-11-25
-last_updated: 2026-11-25
+last_updated: 2026-11-28
 data_as_of: 2026-11-23
 rating: 3
 rating_reason: 日英两版成交、月均走势、PSA 10 率和各店买取都有出处，日英价差很说明问题；但下跌原因只能推断，和本站已写的メガゲンガーex 结论相近。
@@ -39,6 +39,8 @@ comment: |
 
   **和回本的关系**：持续下跌的卡，压货一个月就可能少一成；周转比毛利更重要。
 ---
+
+> **更新 11/28**：PSA 11/25 宣布不再接收英文版 Mega Hyper Rare，本页的英版 **Ascended Heroes 295/217 MHR** 在名单里（日版 SAR / MA / MUR 不受影响）。PokeInvest 11/28：295/217 PSA 10 成交中位 $900（74 笔，最近一笔 11/25，在公告前后，还没反映停评后的价格），未评级 $166。详见 [今日新闻]({{ '/daily/2026-11-28/' | relative_url }})。
 
 {% include figure.html src="/assets/img/cardlab-mega-dragonite-ex-m2a-246-sar.webp" alt="日版メガカイリューex SAR 246/193 卡面" width="400" height="559" caption="日版 M2a 246/193 SAR，插画 DOM。" credit="ポケモンカードゲーム公式 カード検索" credit_url="https://www.pokemon-card.com/card-search/details.php/card/50006/regu/all" %}
 {% include figure.html src="/assets/img/cardlab-mega-dragonite-ex-asc-290-sir.webp" alt="英版 Mega Dragonite ex 290/217 Special Illustration Rare 卡面" width="400" height="559" caption="英版 Ascended Heroes 290/217 SIR，同一张画。" credit="pokemontcg.io（Pokémon TCG API）" credit_url="https://pokemontcg.io/" %}

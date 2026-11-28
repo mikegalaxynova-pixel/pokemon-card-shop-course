@@ -1,5 +1,15 @@
 # 更新日志（唯一数据源）。每次每日更新在最上面新增一条。
 # kind 取值：news | shops | research | videos | kb | cardlab | tools（顶栏小红点按 _data/nav.yml 的 kinds 归到 6 个栏目）（旧条目可能仍是 daily / recs / path / glossary，首页会归入「其他」）；type: new | updated
+- date: 2026-11-28
+  title: 第 10 期 · PSA 停评英文版 Mega 金卡、新弹发售日真实价格与 C-Labo 连开两家
+  items:
+    - { kind: news, type: new, title: "每日新闻 第 10 期（11/28）：PSA 停评英文版 Mega Hyper Rare；「ハドウシーカー」发售日 MUR 买取 3.5 万（预测 2.8〜7 万）；加古川邻居盗卡再逮捕", url: /daily/2026-11-28/ }
+    - { kind: cardlab, type: new, title: "名卡研究：ヒロシマのピカチュウ（Hiroshima's Pikachu，SV-P 261）——地区限定皮卡丘半年从 8.9 万掉到 2.6 万", url: /cardlab/hiroshima-pikachu-sv-p-261/ }
+    - { kind: cardlab, type: new, title: "名卡研究：メガダークライex SAR（Mega Darkrai ex，M5 114）——日版半年 −70%，英文版金卡被 PSA 停评", url: /cardlab/mega-darkrai-ex-abyss-eye/ }
+    - { kind: cardlab, type: updated, title: "名卡研究更新：メガリザードンXex、メガカイリューex、メガレックウザex 加入 PSA 停评说明", url: /cardlab/mega-charizard-x-ex/ }
+    - { kind: shops, type: new, title: "店铺案例：カードラボ（C-Labo）——连锁卡店 11/27 町田、11/28 大宫连开两家", url: /shops/c-labo/ }
+    - { kind: videos, type: new, title: "视频：Reserved Investments 点评 PSA 停评英文版 Mega 金卡（英文）", url: /videos/reserved-investments-psa-mhr-halt/ }
+    - { kind: videos, type: new, title: "视频：外国人带普通卡去秋叶原、池袋卖（粤语）", url: /videos/ashibatv-tokyo-sell-raw-cards/ }
 - date: 2026-11-25
   title: 第 9 期 · 新弹 MUR 预测四站差 2.5 倍、30 周年皮卡丘手办附卡与纯金皮卡丘
   items:

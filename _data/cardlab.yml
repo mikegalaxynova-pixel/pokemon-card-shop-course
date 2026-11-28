@@ -55,6 +55,17 @@
   versions: [M2a 246/193 SAR, M2a 232/193 MA, M2a 250/193 MUR, Ascended Heroes 290/217 SIR, Ascended Heroes 271/217 MA, Ascended Heroes 295/217 MHR]
   date: 2026-11-25
   renaiss: https://index.renaissos.com/card/pokemon/mega-dream-ex/246-mega-dragonite-ex-psa-10-japanese-7bd898e0
-# 候选（Renaiss Index 宝可梦指数成分里出现过、尚未写）：Hiroshima's Pikachu（SV-P 261）、
-# Tohoku's Pikachu（SV-P 260）、Fukuoka's Pikachu（SV-P 289）等地区限定皮卡丘、Gengar（简中 CBB3 07）、
-# Mew ex（SV4A 347，11/1 移出指数）。
+- slug: hiroshima-pikachu-sv-p-261
+  card_en: Hiroshima's Pikachu
+  card_ja: ヒロシマのピカチュウ
+  versions: [SV-P 261, SV-P 260（Tohoku's Pikachu）, SV-P 289（Fukuoka's Pikachu）, SM-P 088（旧版 Tohoku）]
+  date: 2026-11-28
+  renaiss: https://index.renaissos.com/card/pokemon/scarlet-violet-promotional-cards/261-hiroshima-s-pikachu-psa-10-japanese-4eed288d
+- slug: mega-darkrai-ex-abyss-eye
+  card_en: Mega Darkrai ex
+  card_ja: メガダークライex
+  versions: [M5 114/081 SAR, M5 118/081 MUR, M5 099/081 SR, M5 046/081 RR, Pitch Black 116/084 SIR, Pitch Black 120/084 MHR]
+  date: 2026-11-28
+  renaiss: https://index.renaissos.com/card/pokemon/abyss-eye/114-mega-darkrai-ex-psa-10-japanese-0222fd79
+# 候选（Renaiss Index 宝可梦指数成分里出现过、尚未写）：Gengar（简中 CBB3 07）、
+# Mew ex（SV4A 347，11/1 移出指数）、Pikachu（M-P 20，指数第 15 位）。
